@@ -833,3 +833,48 @@ db.createCollection("especialidades", {
 //índices colección especialidades
 
 db.especialidades.createIndex({ nombre: 1 }, { unique: true });
+
+//esquema colección hist_clinicas_alergias
+
+db.createCollection("hist_clinicas_alergias", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_hist_clinica", "id_alergia"],
+            properties: {
+                id_hist_clinica: {
+                    bsonType: "int"
+                },
+                id_alergia: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección hist_clinicas_alergias
+
+db.hist_clinicas_alergias.createIndex({ id_hist_clinica: 1, id_alergia: 1 }, { unique: true });
+
+//esquema colección alergias
+
+db.createCollection("alergias", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 3,
+                    maxLength: 100
+                }
+            }
+        }
+    }
+});
+
+//índices colección alergias
+
+db.alergias.createIndex({ nombre: 1 }, { unique: true });
