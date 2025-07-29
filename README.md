@@ -81,3 +81,139 @@ Si bien en esta etapa de la creación del sistema de datos aún no se tiene una 
 Si bien antes ya se tenía una relación aproximada entre las colecciones, no se tenía una certeza completa de cómo se conectarían estas, unas con otras. Ahora se conoce, gracias a la asignación de tipos de datos (que se representarán en el modelo físico como un `bsonType`, dentro del `$jsonSchema`), que los ids que permitirán el `$lookup` entre tablas relacionadas serán enteros; y que datos como el número de teléfono o el número de colegiatura (`medicos`) no se almacenarán como números, sino como cadenas de texto (debido a que no se realizarán operaciones con ellos y permite, como adicional, realizar operaciones con *regex*).
 
 Básicamente, en este etapa no se realizan reestructuraciones de la base de datos, sino simplemente se transfiere el *Modelo Conceptual* a un esquema visual más limpio y específico.
+
+#### Gráfica
+
+```mermaid
+erDiagram
+    dir_generales {
+        int _id PK
+        string nombre
+        string tel
+        string correo_el
+        string num_lic_gestion
+        decimal salario
+    }
+
+    hospitales {
+        int _id PK
+        string nombre
+        string direccion
+        string tel
+        array areas_especializadas
+        int _id_dir_general FK
+    }
+
+    enfermeros {
+        int _id PK
+        string nombre
+        string tel
+        string correo_el
+        decimal salario
+        int id_hospital FK
+    }
+
+    per_admin {
+        int _id PK
+        string nombre
+        string tel
+        string correo_el
+        string cargo
+        string area_resp
+        decimal salario
+        int id_hospital FK
+    }
+
+    per_mantenimiento {
+        int _id PK
+        string nombre
+        string tel
+        string correo_el
+        string cargo
+        string area_resp
+        decimal salario
+        int id_hospital FK
+    }
+
+    medicos {
+        int _id PK
+        string num_colegiatura
+        string nombre
+        array especialidades
+        string tel
+        string correo_tel
+        decimal salario
+        int id_hospital FK
+    }
+
+    pacientes {
+        int _id PK
+        int id_hist_clinica FK
+        string num_hc
+        string nombre
+        string direccion
+        string tel
+        string correo_el
+        array seguros
+    }
+
+    hist_clinicas {
+        int _id PK
+        string num_hc
+        date fecha_creacion
+        array alergias
+        array ant_personales
+        array ant_familiares
+        date ult_actualizacion
+    }
+
+    visitas_medicas {
+        int _id PK
+        date fecha_hora
+        int id_medico FK
+        int id_paciente FK
+        int id_hist_clinica FK
+        array diagnosticos
+        array tratamientos FK
+        array medicamentos_recetados FK
+        string evolucion
+        array resultados
+    }
+
+    medicamentos {
+        int _id PK
+        string nombre
+        string fabricante
+        string tipo
+    }
+
+    tratamientos {
+        int _id PK
+        string nombre
+        string descripcion
+        string area_med
+        decimal costo
+    }
+
+    inventarios_medicamentos {
+        int _id PK
+        int id_hospital FK
+        int id_medicamento FK
+        int cant_disp
+    }
+
+    dir_generales ||--o{ hospitales : gestionan
+    hospitales ||--o{ enfermeros : tienen
+    hospitales ||--o{ per_admin : tienen
+    hospitales ||--o{ per_mantenimiento : tienen
+    hospitales ||--o{ medicos : tienen
+    hospitales ||--o{ pacientes : tienen
+    hist_clinicas ||..|| pacientes : tienen
+    hist_clinicas ||--o{ visitas_medicas : tienen_registradas
+    pacientes ||--o{ visitas_medicas : realizan
+    medicos ||--o{ visitas_medicas : atienden
+    visitas_medicas ||--o{ medicamentos : recetan
+    visitas_medicas ||--o{ tratamientos : asignan
+    medicamentos ||--o{ inventarios_medicamentos : "se almacenan en"
+    hospitales ||--o{ inventarios_medicamentos : tienen
+```
