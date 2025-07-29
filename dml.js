@@ -146,3 +146,76 @@ db.hospitales.insertMany([
         id_dir_general: 2
     }
 ]);
+
+//inserciones areas_especializadas
+
+db.areas_especializadas.insertMany([
+    { _id: 1, nombre: "Medicina Interna" },
+    { _id: 2, nombre: "Pediatría" },
+    { _id: 3, nombre: "Ginecología y Obstetricia" },
+    { _id: 4, nombre: "Cirugía General" },
+    { _id: 5, nombre: "Ortopedia y Traumatología" },
+    { _id: 6, nombre: "Cardiología" },
+    { _id: 7, nombre: "Neurología" },
+    { _id: 8, nombre: "Oncología" },
+    { _id: 9, nombre: "Dermatología" },
+    { _id: 10, nombre: "Psiquiatría" },
+    { _id: 11, nombre: "Oftalmología" },
+    { _id: 12, nombre: "Otorrinolaringología" },
+    { _id: 13, nombre: "Urología" },
+    { _id: 14, nombre: "Gastroenterología" },
+    { _id: 15, nombre: "Nefrología" },
+    { _id: 16, nombre: "Neumología" },
+    { _id: 17, nombre: "Reumatología" },
+    { _id: 18, nombre: "Anestesiología" },
+    { _id: 19, nombre: "Urgencias" },
+    { _id: 20, nombre: "Unidad de Cuidados Intensivos (UCI)" },
+    { _id: 21, nombre: "Medicina Nuclear" },
+    { _id: 22, nombre: "Radiología" },
+    { _id: 23, nombre: "Rehabilitación y Fisioterapia" },
+    { _id: 24, nombre: "Medicina Familiar" },
+    { _id: 25, nombre: "Medicina del Trabajo" },
+    { _id: 26, nombre: "Hemato-oncología" },
+    { _id: 27, nombre: "Infectología" },
+    { _id: 28, nombre: "Otros" }
+]);
+
+//inserciones hospitales_areas_especializadas
+
+db.hospitales_areas_especializadas.insertMany([
+    { id_hospital: 1, id_area_especializada: 19 },
+    { id_hospital: 1, id_area_especializada: 26 },
+    { id_hospital: 1, id_area_especializada: 22 },
+    { id_hospital: 1, id_area_especializada: 7 },
+    { id_hospital: 1, id_area_especializada: 15 },
+    { id_hospital: 1, id_area_especializada: 14 },
+    { id_hospital: 1, id_area_especializada: 18 },
+    { id_hospital: 1, id_area_especializada: 13 },
+    { id_hospital: 2, id_area_especializada: 5 },
+    { id_hospital: 2, id_area_especializada: 3 },
+    { id_hospital: 2, id_area_especializada: 25 },
+    { id_hospital: 2, id_area_especializada: 10 },
+    { id_hospital: 2, id_area_especializada: 23 },
+    { id_hospital: 2, id_area_especializada: 8 },
+    { id_hospital: 2, id_area_especializada: 27 },
+    { id_hospital: 3, id_area_especializada: 19 },
+    { id_hospital: 3, id_area_especializada: 13 },
+    { id_hospital: 3, id_area_especializada: 21 },
+    { id_hospital: 3, id_area_especializada: 17 },
+    { id_hospital: 3, id_area_especializada: 27 },
+    { id_hospital: 3, id_area_especializada: 22 },
+    { id_hospital: 3, id_area_especializada: 1 },
+    { id_hospital: 4, id_area_especializada: 22 },
+    { id_hospital: 4, id_area_especializada: 10 },
+    { id_hospital: 4, id_area_especializada: 25 },
+    { id_hospital: 4, id_area_especializada: 9 },
+    { id_hospital: 4, id_area_especializada: 21 },
+    { id_hospital: 4, id_area_especializada: 8 },
+    { id_hospital: 4, id_area_especializada: 19 },
+    { id_hospital: 4, id_area_especializada: 18 },
+    { id_hospital: 5, id_area_especializada: 19 },
+    { id_hospital: 5, id_area_especializada: 27 },
+    { id_hospital: 5, id_area_especializada: 7 },
+    { id_hospital: 5, id_area_especializada: 17 },
+    { id_hospital: 5, id_area_especializada: 1 }
+]);
