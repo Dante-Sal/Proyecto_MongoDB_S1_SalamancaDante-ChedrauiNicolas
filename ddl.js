@@ -968,3 +968,124 @@ db.createCollection("ant_familiares", {
 //índices colección ant_familiares
 
 db.ant_familiares.createIndex({ descripcion: 1 }, { unique: true });
+
+//esquema colección visitas_medicas_medicamentos
+
+db.createCollection("visitas_medicas_medicamentos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_visita_medica", "id_medicamento"],
+            properties: {
+                id_visita_medica: {
+                    bsonType: "int"
+                },
+                id_medicamento: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección visitas_medicas_medicamentos
+
+db.visitas_medicas_medicamentos.createIndex({ id_visita_medica: 1, id_medicamento: 1 }, { unique: true });
+
+//esquema colección medicamentos
+
+db.createCollection("medicamentos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre", "id_fabricante", "tipo", "cant_disp"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 10,
+                    maxLength: 50
+                },
+                id_fabricante: {
+                    bsonType: "int"
+                },
+                tipo: {
+                    enum: [
+                        "Analgésico",
+                        "Antibiótico",
+                        "Antiinflamatorio",
+                        "Antipirético",
+                        "Antihipertensivo",
+                        "Ansiolítico",
+                        "Antidepresivo",
+                        "Antihistamínico",
+                        "Broncodilatador",
+                        "Diurético",
+                        "Corticoide",
+                        "Anticonvulsivo",
+                        "Antimicótico",
+                        "Antiviral",
+                        "Vacuna",
+                        "Relajante muscular",
+                        "Antidiabético",
+                        "Anticoagulante",
+                        "Gastroprotector",
+                        "Suplemento vitamínico",
+                        "Otros"
+                    ]
+                },
+                cant_disp: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección medicamentos
+
+db.medicamentos.createIndex({ nombre: 1, id_fabricante: 1 }, { unique: true });
+
+//esquema colección fabricantes
+
+db.createCollection("fabricantes", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre", "pais", "tel", "correo_el"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 2,
+                    maxLength: 50
+                },
+                pais: {
+                    enum: [
+                        "Colombia",
+                        "Estados Unidos",
+                        "Alemania",
+                        "Suiza",
+                        "Francia",
+                        "Italia",
+                        "China",
+                        "México",
+                        "India"
+                    ]
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^\\+?[0-9]{7,14}$"
+                },
+                correo_el: {
+                    bsonType: "string",
+                    pattern: "^(?!.*\\.\\.)([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9])@([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])\.[a-zA-Z]{2,}$"
+                }
+            }
+        }
+    }
+});
+
+//índices colección fabricantes
+
+db.fabricantes.createIndex({ tel: 1 }, { unique: true });
+db.fabricantes.createIndex({ correo_el: 1 }, { unique: true });
+db.fabricantes.createIndex({ nombre: 1, pais: 1 }, { unique: true });
