@@ -594,3 +594,30 @@ db.createCollection("direcciones_pacientes", {
 //índices colección direcciones_pacientes
 
 db.direcciones_pacientes.createIndex({ via_principal_tipo: 1, via_principal_numero: 1, via_principal_letra: 1, via_principal_bis: 1, via_generadora_numero: 1, via_generadora_letra: 1, via_generadora_bis: 1, placa: 1, id_barrio: 1 }, { unique: true });
+
+//esquema colección hist_clinicas
+
+db.createCollection("hist_clinicas", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["num_hc", "fecha_creacion", "ult_actualizacion"],
+            properties: {
+                num_hc: {
+                    bsonType: "string",
+                    pattern: "^HC-[0-9]{4}-[0-9]{5}$"
+                },
+                fecha_creacion: {
+                    bsonType: "date"
+                },
+                ult_actualizacion: {
+                    bsonType: "date"
+                }
+            }
+        }
+    }
+});
+
+//índices colección hist_clinicas
+
+db.hist_clinicas.createIndex({ num_hc: 1 }, { unique: true });
