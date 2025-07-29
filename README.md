@@ -570,7 +570,7 @@ La segunda forma normal solicita que no existan datos con atributos que no depen
 
 Teniendo en cuenta lo que la 2FN solicita, se pudo observar que el modelo ya existente tenía ciertas falencias en este ámbito, aunque pequeñas. Esto debido a que se pudieron identificar tres colecciones que poseían atributos fácilmente intercambiables con otros (lo que en esencia significa, que no son dependientes de la llave primaria de su respectiva colección).
 
-Estos tres atributos eran el tipo y estado de los seguros médicos, las direcciones de los pacientes y los fabricantes de los medicamentos. Si bien, naturalmente, estas propiedades tienen cierta correlación con sus colecciones, esta relación no es intrínseca, ya que pueden considerarse estas como entidades separadas, facilitando la flexibilidad del sistema.
+Estos cuatro atributos (hallados en tres colecciones) eran el tipo y estado de los seguros médicos, las direcciones de los pacientes y los fabricantes de los medicamentos. Si bien, naturalmente, estas propiedades tienen cierta correlación con sus colecciones, esta relación no es intrínseca, ya que pueden considerarse estas como entidades separadas, facilitando la flexibilidad del sistema.
 
 <h4 align=center>Gráfica</h4>
 
@@ -879,3 +879,13 @@ erDiagram
     visitas_medicas_resultados }o..|| resultados : "pueden ser de"
     medicamentos ||..o{ inventarios_medicamentos : "se almacenan en"
 ```
+
+<h4 align=center>Descripción Técnica</h4>
+
+Las mejoras implementadas en esta fase del proceso se centran más que todo en propiedades/atributos que, si bien se podrían dejar como se encuentran hasta este punto, es más conveniente separarlas en colecciones aparte de donde se encontraban alojadas en esta fase.
+
+La primera razón que propicia este cambio es, como suele ser el caso cuando se habla de normalización, la flexibilidad y mantenimiento de la integridad de los datos a futuro (esto incluye poder ingresar nueva información al sistema con facilidad, o ampliar el alcance de este sin mayor complicación). Esto porque al poseer cada característica en una entidad aparte, se permite que se generen nuevos documentos en dichas entidades sin afectar lo que vendría siendo las inserciones que existan al momento de implementar un nuevo tipo de seguro, estado de seguro, fabricante o dirección de pacientes (como lo sería en nuestro contexto).
+
+La segunda razón está orientada al almacenaje de información. Si mantenemos, por ejemplo, los fabricantes como un array de cadenas de texto, no se pueden introducir nuevas características de cada fabricante en caso de precisarlo (como nacionalidad o información de contacto). La única alternativa para esta solución sería embeber los datos de cada fabricante en un array identificado como `fabricantes`, pero esto generaría una posible alteración drástica del `$jsonSchema` establecido al momento y fomentaría la desorganización y desnormalización de la base de datos.
+
+Por esta razón se decidió, dado que un seguro podría llegar a cambiar de tipo o estado si el paciente lo actualiza, o dado que los fabricantes de medicamentos podrían precisar de más información dentro de la BBDD (aislado del propio medicamento), o dado que un paciente podría cambiar rápidamente de una residencia a otra (modificando arbitrariamente los atributos de dirección y generando una relación no estrechamente directa con el `_id` del paciente); se decidió realizar el proceso de normalización en estas cuatro propiedades en colecciones separadas y referenciadas a sus entidades de origen.
