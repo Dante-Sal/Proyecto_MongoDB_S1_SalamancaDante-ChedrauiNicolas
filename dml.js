@@ -11036,4 +11036,5786 @@ db.hist_clinicas_ant_familiares.insertMany([
     { id_hist_clinica: 102, id_ant_familiar: 7 },
     { id_hist_clinica: 102, id_ant_familiar: 11 },
     { id_hist_clinica: 102, id_ant_familiar: 10 },
-    { id_hist_clinica: 103, id_ant_fam
+    { id_hist_clinica: 103, id_ant_familiar: 4 },
+    { id_hist_clinica: 103, id_ant_familiar: 1 },
+    { id_hist_clinica: 103, id_ant_familiar: 16 },
+    { id_hist_clinica: 103, id_ant_familiar: 14 },
+    { id_hist_clinica: 103, id_ant_familiar: 12 },
+    { id_hist_clinica: 104, id_ant_familiar: 6 },
+    { id_hist_clinica: 104, id_ant_familiar: 13 },
+    { id_hist_clinica: 104, id_ant_familiar: 1 },
+    { id_hist_clinica: 104, id_ant_familiar: 10 },
+    { id_hist_clinica: 104, id_ant_familiar: 5 },
+    { id_hist_clinica: 104, id_ant_familiar: 16 },
+    { id_hist_clinica: 105, id_ant_familiar: 18 },
+    { id_hist_clinica: 105, id_ant_familiar: 2 },
+    { id_hist_clinica: 105, id_ant_familiar: 3 },
+    { id_hist_clinica: 105, id_ant_familiar: 13 },
+    { id_hist_clinica: 105, id_ant_familiar: 5 },
+    { id_hist_clinica: 105, id_ant_familiar: 11 },
+    { id_hist_clinica: 106, id_ant_familiar: 1 },
+    { id_hist_clinica: 106, id_ant_familiar: 5 },
+    { id_hist_clinica: 106, id_ant_familiar: 12 },
+    { id_hist_clinica: 106, id_ant_familiar: 7 },
+    { id_hist_clinica: 106, id_ant_familiar: 11 },
+    { id_hist_clinica: 107, id_ant_familiar: 17 },
+    { id_hist_clinica: 107, id_ant_familiar: 9 },
+    { id_hist_clinica: 107, id_ant_familiar: 10 },
+    { id_hist_clinica: 107, id_ant_familiar: 4 },
+    { id_hist_clinica: 108, id_ant_familiar: 1 },
+    { id_hist_clinica: 108, id_ant_familiar: 5 },
+    { id_hist_clinica: 108, id_ant_familiar: 13 },
+    { id_hist_clinica: 108, id_ant_familiar: 3 },
+    { id_hist_clinica: 108, id_ant_familiar: 11 },
+    { id_hist_clinica: 108, id_ant_familiar: 9 },
+    { id_hist_clinica: 108, id_ant_familiar: 16 },
+    { id_hist_clinica: 109, id_ant_familiar: 7 },
+    { id_hist_clinica: 109, id_ant_familiar: 8 },
+    { id_hist_clinica: 109, id_ant_familiar: 12 },
+    { id_hist_clinica: 109, id_ant_familiar: 13 },
+    { id_hist_clinica: 109, id_ant_familiar: 10 },
+    { id_hist_clinica: 110, id_ant_familiar: 11 },
+    { id_hist_clinica: 110, id_ant_familiar: 6 },
+    { id_hist_clinica: 110, id_ant_familiar: 5 },
+    { id_hist_clinica: 110, id_ant_familiar: 7 },
+    { id_hist_clinica: 110, id_ant_familiar: 3 },
+    { id_hist_clinica: 111, id_ant_familiar: 10 },
+    { id_hist_clinica: 111, id_ant_familiar: 15 },
+    { id_hist_clinica: 111, id_ant_familiar: 12 },
+    { id_hist_clinica: 111, id_ant_familiar: 13 },
+    { id_hist_clinica: 111, id_ant_familiar: 3 },
+    { id_hist_clinica: 111, id_ant_familiar: 14 },
+    { id_hist_clinica: 111, id_ant_familiar: 2 },
+    { id_hist_clinica: 112, id_ant_familiar: 18 },
+    { id_hist_clinica: 112, id_ant_familiar: 9 },
+    { id_hist_clinica: 112, id_ant_familiar: 12 },
+    { id_hist_clinica: 112, id_ant_familiar: 6 },
+    { id_hist_clinica: 112, id_ant_familiar: 8 },
+    { id_hist_clinica: 112, id_ant_familiar: 15 },
+    { id_hist_clinica: 112, id_ant_familiar: 10 },
+    { id_hist_clinica: 113, id_ant_familiar: 5 },
+    { id_hist_clinica: 113, id_ant_familiar: 9 },
+    { id_hist_clinica: 113, id_ant_familiar: 10 },
+    { id_hist_clinica: 113, id_ant_familiar: 13 },
+    { id_hist_clinica: 113, id_ant_familiar: 6 },
+    { id_hist_clinica: 114, id_ant_familiar: 17 },
+    { id_hist_clinica: 114, id_ant_familiar: 8 },
+    { id_hist_clinica: 114, id_ant_familiar: 14 },
+    { id_hist_clinica: 114, id_ant_familiar: 12 },
+    { id_hist_clinica: 115, id_ant_familiar: 5 },
+    { id_hist_clinica: 115, id_ant_familiar: 6 },
+    { id_hist_clinica: 115, id_ant_familiar: 11 },
+    { id_hist_clinica: 115, id_ant_familiar: 4 },
+    { id_hist_clinica: 116, id_ant_familiar: 18 },
+    { id_hist_clinica: 116, id_ant_familiar: 12 },
+    { id_hist_clinica: 116, id_ant_familiar: 17 },
+    { id_hist_clinica: 116, id_ant_familiar: 4 },
+    { id_hist_clinica: 117, id_ant_familiar: 17 },
+    { id_hist_clinica: 117, id_ant_familiar: 7 },
+    { id_hist_clinica: 117, id_ant_familiar: 14 },
+    { id_hist_clinica: 117, id_ant_familiar: 1 },
+    { id_hist_clinica: 117, id_ant_familiar: 5 },
+    { id_hist_clinica: 117, id_ant_familiar: 16 },
+    { id_hist_clinica: 117, id_ant_familiar: 18 },
+    { id_hist_clinica: 118, id_ant_familiar: 8 },
+    { id_hist_clinica: 118, id_ant_familiar: 17 },
+    { id_hist_clinica: 118, id_ant_familiar: 10 },
+    { id_hist_clinica: 118, id_ant_familiar: 11 },
+    { id_hist_clinica: 118, id_ant_familiar: 1 },
+    { id_hist_clinica: 118, id_ant_familiar: 6 },
+    { id_hist_clinica: 118, id_ant_familiar: 9 },
+    { id_hist_clinica: 119, id_ant_familiar: 4 },
+    { id_hist_clinica: 119, id_ant_familiar: 15 },
+    { id_hist_clinica: 119, id_ant_familiar: 7 },
+    { id_hist_clinica: 119, id_ant_familiar: 6 },
+    { id_hist_clinica: 119, id_ant_familiar: 5 },
+    { id_hist_clinica: 119, id_ant_familiar: 3 },
+    { id_hist_clinica: 120, id_ant_familiar: 15 },
+    { id_hist_clinica: 120, id_ant_familiar: 2 },
+    { id_hist_clinica: 120, id_ant_familiar: 10 },
+    { id_hist_clinica: 120, id_ant_familiar: 17 },
+    { id_hist_clinica: 120, id_ant_familiar: 3 },
+    { id_hist_clinica: 120, id_ant_familiar: 18 },
+    { id_hist_clinica: 121, id_ant_familiar: 6 },
+    { id_hist_clinica: 121, id_ant_familiar: 4 },
+    { id_hist_clinica: 121, id_ant_familiar: 16 },
+    { id_hist_clinica: 121, id_ant_familiar: 15 },
+    { id_hist_clinica: 121, id_ant_familiar: 14 },
+    { id_hist_clinica: 122, id_ant_familiar: 12 },
+    { id_hist_clinica: 122, id_ant_familiar: 14 },
+    { id_hist_clinica: 122, id_ant_familiar: 9 },
+    { id_hist_clinica: 122, id_ant_familiar: 5 },
+    { id_hist_clinica: 122, id_ant_familiar: 2 },
+    { id_hist_clinica: 123, id_ant_familiar: 4 },
+    { id_hist_clinica: 123, id_ant_familiar: 5 },
+    { id_hist_clinica: 123, id_ant_familiar: 18 },
+    { id_hist_clinica: 123, id_ant_familiar: 14 },
+    { id_hist_clinica: 123, id_ant_familiar: 1 },
+    { id_hist_clinica: 124, id_ant_familiar: 9 },
+    { id_hist_clinica: 124, id_ant_familiar: 14 },
+    { id_hist_clinica: 124, id_ant_familiar: 17 },
+    { id_hist_clinica: 124, id_ant_familiar: 12 },
+    { id_hist_clinica: 124, id_ant_familiar: 16 },
+    { id_hist_clinica: 124, id_ant_familiar: 2 },
+    { id_hist_clinica: 125, id_ant_familiar: 18 },
+    { id_hist_clinica: 125, id_ant_familiar: 4 },
+    { id_hist_clinica: 125, id_ant_familiar: 7 },
+    { id_hist_clinica: 125, id_ant_familiar: 8 },
+    { id_hist_clinica: 125, id_ant_familiar: 9 },
+    { id_hist_clinica: 125, id_ant_familiar: 1 },
+    { id_hist_clinica: 126, id_ant_familiar: 15 },
+    { id_hist_clinica: 126, id_ant_familiar: 8 },
+    { id_hist_clinica: 126, id_ant_familiar: 7 },
+    { id_hist_clinica: 127, id_ant_familiar: 12 },
+    { id_hist_clinica: 127, id_ant_familiar: 17 },
+    { id_hist_clinica: 127, id_ant_familiar: 7 }
+]);
+
+//inserciones fabricantes
+
+db.fabricantes.insertMany([
+    {
+        _id: 1,
+        nombre: "Pfizer Colombia",
+        pais: "Colombia",
+        tel: "+5771234567",
+        correo_el: "contacto@pfizer.com.co"
+    },
+    {
+        _id: 2,
+        nombre: "Laboratorios MK",
+        pais: "Colombia",
+        tel: "+5772345678",
+        correo_el: "info@laboratoriosmk.com"
+    },
+    {
+        _id: 3,
+        nombre: "Bayer Andina",
+        pais: "Colombia",
+        tel: "+5773456789",
+        correo_el: "contacto@bayer.co"
+    },
+    {
+        _id: 4,
+        nombre: "Novartis Pharma AG",
+        pais: "Suiza",
+        tel: "+41445556677",
+        correo_el: "info@novartis.ch"
+    },
+    {
+        _id: 5,
+        nombre: "Tecnoquímicas",
+        pais: "Colombia",
+        tel: "+5774567890",
+        correo_el: "info@tecnoquimicas.com"
+    },
+    {
+        _id: 6,
+        nombre: "Laboratorios Lafrancol",
+        pais: "Colombia",
+        tel: "+5775678901",
+        correo_el: "contacto@lafrancol.com"
+    },
+    {
+        _id: 7,
+        nombre: "Sanofi México",
+        pais: "México",
+        tel: "+525555555555",
+        correo_el: "info@sanofi.com.mx"
+    },
+    {
+        _id: 8,
+        nombre: "Dr. Reddy's Laboratories",
+        pais: "India",
+        tel: "+914445556677",
+        correo_el: "contact@drreddys.com"
+    },
+    {
+        _id: 9,
+        nombre: "Laboratorios Genfar",
+        pais: "Colombia",
+        tel: "+5776789012",
+        correo_el: "info@genfar.com.co"
+    },
+    {
+        _id: 10,
+        nombre: "Sinopharm Group",
+        pais: "China",
+        tel: "+861088888888",
+        correo_el: "contact@sinopharm.cn"
+    },
+    {
+        _id: 11,
+        nombre: "Laboratorios La Santé",
+        pais: "Colombia",
+        tel: "+5777890123",
+        correo_el: "info@lasante.com.co"
+    }
+]);
+
+//inserciones medicamentos
+
+db.medicamentos.insertMany([
+    {
+        _id: 1,
+        nombre: "Paracetamol 500mg",
+        id_fabricante: 10,
+        tipo: "Vacuna",
+        cant_disp: 509
+    },
+    {
+        _id: 2,
+        nombre: "Ibuprofeno 400mg",
+        id_fabricante: 6,
+        tipo: "Antidiabético",
+        cant_disp: 845
+    },
+    {
+        _id: 3,
+        nombre: "Amoxicilina 875mg",
+        id_fabricante: 2,
+        tipo: "Analgésico",
+        cant_disp: 299
+    },
+    {
+        _id: 4,
+        nombre: "Loratadina 10mg",
+        id_fabricante: 1,
+        tipo: "Antihipertensivo",
+        cant_disp: 374
+    },
+    {
+        _id: 5,
+        nombre: "Metformina 850mg",
+        id_fabricante: 1,
+        tipo: "Diurético",
+        cant_disp: 949
+    },
+    {
+        _id: 6,
+        nombre: "Losartán 50mg",
+        id_fabricante: 3,
+        tipo: "Antidiabético",
+        cant_disp: 835
+    },
+    {
+        _id: 7,
+        nombre: "Omeprazol 20mg",
+        id_fabricante: 4,
+        tipo: "Antidiabético",
+        cant_disp: 790
+    },
+    {
+        _id: 8,
+        nombre: "Diazepam 5mg",
+        id_fabricante: 4,
+        tipo: "Antiinflamatorio",
+        cant_disp: 89
+    },
+    {
+        _id: 9,
+        nombre: "Fluoxetina 20mg",
+        id_fabricante: 11,
+        tipo: "Anticoagulante",
+        cant_disp: 966
+    },
+    {
+        _id: 10,
+        nombre: "Acetaminofén Forte",
+        id_fabricante: 6,
+        tipo: "Antiinflamatorio",
+        cant_disp: 690
+    },
+    {
+        _id: 11,
+        nombre: "Clonazepam 0.5mg",
+        id_fabricante: 8,
+        tipo: "Antihistamínico",
+        cant_disp: 154
+    },
+    {
+        _id: 12,
+        nombre: "Dexametasona 4mg",
+        id_fabricante: 9,
+        tipo: "Diurético",
+        cant_disp: 681
+    },
+    {
+        _id: 13,
+        nombre: "Azitromicina 500mg",
+        id_fabricante: 2,
+        tipo: "Antibiótico",
+        cant_disp: 51
+    },
+    {
+        _id: 14,
+        nombre: "Salbutamol Inhalador",
+        id_fabricante: 5,
+        tipo: "Gastroprotector",
+        cant_disp: 145
+    },
+    {
+        _id: 15,
+        nombre: "Insulina NPH",
+        id_fabricante: 8,
+        tipo: "Antihipertensivo",
+        cant_disp: 105
+    },
+    {
+        _id: 16,
+        nombre: "Vitamina C 1g",
+        id_fabricante: 6,
+        tipo: "Antihistamínico",
+        cant_disp: 845
+    },
+    {
+        _id: 17,
+        nombre: "Ranitidina 150mg",
+        id_fabricante: 5,
+        tipo: "Antipirético",
+        cant_disp: 434
+    },
+    {
+        _id: 18,
+        nombre: "Enalapril 10mg",
+        id_fabricante: 11,
+        tipo: "Suplemento vitamínico",
+        cant_disp: 327
+    },
+    {
+        _id: 19,
+        nombre: "Simvastatina 20mg",
+        id_fabricante: 3,
+        tipo: "Antidepresivo",
+        cant_disp: 810
+    },
+    {
+        _id: 20,
+        nombre: "Ciprofloxacina 500mg",
+        id_fabricante: 7,
+        tipo: "Antibiótico",
+        cant_disp: 252
+    },
+    {
+        _id: 21,
+        nombre: "Albendazol 400mg",
+        id_fabricante: 7,
+        tipo: "Otros",
+        cant_disp: 597
+    },
+    {
+        _id: 22,
+        nombre: "Aspirina 100mg",
+        id_fabricante: 7,
+        tipo: "Antihistamínico",
+        cant_disp: 99
+    },
+    {
+        _id: 23,
+        nombre: "Furosemida 40mg",
+        id_fabricante: 9,
+        tipo: "Otros",
+        cant_disp: 529
+    },
+    {
+        _id: 24,
+        nombre: "Levotiroxina 100mcg",
+        id_fabricante: 11,
+        tipo: "Anticoagulante",
+        cant_disp: 339
+    },
+    {
+        _id: 25,
+        nombre: "Aciclovir 400mg",
+        id_fabricante: 10,
+        tipo: "Antihistamínico",
+        cant_disp: 944
+    },
+    {
+        _id: 26,
+        nombre: "Prednisona 20mg",
+        id_fabricante: 4,
+        tipo: "Suplemento vitamínico",
+        cant_disp: 47
+    },
+    {
+        _id: 27,
+        nombre: "Vacuna Influenza",
+        id_fabricante: 1,
+        tipo: "Antibiótico",
+        cant_disp: 250
+    }
+]);
+
+//insercones visitas_medicas_medicamentos
+
+db.visitas_medicas_medicamentos.insertMany([
+    {
+        id_visita_medica: 1,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 2,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 2,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 3,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 3,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 3,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 4,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 4,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 4,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 4,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 5,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 5,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 5,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 5,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 6,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 6,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 6,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 6,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 6,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 7,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 7,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 8,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 8,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 8,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 8,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 9,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 10,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 10,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 11,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 11,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 11,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 11,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 11,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 12,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 12,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 12,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 16,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 16,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 16,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 16,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 16,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 17,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 18,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 18,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 18,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 18,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 18,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 18,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 19,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 19,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 19,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 21,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 21,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 21,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 21,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 21,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 21,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 22,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 22,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 22,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 22,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 22,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 22,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 23,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 23,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 24,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 24,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 25,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 25,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 28,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 28,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 28,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 28,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 28,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 28,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 29,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 29,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 30,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 30,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 31,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 31,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 31,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 32,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 32,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 32,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 33,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 33,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 33,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 33,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 33,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 33,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 34,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 34,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 35,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 35,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 35,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 35,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 36,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 36,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 36,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 36,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 37,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 37,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 38,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 38,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 38,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 39,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 39,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 39,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 42,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 42,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 42,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 42,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 42,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 43,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 43,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 43,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 43,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 43,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 44,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 45,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 45,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 45,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 46,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 46,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 46,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 46,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 47,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 47,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 47,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 48,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 48,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 48,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 49,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 51,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 53,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 53,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 53,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 55,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 55,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 55,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 55,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 55,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 56,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 57,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 58,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 58,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 58,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 59,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 59,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 61,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 61,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 61,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 61,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 61,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 62,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 62,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 62,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 62,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 63,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 63,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 63,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 63,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 64,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 66,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 66,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 66,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 67,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 67,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 67,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 67,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 67,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 68,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 69,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 70,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 70,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 70,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 70,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 70,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 71,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 71,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 71,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 71,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 72,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 72,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 72,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 73,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 73,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 73,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 73,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 74,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 74,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 74,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 74,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 74,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 74,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 75,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 75,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 75,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 75,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 75,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 76,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 76,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 76,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 76,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 76,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 76,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 77,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 77,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 77,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 77,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 77,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 77,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 78,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 79,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 79,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 79,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 79,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 79,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 80,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 80,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 80,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 82,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 82,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 83,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 83,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 83,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 83,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 84,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 85,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 85,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 85,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 85,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 85,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 86,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 86,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 86,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 87,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 87,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 87,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 87,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 87,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 91,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 92,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 92,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 92,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 92,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 92,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 94,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 94,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 97,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 97,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 98,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 98,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 98,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 99,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 99,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 100,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 100,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 100,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 100,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 101,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 101,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 101,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 101,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 101,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 102,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 102,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 102,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 102,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 103,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 103,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 103,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 103,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 104,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 104,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 104,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 104,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 104,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 104,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 106,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 107,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 107,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 107,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 107,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 107,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 107,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 108,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 109,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 109,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 110,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 110,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 110,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 110,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 112,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 112,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 113,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 113,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 113,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 113,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 114,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 114,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 114,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 115,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 115,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 116,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 116,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 116,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 116,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 117,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 117,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 118,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 118,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 118,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 118,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 121,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 121,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 121,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 122,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 122,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 122,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 122,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 123,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 123,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 123,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 123,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 123,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 123,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 124,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 124,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 124,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 127,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 128,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 128,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 128,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 128,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 128,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 128,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 129,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 129,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 130,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 131,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 131,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 131,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 132,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 132,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 132,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 132,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 132,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 133,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 133,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 134,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 135,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 135,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 135,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 135,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 135,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 136,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 139,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 139,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 139,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 139,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 139,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 141,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 141,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 141,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 142,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 143,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 143,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 144,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 144,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 144,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 144,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 145,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 145,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 145,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 145,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 145,
+        id_medicamento: 27
+    },
+    {
+        id_visita_medica: 147,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 147,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 147,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 147,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 147,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 147,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 148,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 148,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 148,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 148,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 148,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 148,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 149,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 150,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 150,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 150,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 150,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 150,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 150,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 151,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 151,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 151,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 151,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 151,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 151,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 152,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 152,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 152,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 152,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 152,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 152,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 153,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 153,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 153,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 153,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 153,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 153,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 154,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 154,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 154,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 154,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 154,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 154,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 155,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 156,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 157,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 157,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 159,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 159,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 159,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 159,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 159,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 161,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 161,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 162,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 162,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 162,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 162,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 162,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 163,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 163,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 163,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 163,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 164,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 164,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 164,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 164,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 165,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 165,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 165,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 165,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 165,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 166,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 166,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 166,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 166,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 166,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 166,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 167,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 167,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 167,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 168,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 168,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 168,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 168,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 168,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 168,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 169,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 169,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 169,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 169,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 170,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 170,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 170,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 170,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 170,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 170,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 171,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 171,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 172,
+        id_medicamento: 16
+    },
+    {
+        id_visita_medica: 172,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 172,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 172,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 172,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 172,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 173,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 173,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 174,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 174,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 174,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 174,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 174,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 174,
+        id_medicamento: 20
+    },
+    {
+        id_visita_medica: 175,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 176,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 176,
+        id_medicamento: 25
+    },
+    {
+        id_visita_medica: 176,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 176,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 176,
+        id_medicamento: 18
+    },
+    {
+        id_visita_medica: 176,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 177,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 177,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 177,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 177,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 177,
+        id_medicamento: 26
+    },
+    {
+        id_visita_medica: 177,
+        id_medicamento: 6
+    },
+    {
+        id_visita_medica: 178,
+        id_medicamento: 15
+    },
+    {
+        id_visita_medica: 180,
+        id_medicamento: 13
+    },
+    {
+        id_visita_medica: 180,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 180,
+        id_medicamento: 17
+    },
+    {
+        id_visita_medica: 180,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 182,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 182,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 183,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 183,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 183,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 183,
+        id_medicamento: 3
+    },
+    {
+        id_visita_medica: 183,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 184,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 185,
+        id_medicamento: 11
+    },
+    {
+        id_visita_medica: 185,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 185,
+        id_medicamento: 19
+    },
+    {
+        id_visita_medica: 185,
+        id_medicamento: 5
+    },
+    {
+        id_visita_medica: 185,
+        id_medicamento: 9
+    },
+    {
+        id_visita_medica: 186,
+        id_medicamento: 12
+    },
+    {
+        id_visita_medica: 186,
+        id_medicamento: 22
+    },
+    {
+        id_visita_medica: 190,
+        id_medicamento: 7
+    },
+    {
+        id_visita_medica: 190,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 190,
+        id_medicamento: 23
+    },
+    {
+        id_visita_medica: 190,
+        id_medicamento: 21
+    },
+    {
+        id_visita_medica: 190,
+        id_medicamento: 2
+    },
+    {
+        id_visita_medica: 190,
+        id_medicamento: 10
+    },
+    {
+        id_visita_medica: 191,
+        id_medicamento: 14
+    },
+    {
+        id_visita_medica: 191,
+        id_medicamento: 8
+    },
+    {
+        id_visita_medica: 191,
+        id_medicamento: 24
+    },
+    {
+        id_visita_medica: 191,
+        id_medicamento: 1
+    },
+    {
+        id_visita_medica: 191,
+        id_medicamento: 4
+    },
+    {
+        id_visita_medica: 191,
+        id_medicamento: 13
+    }
+]);
+
+//inserciones diagnosticos
+
+db.diagnosticos.insertMany([
+    {
+        _id: 1,
+        descripcion: "Paciente presenta signos de infección respiratoria aguda con fiebre persistente y dificultad para respirar."
+    },
+    {
+        _id: 2,
+        descripcion: "Dolor abdominal agudo en cuadrante inferior derecho, sospecha de apendicitis en evolución temprana."
+    },
+    {
+        _id: 3,
+        descripcion: "Paciente con antecedentes de hipertensión presenta dolor torácico y presión elevada."
+    },
+    {
+        _id: 4,
+        descripcion: "Síntomas persistentes de cefalea intensa y visión borrosa, se recomienda evaluación neurológica."
+    },
+    {
+        _id: 5,
+        descripcion: "Lesión traumática en extremidad inferior izquierda con edema y hematoma evidente."
+    },
+    {
+        _id: 6,
+        descripcion: "Sospecha de bronquitis crónica por tos productiva con esputo por más de 3 semanas."
+    },
+    {
+        _id: 7,
+        descripcion: "Paciente con historial de diabetes tipo 2 y niveles elevados de glucosa en sangre."
+    },
+    {
+        _id: 8,
+        descripcion: "Inflamación articular en rodilla derecha con signos de artritis reumatoide activa."
+    },
+    {
+        _id: 9,
+        descripcion: "Erupción cutánea generalizada con picazón intensa, posible reacción alérgica sistémica."
+    },
+    {
+        _id: 10,
+        descripcion: "Se detecta soplo cardíaco funcional durante auscultación rutinaria, se recomienda ecocardiograma."
+    },
+    {
+        _id: 11,
+        descripcion: "Paciente con fatiga constante, palidez y bajos niveles de hemoglobina, indicativo de anemia."
+    },
+    {
+        _id: 12,
+        descripcion: "Diagnóstico presuntivo de infección urinaria baja con disuria y malestar suprapúbico."
+    },
+    {
+        _id: 13,
+        descripcion: "Síntomas depresivos persistentes, incluyendo pérdida de interés, fatiga y trastornos del sueño."
+    },
+    {
+        _id: 14,
+        descripcion: "Paciente con antecedentes de asma presenta sibilancias y dificultad respiratoria leve."
+    },
+    {
+        _id: 15,
+        descripcion: "Dolor lumbar con irradiación a extremidad inferior derecha, posible ciática."
+    },
+    {
+        _id: 16,
+        descripcion: "Paciente pediátrico con fiebre alta y erupción, sospecha de infección viral exantemática."
+    },
+    {
+        _id: 17,
+        descripcion: "Evaluación postoperatoria muestra buena evolución de herida quirúrgica sin signos de infección."
+    },
+    {
+        _id: 18,
+        descripcion: "Presencia de nódulo tiroideo palpable, se sugiere estudio ecográfico adicional."
+    },
+    {
+        _id: 19,
+        descripcion: "Paciente con vómitos recurrentes y diarrea líquida, probable gastroenteritis aguda."
+    },
+    {
+        _id: 20,
+        descripcion: "Presión arterial sistólica superior a 160 mmHg, diagnóstico de hipertensión grado II."
+    },
+    {
+        _id: 21,
+        descripcion: "Evaluación oftalmológica sugiere retinopatía diabética incipiente en ojo derecho."
+    },
+    {
+        _id: 22,
+        descripcion: "Dolor en pecho no relacionado a esfuerzo físico, se descarta angina estable."
+    },
+    {
+        _id: 23,
+        descripcion: "Paciente geriátrico con alteraciones cognitivas, se inicia protocolo de evaluación por demencia."
+    },
+    {
+        _id: 24,
+        descripcion: "Lesión traumática craneal sin pérdida de conciencia, se indica observación."
+    },
+    {
+        _id: 25,
+        descripcion: "Diagnóstico de faringitis aguda estreptocócica confirmado por cultivo positivo."
+    },
+    {
+        _id: 26,
+        descripcion: "Paciente refiere insomnio crónico con alteraciones del estado de ánimo."
+    },
+    {
+        _id: 27,
+        descripcion: "Exploración abdominal muestra masa palpable, se solicita TAC abdominal."
+    },
+    {
+        _id: 28,
+        descripcion: "Paciente con sangrado nasal recurrente sin causa evidente, se sugiere rinoscopia."
+    },
+    {
+        _id: 29,
+        descripcion: "Dolor agudo en hombro con limitación funcional, sospecha de tendinitis del manguito rotador."
+    },
+    {
+        _id: 30,
+        descripcion: "Dermatitis de contacto en manos por exposición frecuente a productos químicos."
+    },
+    {
+        _id: 31,
+        descripcion: "Paciente con hipotiroidismo controlado bajo tratamiento con levotiroxina."
+    },
+    {
+        _id: 32,
+        descripcion: "Niño con síntomas de varicela: fiebre, lesiones vesiculares y malestar general."
+    },
+    {
+        _id: 33,
+        descripcion: "Mujer embarazada en segundo trimestre con náuseas persistentes y pérdida de peso."
+    },
+    {
+        _id: 34,
+        descripcion: "Paciente masculino con dolor testicular agudo, sospecha de torsión testicular."
+    },
+    {
+        _id: 35,
+        descripcion: "Examen de fondo de ojo revela edema de papila, posible hipertensión intracraneal."
+    },
+    {
+        _id: 36,
+        descripcion: "Adolescente con dolor de rodilla tras actividad deportiva, se sospecha condromalacia rotuliana."
+    },
+    {
+        _id: 37,
+        descripcion: "Paciente con ictericia, coluria y heces hipocólicas, se sugiere estudio hepático."
+    },
+    {
+        _id: 38,
+        descripcion: "Presencia de secreción purulenta en oído derecho, diagnóstico de otitis media supurada."
+    },
+    {
+        _id: 39,
+        descripcion: "Evaluación física muestra escoliosis lumbar con desviación de 15 grados."
+    },
+    {
+        _id: 40,
+        descripcion: "Paciente presenta disnea paroxística nocturna, probable insuficiencia cardíaca congestiva."
+    },
+    {
+        _id: 41,
+        descripcion: "Hallazgo incidental de litiasis renal durante estudio por dolor abdominal inespecífico."
+    },
+    {
+        _id: 42,
+        descripcion: "Se detecta hiperplasia prostática benigna en paciente masculino mayor de 60 años."
+    },
+    {
+        _id: 43,
+        descripcion: "Niño con signos de deshidratación moderada por vómitos y diarrea persistentes."
+    }
+]);
+
+//inserciones visitas_medicas_diagnosticos
+
+db.visitas_medicas_diagnosticos.insertMany([
+    { id_visita_medica: 95, id_diagnostico: 2 },
+    { id_visita_medica: 95, id_diagnostico: 41 },
+    { id_visita_medica: 104, id_diagnostico: 14 },
+    { id_visita_medica: 104, id_diagnostico: 6 },
+    { id_visita_medica: 104, id_diagnostico: 1 },
+    { id_visita_medica: 11, id_diagnostico: 3 },
+    { id_visita_medica: 11, id_diagnostico: 22 },
+    { id_visita_medica: 11, id_diagnostico: 20 },
+    { id_visita_medica: 60, id_diagnostico: 10 },
+    { id_visita_medica: 106, id_diagnostico: 18 },
+    { id_visita_medica: 89, id_diagnostico: 11 },
+    { id_visita_medica: 145, id_diagnostico: 11 },
+    { id_visita_medica: 124, id_diagnostico: 23 },
+    { id_visita_medica: 49, id_diagnostico: 42 },
+    { id_visita_medica: 49, id_diagnostico: 12 },
+    { id_visita_medica: 122, id_diagnostico: 16 },
+    { id_visita_medica: 122, id_diagnostico: 32 },
+    { id_visita_medica: 125, id_diagnostico: 9 },
+    { id_visita_medica: 75, id_diagnostico: 13 },
+    { id_visita_medica: 75, id_diagnostico: 26 },
+    { id_visita_medica: 185, id_diagnostico: 9 },
+    { id_visita_medica: 8, id_diagnostico: 18 },
+    { id_visita_medica: 84, id_diagnostico: 17 },
+    { id_visita_medica: 156, id_diagnostico: 26 },
+    { id_visita_medica: 156, id_diagnostico: 13 },
+    { id_visita_medica: 177, id_diagnostico: 26 },
+    { id_visita_medica: 12, id_diagnostico: 35 },
+    { id_visita_medica: 12, id_diagnostico: 4 },
+    { id_visita_medica: 134, id_diagnostico: 23 },
+    { id_visita_medica: 17, id_diagnostico: 43 },
+    { id_visita_medica: 24, id_diagnostico: 19 },
+    { id_visita_medica: 169, id_diagnostico: 23 },
+    { id_visita_medica: 102, id_diagnostico: 9 },
+    { id_visita_medica: 91, id_diagnostico: 30 },
+    { id_visita_medica: 91, id_diagnostico: 9 },
+    { id_visita_medica: 98, id_diagnostico: 21 },
+    { id_visita_medica: 98, id_diagnostico: 31 },
+    { id_visita_medica: 98, id_diagnostico: 7 },
+    { id_visita_medica: 76, id_diagnostico: 39 },
+    { id_visita_medica: 58, id_diagnostico: 5 },
+    { id_visita_medica: 48, id_diagnostico: 19 },
+    { id_visita_medica: 59, id_diagnostico: 29 },
+    { id_visita_medica: 59, id_diagnostico: 36 },
+    { id_visita_medica: 59, id_diagnostico: 5 },
+    { id_visita_medica: 165, id_diagnostico: 21 },
+    { id_visita_medica: 165, id_diagnostico: 7 },
+    { id_visita_medica: 165, id_diagnostico: 31 },
+    { id_visita_medica: 83, id_diagnostico: 11 },
+    { id_visita_medica: 131, id_diagnostico: 41 },
+    { id_visita_medica: 131, id_diagnostico: 2 },
+    { id_visita_medica: 85, id_diagnostico: 27 },
+    { id_visita_medica: 172, id_diagnostico: 13 },
+    { id_visita_medica: 55, id_diagnostico: 39 },
+    { id_visita_medica: 66, id_diagnostico: 9 },
+    { id_visita_medica: 23, id_diagnostico: 26 },
+    { id_visita_medica: 23, id_diagnostico: 13 },
+    { id_visita_medica: 90, id_diagnostico: 33 },
+    { id_visita_medica: 39, id_diagnostico: 24 },
+    { id_visita_medica: 1, id_diagnostico: 2 },
+    { id_visita_medica: 1, id_diagnostico: 41 },
+    { id_visita_medica: 73, id_diagnostico: 11 },
+    { id_visita_medica: 63, id_diagnostico: 18 },
+    { id_visita_medica: 135, id_diagnostico: 40 },
+    { id_visita_medica: 135, id_diagnostico: 10 },
+    { id_visita_medica: 114, id_diagnostico: 42 },
+    { id_visita_medica: 161, id_diagnostico: 28 },
+    { id_visita_medica: 32, id_diagnostico: 34 },
+    { id_visita_medica: 173, id_diagnostico: 34 },
+    { id_visita_medica: 79, id_diagnostico: 22 },
+    { id_visita_medica: 79, id_diagnostico: 20 },
+    { id_visita_medica: 79, id_diagnostico: 3 },
+    { id_visita_medica: 160, id_diagnostico: 18 },
+    { id_visita_medica: 57, id_diagnostico: 8 },
+    { id_visita_medica: 190, id_diagnostico: 9 },
+    { id_visita_medica: 190, id_diagnostico: 30 },
+    { id_visita_medica: 141, id_diagnostico: 35 },
+    { id_visita_medica: 163, id_diagnostico: 34 },
+    { id_visita_medica: 72, id_diagnostico: 27 },
+    { id_visita_medica: 179, id_diagnostico: 15 },
+    { id_visita_medica: 179, id_diagnostico: 39 },
+    { id_visita_medica: 97, id_diagnostico: 34 },
+    { id_visita_medica: 50, id_diagnostico: 41 },
+    { id_visita_medica: 113, id_diagnostico: 29 },
+    { id_visita_medica: 129, id_diagnostico: 40 },
+    { id_visita_medica: 148, id_diagnostico: 35 },
+    { id_visita_medica: 101, id_diagnostico: 8 },
+    { id_visita_medica: 21, id_diagnostico: 34 },
+    { id_visita_medica: 54, id_diagnostico: 18 },
+    { id_visita_medica: 67, id_diagnostico: 27 },
+    { id_visita_medica: 14, id_diagnostico: 19 },
+    { id_visita_medica: 68, id_diagnostico: 27 },
+    { id_visita_medica: 137, id_diagnostico: 4 },
+    { id_visita_medica: 137, id_diagnostico: 35 },
+    { id_visita_medica: 40, id_diagnostico: 40 },
+    { id_visita_medica: 40, id_diagnostico: 10 },
+    { id_visita_medica: 193, id_diagnostico: 35 },
+    { id_visita_medica: 31, id_diagnostico: 15 },
+    { id_visita_medica: 2, id_diagnostico: 13 },
+    { id_visita_medica: 2, id_diagnostico: 26 },
+    { id_visita_medica: 164, id_diagnostico: 5 },
+    { id_visita_medica: 164, id_diagnostico: 36 },
+    { id_visita_medica: 164, id_diagnostico: 29 },
+    { id_visita_medica: 74, id_diagnostico: 42 },
+    { id_visita_medica: 74, id_diagnostico: 12 },
+    { id_visita_medica: 18, id_diagnostico: 17 },
+    { id_visita_medica: 69, id_diagnostico: 25 },
+    { id_visita_medica: 154, id_diagnostico: 39 },
+    { id_visita_medica: 154, id_diagnostico: 15 },
+    { id_visita_medica: 167, id_diagnostico: 1 },
+    { id_visita_medica: 167, id_diagnostico: 14 },
+    { id_visita_medica: 167, id_diagnostico: 6 },
+    { id_visita_medica: 86, id_diagnostico: 34 },
+    { id_visita_medica: 6, id_diagnostico: 33 },
+    { id_visita_medica: 61, id_diagnostico: 37 },
+    { id_visita_medica: 13, id_diagnostico: 24 },
+    { id_visita_medica: 10, id_diagnostico: 33 },
+    { id_visita_medica: 65, id_diagnostico: 5 },
+    { id_visita_medica: 65, id_diagnostico: 29 },
+    { id_visita_medica: 65, id_diagnostico: 36 },
+    { id_visita_medica: 136, id_diagnostico: 10 },
+    { id_visita_medica: 108, id_diagnostico: 10 },
+    { id_visita_medica: 121, id_diagnostico: 34 },
+    { id_visita_medica: 81, id_diagnostico: 24 },
+    { id_visita_medica: 119, id_diagnostico: 37 },
+    { id_visita_medica: 53, id_diagnostico: 37 },
+    { id_visita_medica: 92, id_diagnostico: 17 },
+    { id_visita_medica: 34, id_diagnostico: 11 },
+    { id_visita_medica: 168, id_diagnostico: 12 },
+    { id_visita_medica: 168, id_diagnostico: 42 },
+    { id_visita_medica: 33, id_diagnostico: 15 },
+    { id_visita_medica: 33, id_diagnostico: 39 },
+    { id_visita_medica: 147, id_diagnostico: 31 },
+    { id_visita_medica: 4, id_diagnostico: 7 },
+    { id_visita_medica: 4, id_diagnostico: 31 },
+    { id_visita_medica: 26, id_diagnostico: 5 },
+    { id_visita_medica: 175, id_diagnostico: 39 },
+    { id_visita_medica: 175, id_diagnostico: 15 },
+    { id_visita_medica: 96, id_diagnostico: 35 },
+    { id_visita_medica: 96, id_diagnostico: 4 },
+    { id_visita_medica: 188, id_diagnostico: 39 },
+    { id_visita_medica: 188, id_diagnostico: 15 },
+    { id_visita_medica: 174, id_diagnostico: 20 },
+    { id_visita_medica: 174, id_diagnostico: 22 },
+    { id_visita_medica: 146, id_diagnostico: 10 },
+    { id_visita_medica: 146, id_diagnostico: 40 },
+    { id_visita_medica: 142, id_diagnostico: 40 },
+    { id_visita_medica: 142, id_diagnostico: 10 },
+    { id_visita_medica: 181, id_diagnostico: 19 },
+    { id_visita_medica: 64, id_diagnostico: 38 },
+    { id_visita_medica: 35, id_diagnostico: 27 },
+    { id_visita_medica: 16, id_diagnostico: 18 },
+    { id_visita_medica: 133, id_diagnostico: 2 },
+    { id_visita_medica: 133, id_diagnostico: 41 },
+    { id_visita_medica: 15, id_diagnostico: 27 },
+    { id_visita_medica: 166, id_diagnostico: 33 },
+    { id_visita_medica: 38, id_diagnostico: 19 },
+    { id_visita_medica: 139, id_diagnostico: 22 },
+    { id_visita_medica: 71, id_diagnostico: 35 },
+    { id_visita_medica: 186, id_diagnostico: 8 },
+    { id_visita_medica: 45, id_diagnostico: 42 },
+    { id_visita_medica: 7, id_diagnostico: 40 },
+    { id_visita_medica: 46, id_diagnostico: 18 },
+    { id_visita_medica: 94, id_diagnostico: 33 },
+    { id_visita_medica: 25, id_diagnostico: 23 },
+    { id_visita_medica: 118, id_diagnostico: 40 },
+    { id_visita_medica: 88, id_diagnostico: 24 },
+    { id_visita_medica: 29, id_diagnostico: 12 },
+    { id_visita_medica: 29, id_diagnostico: 42 },
+    { id_visita_medica: 182, id_diagnostico: 43 },
+    { id_visita_medica: 182, id_diagnostico: 16 },
+    { id_visita_medica: 182, id_diagnostico: 32 },
+    { id_visita_medica: 77, id_diagnostico: 40 },
+    { id_visita_medica: 77, id_diagnostico: 10 },
+    { id_visita_medica: 5, id_diagnostico: 17 },
+    { id_visita_medica: 107, id_diagnostico: 27 },
+    { id_visita_medica: 30, id_diagnostico: 16 },
+    { id_visita_medica: 30, id_diagnostico: 43 },
+    { id_visita_medica: 30, id_diagnostico: 32 },
+    { id_visita_medica: 20, id_diagnostico: 15 },
+    { id_visita_medica: 20, id_diagnostico: 39 },
+    { id_visita_medica: 170, id_diagnostico: 24 },
+    { id_visita_medica: 176, id_diagnostico: 35 },
+    { id_visita_medica: 176, id_diagnostico: 4 },
+    { id_visita_medica: 80, id_diagnostico: 37 },
+    { id_visita_medica: 116, id_diagnostico: 23 },
+    { id_visita_medica: 44, id_diagnostico: 41 },
+    { id_visita_medica: 28, id_diagnostico: 34 },
+    { id_visita_medica: 127, id_diagnostico: 2 },
+    { id_visita_medica: 127, id_diagnostico: 41 },
+    { id_visita_medica: 99, id_diagnostico: 27 },
+    { id_visita_medica: 103, id_diagnostico: 19 },
+    { id_visita_medica: 153, id_diagnostico: 32 },
+    { id_visita_medica: 27, id_diagnostico: 9 },
+    { id_visita_medica: 178, id_diagnostico: 40 },
+    { id_visita_medica: 178, id_diagnostico: 10 },
+    { id_visita_medica: 171, id_diagnostico: 34 },
+    { id_visita_medica: 78, id_diagnostico: 17 },
+    { id_visita_medica: 105, id_diagnostico: 17 },
+    { id_visita_medica: 128, id_diagnostico: 29 },
+    { id_visita_medica: 128, id_diagnostico: 36 },
+    { id_visita_medica: 128, id_diagnostico: 5 },
+    { id_visita_medica: 42, id_diagnostico: 27 },
+    { id_visita_medica: 159, id_diagnostico: 33 },
+    { id_visita_medica: 184, id_diagnostico: 31 },
+    { id_visita_medica: 184, id_diagnostico: 21 },
+    { id_visita_medica: 184, id_diagnostico: 7 },
+    { id_visita_medica: 9, id_diagnostico: 4 },
+    { id_visita_medica: 9, id_diagnostico: 35 },
+    { id_visita_medica: 93, id_diagnostico: 21 },
+    { id_visita_medica: 93, id_diagnostico: 31 },
+    { id_visita_medica: 93, id_diagnostico: 7 },
+    { id_visita_medica: 144, id_diagnostico: 9 },
+    { id_visita_medica: 144, id_diagnostico: 30 },
+    { id_visita_medica: 52, id_diagnostico: 16 },
+    { id_visita_medica: 52, id_diagnostico: 43 },
+    { id_visita_medica: 52, id_diagnostico: 32 },
+    { id_visita_medica: 47, id_diagnostico: 11 },
+    { id_visita_medica: 120, id_diagnostico: 11 },
+    { id_visita_medica: 140, id_diagnostico: 14 },
+    { id_visita_medica: 140, id_diagnostico: 6 },
+    { id_visita_medica: 140, id_diagnostico: 1 },
+    { id_visita_medica: 51, id_diagnostico: 32 },
+    { id_visita_medica: 157, id_diagnostico: 33 },
+    { id_visita_medica: 130, id_diagnostico: 32 },
+    { id_visita_medica: 130, id_diagnostico: 43 },
+    { id_visita_medica: 130, id_diagnostico: 16 },
+    { id_visita_medica: 115, id_diagnostico: 7 },
+    { id_visita_medica: 115, id_diagnostico: 21 },
+    { id_visita_medica: 87, id_diagnostico: 17 },
+    { id_visita_medica: 41, id_diagnostico: 11 },
+    { id_visita_medica: 70, id_diagnostico: 27 },
+    { id_visita_medica: 22, id_diagnostico: 17 },
+    { id_visita_medica: 82, id_diagnostico: 17 },
+    { id_visita_medica: 183, id_diagnostico: 8 },
+    { id_visita_medica: 62, id_diagnostico: 17 },
+    { id_visita_medica: 109, id_diagnostico: 26 },
+    { id_visita_medica: 123, id_diagnostico: 4 },
+    { id_visita_medica: 123, id_diagnostico: 35 },
+    { id_visita_medica: 37, id_diagnostico: 22 },
+    { id_visita_medica: 143, id_diagnostico: 15 },
+    { id_visita_medica: 143, id_diagnostico: 39 },
+    { id_visita_medica: 187, id_diagnostico: 22 },
+    { id_visita_medica: 56, id_diagnostico: 40 },
+    { id_visita_medica: 126, id_diagnostico: 21 },
+    { id_visita_medica: 138, id_diagnostico: 34 },
+    { id_visita_medica: 43, id_diagnostico: 18 },
+    { id_visita_medica: 112, id_diagnostico: 33 }
+]);
+
+//inserciones resultados
+
+db.resultados.insertMany([
+    {
+        _id: 1,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se programa una nueva evaluación y se considera alta médica próxima."
+    },
+    {
+        _id: 2,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se refiere a especialista y se considera alta médica próxima."
+    },
+    {
+        _id: 3,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se refiere a especialista y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 4,
+        descripcion: "El paciente muestra estabilidad en su condición con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 5,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se refiere a especialista y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 6,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se refiere a especialista y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 7,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se considera alta médica próxima."
+    },
+    {
+        _id: 8,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se refiere a especialista y se evalúa necesidad de exámenes más en profundidad."
+    },
+    {
+        _id: 9,
+        descripcion: "El paciente muestra estabilidad en su condición con respecto a la evaluación anterior. Se refiere a especialista y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 10,
+        descripcion: "El paciente muestra estabilidad en su condición con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se considera alta médica próxima."
+    },
+    {
+        _id: 11,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se refiere a especialista y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 12,
+        descripcion: "El paciente muestra respuesta positiva al tratamiento con respecto a la evaluación anterior. Se recomienda iniciar fisioterapia y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 13,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se programa una nueva evaluación y se identifican nuevos síntomas a monitorear."
+    },
+    {
+        _id: 14,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se recomienda iniciar fisioterapia y se considera alta médica próxima."
+    },
+    {
+        _id: 15,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se recomienda iniciar fisioterapia y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 16,
+        descripcion: "El paciente muestra respuesta positiva al tratamiento con respecto a la evaluación anterior. Se programa una nueva evaluación y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 17,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se programa una nueva evaluación y se considera alta médica próxima."
+    },
+    {
+        _id: 18,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 19,
+        descripcion: "El paciente muestra respuesta positiva al tratamiento con respecto a la evaluación anterior. Se refiere a especialista y se identifican nuevos síntomas a monitorear."
+    },
+    {
+        _id: 20,
+        descripcion: "El paciente muestra estabilidad en su condición con respecto a la evaluación anterior. Se refiere a especialista y se considera alta médica próxima."
+    },
+    {
+        _id: 21,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se programa una nueva evaluación y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 22,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 23,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 24,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se refiere a especialista y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 25,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 26,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se considera alta médica próxima."
+    },
+    {
+        _id: 27,
+        descripcion: "El paciente muestra estabilidad en su condición con respecto a la evaluación anterior. Se programa una nueva evaluación y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 28,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se identifican nuevos síntomas a monitorear."
+    },
+    {
+        _id: 29,
+        descripcion: "El paciente muestra respuesta positiva al tratamiento con respecto a la evaluación anterior. Se recomienda iniciar fisioterapia y se evalúa necesidad de exámenes de control."
+    },
+    {
+        _id: 30,
+        descripcion: "El paciente muestra respuesta positiva al tratamiento con respecto a la evaluación anterior. Se refiere a especialista y se considera alta médica próxima."
+    },
+    {
+        _id: 31,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se programa una nueva evaluación y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 32,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 33,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 34,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se considera alta médica próxima."
+    },
+    {
+        _id: 35,
+        descripcion: "El paciente muestra estabilidad en su condición con respecto a la evaluación anterior. Se recomienda iniciar fisioterapia y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 36,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se refiere a especialista, pero no se descartan posibles complicaciones futuras."
+    },
+    {
+        _id: 37,
+        descripcion: "El paciente muestra respuesta positiva al tratamiento con respecto a la evaluación anterior. Se refiere a especialista y se considera realización de exámenes de control antes de dar de alta."
+    },
+    {
+        _id: 38,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se considera alta médica próxima."
+    },
+    {
+        _id: 39,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se refiere a especialista y se considera alta médica próxima."
+    },
+    {
+        _id: 40,
+        descripcion: "El paciente muestra desmejoría con respecto a la evaluación anterior. Se refiere a especialista y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 41,
+        descripcion: "El paciente muestra estabilidad en su condición con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 42,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se recomienda iniciar fisioterapia y se evalúa necesidad de exámenes complementarios o tratamientos adicionales."
+    },
+    {
+        _id: 43,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se programa una nueva evaluación y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 44,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se programa una nueva evaluación y se considera alta médica próxima."
+    },
+    {
+        _id: 45,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 46,
+        descripcion: "El paciente muestra un retroceso moderado con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 47,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 48,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se refiere a especialista y se considera la realización de exámenes de control previo al alta."
+    },
+    {
+        _id: 49,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se programa una nueva evaluación y se identifican nuevos síntomas a monitorear."
+    },
+    {
+        _id: 50,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se mantiene el tratamiento actual y los síntomas permanecen sin cambios significativos."
+    },
+    {
+        _id: 51,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se refiere a especialista y se evalúa necesidad de exámenes en profundidad."
+    },
+    {
+        _id: 52,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se mantiene el tratamiento actual, pero se considera la posibilidad de complicaciones adicionales."
+    },
+    {
+        _id: 53,
+        descripcion: "El paciente muestra respuesta positiva al tratamiento con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 54,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se recomienda iniciar fisioterapia y se descartan complicaciones adicionales."
+    },
+    {
+        _id: 55,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se ajusta la dosis del medicamento, pero se considera la posibilidad de que surjan complicaciones adicionales."
+    },
+    {
+        _id: 56,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 57,
+        descripcion: "El paciente muestra síntomas persistentes con respecto a la evaluación anterior. Se refiere a especialista y se considera alta médica próxima."
+    },
+    {
+        _id: 58,
+        descripcion: "El paciente muestra una mejoría significativa con respecto a la evaluación anterior. Se mantiene el tratamiento actual, pero se considera un posible ajuste de este para garantizar el alta próxima."
+    },
+    {
+        _id: 59,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se refiere a especialista y se evalúa necesidad de exámenes complementarios."
+    },
+    {
+        _id: 60,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se mantiene el tratamiento actual y se considera alta médica próxima."
+    },
+    {
+        _id: 61,
+        descripcion: "El paciente muestra una leve mejora con respecto a la evaluación anterior. Se ajusta la dosis del medicamento y se evalúa necesidad de exámenes complementarios."
+    }
+]);
+
+//inserciones visitas_medicas_resultados
+
+db.visitas_medicas_resultados.insertMany([
+    { id_visita_medica: 1, id_resultado: 3 },
+    { id_visita_medica: 1, id_resultado: 46 },
+    { id_visita_medica: 2, id_resultado: 49 },
+    { id_visita_medica: 2, id_resultado: 30 },
+    { id_visita_medica: 2, id_resultado: 38 },
+    { id_visita_medica: 2, id_resultado: 11 },
+    { id_visita_medica: 2, id_resultado: 58 },
+    { id_visita_medica: 2, id_resultado: 48 },
+    { id_visita_medica: 2, id_resultado: 31 },
+    { id_visita_medica: 2, id_resultado: 51 },
+    { id_visita_medica: 3, id_resultado: 18 },
+    { id_visita_medica: 3, id_resultado: 45 },
+    { id_visita_medica: 4, id_resultado: 38 },
+    { id_visita_medica: 4, id_resultado: 30 },
+    { id_visita_medica: 4, id_resultado: 31 },
+    { id_visita_medica: 4, id_resultado: 5 },
+    { id_visita_medica: 5, id_resultado: 35 },
+    { id_visita_medica: 5, id_resultado: 9 },
+    { id_visita_medica: 5, id_resultado: 10 },
+    { id_visita_medica: 5, id_resultado: 4 },
+    { id_visita_medica: 6, id_resultado: 28 },
+    { id_visita_medica: 6, id_resultado: 61 },
+    { id_visita_medica: 7, id_resultado: 19 },
+    { id_visita_medica: 7, id_resultado: 53 },
+    { id_visita_medica: 7, id_resultado: 29 },
+    { id_visita_medica: 7, id_resultado: 37 },
+    { id_visita_medica: 7, id_resultado: 12 },
+    { id_visita_medica: 7, id_resultado: 16 },
+    { id_visita_medica: 8, id_resultado: 37 },
+    { id_visita_medica: 8, id_resultado: 19 },
+    { id_visita_medica: 8, id_resultado: 53 },
+    { id_visita_medica: 9, id_resultado: 41 },
+    { id_visita_medica: 9, id_resultado: 9 },
+    { id_visita_medica: 9, id_resultado: 10 },
+    { id_visita_medica: 10, id_resultado: 41 },
+    { id_visita_medica: 10, id_resultado: 27 },
+    { id_visita_medica: 10, id_resultado: 35 },
+    { id_visita_medica: 10, id_resultado: 20 },
+    { id_visita_medica: 10, id_resultado: 4 },
+    { id_visita_medica: 10, id_resultado: 10 },
+    { id_visita_medica: 10, id_resultado: 9 },
+    { id_visita_medica: 11, id_resultado: 58 },
+    { id_visita_medica: 11, id_resultado: 48 },
+    { id_visita_medica: 11, id_resultado: 30 },
+    { id_visita_medica: 11, id_resultado: 38 },
+    { id_visita_medica: 11, id_resultado: 5 },
+    { id_visita_medica: 11, id_resultado: 31 },
+    { id_visita_medica: 11, id_resultado: 52 },
+    { id_visita_medica: 11, id_resultado: 2 },
+    { id_visita_medica: 12, id_resultado: 57 },
+    { id_visita_medica: 13, id_resultado: 31 },
+    { id_visita_medica: 13, id_resultado: 52 },
+    { id_visita_medica: 13, id_resultado: 11 },
+    { id_visita_medica: 13, id_resultado: 30 },
+    { id_visita_medica: 13, id_resultado: 2 },
+    { id_visita_medica: 14, id_resultado: 22 },
+    { id_visita_medica: 14, id_resultado: 3 },
+    { id_visita_medica: 14, id_resultado: 46 },
+    { id_visita_medica: 14, id_resultado: 34 },
+    { id_visita_medica: 14, id_resultado: 17 },
+    { id_visita_medica: 14, id_resultado: 25 },
+    { id_visita_medica: 14, id_resultado: 43 },
+    { id_visita_medica: 15, id_resultado: 35 },
+    { id_visita_medica: 15, id_resultado: 10 },
+    { id_visita_medica: 15, id_resultado: 9 },
+    { id_visita_medica: 15, id_resultado: 41 },
+    { id_visita_medica: 15, id_resultado: 27 },
+    { id_visita_medica: 16, id_resultado: 7 },
+    { id_visita_medica: 16, id_resultado: 61 },
+    { id_visita_medica: 16, id_resultado: 13 },
+    { id_visita_medica: 16, id_resultado: 56 },
+    { id_visita_medica: 16, id_resultado: 39 },
+    { id_visita_medica: 16, id_resultado: 28 },
+    { id_visita_medica: 16, id_resultado: 21 },
+    { id_visita_medica: 16, id_resultado: 60 },
+    { id_visita_medica: 16, id_resultado: 50 },
+    { id_visita_medica: 16, id_resultado: 55 },
+    { id_visita_medica: 16, id_resultado: 1 },
+    { id_visita_medica: 16, id_resultado: 59 },
+    { id_visita_medica: 17, id_resultado: 43 },
+    { id_visita_medica: 17, id_resultado: 3 },
+    { id_visita_medica: 17, id_resultado: 46 },
+    { id_visita_medica: 18, id_resultado: 29 },
+    { id_visita_medica: 18, id_resultado: 53 },
+    { id_visita_medica: 18, id_resultado: 19 },
+    { id_visita_medica: 18, id_resultado: 16 },
+    { id_visita_medica: 18, id_resultado: 12 },
+    { id_visita_medica: 18, id_resultado: 37 },
+    { id_visita_medica: 19, id_resultado: 30 },
+    { id_visita_medica: 19, id_resultado: 38 },
+    { id_visita_medica: 19, id_resultado: 51 },
+    { id_visita_medica: 19, id_resultado: 11 },
+    { id_visita_medica: 19, id_resultado: 49 },
+    { id_visita_medica: 20, id_resultado: 32 },
+    { id_visita_medica: 21, id_resultado: 5 },
+    { id_visita_medica: 22, id_resultado: 33 },
+    { id_visita_medica: 22, id_resultado: 3 },
+    { id_visita_medica: 22, id_resultado: 34 },
+    { id_visita_medica: 22, id_resultado: 17 },
+    { id_visita_medica: 22, id_resultado: 22 },
+    { id_visita_medica: 22, id_resultado: 46 },
+    { id_visita_medica: 22, id_resultado: 14 },
+    { id_visita_medica: 22, id_resultado: 25 },
+    { id_visita_medica: 22, id_resultado: 43 },
+    { id_visita_medica: 23, id_resultado: 28 },
+    { id_visita_medica: 23, id_resultado: 39 },
+    { id_visita_medica: 23, id_resultado: 7 },
+    { id_visita_medica: 23, id_resultado: 60 },
+    { id_visita_medica: 23, id_resultado: 21 },
+    { id_visita_medica: 23, id_resultado: 1 },
+    { id_visita_medica: 23, id_resultado: 59 },
+    { id_visita_medica: 23, id_resultado: 55 },
+    { id_visita_medica: 23, id_resultado: 23 },
+    { id_visita_medica: 23, id_resultado: 61 },
+    { id_visita_medica: 23, id_resultado: 56 },
+    { id_visita_medica: 23, id_resultado: 13 },
+    { id_visita_medica: 24, id_resultado: 29 },
+    { id_visita_medica: 25, id_resultado: 41 },
+    { id_visita_medica: 25, id_resultado: 10 },
+    { id_visita_medica: 25, id_resultado: 9 },
+    { id_visita_medica: 25, id_resultado: 4 },
+    { id_visita_medica: 25, id_resultado: 35 },
+    { id_visita_medica: 25, id_resultado: 20 },
+    { id_visita_medica: 25, id_resultado: 27 },
+    { id_visita_medica: 26, id_resultado: 35 },
+    { id_visita_medica: 26, id_resultado: 10 },
+    { id_visita_medica: 26, id_resultado: 9 },
+    { id_visita_medica: 26, id_resultado: 20 },
+    { id_visita_medica: 26, id_resultado: 41 },
+    { id_visita_medica: 27, id_resultado: 37 },
+    { id_visita_medica: 28, id_resultado: 50 },
+    { id_visita_medica: 28, id_resultado: 60 },
+    { id_visita_medica: 28, id_resultado: 61 },
+    { id_visita_medica: 28, id_resultado: 23 },
+    { id_visita_medica: 28, id_resultado: 1 },
+    { id_visita_medica: 28, id_resultado: 55 },
+    { id_visita_medica: 28, id_resultado: 56 },
+    { id_visita_medica: 28, id_resultado: 13 },
+    { id_visita_medica: 28, id_resultado: 21 },
+    { id_visita_medica: 28, id_resultado: 28 },
+    { id_visita_medica: 29, id_resultado: 29 },
+    { id_visita_medica: 29, id_resultado: 37 },
+    { id_visita_medica: 29, id_resultado: 16 },
+    { id_visita_medica: 30, id_resultado: 1 },
+    { id_visita_medica: 30, id_resultado: 39 },
+    { id_visita_medica: 30, id_resultado: 50 },
+    { id_visita_medica: 30, id_resultado: 7 },
+    { id_visita_medica: 30, id_resultado: 61 },
+    { id_visita_medica: 30, id_resultado: 55 },
+    { id_visita_medica: 30, id_resultado: 23 },
+    { id_visita_medica: 30, id_resultado: 60 },
+    { id_visita_medica: 30, id_resultado: 56 },
+    { id_visita_medica: 31, id_resultado: 31 },
+    { id_visita_medica: 31, id_resultado: 30 },
+    { id_visita_medica: 31, id_resultado: 2 },
+    { id_visita_medica: 32, id_resultado: 4 },
+    { id_visita_medica: 32, id_resultado: 20 },
+    { id_visita_medica: 32, id_resultado: 10 },
+    { id_visita_medica: 32, id_resultado: 9 },
+    { id_visita_medica: 32, id_resultado: 27 },
+    { id_visita_medica: 32, id_resultado: 41 },
+    { id_visita_medica: 32, id_resultado: 35 },
+    { id_visita_medica: 33, id_resultado: 4 },
+    { id_visita_medica: 34, id_resultado: 25 },
+    { id_visita_medica: 34, id_resultado: 33 },
+    { id_visita_medica: 34, id_resultado: 3 },
+    { id_visita_medica: 34, id_resultado: 43 },
+    { id_visita_medica: 34, id_resultado: 17 },
+    { id_visita_medica: 34, id_resultado: 22 },
+    { id_visita_medica: 34, id_resultado: 34 },
+    { id_visita_medica: 34, id_resultado: 14 },
+    { id_visita_medica: 34, id_resultado: 46 },
+    { id_visita_medica: 35, id_resultado: 57 },
+    { id_visita_medica: 35, id_resultado: 24 },
+    { id_visita_medica: 35, id_resultado: 40 },
+    { id_visita_medica: 35, id_resultado: 15 },
+    { id_visita_medica: 36, id_resultado: 52 },
+    { id_visita_medica: 36, id_resultado: 5 },
+    { id_visita_medica: 36, id_resultado: 31 },
+    { id_visita_medica: 36, id_resultado: 11 },
+    { id_visita_medica: 36, id_resultado: 30 },
+    { id_visita_medica: 36, id_resultado: 48 },
+    { id_visita_medica: 36, id_resultado: 2 },
+    { id_visita_medica: 36, id_resultado: 38 },
+    { id_visita_medica: 36, id_resultado: 58 },
+    { id_visita_medica: 36, id_resultado: 36 },
+    { id_visita_medica: 37, id_resultado: 37 },
+    { id_visita_medica: 38, id_resultado: 45 },
+    { id_visita_medica: 39, id_resultado: 31 },
+    { id_visita_medica: 39, id_resultado: 11 },
+    { id_visita_medica: 39, id_resultado: 58 },
+    { id_visita_medica: 39, id_resultado: 30 },
+    { id_visita_medica: 39, id_resultado: 52 },
+    { id_visita_medica: 39, id_resultado: 38 },
+    { id_visita_medica: 39, id_resultado: 49 },
+    { id_visita_medica: 39, id_resultado: 5 },
+    { id_visita_medica: 39, id_resultado: 2 },
+    { id_visita_medica: 39, id_resultado: 36 },
+    { id_visita_medica: 39, id_resultado: 48 },
+    { id_visita_medica: 39, id_resultado: 51 },
+    { id_visita_medica: 40, id_resultado: 36 },
+    { id_visita_medica: 40, id_resultado: 30 },
+    { id_visita_medica: 40, id_resultado: 11 },
+    { id_visita_medica: 40, id_resultado: 49 },
+    { id_visita_medica: 40, id_resultado: 38 },
+    { id_visita_medica: 40, id_resultado: 52 },
+    { id_visita_medica: 40, id_resultado: 5 },
+    { id_visita_medica: 40, id_resultado: 2 },
+    { id_visita_medica: 40, id_resultado: 58 },
+    { id_visita_medica: 41, id_resultado: 56 },
+    { id_visita_medica: 41, id_resultado: 55 },
+    { id_visita_medica: 41, id_resultado: 21 },
+    { id_visita_medica: 41, id_resultado: 13 },
+    { id_visita_medica: 41, id_resultado: 59 },
+    { id_visita_medica: 41, id_resultado: 23 },
+    { id_visita_medica: 41, id_resultado: 39 },
+    { id_visita_medica: 41, id_resultado: 28 },
+    { id_visita_medica: 41, id_resultado: 1 },
+    { id_visita_medica: 41, id_resultado: 61 },
+    { id_visita_medica: 41, id_resultado: 7 },
+    { id_visita_medica: 41, id_resultado: 60 },
+    { id_visita_medica: 42, id_resultado: 60 },
+    { id_visita_medica: 42, id_resultado: 59 },
+    { id_visita_medica: 42, id_resultado: 7 },
+    { id_visita_medica: 42, id_resultado: 28 },
+    { id_visita_medica: 42, id_resultado: 1 },
+    { id_visita_medica: 42, id_resultado: 61 },
+    { id_visita_medica: 42, id_resultado: 21 },
+    { id_visita_medica: 42, id_resultado: 39 },
+    { id_visita_medica: 42, id_resultado: 13 },
+    { id_visita_medica: 42, id_resultado: 56 },
+    { id_visita_medica: 42, id_resultado: 23 },
+    { id_visita_medica: 42, id_resultado: 55 },
+    { id_visita_medica: 43, id_resultado: 53 },
+    { id_visita_medica: 43, id_resultado: 19 },
+    { id_visita_medica: 43, id_resultado: 12 },
+    { id_visita_medica: 43, id_resultado: 37 },
+    { id_visita_medica: 44, id_resultado: 30 },
+    { id_visita_medica: 44, id_resultado: 36 },
+    { id_visita_medica: 44, id_resultado: 5 },
+    { id_visita_medica: 44, id_resultado: 11 },
+    { id_visita_medica: 44, id_resultado: 31 },
+    { id_visita_medica: 44, id_resultado: 49 },
+    { id_visita_medica: 44, id_resultado: 38 },
+    { id_visita_medica: 44, id_resultado: 52 },
+    { id_visita_medica: 45, id_resultado: 41 },
+    { id_visita_medica: 45, id_resultado: 35 },
+    { id_visita_medica: 45, id_resultado: 10 },
+    { id_visita_medica: 45, id_resultado: 4 },
+    { id_visita_medica: 45, id_resultado: 20 },
+    { id_visita_medica: 45, id_resultado: 9 },
+    { id_visita_medica: 45, id_resultado: 27 },
+    { id_visita_medica: 46, id_resultado: 37 },
+    { id_visita_medica: 46, id_resultado: 53 },
+    { id_visita_medica: 47, id_resultado: 18 },
+    { id_visita_medica: 47, id_resultado: 45 },
+    { id_visita_medica: 47, id_resultado: 40 },
+    { id_visita_medica: 48, id_resultado: 42 },
+    { id_visita_medica: 48, id_resultado: 26 },
+    { id_visita_medica: 48, id_resultado: 47 },
+    { id_visita_medica: 48, id_resultado: 8 },
+    { id_visita_medica: 48, id_resultado: 24 },
+    { id_visita_medica: 48, id_resultado: 40 },
+    { id_visita_medica: 48, id_resultado: 44 },
+    { id_visita_medica: 48, id_resultado: 32 },
+    { id_visita_medica: 48, id_resultado: 57 },
+    { id_visita_medica: 48, id_resultado: 18 },
+    { id_visita_medica: 49, id_resultado: 35 },
+    { id_visita_medica: 49, id_resultado: 20 },
+    { id_visita_medica: 49, id_resultado: 10 },
+    { id_visita_medica: 49, id_resultado: 4 },
+    { id_visita_medica: 49, id_resultado: 41 },
+    { id_visita_medica: 49, id_resultado: 27 },
+    { id_visita_medica: 49, id_resultado: 9 },
+    { id_visita_medica: 50, id_resultado: 35 },
+    { id_visita_medica: 51, id_resultado: 34 },
+    { id_visita_medica: 51, id_resultado: 25 },
+    { id_visita_medica: 51, id_resultado: 22 },
+    { id_visita_medica: 51, id_resultado: 14 },
+    { id_visita_medica: 51, id_resultado: 3 },
+    { id_visita_medica: 51, id_resultado: 33 },
+    { id_visita_medica: 51, id_resultado: 46 },
+    { id_visita_medica: 51, id_resultado: 17 },
+    { id_visita_medica: 51, id_resultado: 43 },
+    { id_visita_medica: 52, id_resultado: 7 },
+    { id_visita_medica: 52, id_resultado: 23 },
+    { id_visita_medica: 52, id_resultado: 50 },
+    { id_visita_medica: 52, id_resultado: 61 },
+    { id_visita_medica: 52, id_resultado: 28 },
+    { id_visita_medica: 52, id_resultado: 59 },
+    { id_visita_medica: 52, id_resultado: 55 },
+    { id_visita_medica: 52, id_resultado: 39 },
+    { id_visita_medica: 52, id_resultado: 60 },
+    { id_visita_medica: 52, id_resultado: 56 },
+    { id_visita_medica: 53, id_resultado: 23 },
+    { id_visita_medica: 53, id_resultado: 59 },
+    { id_visita_medica: 53, id_resultado: 28 },
+    { id_visita_medica: 53, id_resultado: 39 },
+    { id_visita_medica: 53, id_resultado: 55 },
+    { id_visita_medica: 53, id_resultado: 7 },
+    { id_visita_medica: 54, id_resultado: 59 },
+    { id_visita_medica: 54, id_resultado: 39 },
+    { id_visita_medica: 54, id_resultado: 13 },
+    { id_visita_medica: 54, id_resultado: 61 },
+    { id_visita_medica: 54, id_resultado: 60 },
+    { id_visita_medica: 54, id_resultado: 21 },
+    { id_visita_medica: 54, id_resultado: 23 },
+    { id_visita_medica: 54, id_resultado: 56 },
+    { id_visita_medica: 55, id_resultado: 25 },
+    { id_visita_medica: 55, id_resultado: 43 },
+    { id_visita_medica: 55, id_resultado: 17 },
+    { id_visita_medica: 55, id_resultado: 46 },
+    { id_visita_medica: 55, id_resultado: 14 },
+    { id_visita_medica: 55, id_resultado: 33 },
+    { id_visita_medica: 55, id_resultado: 3 },
+    { id_visita_medica: 56, id_resultado: 10 },
+    { id_visita_medica: 57, id_resultado: 45 },
+    { id_visita_medica: 57, id_resultado: 32 },
+    { id_visita_medica: 57, id_resultado: 47 },
+    { id_visita_medica: 57, id_resultado: 15 },
+    { id_visita_medica: 57, id_resultado: 42 },
+    { id_visita_medica: 57, id_resultado: 57 },
+    { id_visita_medica: 57, id_resultado: 8 },
+    { id_visita_medica: 57, id_resultado: 18 },
+    { id_visita_medica: 57, id_resultado: 6 },
+    { id_visita_medica: 57, id_resultado: 54 },
+    { id_visita_medica: 57, id_resultado: 26 },
+    { id_visita_medica: 58, id_resultado: 29 },
+    { id_visita_medica: 58, id_resultado: 19 },
+    { id_visita_medica: 58, id_resultado: 16 },
+    { id_visita_medica: 58, id_resultado: 53 },
+    { id_visita_medica: 58, id_resultado: 12 },
+    { id_visita_medica: 59, id_resultado: 23 },
+    { id_visita_medica: 59, id_resultado: 61 },
+    { id_visita_medica: 59, id_resultado: 21 },
+    { id_visita_medica: 59, id_resultado: 56 },
+    { id_visita_medica: 59, id_resultado: 1 },
+    { id_visita_medica: 59, id_resultado: 60 },
+    { id_visita_medica: 60, id_resultado: 47 },
+    { id_visita_medica: 60, id_resultado: 32 },
+    { id_visita_medica: 60, id_resultado: 24 },
+    { id_visita_medica: 60, id_resultado: 18 },
+    { id_visita_medica: 60, id_resultado: 42 },
+    { id_visita_medica: 60, id_resultado: 57 },
+    { id_visita_medica: 60, id_resultado: 6 },
+    { id_visita_medica: 60, id_resultado: 15 },
+    { id_visita_medica: 61, id_resultado: 19 },
+    { id_visita_medica: 61, id_resultado: 12 },
+    { id_visita_medica: 61, id_resultado: 16 },
+    { id_visita_medica: 61, id_resultado: 29 },
+    { id_visita_medica: 61, id_resultado: 37 },
+    { id_visita_medica: 61, id_resultado: 53 },
+    { id_visita_medica: 62, id_resultado: 42 },
+    { id_visita_medica: 62, id_resultado: 8 },
+    { id_visita_medica: 62, id_resultado: 44 },
+    { id_visita_medica: 62, id_resultado: 57 },
+    { id_visita_medica: 62, id_resultado: 24 },
+    { id_visita_medica: 62, id_resultado: 15 },
+    { id_visita_medica: 62, id_resultado: 18 },
+    { id_visita_medica: 62, id_resultado: 47 },
+    { id_visita_medica: 62, id_resultado: 54 },
+    { id_visita_medica: 62, id_resultado: 26 },
+    { id_visita_medica: 62, id_resultado: 32 },
+    { id_visita_medica: 63, id_resultado: 12 },
+    { id_visita_medica: 63, id_resultado: 16 },
+    { id_visita_medica: 63, id_resultado: 29 },
+    { id_visita_medica: 63, id_resultado: 53 },
+    { id_visita_medica: 63, id_resultado: 37 },
+    { id_visita_medica: 63, id_resultado: 19 },
+    { id_visita_medica: 64, id_resultado: 20 },
+    { id_visita_medica: 64, id_resultado: 27 },
+    { id_visita_medica: 64, id_resultado: 35 },
+    { id_visita_medica: 64, id_resultado: 10 },
+    { id_visita_medica: 65, id_resultado: 9 },
+    { id_visita_medica: 65, id_resultado: 35 },
+    { id_visita_medica: 65, id_resultado: 41 },
+    { id_visita_medica: 65, id_resultado: 10 },
+    { id_visita_medica: 65, id_resultado: 20 },
+    { id_visita_medica: 65, id_resultado: 4 },
+    { id_visita_medica: 65, id_resultado: 27 },
+    { id_visita_medica: 66, id_resultado: 55 },
+    { id_visita_medica: 66, id_resultado: 28 },
+    { id_visita_medica: 67, id_resultado: 16 },
+    { id_visita_medica: 68, id_resultado: 54 },
+    { id_visita_medica: 68, id_resultado: 42 },
+    { id_visita_medica: 68, id_resultado: 44 },
+    { id_visita_medica: 68, id_resultado: 15 },
+    { id_visita_medica: 68, id_resultado: 8 },
+    { id_visita_medica: 68, id_resultado: 6 },
+    { id_visita_medica: 68, id_resultado: 57 },
+    { id_visita_medica: 68, id_resultado: 40 },
+    { id_visita_medica: 68, id_resultado: 47 },
+    { id_visita_medica: 69, id_resultado: 20 },
+    { id_visita_medica: 69, id_resultado: 27 },
+    { id_visita_medica: 69, id_resultado: 9 },
+    { id_visita_medica: 69, id_resultado: 4 },
+    { id_visita_medica: 69, id_resultado: 41 },
+    { id_visita_medica: 69, id_resultado: 35 },
+    { id_visita_medica: 69, id_resultado: 10 },
+    { id_visita_medica: 70, id_resultado: 4 },
+    { id_visita_medica: 70, id_resultado: 9 },
+    { id_visita_medica: 70, id_resultado: 20 },
+    { id_visita_medica: 70, id_resultado: 10 },
+    { id_visita_medica: 70, id_resultado: 41 },
+    { id_visita_medica: 70, id_resultado: 35 },
+    { id_visita_medica: 70, id_resultado: 27 },
+    { id_visita_medica: 71, id_resultado: 37 },
+    { id_visita_medica: 71, id_resultado: 29 },
+    { id_visita_medica: 71, id_resultado: 16 },
+    { id_visita_medica: 71, id_resultado: 53 },
+    { id_visita_medica: 71, id_resultado: 19 },
+    { id_visita_medica: 71, id_resultado: 12 },
+    { id_visita_medica: 72, id_resultado: 4 },
+    { id_visita_medica: 72, id_resultado: 9 },
+    { id_visita_medica: 72, id_resultado: 27 },
+    { id_visita_medica: 72, id_resultado: 41 },
+    { id_visita_medica: 72, id_resultado: 35 },
+    { id_visita_medica: 72, id_resultado: 20 },
+    { id_visita_medica: 73, id_resultado: 11 },
+    { id_visita_medica: 73, id_resultado: 38 },
+    { id_visita_medica: 73, id_resultado: 48 },
+    { id_visita_medica: 73, id_resultado: 36 },
+    { id_visita_medica: 73, id_resultado: 52 },
+    { id_visita_medica: 73, id_resultado: 5 },
+    { id_visita_medica: 73, id_resultado: 2 },
+    { id_visita_medica: 73, id_resultado: 31 },
+    { id_visita_medica: 73, id_resultado: 49 },
+    { id_visita_medica: 74, id_resultado: 26 },
+    { id_visita_medica: 74, id_resultado: 6 },
+    { id_visita_medica: 74, id_resultado: 47 },
+    { id_visita_medica: 74, id_resultado: 42 },
+    { id_visita_medica: 74, id_resultado: 40 },
+    { id_visita_medica: 74, id_resultado: 24 },
+    { id_visita_medica: 74, id_resultado: 54 },
+    { id_visita_medica: 74, id_resultado: 45 },
+    { id_visita_medica: 74, id_resultado: 18 },
+    { id_visita_medica: 74, id_resultado: 8 },
+    { id_visita_medica: 75, id_resultado: 47 },
+    { id_visita_medica: 75, id_resultado: 8 },
+    { id_visita_medica: 75, id_resultado: 32 },
+    { id_visita_medica: 75, id_resultado: 24 },
+    { id_visita_medica: 75, id_resultado: 6 },
+    { id_visita_medica: 75, id_resultado: 45 },
+    { id_visita_medica: 75, id_resultado: 54 },
+    { id_visita_medica: 75, id_resultado: 15 },
+    { id_visita_medica: 75, id_resultado: 18 },
+    { id_visita_medica: 75, id_resultado: 57 },
+    { id_visita_medica: 75, id_resultado: 26 },
+    { id_visita_medica: 76, id_resultado: 24 },
+    { id_visita_medica: 76, id_resultado: 40 },
+    { id_visita_medica: 76, id_resultado: 26 },
+    { id_visita_medica: 76, id_resultado: 15 },
+    { id_visita_medica: 76, id_resultado: 42 },
+    { id_visita_medica: 76, id_resultado: 44 },
+    { id_visita_medica: 76, id_resultado: 6 },
+    { id_visita_medica: 76, id_resultado: 45 },
+    { id_visita_medica: 76, id_resultado: 47 },
+    { id_visita_medica: 76, id_resultado: 32 },
+    { id_visita_medica: 77, id_resultado: 53 },
+    { id_visita_medica: 77, id_resultado: 29 },
+    { id_visita_medica: 77, id_resultado: 16 },
+    { id_visita_medica: 78, id_resultado: 4 },
+    { id_visita_medica: 79, id_resultado: 32 },
+    { id_visita_medica: 79, id_resultado: 26 },
+    { id_visita_medica: 79, id_resultado: 18 },
+    { id_visita_medica: 79, id_resultado: 6 },
+    { id_visita_medica: 79, id_resultado: 54 },
+    { id_visita_medica: 79, id_resultado: 42 },
+    { id_visita_medica: 79, id_resultado: 44 },
+    { id_visita_medica: 79, id_resultado: 8 },
+    { id_visita_medica: 79, id_resultado: 45 },
+    { id_visita_medica: 79, id_resultado: 40 },
+    { id_visita_medica: 79, id_resultado: 47 },
+    { id_visita_medica: 80, id_resultado: 22 },
+    { id_visita_medica: 80, id_resultado: 46 },
+    { id_visita_medica: 81, id_resultado: 6 },
+    { id_visita_medica: 81, id_resultado: 32 },
+    { id_visita_medica: 81, id_resultado: 54 },
+    { id_visita_medica: 81, id_resultado: 44 },
+    { id_visita_medica: 81, id_resultado: 24 },
+    { id_visita_medica: 81, id_resultado: 45 },
+    { id_visita_medica: 81, id_resultado: 18 },
+    { id_visita_medica: 82, id_resultado: 35 },
+    { id_visita_medica: 82, id_resultado: 20 },
+    { id_visita_medica: 82, id_resultado: 4 },
+    { id_visita_medica: 83, id_resultado: 24 },
+    { id_visita_medica: 83, id_resultado: 6 },
+    { id_visita_medica: 83, id_resultado: 54 },
+    { id_visita_medica: 83, id_resultado: 18 },
+    { id_visita_medica: 83, id_resultado: 32 },
+    { id_visita_medica: 83, id_resultado: 26 },
+    { id_visita_medica: 83, id_resultado: 40 },
+    { id_visita_medica: 83, id_resultado: 45 },
+    { id_visita_medica: 84, id_resultado: 33 },
+    { id_visita_medica: 84, id_resultado: 3 },
+    { id_visita_medica: 84, id_resultado: 34 },
+    { id_visita_medica: 85, id_resultado: 24 },
+    { id_visita_medica: 85, id_resultado: 54 },
+    { id_visita_medica: 85, id_resultado: 26 },
+    { id_visita_medica: 85, id_resultado: 45 },
+    { id_visita_medica: 85, id_resultado: 32 },
+    { id_visita_medica: 85, id_resultado: 42 },
+    { id_visita_medica: 85, id_resultado: 57 },
+    { id_visita_medica: 85, id_resultado: 44 },
+    { id_visita_medica: 85, id_resultado: 40 },
+    { id_visita_medica: 85, id_resultado: 6 },
+    { id_visita_medica: 85, id_resultado: 8 },
+    { id_visita_medica: 86, id_resultado: 53 },
+    { id_visita_medica: 86, id_resultado: 12 },
+    { id_visita_medica: 86, id_resultado: 29 },
+    { id_visita_medica: 86, id_resultado: 19 },
+    { id_visita_medica: 86, id_resultado: 37 },
+    { id_visita_medica: 86, id_resultado: 16 },
+    { id_visita_medica: 87, id_resultado: 35 },
+    { id_visita_medica: 87, id_resultado: 10 },
+    { id_visita_medica: 87, id_resultado: 20 },
+    { id_visita_medica: 88, id_resultado: 19 },
+    { id_visita_medica: 88, id_resultado: 53 },
+    { id_visita_medica: 88, id_resultado: 29 },
+    { id_visita_medica: 88, id_resultado: 16 },
+    { id_visita_medica: 88, id_resultado: 12 },
+    { id_visita_medica: 88, id_resultado: 37 },
+    { id_visita_medica: 89, id_resultado: 29 },
+    { id_visita_medica: 89, id_resultado: 12 },
+    { id_visita_medica: 89, id_resultado: 53 },
+    { id_visita_medica: 90, id_resultado: 46 },
+    { id_visita_medica: 91, id_resultado: 35 },
+    { id_visita_medica: 91, id_resultado: 4 },
+    { id_visita_medica: 91, id_resultado: 9 },
+    { id_visita_medica: 91, id_resultado: 41 },
+    { id_visita_medica: 91, id_resultado: 27 },
+    { id_visita_medica: 91, id_resultado: 20 },
+    { id_visita_medica: 91, id_resultado: 10 },
+    { id_visita_medica: 92, id_resultado: 14 },
+    { id_visita_medica: 92, id_resultado: 25 },
+    { id_visita_medica: 92, id_resultado: 17 },
+    { id_visita_medica: 93, id_resultado: 48 },
+    { id_visita_medica: 93, id_resultado: 36 },
+    { id_visita_medica: 93, id_resultado: 31 },
+    { id_visita_medica: 93, id_resultado: 52 },
+    { id_visita_medica: 93, id_resultado: 5 },
+    { id_visita_medica: 93, id_resultado: 30 },
+    { id_visita_medica: 93, id_resultado: 51 },
+    { id_visita_medica: 93, id_resultado: 11 },
+    { id_visita_medica: 93, id_resultado: 58 },
+    { id_visita_medica: 94, id_resultado: 19 },
+    { id_visita_medica: 94, id_resultado: 16 },
+    { id_visita_medica: 94, id_resultado: 37 },
+    { id_visita_medica: 94, id_resultado: 12 },
+    { id_visita_medica: 94, id_resultado: 53 },
+    { id_visita_medica: 94, id_resultado: 29 },
+    { id_visita_medica: 95, id_resultado: 9 },
+    { id_visita_medica: 95, id_resultado: 20 },
+    { id_visita_medica: 96, id_resultado: 48 },
+    { id_visita_medica: 96, id_resultado: 30 },
+    { id_visita_medica: 96, id_resultado: 31 },
+    { id_visita_medica: 96, id_resultado: 5 },
+    { id_visita_medica: 96, id_resultado: 36 },
+    { id_visita_medica: 96, id_resultado: 38 },
+    { id_visita_medica: 96, id_resultado: 58 },
+    { id_visita_medica: 96, id_resultado: 52 },
+    { id_visita_medica: 96, id_resultado: 2 },
+    { id_visita_medica: 96, id_resultado: 51 },
+    { id_visita_medica: 96, id_resultado: 11 },
+    { id_visita_medica: 96, id_resultado: 49 },
+    { id_visita_medica: 97, id_resultado: 53 },
+    { id_visita_medica: 97, id_resultado: 29 },
+    { id_visita_medica: 97, id_resultado: 19 },
+    { id_visita_medica: 97, id_resultado: 37 },
+    { id_visita_medica: 98, id_resultado: 36 },
+    { id_visita_medica: 98, id_resultado: 49 },
+    { id_visita_medica: 98, id_resultado: 31 },
+    { id_visita_medica: 98, id_resultado: 11 },
+    { id_visita_medica: 98, id_resultado: 2 },
+    { id_visita_medica: 98, id_resultado: 30 },
+    { id_visita_medica: 98, id_resultado: 5 },
+    { id_visita_medica: 98, id_resultado: 38 },
+    { id_visita_medica: 99, id_resultado: 40 },
+    { id_visita_medica: 100, id_resultado: 38 },
+    { id_visita_medica: 100, id_resultado: 52 },
+    { id_visita_medica: 101, id_resultado: 9 },
+    { id_visita_medica: 101, id_resultado: 20 },
+    { id_visita_medica: 101, id_resultado: 10 },
+    { id_visita_medica: 101, id_resultado: 27 },
+    { id_visita_medica: 101, id_resultado: 4 },
+    { id_visita_medica: 101, id_resultado: 35 },
+    { id_visita_medica: 101, id_resultado: 41 },
+    { id_visita_medica: 102, id_resultado: 54 },
+    { id_visita_medica: 102, id_resultado: 6 },
+    { id_visita_medica: 102, id_resultado: 44 },
+    { id_visita_medica: 102, id_resultado: 57 },
+    { id_visita_medica: 102, id_resultado: 45 },
+    { id_visita_medica: 102, id_resultado: 40 },
+    { id_visita_medica: 102, id_resultado: 47 },
+    { id_visita_medica: 102, id_resultado: 15 },
+    { id_visita_medica: 102, id_resultado: 32 },
+    { id_visita_medica: 103, id_resultado: 41 },
+    { id_visita_medica: 103, id_resultado: 35 },
+    { id_visita_medica: 103, id_resultado: 20 },
+    { id_visita_medica: 103, id_resultado: 9 },
+    { id_visita_medica: 103, id_resultado: 10 },
+    { id_visita_medica: 104, id_resultado: 46 },
+    { id_visita_medica: 104, id_resultado: 17 },
+    { id_visita_medica: 104, id_resultado: 3 },
+    { id_visita_medica: 104, id_resultado: 22 },
+    { id_visita_medica: 104, id_resultado: 43 },
+    { id_visita_medica: 104, id_resultado: 14 },
+    { id_visita_medica: 104, id_resultado: 25 },
+    { id_visita_medica: 104, id_resultado: 34 },
+    { id_visita_medica: 104, id_resultado: 33 },
+    { id_visita_medica: 105, id_resultado: 31 },
+    { id_visita_medica: 105, id_resultado: 36 },
+    { id_visita_medica: 105, id_resultado: 2 },
+    { id_visita_medica: 105, id_resultado: 30 },
+    { id_visita_medica: 106, id_resultado: 25 },
+    { id_visita_medica: 106, id_resultado: 46 },
+    { id_visita_medica: 106, id_resultado: 43 },
+    { id_visita_medica: 107, id_resultado: 53 },
+    { id_visita_medica: 108, id_resultado: 28 },
+    { id_visita_medica: 108, id_resultado: 61 },
+    { id_visita_medica: 108, id_resultado: 50 },
+    { id_visita_medica: 108, id_resultado: 21 },
+    { id_visita_medica: 108, id_resultado: 13 },
+    { id_visita_medica: 108, id_resultado: 59 },
+    { id_visita_medica: 108, id_resultado: 7 },
+    { id_visita_medica: 108, id_resultado: 23 },
+    { id_visita_medica: 109, id_resultado: 6 },
+    { id_visita_medica: 109, id_resultado: 54 },
+    { id_visita_medica: 109, id_resultado: 57 },
+    { id_visita_medica: 110, id_resultado: 29 },
+    { id_visita_medica: 110, id_resultado: 53 },
+    { id_visita_medica: 110, id_resultado: 19 },
+    { id_visita_medica: 110, id_resultado: 37 },
+    { id_visita_medica: 110, id_resultado: 16 },
+    { id_visita_medica: 110, id_resultado: 12 },
+    { id_visita_medica: 111, id_resultado: 38 },
+    { id_visita_medica: 111, id_resultado: 51 },
+    { id_visita_medica: 111, id_resultado: 11 },
+    { id_visita_medica: 111, id_resultado: 30 },
+    { id_visita_medica: 111, id_resultado: 31 },
+    { id_visita_medica: 112, id_resultado: 37 },
+    { id_visita_medica: 112, id_resultado: 19 },
+    { id_visita_medica: 112, id_resultado: 16 },
+    { id_visita_medica: 112, id_resultado: 53 },
+    { id_visita_medica: 112, id_resultado: 12 },
+    { id_visita_medica: 112, id_resultado: 29 },
+    { id_visita_medica: 113, id_resultado: 15 },
+    { id_visita_medica: 114, id_resultado: 31 },
+    { id_visita_medica: 114, id_resultado: 36 },
+    { id_visita_medica: 114, id_resultado: 49 },
+    { id_visita_medica: 114, id_resultado: 48 },
+    { id_visita_medica: 114, id_resultado: 38 },
+    { id_visita_medica: 115, id_resultado: 57 },
+    { id_visita_medica: 116, id_resultado: 17 },
+    { id_visita_medica: 116, id_resultado: 33 },
+    { id_visita_medica: 116, id_resultado: 34 },
+    { id_visita_medica: 116, id_resultado: 25 },
+    { id_visita_medica: 116, id_resultado: 46 },
+    { id_visita_medica: 116, id_resultado: 22 },
+    { id_visita_medica: 116, id_resultado: 14 },
+    { id_visita_medica: 116, id_resultado: 3 },
+    { id_visita_medica: 116, id_resultado: 43 },
+    { id_visita_medica: 117, id_resultado: 17 },
+    { id_visita_medica: 117, id_resultado: 22 },
+    { id_visita_medica: 117, id_resultado: 34 },
+    { id_visita_medica: 118, id_resultado: 38 },
+    { id_visita_medica: 118, id_resultado: 11 },
+    { id_visita_medica: 118, id_resultado: 49 },
+    { id_visita_medica: 118, id_resultado: 51 },
+    { id_visita_medica: 118, id_resultado: 2 },
+    { id_visita_medica: 118, id_resultado: 58 },
+    { id_visita_medica: 118, id_resultado: 52 },
+    { id_visita_medica: 118, id_resultado: 48 },
+    { id_visita_medica: 118, id_resultado: 5 },
+    { id_visita_medica: 118, id_resultado: 36 },
+    { id_visita_medica: 118, id_resultado: 30 },
+    { id_visita_medica: 118, id_resultado: 31 },
+    { id_visita_medica: 119, id_resultado: 30 },
+    { id_visita_medica: 119, id_resultado: 49 },
+    { id_visita_medica: 119, id_resultado: 11 },
+    { id_visita_medica: 119, id_resultado: 48 },
+    { id_visita_medica: 119, id_resultado: 38 },
+    { id_visita_medica: 119, id_resultado: 5 },
+    { id_visita_medica: 119, id_resultado: 31 },
+    { id_visita_medica: 119, id_resultado: 2 },
+    { id_visita_medica: 119, id_resultado: 52 },
+    { id_visita_medica: 120, id_resultado: 49 },
+    { id_visita_medica: 120, id_resultado: 48 },
+    { id_visita_medica: 120, id_resultado: 5 },
+    { id_visita_medica: 120, id_resultado: 11 },
+    { id_visita_medica: 121, id_resultado: 40 },
+    { id_visita_medica: 121, id_resultado: 57 },
+    { id_visita_medica: 121, id_resultado: 45 },
+    { id_visita_medica: 122, id_resultado: 57 },
+    { id_visita_medica: 122, id_resultado: 44 },
+    { id_visita_medica: 122, id_resultado: 47 },
+    { id_visita_medica: 122, id_resultado: 40 },
+    { id_visita_medica: 122, id_resultado: 18 },
+    { id_visita_medica: 122, id_resultado: 26 },
+    { id_visita_medica: 123, id_resultado: 26 },
+    { id_visita_medica: 123, id_resultado: 44 },
+    { id_visita_medica: 123, id_resultado: 8 },
+    { id_visita_medica: 123, id_resultado: 6 },
+    { id_visita_medica: 123, id_resultado: 32 },
+    { id_visita_medica: 123, id_resultado: 47 },
+    { id_visita_medica: 123, id_resultado: 18 },
+    { id_visita_medica: 123, id_resultado: 40 },
+    { id_visita_medica: 123, id_resultado: 54 },
+    { id_visita_medica: 124, id_resultado: 3 },
+    { id_visita_medica: 124, id_resultado: 25 },
+    { id_visita_medica: 124, id_resultado: 46 },
+    { id_visita_medica: 124, id_resultado: 17 },
+    { id_visita_medica: 124, id_resultado: 43 },
+    { id_visita_medica: 124, id_resultado: 22 },
+    { id_visita_medica: 124, id_resultado: 14 },
+    { id_visita_medica: 124, id_resultado: 33 },
+    { id_visita_medica: 124, id_resultado: 34 },
+    { id_visita_medica: 125, id_resultado: 44 },
+    { id_visita_medica: 125, id_resultado: 42 },
+    { id_visita_medica: 125, id_resultado: 8 },
+    { id_visita_medica: 126, id_resultado: 16 },
+    { id_visita_medica: 126, id_resultado: 29 },
+    { id_visita_medica: 127, id_resultado: 19 },
+    { id_visita_medica: 127, id_resultado: 29 },
+    { id_visita_medica: 127, id_resultado: 12 },
+    { id_visita_medica: 127, id_resultado: 16 },
+    { id_visita_medica: 127, id_resultado: 53 },
+    { id_visita_medica: 128, id_resultado: 45 },
+    { id_visita_medica: 128, id_resultado: 24 },
+    { id_visita_medica: 128, id_resultado: 44 },
+    { id_visita_medica: 128, id_resultado: 8 },
+    { id_visita_medica: 128, id_resultado: 40 },
+    { id_visita_medica: 128, id_resultado: 57 },
+    { id_visita_medica: 128, id_resultado: 15 },
+    { id_visita_medica: 128, id_resultado: 18 },
+    { id_visita_medica: 128, id_resultado: 6 },
+    { id_visita_medica: 128, id_resultado: 42 },
+    { id_visita_medica: 128, id_resultado: 54 },
+    { id_visita_medica: 128, id_resultado: 47 },
+    { id_visita_medica: 129, id_resultado: 41 },
+    { id_visita_medica: 129, id_resultado: 27 },
+    { id_visita_medica: 129, id_resultado: 4 },
+    { id_visita_medica: 129, id_resultado: 10 },
+    { id_visita_medica: 129, id_resultado: 20 },
+    { id_visita_medica: 129, id_resultado: 35 },
+    { id_visita_medica: 130, id_resultado: 4 },
+    { id_visita_medica: 130, id_resultado: 20 },
+    { id_visita_medica: 130, id_resultado: 41 },
+    { id_visita_medica: 130, id_resultado: 10 },
+    { id_visita_medica: 130, id_resultado: 27 },
+    { id_visita_medica: 130, id_resultado: 9 },
+    { id_visita_medica: 130, id_resultado: 35 },
+    { id_visita_medica: 131, id_resultado: 9 },
+    { id_visita_medica: 132, id_resultado: 26 },
+    { id_visita_medica: 132, id_resultado: 24 },
+    { id_visita_medica: 132, id_resultado: 47 },
+    { id_visita_medica: 132, id_resultado: 8 },
+    { id_visita_medica: 132, id_resultado: 45 },
+    { id_visita_medica: 133, id_resultado: 46 },
+    { id_visita_medica: 134, id_resultado: 31 },
+    { id_visita_medica: 134, id_resultado: 11 },
+    { id_visita_medica: 134, id_resultado: 5 },
+    { id_visita_medica: 134, id_resultado: 30 },
+    { id_visita_medica: 134, id_resultado: 48 },
+    { id_visita_medica: 134, id_resultado: 52 },
+    { id_visita_medica: 134, id_resultado: 2 },
+    { id_visita_medica: 134, id_resultado: 49 },
+    { id_visita_medica: 134, id_resultado: 38 },
+    { id_visita_medica: 134, id_resultado: 58 },
+    { id_visita_medica: 134, id_resultado: 51 },
+    { id_visita_medica: 134, id_resultado: 36 },
+    { id_visita_medica: 135, id_resultado: 46 },
+    { id_visita_medica: 135, id_resultado: 14 },
+    { id_visita_medica: 135, id_resultado: 43 },
+    { id_visita_medica: 135, id_resultado: 25 },
+    { id_visita_medica: 135, id_resultado: 22 },
+    { id_visita_medica: 135, id_resultado: 3 },
+    { id_visita_medica: 136, id_resultado: 60 },
+    { id_visita_medica: 136, id_resultado: 59 },
+    { id_visita_medica: 136, id_resultado: 55 },
+    { id_visita_medica: 136, id_resultado: 50 },
+    { id_visita_medica: 137, id_resultado: 31 },
+    { id_visita_medica: 137, id_resultado: 11 },
+    { id_visita_medica: 137, id_resultado: 5 },
+    { id_visita_medica: 137, id_resultado: 52 },
+    { id_visita_medica: 138, id_resultado: 2 },
+    { id_visita_medica: 138, id_resultado: 52 },
+    { id_visita_medica: 138, id_resultado: 49 },
+    { id_visita_medica: 138, id_resultado: 58 },
+    { id_visita_medica: 139, id_resultado: 61 },
+    { id_visita_medica: 139, id_resultado: 1 },
+    { id_visita_medica: 139, id_resultado: 39 },
+    { id_visita_medica: 139, id_resultado: 56 },
+    { id_visita_medica: 139, id_resultado: 13 },
+    { id_visita_medica: 140, id_resultado: 23 },
+    { id_visita_medica: 141, id_resultado: 13 },
+    { id_visita_medica: 141, id_resultado: 23 },
+    { id_visita_medica: 141, id_resultado: 1 },
+    { id_visita_medica: 141, id_resultado: 60 },
+    { id_visita_medica: 141, id_resultado: 7 },
+    { id_visita_medica: 141, id_resultado: 28 },
+    { id_visita_medica: 141, id_resultado: 21 },
+    { id_visita_medica: 141, id_resultado: 61 },
+    { id_visita_medica: 141, id_resultado: 39 },
+    { id_visita_medica: 141, id_resultado: 50 },
+    { id_visita_medica: 142, id_resultado: 47 },
+    { id_visita_medica: 142, id_resultado: 54 },
+    { id_visita_medica: 142, id_resultado: 44 },
+    { id_visita_medica: 142, id_resultado: 8 },
+    { id_visita_medica: 143, id_resultado: 19 },
+    { id_visita_medica: 143, id_resultado: 53 },
+    { id_visita_medica: 143, id_resultado: 37 },
+    { id_visita_medica: 143, id_resultado: 16 },
+    { id_visita_medica: 143, id_resultado: 29 },
+    { id_visita_medica: 143, id_resultado: 12 },
+    { id_visita_medica: 144, id_resultado: 21 },
+    { id_visita_medica: 145, id_resultado: 16 },
+    { id_visita_medica: 145, id_resultado: 19 },
+    { id_visita_medica: 145, id_resultado: 12 },
+    { id_visita_medica: 146, id_resultado: 44 },
+    { id_visita_medica: 146, id_resultado: 24 },
+    { id_visita_medica: 146, id_resultado: 8 },
+    { id_visita_medica: 146, id_resultado: 54 },
+    { id_visita_medica: 146, id_resultado: 45 },
+    { id_visita_medica: 146, id_resultado: 26 },
+    { id_visita_medica: 146, id_resultado: 57 },
+    { id_visita_medica: 147, id_resultado: 31 },
+    { id_visita_medica: 147, id_resultado: 49 },
+    { id_visita_medica: 147, id_resultado: 52 },
+    { id_visita_medica: 147, id_resultado: 36 },
+    { id_visita_medica: 147, id_resultado: 38 },
+    { id_visita_medica: 147, id_resultado: 5 },
+    { id_visita_medica: 147, id_resultado: 11 },
+    { id_visita_medica: 147, id_resultado: 2 },
+    { id_visita_medica: 148, id_resultado: 12 },
+    { id_visita_medica: 148, id_resultado: 53 },
+    { id_visita_medica: 148, id_resultado: 16 },
+    { id_visita_medica: 149, id_resultado: 8 },
+    { id_visita_medica: 149, id_resultado: 42 },
+    { id_visita_medica: 149, id_resultado: 45 },
+    { id_visita_medica: 149, id_resultado: 47 },
+    { id_visita_medica: 149, id_resultado: 6 },
+    { id_visita_medica: 149, id_resultado: 15 },
+    { id_visita_medica: 149, id_resultado: 26 },
+    { id_visita_medica: 149, id_resultado: 44 },
+    { id_visita_medica: 149, id_resultado: 57 },
+    { id_visita_medica: 150, id_resultado: 5 },
+    { id_visita_medica: 150, id_resultado: 52 },
+    { id_visita_medica: 151, id_resultado: 53 },
+    { id_visita_medica: 151, id_resultado: 19 },
+    { id_visita_medica: 151, id_resultado: 29 },
+    { id_visita_medica: 151, id_resultado: 37 },
+    { id_visita_medica: 151, id_resultado: 12 },
+    { id_visita_medica: 152, id_resultado: 4 },
+    { id_visita_medica: 152, id_resultado: 9 },
+    { id_visita_medica: 152, id_resultado: 35 },
+    { id_visita_medica: 152, id_resultado: 20 },
+    { id_visita_medica: 152, id_resultado: 10 },
+    { id_visita_medica: 152, id_resultado: 41 },
+    { id_visita_medica: 152, id_resultado: 27 },
+    { id_visita_medica: 153, id_resultado: 17 },
+    { id_visita_medica: 153, id_resultado: 22 },
+    { id_visita_medica: 153, id_resultado: 14 },
+    { id_visita_medica: 153, id_resultado: 33 },
+    { id_visita_medica: 153, id_resultado: 46 },
+    { id_visita_medica: 153, id_resultado: 43 },
+    { id_visita_medica: 154, id_resultado: 13 },
+    { id_visita_medica: 154, id_resultado: 1 },
+    { id_visita_medica: 154, id_resultado: 28 },
+    { id_visita_medica: 154, id_resultado: 21 },
+    { id_visita_medica: 154, id_resultado: 59 },
+    { id_visita_medica: 154, id_resultado: 55 },
+    { id_visita_medica: 154, id_resultado: 60 },
+    { id_visita_medica: 154, id_resultado: 56 },
+    { id_visita_medica: 154, id_resultado: 61 },
+    { id_visita_medica: 155, id_resultado: 55 },
+    { id_visita_medica: 155, id_resultado: 1 },
+    { id_visita_medica: 155, id_resultado: 13 },
+    { id_visita_medica: 155, id_resultado: 39 },
+    { id_visita_medica: 155, id_resultado: 61 },
+    { id_visita_medica: 155, id_resultado: 59 },
+    { id_visita_medica: 155, id_resultado: 21 },
+    { id_visita_medica: 155, id_resultado: 60 },
+    { id_visita_medica: 155, id_resultado: 56 },
+    { id_visita_medica: 155, id_resultado: 7 },
+    { id_visita_medica: 155, id_resultado: 28 },
+    { id_visita_medica: 155, id_resultado: 50 },
+    { id_visita_medica: 156, id_resultado: 55 },
+    { id_visita_medica: 156, id_resultado: 59 },
+    { id_visita_medica: 156, id_resultado: 56 },
+    { id_visita_medica: 156, id_resultado: 61 },
+    { id_visita_medica: 156, id_resultado: 23 },
+    { id_visita_medica: 156, id_resultado: 13 },
+    { id_visita_medica: 156, id_resultado: 39 },
+    { id_visita_medica: 156, id_resultado: 7 },
+    { id_visita_medica: 156, id_resultado: 50 },
+    { id_visita_medica: 156, id_resultado: 1 },
+    { id_visita_medica: 156, id_resultado: 21 },
+    { id_visita_medica: 157, id_resultado: 44 },
+    { id_visita_medica: 157, id_resultado: 6 },
+    { id_visita_medica: 157, id_resultado: 54 },
+    { id_visita_medica: 157, id_resultado: 47 },
+    { id_visita_medica: 158, id_resultado: 54 },
+    { id_visita_medica: 158, id_resultado: 8 },
+    { id_visita_medica: 158, id_resultado: 15 },
+    { id_visita_medica: 159, id_resultado: 52 },
+    { id_visita_medica: 159, id_resultado: 2 },
+    { id_visita_medica: 159, id_resultado: 31 },
+    { id_visita_medica: 159, id_resultado: 51 },
+    { id_visita_medica: 159, id_resultado: 5 },
+    { id_visita_medica: 159, id_resultado: 38 },
+    { id_visita_medica: 159, id_resultado: 48 },
+    { id_visita_medica: 159, id_resultado: 36 },
+    { id_visita_medica: 159, id_resultado: 11 },
+    { id_visita_medica: 159, id_resultado: 30 },
+    { id_visita_medica: 160, id_resultado: 51 },
+    { id_visita_medica: 160, id_resultado: 31 },
+    { id_visita_medica: 160, id_resultado: 58 },
+    { id_visita_medica: 160, id_resultado: 5 },
+    { id_visita_medica: 160, id_resultado: 48 },
+    { id_visita_medica: 160, id_resultado: 36 },
+    { id_visita_medica: 160, id_resultado: 52 },
+    { id_visita_medica: 160, id_resultado: 38 },
+    { id_visita_medica: 160, id_resultado: 49 },
+    { id_visita_medica: 160, id_resultado: 2 },
+    { id_visita_medica: 160, id_resultado: 11 },
+    { id_visita_medica: 161, id_resultado: 3 },
+    { id_visita_medica: 161, id_resultado: 14 },
+    { id_visita_medica: 161, id_resultado: 34 },
+    { id_visita_medica: 161, id_resultado: 17 },
+    { id_visita_medica: 161, id_resultado: 43 },
+    { id_visita_medica: 161, id_resultado: 33 },
+    { id_visita_medica: 161, id_resultado: 46 },
+    { id_visita_medica: 161, id_resultado: 22 },
+    { id_visita_medica: 162, id_resultado: 46 },
+    { id_visita_medica: 162, id_resultado: 14 },
+    { id_visita_medica: 162, id_resultado: 17 },
+    { id_visita_medica: 162, id_resultado: 43 },
+    { id_visita_medica: 162, id_resultado: 34 },
+    { id_visita_medica: 162, id_resultado: 3 },
+    { id_visita_medica: 162, id_resultado: 25 },
+    { id_visita_medica: 162, id_resultado: 22 },
+    { id_visita_medica: 163, id_resultado: 58 },
+    { id_visita_medica: 163, id_resultado: 48 },
+    { id_visita_medica: 163, id_resultado: 11 },
+    { id_visita_medica: 163, id_resultado: 30 },
+    { id_visita_medica: 163, id_resultado: 38 },
+    { id_visita_medica: 163, id_resultado: 49 },
+    { id_visita_medica: 163, id_resultado: 51 },
+    { id_visita_medica: 163, id_resultado: 5 },
+    { id_visita_medica: 164, id_resultado: 7 },
+    { id_visita_medica: 164, id_resultado: 1 },
+    { id_visita_medica: 164, id_resultado: 56 },
+    { id_visita_medica: 164, id_resultado: 59 },
+    { id_visita_medica: 164, id_resultado: 60 },
+    { id_visita_medica: 165, id_resultado: 51 },
+    { id_visita_medica: 165, id_resultado: 30 },
+    { id_visita_medica: 165, id_resultado: 31 },
+    { id_visita_medica: 165, id_resultado: 48 },
+    { id_visita_medica: 165, id_resultado: 5 },
+    { id_visita_medica: 166, id_resultado: 8 },
+    { id_visita_medica: 166, id_resultado: 42 },
+    { id_visita_medica: 166, id_resultado: 44 },
+    { id_visita_medica: 166, id_resultado: 6 },
+    { id_visita_medica: 166, id_resultado: 32 },
+    { id_visita_medica: 166, id_resultado: 15 },
+    { id_visita_medica: 166, id_resultado: 40 },
+    { id_visita_medica: 167, id_resultado: 53 },
+    { id_visita_medica: 167, id_resultado: 16 },
+    { id_visita_medica: 167, id_resultado: 37 },
+    { id_visita_medica: 167, id_resultado: 29 },
+    { id_visita_medica: 167, id_resultado: 19 },
+    { id_visita_medica: 167, id_resultado: 12 },
+    { id_visita_medica: 168, id_resultado: 21 },
+    { id_visita_medica: 168, id_resultado: 60 },
+    { id_visita_medica: 168, id_resultado: 7 },
+    { id_visita_medica: 168, id_resultado: 23 },
+    { id_visita_medica: 168, id_resultado: 13 },
+    { id_visita_medica: 168, id_resultado: 50 },
+    { id_visita_medica: 168, id_resultado: 56 },
+    { id_visita_medica: 168, id_resultado: 28 },
+    { id_visita_medica: 169, id_resultado: 35 },
+    { id_visita_medica: 169, id_resultado: 10 },
+    { id_visita_medica: 169, id_resultado: 27 },
+    { id_visita_medica: 169, id_resultado: 41 },
+    { id_visita_medica: 169, id_resultado: 4 },
+    { id_visita_medica: 169, id_resultado: 20 },
+    { id_visita_medica: 169, id_resultado: 9 },
+    { id_visita_medica: 170, id_resultado: 31 },
+    { id_visita_medica: 170, id_resultado: 2 },
+    { id_visita_medica: 170, id_resultado: 38 },
+    { id_visita_medica: 170, id_resultado: 58 },
+    { id_visita_medica: 170, id_resultado: 49 },
+    { id_visita_medica: 170, id_resultado: 5 },
+    { id_visita_medica: 170, id_resultado: 30 },
+    { id_visita_medica: 170, id_resultado: 52 },
+    { id_visita_medica: 170, id_resultado: 36 },
+    { id_visita_medica: 170, id_resultado: 51 },
+    { id_visita_medica: 170, id_resultado: 11 },
+    { id_visita_medica: 170, id_resultado: 48 },
+    { id_visita_medica: 171, id_resultado: 16 },
+    { id_visita_medica: 171, id_resultado: 29 },
+    { id_visita_medica: 171, id_resultado: 53 },
+    { id_visita_medica: 171, id_resultado: 19 },
+    { id_visita_medica: 171, id_resultado: 12 },
+    { id_visita_medica: 171, id_resultado: 37 },
+    { id_visita_medica: 172, id_resultado: 16 },
+    { id_visita_medica: 173, id_resultado: 58 },
+    { id_visita_medica: 173, id_resultado: 51 },
+    { id_visita_medica: 173, id_resultado: 30 },
+    { id_visita_medica: 173, id_resultado: 48 },
+    { id_visita_medica: 173, id_resultado: 5 },
+    { id_visita_medica: 173, id_resultado: 52 },
+    { id_visita_medica: 173, id_resultado: 31 },
+    { id_visita_medica: 173, id_resultado: 11 },
+    { id_visita_medica: 173, id_resultado: 38 },
+    { id_visita_medica: 173, id_resultado: 49 },
+    { id_visita_medica: 174, id_resultado: 16 },
+    { id_visita_medica: 174, id_resultado: 53 },
+    { id_visita_medica: 174, id_resultado: 19 },
+    { id_visita_medica: 174, id_resultado: 29 },
+    { id_visita_medica: 174, id_resultado: 37 },
+    { id_visita_medica: 174, id_resultado: 12 },
+    { id_visita_medica: 175, id_resultado: 41 },
+    { id_visita_medica: 175, id_resultado: 35 },
+    { id_visita_medica: 175, id_resultado: 20 },
+    { id_visita_medica: 175, id_resultado: 9 },
+    { id_visita_medica: 175, id_resultado: 4 },
+    { id_visita_medica: 175, id_resultado: 10 },
+    { id_visita_medica: 175, id_resultado: 27 },
+    { id_visita_medica: 176, id_resultado: 59 },
+    { id_visita_medica: 176, id_resultado: 23 },
+    { id_visita_medica: 176, id_resultado: 55 },
+    { id_visita_medica: 177, id_resultado: 38 },
+    { id_visita_medica: 177, id_resultado: 58 },
+    { id_visita_medica: 177, id_resultado: 11 },
+    { id_visita_medica: 177, id_resultado: 49 },
+    { id_visita_medica: 178, id_resultado: 34 },
+    { id_visita_medica: 178, id_resultado: 43 },
+    { id_visita_medica: 178, id_resultado: 14 },
+    { id_visita_medica: 178, id_resultado: 33 },
+    { id_visita_medica: 178, id_resultado: 46 },
+    { id_visita_medica: 178, id_resultado: 17 },
+    { id_visita_medica: 178, id_resultado: 25 },
+    { id_visita_medica: 178, id_resultado: 3 },
+    { id_visita_medica: 178, id_resultado: 22 },
+    { id_visita_medica: 179, id_resultado: 29 },
+    { id_visita_medica: 179, id_resultado: 53 },
+    { id_visita_medica: 179, id_resultado: 19 },
+    { id_visita_medica: 179, id_resultado: 12 },
+    { id_visita_medica: 179, id_resultado: 16 },
+    { id_visita_medica: 179, id_resultado: 37 },
+    { id_visita_medica: 180, id_resultado: 32 },
+    { id_visita_medica: 180, id_resultado: 47 },
+    { id_visita_medica: 180, id_resultado: 40 },
+    { id_visita_medica: 180, id_resultado: 54 },
+    { id_visita_medica: 180, id_resultado: 42 },
+    { id_visita_medica: 180, id_resultado: 26 },
+    { id_visita_medica: 180, id_resultado: 18 },
+    { id_visita_medica: 180, id_resultado: 45 },
+    { id_visita_medica: 180, id_resultado: 24 },
+    { id_visita_medica: 181, id_resultado: 47 },
+    { id_visita_medica: 181, id_resultado: 42 },
+    { id_visita_medica: 181, id_resultado: 54 },
+    { id_visita_medica: 181, id_resultado: 44 },
+    { id_visita_medica: 181, id_resultado: 15 },
+    { id_visita_medica: 181, id_resultado: 32 },
+    { id_visita_medica: 181, id_resultado: 8 },
+    { id_visita_medica: 181, id_resultado: 6 },
+    { id_visita_medica: 181, id_resultado: 40 },
+    { id_visita_medica: 181, id_resultado: 57 },
+    { id_visita_medica: 181, id_resultado: 18 },
+    { id_visita_medica: 181, id_resultado: 26 },
+    { id_visita_medica: 182, id_resultado: 53 },
+    { id_visita_medica: 182, id_resultado: 37 },
+    { id_visita_medica: 182, id_resultado: 12 },
+    { id_visita_medica: 182, id_resultado: 19 },
+    { id_visita_medica: 182, id_resultado: 29 },
+    { id_visita_medica: 182, id_resultado: 16 },
+    { id_visita_medica: 183, id_resultado: 51 },
+    { id_visita_medica: 183, id_resultado: 58 },
+    { id_visita_medica: 183, id_resultado: 38 },
+    { id_visita_medica: 183, id_resultado: 48 },
+    { id_visita_medica: 183, id_resultado: 11 },
+    { id_visita_medica: 183, id_resultado: 52 },
+    { id_visita_medica: 183, id_resultado: 5 },
+    { id_visita_medica: 183, id_resultado: 31 },
+    { id_visita_medica: 184, id_resultado: 38 },
+    { id_visita_medica: 184, id_resultado: 58 },
+    { id_visita_medica: 184, id_resultado: 31 },
+    { id_visita_medica: 185, id_resultado: 7 },
+    { id_visita_medica: 185, id_resultado: 60 },
+    { id_visita_medica: 185, id_resultado: 1 },
+    { id_visita_medica: 185, id_resultado: 61 },
+    { id_visita_medica: 185, id_resultado: 23 },
+    { id_visita_medica: 185, id_resultado: 50 },
+    { id_visita_medica: 185, id_resultado: 39 },
+    { id_visita_medica: 185, id_resultado: 56 },
+    { id_visita_medica: 185, id_resultado: 59 },
+    { id_visita_medica: 186, id_resultado: 37 },
+    { id_visita_medica: 186, id_resultado: 53 },
+    { id_visita_medica: 186, id_resultado: 19 },
+    { id_visita_medica: 186, id_resultado: 16 },
+    { id_visita_medica: 186, id_resultado: 29 },
+    { id_visita_medica: 186, id_resultado: 12 },
+    { id_visita_medica: 187, id_resultado: 16 },
+    { id_visita_medica: 187, id_resultado: 12 },
+    { id_visita_medica: 187, id_resultado: 53 },
+    { id_visita_medica: 187, id_resultado: 19 },
+    { id_visita_medica: 187, id_resultado: 37 },
+    { id_visita_medica: 187, id_resultado: 29 },
+    { id_visita_medica: 188, id_resultado: 47 },
+    { id_visita_medica: 188, id_resultado: 26 },
+    { id_visita_medica: 188, id_resultado: 8 },
+    { id_visita_medica: 188, id_resultado: 6 },
+    { id_visita_medica: 188, id_resultado: 18 },
+    { id_visita_medica: 188, id_resultado: 42 },
+    { id_visita_medica: 188, id_resultado: 44 },
+    { id_visita_medica: 188, id_resultado: 15 },
+    { id_visita_medica: 188, id_resultado: 57 },
+    { id_visita_medica: 188, id_resultado: 32 },
+    { id_visita_medica: 188, id_resultado: 40 },
+    { id_visita_medica: 188, id_resultado: 45 },
+    { id_visita_medica: 189, id_resultado: 42 },
+    { id_visita_medica: 189, id_resultado: 8 },
+    { id_visita_medica: 189, id_resultado: 32 },
+    { id_visita_medica: 189, id_resultado: 44 },
+    { id_visita_medica: 189, id_resultado: 15 },
+    { id_visita_medica: 189, id_resultado: 40 },
+    { id_visita_medica: 189, id_resultado: 47 },
+    { id_visita_medica: 189, id_resultado: 6 },
+    { id_visita_medica: 189, id_resultado: 54 },
+    { id_visita_medica: 189, id_resultado: 26 },
+    { id_visita_medica: 189, id_resultado: 24 },
+    { id_visita_medica: 189, id_resultado: 57 },
+    { id_visita_medica: 190, id_resultado: 23 },
+    { id_visita_medica: 190, id_resultado: 55 },
+    { id_visita_medica: 190, id_resultado: 56 },
+    { id_visita_medica: 191, id_resultado: 46 },
+    { id_visita_medica: 191, id_resultado: 34 },
+    { id_visita_medica: 191, id_resultado: 43 },
+    { id_visita_medica: 191, id_resultado: 25 },
+    { id_visita_medica: 191, id_resultado: 33 },
+    { id_visita_medica: 191, id_resultado: 3 },
+    { id_visita_medica: 191, id_resultado: 14 },
+    { id_visita_medica: 191, id_resultado: 22 },
+    { id_visita_medica: 192, id_resultado: 12 },
+    { id_visita_medica: 192, id_resultado: 29 },
+    { id_visita_medica: 192, id_resultado: 53 },
+    { id_visita_medica: 192, id_resultado: 37 },
+    { id_visita_medica: 192, id_resultado: 19 },
+    { id_visita_medica: 192, id_resultado: 16 },
+    { id_visita_medica: 193, id_resultado: 8 },
+    { id_visita_medica: 193, id_resultado: 54 },
+    { id_visita_medica: 193, id_resultado: 42 },
+    { id_visita_medica: 193, id_resultado: 44 },
+    { id_visita_medica: 193, id_resultado: 15 },
+    { id_visita_medica: 193, id_resultado: 32 }
+]);
+
+//inserciones tratamientos
+
+db.tratamientos.insertMany([
+    {
+        _id: 1,
+        nombre: "Terapia respiratoria avanzada",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Urología",
+        costo: NumberDecimal("7112705.77")
+    },
+    {
+        _id: 2,
+        nombre: "Control de diabetes tipo 2",
+        descripcion: "Se desarrollan sesiones terapéuticas con duración variable según necesidad.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("3689201.04")
+    },
+    {
+        _id: 3,
+        nombre: "Rehabilitación post-operatoria",
+        descripcion: "Se realizan controles semanales para valorar evolución.",
+        area_med: "Ortopedia",
+        costo: NumberDecimal("9685729.65")
+    },
+    {
+        _id: 4,
+        nombre: "Tratamiento hormonal ginecológico",
+        descripcion: "Plan terapéutico con enfoque personalizado y evaluación médica constante.",
+        area_med: "Nefrología",
+        costo: NumberDecimal("6809773.11")
+    },
+    {
+        _id: 5,
+        nombre: "Electrocardiograma con monitoreo",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Otros",
+        costo: NumberDecimal("3061313.00")
+    },
+    {
+        _id: 6,
+        nombre: "Aplicación de toxina botulínica",
+        descripcion: "Intervención médica programada que busca prevenir complicaciones a largo plazo.",
+        area_med: "Dermatología",
+        costo: NumberDecimal("2802093.00")
+    },
+    {
+        _id: 7,
+        nombre: "Manejo integral de hipertensión",
+        descripcion: "Plan de manejo ajustado a las condiciones crónicas del paciente.",
+        area_med: "Cardiología",
+        costo: NumberDecimal("8631063.73")
+    },
+    {
+        _id: 8,
+        nombre: "Terapia cognitivo conductual",
+        descripcion: "Requiere la participación activa del paciente en todo el proceso terapéutico.",
+        area_med: "Neurología",
+        costo: NumberDecimal("2568943.11")
+    },
+    {
+        _id: 9,
+        nombre: "Cirugía de cataratas",
+        descripcion: "Se requiere monitoreo constante de signos vitales y respuesta al tratamiento.",
+        area_med: "Neumología",
+        costo: NumberDecimal("5206818.55")
+    },
+    {
+        _id: 10,
+        nombre: "Terapia para asma crónica",
+        descripcion: "Incluye diagnóstico, tratamiento y seguimiento por parte del equipo interdisciplinario.",
+        area_med: "Medicina Interna",
+        costo: NumberDecimal("3017397.90")
+    },
+    {
+        _id: 11,
+        nombre: "Tratamiento de acné severo",
+        descripcion: "Tratamiento ambulatorio con revisiones periódicas para ajuste de medicamentos.",
+        area_med: "Otros",
+        costo: NumberDecimal("9385143.40")
+    },
+    {
+        _id: 12,
+        nombre: "Control de epilepsia",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("6433231.26")
+    },
+    {
+        _id: 13,
+        nombre: "Terapia física para escoliosis",
+        descripcion: "Procedimiento clínico destinado a reducir los síntomas y mejorar la calidad de vida del paciente.",
+        area_med: "Medicina Interna",
+        costo: NumberDecimal("9307167.90")
+    },
+    {
+        _id: 14,
+        nombre: "Manejo del dolor oncológico",
+        descripcion: "Aborda las necesidades físicas y emocionales del paciente.",
+        area_med: "Cardiología",
+        costo: NumberDecimal("6296143.26")
+    },
+    {
+        _id: 15,
+        nombre: "Seguimiento en embarazo de alto riesgo",
+        descripcion: "Tratamiento ambulatorio con revisiones periódicas para ajuste de medicamentos.",
+        area_med: "Medicina Interna",
+        costo: NumberDecimal("9675227.80")
+    },
+    {
+        _id: 16,
+        nombre: "Tratamiento para insuficiencia renal",
+        descripcion: "Supervisión directa por especialista y asistencia complementaria en consulta externa.",
+        area_med: "Endocrinología",
+        costo: NumberDecimal("2026827.12")
+    },
+    {
+        _id: 17,
+        nombre: "Plan nutricional pediátrico",
+        descripcion: "Tratamiento ambulatorio con revisiones periódicas para ajuste de medicamentos.",
+        area_med: "Ortopedia",
+        costo: NumberDecimal("834777.33")
+    },
+    {
+        _id: 18,
+        nombre: "Colocación de catéter urinario",
+        descripcion: "Se realizan controles semanales para valorar evolución.",
+        area_med: "Psiquiatría",
+        costo: NumberDecimal("5523029.51")
+    },
+    {
+        _id: 19,
+        nombre: "Desparasitación gastrointestinal",
+        descripcion: "Implementación de medidas farmacológicas y cambios en el estilo de vida.",
+        area_med: "Dermatología",
+        costo: NumberDecimal("3046979.57")
+    },
+    {
+        _id: 20,
+        nombre: "Evaluación neurológica avanzada",
+        descripcion: "Incluye diagnóstico, tratamiento y seguimiento por parte del equipo interdisciplinario.",
+        area_med: "Cardiología",
+        costo: NumberDecimal("4234362.35")
+    },
+    {
+        _id: 21,
+        nombre: "Tratamiento del pie diabético",
+        descripcion: "Terapia de duración media con intervención farmacológica y no farmacológica.",
+        area_med: "Pediatría",
+        costo: NumberDecimal("102295.34")
+    },
+    {
+        _id: 22,
+        nombre: "Control de tiroides",
+        descripcion: "Plan de manejo ajustado a las condiciones crónicas del paciente.",
+        area_med: "Urología",
+        costo: NumberDecimal("660915.99")
+    },
+    {
+        _id: 23,
+        nombre: "Tratamiento para trastorno bipolar",
+        descripcion: "Procedimiento clínico destinado a reducir los síntomas y mejorar la calidad de vida del paciente.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("7614225.03")
+    },
+    {
+        _id: 24,
+        nombre: "Rehabilitación motora post-ACV",
+        descripcion: "Se desarrollan sesiones terapéuticas con duración variable según necesidad.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("4542568.09")
+    },
+    {
+        _id: 25,
+        nombre: "Control de colesterol elevado",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Infectología",
+        costo: NumberDecimal("7677019.05")
+    },
+    {
+        _id: 26,
+        nombre: "Fototerapia para psoriasis",
+        descripcion: "Aborda las necesidades físicas y emocionales del paciente.",
+        area_med: "Obstetricia",
+        costo: NumberDecimal("2648518.96")
+    },
+    {
+        _id: 27,
+        nombre: "Tratamiento de glaucoma",
+        descripcion: "Se requiere monitoreo constante de signos vitales y respuesta al tratamiento.",
+        area_med: "Otorrinolaringología",
+        costo: NumberDecimal("8403004.00")
+    },
+    {
+        _id: 28,
+        nombre: "Terapia de lenguaje pediátrica",
+        descripcion: "Incluye instrucción educativa sobre autocuidado y adherencia al tratamiento.",
+        area_med: "Psiquiatría",
+        costo: NumberDecimal("9862386.62")
+    },
+    {
+        _id: 29,
+        nombre: "Control de asma infantil",
+        descripcion: "Procedimiento clínico destinado a reducir los síntomas y mejorar la calidad de vida del paciente.",
+        area_med: "Neumología",
+        costo: NumberDecimal("925012.28")
+    },
+    {
+        _id: 30,
+        nombre: "Implante de marcapasos",
+        descripcion: "Aplicación de técnica clínica bajo supervisión especializada.",
+        area_med: "Obstetricia",
+        costo: NumberDecimal("4971907.35")
+    },
+    {
+        _id: 31,
+        nombre: "Endoscopia digestiva alta",
+        descripcion: "Aplicación de técnica clínica bajo supervisión especializada.",
+        area_med: "Infectología",
+        costo: NumberDecimal("1553950.06")
+    },
+    {
+        _id: 32,
+        nombre: "Tratamiento para depresión mayor",
+        descripcion: "Manejo continuo en consulta externa con soporte familiar.",
+        area_med: "Infectología",
+        costo: NumberDecimal("1496940.11")
+    },
+    {
+        _id: 33,
+        nombre: "Cirugía laparoscópica",
+        descripcion: "Intervención médica programada que busca prevenir complicaciones a largo plazo.",
+        area_med: "Endocrinología",
+        costo: NumberDecimal("5041121.56")
+    },
+    {
+        _id: 34,
+        nombre: "Detección temprana de cáncer de mama",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Obstetricia",
+        costo: NumberDecimal("8859865.95")
+    },
+    {
+        _id: 35,
+        nombre: "Colocación de DIU hormonal",
+        descripcion: "Plan de manejo ajustado a las condiciones crónicas del paciente.",
+        area_med: "Pediatría",
+        costo: NumberDecimal("7598091.49")
+    },
+    {
+        _id: 36,
+        nombre: "Control de migraña crónica",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Endocrinología",
+        costo: NumberDecimal("8066911.77")
+    },
+    {
+        _id: 37,
+        nombre: "Plan de vacunación adulto mayor",
+        descripcion: "Manejo continuo en consulta externa con soporte familiar.",
+        area_med: "Ortopedia",
+        costo: NumberDecimal("6272546.82")
+    },
+    {
+        _id: 38,
+        nombre: "Tratamiento para reflujo gástrico",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Otorrinolaringología",
+        costo: NumberDecimal("7576464.25")
+    },
+    {
+        _id: 39,
+        nombre: "Intervención para lumbalgia aguda",
+        descripcion: "Aplicación de técnica clínica bajo supervisión especializada.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("8298216.22")
+    },
+    {
+        _id: 40,
+        nombre: "Terapia de estimulación cerebral",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Ginecología",
+        costo: NumberDecimal("8054815.39")
+    },
+    {
+        _id: 41,
+        nombre: "Control metabólico integral",
+        descripcion: "Requiere la participación activa del paciente en todo el proceso terapéutico.",
+        area_med: "Cardiología",
+        costo: NumberDecimal("7337285.18")
+    },
+    {
+        _id: 42,
+        nombre: "Tratamiento de varices",
+        descripcion: "Incluye diagnóstico, tratamiento y seguimiento por parte del equipo interdisciplinario.",
+        area_med: "Urología",
+        costo: NumberDecimal("5119701.08")
+    },
+    {
+        _id: 43,
+        nombre: "Monitoreo fetal electrónico",
+        descripcion: "Aborda las necesidades físicas y emocionales del paciente.",
+        area_med: "Traumatología",
+        costo: NumberDecimal("140790.84")
+    },
+    {
+        _id: 44,
+        nombre: "Colposcopia diagnóstica",
+        descripcion: "Plan terapéutico con enfoque personalizado y evaluación médica constante.",
+        area_med: "Nefrología",
+        costo: NumberDecimal("8345442.01")
+    },
+    {
+        _id: 45,
+        nombre: "Tratamiento para hiperplasia prostática",
+        descripcion: "Implementación de medidas farmacológicas y cambios en el estilo de vida.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("5885104.24")
+    },
+    {
+        _id: 46,
+        nombre: "Sesión de hemodiálisis",
+        descripcion: "Se realizan controles semanales para valorar evolución.",
+        area_med: "Infectología",
+        costo: NumberDecimal("6695562.62")
+    },
+    {
+        _id: 47,
+        nombre: "Aplicación de quimioterapia",
+        descripcion: "Terapia de duración media con intervención farmacológica y no farmacológica.",
+        area_med: "Urología",
+        costo: NumberDecimal("5667925.62")
+    },
+    {
+        _id: 48,
+        nombre: "Terapia de oxigenación hiperbárica",
+        descripcion: "Terapia de duración media con intervención farmacológica y no farmacológica.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("5172372.77")
+    },
+    {
+        _id: 49,
+        nombre: "Implante dental simple",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Nefrología",
+        costo: NumberDecimal("3737474.69")
+    },
+    {
+        _id: 50,
+        nombre: "Tratamiento de fimosis infantil",
+        descripcion: "Incluye diagnóstico, tratamiento y seguimiento por parte del equipo interdisciplinario.",
+        area_med: "Neurología",
+        costo: NumberDecimal("7008981.83")
+    },
+    {
+        _id: 51,
+        nombre: "Control de enfermedad celíaca",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Obstetricia",
+        costo: NumberDecimal("1452284.17")
+    },
+    {
+        _id: 52,
+        nombre: "Intervención en trastorno de ansiedad",
+        descripcion: "Requiere la participación activa del paciente en todo el proceso terapéutico.",
+        area_med: "Medicina Interna",
+        costo: NumberDecimal("1738688.96")
+    },
+    {
+        _id: 53,
+        nombre: "Terapia ocupacional geriátrica",
+        descripcion: "Se requiere monitoreo constante de signos vitales y respuesta al tratamiento.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("4189619.29")
+    },
+    {
+        _id: 54,
+        nombre: "Tratamiento con insulina intensivo",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("4508458.65")
+    },
+    {
+        _id: 55,
+        nombre: "Tratamiento para dermatitis atópica",
+        descripcion: "Se realizan controles semanales para valorar evolución.",
+        area_med: "Otorrinolaringología",
+        costo: NumberDecimal("9847459.59")
+    },
+    {
+        _id: 56,
+        nombre: "Control de obesidad infantil",
+        descripcion: "Requiere la participación activa del paciente en todo el proceso terapéutico.",
+        area_med: "Urología",
+        costo: NumberDecimal("827354.84")
+    },
+    {
+        _id: 57,
+        nombre: "Terapia de reemplazo hormonal",
+        descripcion: "Se desarrollan sesiones terapéuticas con duración variable según necesidad.",
+        area_med: "Urología",
+        costo: NumberDecimal("2457342.12")
+    },
+    {
+        _id: 58,
+        nombre: "Tratamiento para alergias estacionales",
+        descripcion: "Se emplean herramientas tecnológicas para el seguimiento del paciente.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("5822132.88")
+    },
+    {
+        _id: 59,
+        nombre: "Control de lupus eritematoso",
+        descripcion: "Se requiere monitoreo constante de signos vitales y respuesta al tratamiento.",
+        area_med: "Traumatología",
+        costo: NumberDecimal("2134733.54")
+    },
+    {
+        _id: 60,
+        nombre: "Evaluación y corrección postural",
+        descripcion: "Aplicación de técnica clínica bajo supervisión especializada.",
+        area_med: "Otros",
+        costo: NumberDecimal("4399919.90")
+    },
+    {
+        _id: 61,
+        nombre: "Terapia de reeducación vesical",
+        descripcion: "Supervisión directa por especialista y asistencia complementaria en consulta externa.",
+        area_med: "Otorrinolaringología",
+        costo: NumberDecimal("9950233.05")
+    },
+    {
+        _id: 62,
+        nombre: "Colocación de prótesis ortopédica",
+        descripcion: "Implementación de medidas farmacológicas y cambios en el estilo de vida.",
+        area_med: "Nefrología",
+        costo: NumberDecimal("1641324.38")
+    },
+    {
+        _id: 63,
+        nombre: "Tratamiento para hepatitis C",
+        descripcion: "Intervención médica programada que busca prevenir complicaciones a largo plazo.",
+        area_med: "Obstetricia",
+        costo: NumberDecimal("8776435.19")
+    },
+    {
+        _id: 64,
+        nombre: "Tratamiento especializado combinado #64",
+        descripcion: "Se requiere monitoreo constante de signos vitales y respuesta al tratamiento.",
+        area_med: "Ortopedia",
+        costo: NumberDecimal("8897873.18")
+    },
+    {
+        _id: 65,
+        nombre: "Tratamiento especializado combinado #65",
+        descripcion: "Manejo continuo en consulta externa con soporte familiar.",
+        area_med: "Neurología",
+        costo: NumberDecimal("1478430.13")
+    },
+    {
+        _id: 66,
+        nombre: "Tratamiento especializado combinado #66",
+        descripcion: "Requiere la participación activa del paciente en todo el proceso terapéutico.",
+        area_med: "Traumatología",
+        costo: NumberDecimal("8146869.43")
+    },
+    {
+        _id: 67,
+        nombre: "Tratamiento especializado combinado #67",
+        descripcion: "Se emplean herramientas tecnológicas para el seguimiento del paciente.",
+        area_med: "Ginecología",
+        costo: NumberDecimal("7077810.12")
+    },
+    {
+        _id: 68,
+        nombre: "Tratamiento especializado combinado #68",
+        descripcion: "Aplicación de técnica clínica bajo supervisión especializada.",
+        area_med: "Ginecología",
+        costo: NumberDecimal("6484882.88")
+    },
+    {
+        _id: 69,
+        nombre: "Tratamiento especializado combinado #69",
+        descripcion: "Terapia de duración media con intervención farmacológica y no farmacológica.",
+        area_med: "Oftalmología",
+        costo: NumberDecimal("3629009.99")
+    },
+    {
+        _id: 70,
+        nombre: "Tratamiento especializado combinado #70",
+        descripcion: "Se requiere monitoreo constante de signos vitales y respuesta al tratamiento.",
+        area_med: "Oftalmología",
+        costo: NumberDecimal("6394942.90")
+    },
+    {
+        _id: 71,
+        nombre: "Tratamiento especializado combinado #71",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Otros",
+        costo: NumberDecimal("3735486.43")
+    },
+    {
+        _id: 72,
+        nombre: "Tratamiento especializado combinado #72",
+        descripcion: "Procedimiento clínico destinado a reducir los síntomas y mejorar la calidad de vida del paciente.",
+        area_med: "Dermatología",
+        costo: NumberDecimal("6025437.48")
+    },
+    {
+        _id: 73,
+        nombre: "Tratamiento especializado combinado #73",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Urología",
+        costo: NumberDecimal("7610595.99")
+    },
+    {
+        _id: 74,
+        nombre: "Tratamiento especializado combinado #74",
+        descripcion: "Manejo continuo en consulta externa con soporte familiar.",
+        area_med: "Otorrinolaringología",
+        costo: NumberDecimal("9124408.24")
+    },
+    {
+        _id: 75,
+        nombre: "Tratamiento especializado combinado #75",
+        descripcion: "Procedimiento indicado tras evaluación clínica minuciosa.",
+        area_med: "Obstetricia",
+        costo: NumberDecimal("9740327.22")
+    },
+    {
+        _id: 76,
+        nombre: "Tratamiento especializado combinado #76",
+        descripcion: "Tratamiento ambulatorio con revisiones periódicas para ajuste de medicamentos.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("1243551.72")
+    },
+    {
+        _id: 77,
+        nombre: "Tratamiento especializado combinado #77",
+        descripcion: "Intervención médica programada que busca prevenir complicaciones a largo plazo.",
+        area_med: "Oncología",
+        costo: NumberDecimal("4381013.00")
+    },
+    {
+        _id: 78,
+        nombre: "Tratamiento especializado combinado #78",
+        descripcion: "Supervisión directa por especialista y asistencia complementaria en consulta externa.",
+        area_med: "Nefrología",
+        costo: NumberDecimal("1032623.40")
+    },
+    {
+        _id: 79,
+        nombre: "Tratamiento especializado combinado #79",
+        descripcion: "Plan de manejo ajustado a las condiciones crónicas del paciente.",
+        area_med: "Nefrología",
+        costo: NumberDecimal("3648848.40")
+    },
+    {
+        _id: 80,
+        nombre: "Tratamiento especializado combinado #80",
+        descripcion: "Implementación de medidas farmacológicas y cambios en el estilo de vida.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("6646345.11")
+    },
+    {
+        _id: 81,
+        nombre: "Tratamiento especializado combinado #81",
+        descripcion: "Incluye diagnóstico, tratamiento y seguimiento por parte del equipo interdisciplinario.",
+        area_med: "Psiquiatría",
+        costo: NumberDecimal("8222032.71")
+    },
+    {
+        _id: 82,
+        nombre: "Tratamiento especializado combinado #82",
+        descripcion: "Requiere la participación activa del paciente en todo el proceso terapéutico.",
+        area_med: "Infectología",
+        costo: NumberDecimal("9411440.50")
+    },
+    {
+        _id: 83,
+        nombre: "Tratamiento especializado combinado #83",
+        descripcion: "Manejo continuo en consulta externa con soporte familiar.",
+        area_med: "Oftalmología",
+        costo: NumberDecimal("9663851.76")
+    },
+    {
+        _id: 84,
+        nombre: "Tratamiento especializado combinado #84",
+        descripcion: "Manejo continuo en consulta externa con soporte familiar.",
+        area_med: "Otros",
+        costo: NumberDecimal("881683.61")
+    },
+    {
+        _id: 85,
+        nombre: "Tratamiento especializado combinado #85",
+        descripcion: "Aplicación de técnica clínica bajo supervisión especializada.",
+        area_med: "Cardiología",
+        costo: NumberDecimal("5079940.16")
+    },
+    {
+        _id: 86,
+        nombre: "Tratamiento especializado combinado #86",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("779639.82")
+    },
+    {
+        _id: 87,
+        nombre: "Tratamiento especializado combinado #87",
+        descripcion: "Se desarrollan sesiones terapéuticas con duración variable según necesidad.",
+        area_med: "Psiquiatría",
+        costo: NumberDecimal("6442380.61")
+    },
+    {
+        _id: 88,
+        nombre: "Tratamiento especializado combinado #88",
+        descripcion: "Incluye instrucción educativa sobre autocuidado y adherencia al tratamiento.",
+        area_med: "Neumología",
+        costo: NumberDecimal("8530385.69")
+    },
+    {
+        _id: 89,
+        nombre: "Tratamiento especializado combinado #89",
+        descripcion: "Procedimiento clínico destinado a reducir los síntomas y mejorar la calidad de vida del paciente.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("5308031.58")
+    },
+    {
+        _id: 90,
+        nombre: "Tratamiento especializado combinado #90",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Neurología",
+        costo: NumberDecimal("4876102.90")
+    },
+    {
+        _id: 91,
+        nombre: "Tratamiento especializado combinado #91",
+        descripcion: "Procedimiento clínico destinado a reducir los síntomas y mejorar la calidad de vida del paciente.",
+        area_med: "Infectología",
+        costo: NumberDecimal("4302153.29")
+    },
+    {
+        _id: 92,
+        nombre: "Tratamiento especializado combinado #92",
+        descripcion: "Se requiere monitoreo constante de signos vitales y respuesta al tratamiento.",
+        area_med: "Pediatría",
+        costo: NumberDecimal("3107310.11")
+    },
+    {
+        _id: 93,
+        nombre: "Tratamiento especializado combinado #93",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Medicina Interna",
+        costo: NumberDecimal("1686035.55")
+    },
+    {
+        _id: 94,
+        nombre: "Tratamiento especializado combinado #94",
+        descripcion: "Tratamiento intensivo con soporte nutricional y medicación específica.",
+        area_med: "Neumología",
+        costo: NumberDecimal("8269214.25")
+    },
+    {
+        _id: 95,
+        nombre: "Tratamiento especializado combinado #95",
+        descripcion: "Incluye diagnóstico, tratamiento y seguimiento por parte del equipo interdisciplinario.",
+        area_med: "Medicina Interna",
+        costo: NumberDecimal("3015085.59")
+    },
+    {
+        _id: 96,
+        nombre: "Tratamiento especializado combinado #96",
+        descripcion: "Se desarrollan sesiones terapéuticas con duración variable según necesidad.",
+        area_med: "Gastroenterología",
+        costo: NumberDecimal("8839846.08")
+    },
+    {
+        _id: 97,
+        nombre: "Tratamiento especializado combinado #97",
+        descripcion: "Se desarrollan sesiones terapéuticas con duración variable según necesidad.",
+        area_med: "Medicina General",
+        costo: NumberDecimal("2396126.83")
+    },
+    {
+        _id: 98,
+        nombre: "Tratamiento especializado combinado #98",
+        descripcion: "Evaluación clínica previa y plan de tratamiento individualizado.",
+        area_med: "Psiquiatría",
+        costo: NumberDecimal("5346822.69")
+    },
+    {
+        _id: 99,
+        nombre: "Tratamiento especializado combinado #99",
+        descripcion: "Plan terapéutico con enfoque personalizado y evaluación médica constante.",
+        area_med: "Reumatología",
+        costo: NumberDecimal("6002008.11")
+    },
+    {
+        _id: 100,
+        nombre: "Tratamiento especializado combinado #100",
+        descripcion: "Plan terapéutico con enfoque personalizado y evaluación médica constante.",
+        area_med: "Infectología",
+        costo: NumberDecimal("3202479.07")
+    },
+    {
+        _id: 101,
+        nombre: "Tratamiento especializado combinado #101",
+        descripcion: "Plan de manejo ajustado a las condiciones crónicas del paciente.",
+        area_med: "Urología",
+        costo: NumberDecimal("1050513.72")
+    },
+    {
+        _id: 102,
+        nombre: "Tratamiento especializado combinado #102",
+        descripcion: "Supervisión directa por especialista y asistencia complementaria en consulta externa.",
+        area_med: "Traumatología",
+        costo: NumberDecimal("8866080.00")
+    },
+    {
+        _id: 103,
+        nombre: "Tratamiento especializado combinado #103",
+        descripcion: "Se realizan controles semanales para valorar evolución.",
+        area_med: "Otorrinolaringología",
+        costo: NumberDecimal("8939380.38")
+    },
+    {
+        _id: 104,
+        nombre: "Tratamiento especializado combinado #104",
+        descripcion: "Implementación de medidas farmacológicas y cambios en el estilo de vida.",
+        area_med: "Gastroenterología",
+        costo: NumberDecimal("9339062.38")
+    },
+    {
+        _id: 105,
+        nombre: "Tratamiento especializado combinado #105",
+        descripcion: "Se desarrollan sesiones terapéuticas con duración variable según necesidad.",
+        area_med: "Oftalmología",
+        costo: NumberDecimal("6111590.05")
+    }
+]);
+
+//inserciones visitas_medicas_tratamientos
+
+db.visitas_medicas_tratamientos.insertMany([
+    { id_visita_medica: 1, id_tratamiento: 25 },
+    { id_visita_medica: 1, id_tratamiento: 80 },
+    { id_visita_medica: 1, id_tratamiento: 52 },
+    { id_visita_medica: 1, id_tratamiento: 85 },
+    { id_visita_medica: 1, id_tratamiento: 96 },
+    { id_visita_medica: 1, id_tratamiento: 105 },
+    { id_visita_medica: 2, id_tratamiento: 7 },
+    { id_visita_medica: 2, id_tratamiento: 105 },
+    { id_visita_medica: 2, id_tratamiento: 82 },
+    { id_visita_medica: 3, id_tratamiento: 50 },
+    { id_visita_medica: 3, id_tratamiento: 35 },
+    { id_visita_medica: 3, id_tratamiento: 95 },
+    { id_visita_medica: 3, id_tratamiento: 92 },
+    { id_visita_medica: 4, id_tratamiento: 93 },
+    { id_visita_medica: 4, id_tratamiento: 22 },
+    { id_visita_medica: 4, id_tratamiento: 8 },
+    { id_visita_medica: 5, id_tratamiento: 42 },
+    { id_visita_medica: 5, id_tratamiento: 31 },
+    { id_visita_medica: 5, id_tratamiento: 17 },
+    { id_visita_medica: 5, id_tratamiento: 72 },
+    { id_visita_medica: 6, id_tratamiento: 36 },
+    { id_visita_medica: 6, id_tratamiento: 55 },
+    { id_visita_medica: 7, id_tratamiento: 48 },
+    { id_visita_medica: 7, id_tratamiento: 10 },
+    { id_visita_medica: 7, id_tratamiento: 81 },
+    { id_visita_medica: 8, id_tratamiento: 73 },
+    { id_visita_medica: 9, id_tratamiento: 11 },
+    { id_visita_medica: 9, id_tratamiento: 94 },
+    { id_visita_medica: 9, id_tratamiento: 12 },
+    { id_visita_medica: 9, id_tratamiento: 24 },
+    { id_visita_medica: 9, id_tratamiento: 2 },
+    { id_visita_medica: 10, id_tratamiento: 23 },
+    { id_visita_medica: 10, id_tratamiento: 98 },
+    { id_visita_medica: 10, id_tratamiento: 62 },
+    { id_visita_medica: 10, id_tratamiento: 10 },
+    { id_visita_medica: 10, id_tratamiento: 73 },
+    { id_visita_medica: 11, id_tratamiento: 50 },
+    { id_visita_medica: 11, id_tratamiento: 6 },
+    { id_visita_medica: 12, id_tratamiento: 91 },
+    { id_visita_medica: 12, id_tratamiento: 75 },
+    { id_visita_medica: 12, id_tratamiento: 103 },
+    { id_visita_medica: 13, id_tratamiento: 46 },
+    { id_visita_medica: 13, id_tratamiento: 58 },
+    { id_visita_medica: 13, id_tratamiento: 26 },
+    { id_visita_medica: 13, id_tratamiento: 29 },
+    { id_visita_medica: 13, id_tratamiento: 103 },
+    { id_visita_medica: 14, id_tratamiento: 50 },
+    { id_visita_medica: 14, id_tratamiento: 70 },
+    { id_visita_medica: 14, id_tratamiento: 72 },
+    { id_visita_medica: 14, id_tratamiento: 44 },
+    { id_visita_medica: 15, id_tratamiento: 103 },
+    { id_visita_medica: 15, id_tratamiento: 46 },
+    { id_visita_medica: 15, id_tratamiento: 102 },
+    { id_visita_medica: 15, id_tratamiento: 2 },
+    { id_visita_medica: 15, id_tratamiento: 25 },
+    { id_visita_medica: 16, id_tratamiento: 43 },
+    { id_visita_medica: 16, id_tratamiento: 20 },
+    { id_visita_medica: 16, id_tratamiento: 2 },
+    { id_visita_medica: 16, id_tratamiento: 45 },
+    { id_visita_medica: 17, id_tratamiento: 1 },
+    { id_visita_medica: 17, id_tratamiento: 44 },
+    { id_visita_medica: 17, id_tratamiento: 28 },
+    { id_visita_medica: 17, id_tratamiento: 72 },
+    { id_visita_medica: 18, id_tratamiento: 69 },
+    { id_visita_medica: 18, id_tratamiento: 97 },
+    { id_visita_medica: 18, id_tratamiento: 99 },
+    { id_visita_medica: 18, id_tratamiento: 27 },
+    { id_visita_medica: 18, id_tratamiento: 22 },
+    { id_visita_medica: 19, id_tratamiento: 9 },
+    { id_visita_medica: 19, id_tratamiento: 35 },
+    { id_visita_medica: 19, id_tratamiento: 58 },
+    { id_visita_medica: 19, id_tratamiento: 96 },
+    { id_visita_medica: 19, id_tratamiento: 105 },
+    { id_visita_medica: 20, id_tratamiento: 83 },
+    { id_visita_medica: 20, id_tratamiento: 76 },
+    { id_visita_medica: 20, id_tratamiento: 104 },
+    { id_visita_medica: 20, id_tratamiento: 9 },
+    { id_visita_medica: 20, id_tratamiento: 41 },
+    { id_visita_medica: 21, id_tratamiento: 40 },
+    { id_visita_medica: 21, id_tratamiento: 17 },
+    { id_visita_medica: 21, id_tratamiento: 22 },
+    { id_visita_medica: 21, id_tratamiento: 48 },
+    { id_visita_medica: 21, id_tratamiento: 10 },
+    { id_visita_medica: 21, id_tratamiento: 63 },
+    { id_visita_medica: 22, id_tratamiento: 14 },
+    { id_visita_medica: 23, id_tratamiento: 53 },
+    { id_visita_medica: 24, id_tratamiento: 98 },
+    { id_visita_medica: 24, id_tratamiento: 6 },
+    { id_visita_medica: 25, id_tratamiento: 23 },
+    { id_visita_medica: 25, id_tratamiento: 12 },
+    { id_visita_medica: 25, id_tratamiento: 91 },
+    { id_visita_medica: 25, id_tratamiento: 62 },
+    { id_visita_medica: 26, id_tratamiento: 25 },
+    { id_visita_medica: 26, id_tratamiento: 100 },
+    { id_visita_medica: 26, id_tratamiento: 4 },
+    { id_visita_medica: 26, id_tratamiento: 91 },
+    { id_visita_medica: 26, id_tratamiento: 96 },
+    { id_visita_medica: 27, id_tratamiento: 48 },
+    { id_visita_medica: 27, id_tratamiento: 95 },
+    { id_visita_medica: 27, id_tratamiento: 7 },
+    { id_visita_medica: 27, id_tratamiento: 66 },
+    { id_visita_medica: 27, id_tratamiento: 44 },
+    { id_visita_medica: 28, id_tratamiento: 14 },
+    { id_visita_medica: 28, id_tratamiento: 87 },
+    { id_visita_medica: 28, id_tratamiento: 62 },
+    { id_visita_medica: 28, id_tratamiento: 32 },
+    { id_visita_medica: 29, id_tratamiento: 1 },
+    { id_visita_medica: 29, id_tratamiento: 75 },
+    { id_visita_medica: 29, id_tratamiento: 19 },
+    { id_visita_medica: 29, id_tratamiento: 53 },
+    { id_visita_medica: 29, id_tratamiento: 71 },
+    { id_visita_medica: 29, id_tratamiento: 56 },
+    { id_visita_medica: 30, id_tratamiento: 39 },
+    { id_visita_medica: 30, id_tratamiento: 94 },
+    { id_visita_medica: 30, id_tratamiento: 17 },
+    { id_visita_medica: 30, id_tratamiento: 65 },
+    { id_visita_medica: 30, id_tratamiento: 21 },
+    { id_visita_medica: 30, id_tratamiento: 92 },
+    { id_visita_medica: 31, id_tratamiento: 101 },
+    { id_visita_medica: 32, id_tratamiento: 92 },
+    { id_visita_medica: 33, id_tratamiento: 72 },
+    { id_visita_medica: 33, id_tratamiento: 53 },
+    { id_visita_medica: 33, id_tratamiento: 17 },
+    { id_visita_medica: 33, id_tratamiento: 82 },
+    { id_visita_medica: 33, id_tratamiento: 24 },
+    { id_visita_medica: 33, id_tratamiento: 4 },
+    { id_visita_medica: 34, id_tratamiento: 52 },
+    { id_visita_medica: 34, id_tratamiento: 83 },
+    { id_visita_medica: 34, id_tratamiento: 89 },
+    { id_visita_medica: 34, id_tratamiento: 94 },
+    { id_visita_medica: 34, id_tratamiento: 103 },
+    { id_visita_medica: 35, id_tratamiento: 30 },
+    { id_visita_medica: 35, id_tratamiento: 17 },
+    { id_visita_medica: 35, id_tratamiento: 90 },
+    { id_visita_medica: 35, id_tratamiento: 23 },
+    { id_visita_medica: 35, id_tratamiento: 72 },
+    { id_visita_medica: 37, id_tratamiento: 51 },
+    { id_visita_medica: 37, id_tratamiento: 75 },
+    { id_visita_medica: 37, id_tratamiento: 44 },
+    { id_visita_medica: 37, id_tratamiento: 33 },
+    { id_visita_medica: 38, id_tratamiento: 39 },
+    { id_visita_medica: 38, id_tratamiento: 99 },
+    { id_visita_medica: 38, id_tratamiento: 41 },
+    { id_visita_medica: 38, id_tratamiento: 87 },
+    { id_visita_medica: 39, id_tratamiento: 89 },
+    { id_visita_medica: 39, id_tratamiento: 39 },
+    { id_visita_medica: 40, id_tratamiento: 74 },
+    { id_visita_medica: 40, id_tratamiento: 67 },
+    { id_visita_medica: 40, id_tratamiento: 77 },
+    { id_visita_medica: 41, id_tratamiento: 62 },
+    { id_visita_medica: 41, id_tratamiento: 91 },
+    { id_visita_medica: 41, id_tratamiento: 49 },
+    { id_visita_medica: 41, id_tratamiento: 46 },
+    { id_visita_medica: 41, id_tratamiento: 100 },
+    { id_visita_medica: 41, id_tratamiento: 32 },
+    { id_visita_medica: 42, id_tratamiento: 96 },
+    { id_visita_medica: 42, id_tratamiento: 52 },
+    { id_visita_medica: 42, id_tratamiento: 90 },
+    { id_visita_medica: 42, id_tratamiento: 63 },
+    { id_visita_medica: 43, id_tratamiento: 21 },
+    { id_visita_medica: 44, id_tratamiento: 91 },
+    { id_visita_medica: 44, id_tratamiento: 64 },
+    { id_visita_medica: 44, id_tratamiento: 58 },
+    { id_visita_medica: 44, id_tratamiento: 54 },
+    { id_visita_medica: 44, id_tratamiento: 103 },
+    { id_visita_medica: 44, id_tratamiento: 14 },
+    { id_visita_medica: 45, id_tratamiento: 32 },
+    { id_visita_medica: 45, id_tratamiento: 50 },
+    { id_visita_medica: 45, id_tratamiento: 18 },
+    { id_visita_medica: 45, id_tratamiento: 83 },
+    { id_visita_medica: 46, id_tratamiento: 65 },
+    { id_visita_medica: 46, id_tratamiento: 24 },
+    { id_visita_medica: 46, id_tratamiento: 42 },
+    { id_visita_medica: 46, id_tratamiento: 43 },
+    { id_visita_medica: 48, id_tratamiento: 65 },
+    { id_visita_medica: 48, id_tratamiento: 66 },
+    { id_visita_medica: 48, id_tratamiento: 94 },
+    { id_visita_medica: 48, id_tratamiento: 104 },
+    { id_visita_medica: 48, id_tratamiento: 76 },
+    { id_visita_medica: 49, id_tratamiento: 8 },
+    { id_visita_medica: 49, id_tratamiento: 58 },
+    { id_visita_medica: 49, id_tratamiento: 24 },
+    { id_visita_medica: 50, id_tratamiento: 48 },
+    { id_visita_medica: 50, id_tratamiento: 60 },
+    { id_visita_medica: 50, id_tratamiento: 33 },
+    { id_visita_medica: 51, id_tratamiento: 24 },
+    { id_visita_medica: 51, id_tratamiento: 43 },
+    { id_visita_medica: 51, id_tratamiento: 37 },
+    { id_visita_medica: 51, id_tratamiento: 98 },
+    { id_visita_medica: 51, id_tratamiento: 70 },
+    { id_visita_medica: 51, id_tratamiento: 90 },
+    { id_visita_medica: 53, id_tratamiento: 34 },
+    { id_visita_medica: 53, id_tratamiento: 89 },
+    { id_visita_medica: 53, id_tratamiento: 30 },
+    { id_visita_medica: 53, id_tratamiento: 93 },
+    { id_visita_medica: 53, id_tratamiento: 91 },
+    { id_visita_medica: 53, id_tratamiento: 37 },
+    { id_visita_medica: 54, id_tratamiento: 21 },
+    { id_visita_medica: 54, id_tratamiento: 35 },
+    { id_visita_medica: 54, id_tratamiento: 36 },
+    { id_visita_medica: 54, id_tratamiento: 94 },
+    { id_visita_medica: 54, id_tratamiento: 60 },
+    { id_visita_medica: 55, id_tratamiento: 16 },
+    { id_visita_medica: 55, id_tratamiento: 35 },
+    { id_visita_medica: 55, id_tratamiento: 5 },
+    { id_visita_medica: 55, id_tratamiento: 25 },
+    { id_visita_medica: 55, id_tratamiento: 74 },
+    { id_visita_medica: 55, id_tratamiento: 33 },
+    { id_visita_medica: 56, id_tratamiento: 52 },
+    { id_visita_medica: 56, id_tratamiento: 66 },
+    { id_visita_medica: 56, id_tratamiento: 90 },
+    { id_visita_medica: 57, id_tratamiento: 103 },
+    { id_visita_medica: 58, id_tratamiento: 15 },
+    { id_visita_medica: 58, id_tratamiento: 44 },
+    { id_visita_medica: 58, id_tratamiento: 39 },
+    { id_visita_medica: 58, id_tratamiento: 87 },
+    { id_visita_medica: 58, id_tratamiento: 68 },
+    { id_visita_medica: 58, id_tratamiento: 13 },
+    { id_visita_medica: 59, id_tratamiento: 25 },
+    { id_visita_medica: 59, id_tratamiento: 42 },
+    { id_visita_medica: 59, id_tratamiento: 32 },
+    { id_visita_medica: 59, id_tratamiento: 24 },
+    { id_visita_medica: 59, id_tratamiento: 87 },
+    { id_visita_medica: 59, id_tratamiento: 20 },
+    { id_visita_medica: 60, id_tratamiento: 16 },
+    { id_visita_medica: 60, id_tratamiento: 60 },
+    { id_visita_medica: 61, id_tratamiento: 21 },
+    { id_visita_medica: 61, id_tratamiento: 34 },
+    { id_visita_medica: 61, id_tratamiento: 82 },
+    { id_visita_medica: 62, id_tratamiento: 77 },
+    { id_visita_medica: 63, id_tratamiento: 41 },
+    { id_visita_medica: 63, id_tratamiento: 5 },
+    { id_visita_medica: 64, id_tratamiento: 39 },
+    { id_visita_medica: 65, id_tratamiento: 101 },
+    { id_visita_medica: 65, id_tratamiento: 50 },
+    { id_visita_medica: 65, id_tratamiento: 40 },
+    { id_visita_medica: 65, id_tratamiento: 88 },
+    { id_visita_medica: 66, id_tratamiento: 68 },
+    { id_visita_medica: 66, id_tratamiento: 67 },
+    { id_visita_medica: 66, id_tratamiento: 92 },
+    { id_visita_medica: 67, id_tratamiento: 14 },
+    { id_visita_medica: 67, id_tratamiento: 103 },
+    { id_visita_medica: 67, id_tratamiento: 19 },
+    { id_visita_medica: 67, id_tratamiento: 63 },
+    { id_visita_medica: 67, id_tratamiento: 48 },
+    { id_visita_medica: 67, id_tratamiento: 59 },
+    { id_visita_medica: 68, id_tratamiento: 10 },
+    { id_visita_medica: 68, id_tratamiento: 73 },
+    { id_visita_medica: 68, id_tratamiento: 53 },
+    { id_visita_medica: 68, id_tratamiento: 59 },
+    { id_visita_medica: 68, id_tratamiento: 68 },
+    { id_visita_medica: 69, id_tratamiento: 18 },
+    { id_visita_medica: 70, id_tratamiento: 46 },
+    { id_visita_medica: 70, id_tratamiento: 100 },
+    { id_visita_medica: 70, id_tratamiento: 71 },
+    { id_visita_medica: 70, id_tratamiento: 80 },
+    { id_visita_medica: 71, id_tratamiento: 14 },
+    { id_visita_medica: 71, id_tratamiento: 68 },
+    { id_visita_medica: 71, id_tratamiento: 104 },
+    { id_visita_medica: 73, id_tratamiento: 96 },
+    { id_visita_medica: 73, id_tratamiento: 4 },
+    { id_visita_medica: 74, id_tratamiento: 38 },
+    { id_visita_medica: 74, id_tratamiento: 25 },
+    { id_visita_medica: 75, id_tratamiento: 32 },
+    { id_visita_medica: 75, id_tratamiento: 41 },
+    { id_visita_medica: 75, id_tratamiento: 81 },
+    { id_visita_medica: 75, id_tratamiento: 100 },
+    { id_visita_medica: 75, id_tratamiento: 87 },
+    { id_visita_medica: 75, id_tratamiento: 34 },
+    { id_visita_medica: 76, id_tratamiento: 38 },
+    { id_visita_medica: 76, id_tratamiento: 89 },
+    { id_visita_medica: 76, id_tratamiento: 17 },
+    { id_visita_medica: 76, id_tratamiento: 16 },
+    { id_visita_medica: 77, id_tratamiento: 34 },
+    { id_visita_medica: 77, id_tratamiento: 40 },
+    { id_visita_medica: 77, id_tratamiento: 28 },
+    { id_visita_medica: 77, id_tratamiento: 26 },
+    { id_visita_medica: 77, id_tratamiento: 41 },
+    { id_visita_medica: 78, id_tratamiento: 98 },
+    { id_visita_medica: 78, id_tratamiento: 89 },
+    { id_visita_medica: 78, id_tratamiento: 73 },
+    { id_visita_medica: 78, id_tratamiento: 1 },
+    { id_visita_medica: 78, id_tratamiento: 70 },
+    { id_visita_medica: 78, id_tratamiento: 81 },
+    { id_visita_medica: 79, id_tratamiento: 70 },
+    { id_visita_medica: 79, id_tratamiento: 3 },
+    { id_visita_medica: 79, id_tratamiento: 68 },
+    { id_visita_medica: 79, id_tratamiento: 80 },
+    { id_visita_medica: 80, id_tratamiento: 105 },
+    { id_visita_medica: 80, id_tratamiento: 22 },
+    { id_visita_medica: 80, id_tratamiento: 9 },
+    { id_visita_medica: 80, id_tratamiento: 32 },
+    { id_visita_medica: 80, id_tratamiento: 18 },
+    { id_visita_medica: 81, id_tratamiento: 21 },
+    { id_visita_medica: 81, id_tratamiento: 61 },
+    { id_visita_medica: 82, id_tratamiento: 96 },
+    { id_visita_medica: 82, id_tratamiento: 13 },
+    { id_visita_medica: 83, id_tratamiento: 85 },
+    { id_visita_medica: 83, id_tratamiento: 60 },
+    { id_visita_medica: 83, id_tratamiento: 105 },
+    { id_visita_medica: 83, id_tratamiento: 89 },
+    { id_visita_medica: 83, id_tratamiento: 2 },
+    { id_visita_medica: 83, id_tratamiento: 24 },
+    { id_visita_medica: 84, id_tratamiento: 21 },
+    { id_visita_medica: 84, id_tratamiento: 48 },
+    { id_visita_medica: 85, id_tratamiento: 26 },
+    { id_visita_medica: 85, id_tratamiento: 39 },
+    { id_visita_medica: 85, id_tratamiento: 93 },
+    { id_visita_medica: 86, id_tratamiento: 8 },
+    { id_visita_medica: 86, id_tratamiento: 17 },
+    { id_visita_medica: 86, id_tratamiento: 93 },
+    { id_visita_medica: 86, id_tratamiento: 19 },
+    { id_visita_medica: 86, id_tratamiento: 92 },
+    { id_visita_medica: 86, id_tratamiento: 78 },
+    { id_visita_medica: 87, id_tratamiento: 76 },
+    { id_visita_medica: 87, id_tratamiento: 82 },
+    { id_visita_medica: 87, id_tratamiento: 80 },
+    { id_visita_medica: 87, id_tratamiento: 47 },
+    { id_visita_medica: 87, id_tratamiento: 41 },
+    { id_visita_medica: 89, id_tratamiento: 58 },
+    { id_visita_medica: 89, id_tratamiento: 20 },
+    { id_visita_medica: 89, id_tratamiento: 79 },
+    { id_visita_medica: 89, id_tratamiento: 54 },
+    { id_visita_medica: 89, id_tratamiento: 12 },
+    { id_visita_medica: 90, id_tratamiento: 11 },
+    { id_visita_medica: 90, id_tratamiento: 23 },
+    { id_visita_medica: 90, id_tratamiento: 35 },
+    { id_visita_medica: 90, id_tratamiento: 87 },
+    { id_visita_medica: 90, id_tratamiento: 76 },
+    { id_visita_medica: 91, id_tratamiento: 99 },
+    { id_visita_medica: 92, id_tratamiento: 39 },
+    { id_visita_medica: 92, id_tratamiento: 18 },
+    { id_visita_medica: 93, id_tratamiento: 14 },
+    { id_visita_medica: 93, id_tratamiento: 64 },
+    { id_visita_medica: 94, id_tratamiento: 103 },
+    { id_visita_medica: 94, id_tratamiento: 65 },
+    { id_visita_medica: 95, id_tratamiento: 37 },
+    { id_visita_medica: 96, id_tratamiento: 63 },
+    { id_visita_medica: 98, id_tratamiento: 32 },
+    { id_visita_medica: 98, id_tratamiento: 92 },
+    { id_visita_medica: 98, id_tratamiento: 98 },
+    { id_visita_medica: 98, id_tratamiento: 94 },
+    { id_visita_medica: 98, id_tratamiento: 104 },
+    { id_visita_medica: 98, id_tratamiento: 11 },
+    { id_visita_medica: 99, id_tratamiento: 56 },
+    { id_visita_medica: 99, id_tratamiento: 5 },
+    { id_visita_medica: 99, id_tratamiento: 28 },
+    { id_visita_medica: 99, id_tratamiento: 36 },
+    { id_visita_medica: 100, id_tratamiento: 43 },
+    { id_visita_medica: 100, id_tratamiento: 27 },
+    { id_visita_medica: 100, id_tratamiento: 70 },
+    { id_visita_medica: 100, id_tratamiento: 21 },
+    { id_visita_medica: 101, id_tratamiento: 88 },
+    { id_visita_medica: 101, id_tratamiento: 70 },
+    { id_visita_medica: 101, id_tratamiento: 15 },
+    { id_visita_medica: 101, id_tratamiento: 31 },
+    { id_visita_medica: 101, id_tratamiento: 102 },
+    { id_visita_medica: 101, id_tratamiento: 44 },
+    { id_visita_medica: 102, id_tratamiento: 48 },
+    { id_visita_medica: 102, id_tratamiento: 66 },
+    { id_visita_medica: 103, id_tratamiento: 68 },
+    { id_visita_medica: 103, id_tratamiento: 91 },
+    { id_visita_medica: 103, id_tratamiento: 70 },
+    { id_visita_medica: 103, id_tratamiento: 16 },
+    { id_visita_medica: 103, id_tratamiento: 57 },
+    { id_visita_medica: 103, id_tratamiento: 37 },
+    { id_visita_medica: 104, id_tratamiento: 84 },
+    { id_visita_medica: 104, id_tratamiento: 5 },
+    { id_visita_medica: 105, id_tratamiento: 32 },
+    { id_visita_medica: 105, id_tratamiento: 56 },
+    { id_visita_medica: 105, id_tratamiento: 29 },
+    { id_visita_medica: 105, id_tratamiento: 85 },
+    { id_visita_medica: 105, id_tratamiento: 40 },
+    { id_visita_medica: 106, id_tratamiento: 47 },
+    { id_visita_medica: 106, id_tratamiento: 20 },
+    { id_visita_medica: 106, id_tratamiento: 68 },
+    { id_visita_medica: 106, id_tratamiento: 55 },
+    { id_visita_medica: 106, id_tratamiento: 8 },
+    { id_visita_medica: 106, id_tratamiento: 17 },
+    { id_visita_medica: 107, id_tratamiento: 34 },
+    { id_visita_medica: 107, id_tratamiento: 66 },
+    { id_visita_medica: 108, id_tratamiento: 99 },
+    { id_visita_medica: 108, id_tratamiento: 105 },
+    { id_visita_medica: 108, id_tratamiento: 88 },
+    { id_visita_medica: 108, id_tratamiento: 27 },
+    { id_visita_medica: 108, id_tratamiento: 31 },
+    { id_visita_medica: 108, id_tratamiento: 19 },
+    { id_visita_medica: 109, id_tratamiento: 99 },
+    { id_visita_medica: 109, id_tratamiento: 102 },
+    { id_visita_medica: 109, id_tratamiento: 35 },
+    { id_visita_medica: 109, id_tratamiento: 5 },
+    { id_visita_medica: 109, id_tratamiento: 73 },
+    { id_visita_medica: 109, id_tratamiento: 59 },
+    { id_visita_medica: 110, id_tratamiento: 82 },
+    { id_visita_medica: 111, id_tratamiento: 58 },
+    { id_visita_medica: 111, id_tratamiento: 37 },
+    { id_visita_medica: 112, id_tratamiento: 20 },
+    { id_visita_medica: 113, id_tratamiento: 11 },
+    { id_visita_medica: 114, id_tratamiento: 77 },
+    { id_visita_medica: 114, id_tratamiento: 37 },
+    { id_visita_medica: 114, id_tratamiento: 34 },
+    { id_visita_medica: 115, id_tratamiento: 95 },
+    { id_visita_medica: 115, id_tratamiento: 103 },
+    { id_visita_medica: 115, id_tratamiento: 27 },
+    { id_visita_medica: 115, id_tratamiento: 76 },
+    { id_visita_medica: 115, id_tratamiento: 59 },
+    { id_visita_medica: 116, id_tratamiento: 31 },
+    { id_visita_medica: 117, id_tratamiento: 3 },
+    { id_visita_medica: 117, id_tratamiento: 55 },
+    { id_visita_medica: 118, id_tratamiento: 5 },
+    { id_visita_medica: 118, id_tratamiento: 35 },
+    { id_visita_medica: 118, id_tratamiento: 57 },
+    { id_visita_medica: 119, id_tratamiento: 38 },
+    { id_visita_medica: 120, id_tratamiento: 73 },
+    { id_visita_medica: 120, id_tratamiento: 87 },
+    { id_visita_medica: 120, id_tratamiento: 80 },
+    { id_visita_medica: 120, id_tratamiento: 11 },
+    { id_visita_medica: 120, id_tratamiento: 72 },
+    { id_visita_medica: 120, id_tratamiento: 52 },
+    { id_visita_medica: 121, id_tratamiento: 68 },
+    { id_visita_medica: 122, id_tratamiento: 66 },
+    { id_visita_medica: 124, id_tratamiento: 25 },
+    { id_visita_medica: 124, id_tratamiento: 13 },
+    { id_visita_medica: 124, id_tratamiento: 20 },
+    { id_visita_medica: 124, id_tratamiento: 85 },
+    { id_visita_medica: 124, id_tratamiento: 89 },
+    { id_visita_medica: 124, id_tratamiento: 49 },
+    { id_visita_medica: 125, id_tratamiento: 13 },
+    { id_visita_medica: 126, id_tratamiento: 27 },
+    { id_visita_medica: 126, id_tratamiento: 9 },
+    { id_visita_medica: 126, id_tratamiento: 102 },
+    { id_visita_medica: 126, id_tratamiento: 88 },
+    { id_visita_medica: 126, id_tratamiento: 61 },
+    { id_visita_medica: 128, id_tratamiento: 23 },
+    { id_visita_medica: 128, id_tratamiento: 42 },
+    { id_visita_medica: 128, id_tratamiento: 5 },
+    { id_visita_medica: 128, id_tratamiento: 49 },
+    { id_visita_medica: 128, id_tratamiento: 34 },
+    { id_visita_medica: 129, id_tratamiento: 68 },
+    { id_visita_medica: 129, id_tratamiento: 49 },
+    { id_visita_medica: 130, id_tratamiento: 73 },
+    { id_visita_medica: 130, id_tratamiento: 21 },
+    { id_visita_medica: 130, id_tratamiento: 11 },
+    { id_visita_medica: 130, id_tratamiento: 69 },
+    { id_visita_medica: 130, id_tratamiento: 100 },
+    { id_visita_medica: 130, id_tratamiento: 72 },
+    { id_visita_medica: 131, id_tratamiento: 89 },
+    { id_visita_medica: 131, id_tratamiento: 30 },
+    { id_visita_medica: 131, id_tratamiento: 68 },
+    { id_visita_medica: 132, id_tratamiento: 38 },
+    { id_visita_medica: 132, id_tratamiento: 53 },
+    { id_visita_medica: 132, id_tratamiento: 95 },
+    { id_visita_medica: 132, id_tratamiento: 76 },
+    { id_visita_medica: 132, id_tratamiento: 45 },
+    { id_visita_medica: 132, id_tratamiento: 105 },
+    { id_visita_medica: 133, id_tratamiento: 90 },
+    { id_visita_medica: 133, id_tratamiento: 55 },
+    { id_visita_medica: 133, id_tratamiento: 36 },
+    { id_visita_medica: 133, id_tratamiento: 38 },
+    { id_visita_medica: 133, id_tratamiento: 87 },
+    { id_visita_medica: 134, id_tratamiento: 37 },
+    { id_visita_medica: 134, id_tratamiento: 41 },
+    { id_visita_medica: 134, id_tratamiento: 62 },
+    { id_visita_medica: 135, id_tratamiento: 26 },
+    { id_visita_medica: 136, id_tratamiento: 99 },
+    { id_visita_medica: 138, id_tratamiento: 31 },
+    { id_visita_medica: 139, id_tratamiento: 87 },
+    { id_visita_medica: 139, id_tratamiento: 105 },
+    { id_visita_medica: 140, id_tratamiento: 83 },
+    { id_visita_medica: 140, id_tratamiento: 96 },
+    { id_visita_medica: 140, id_tratamiento: 103 },
+    { id_visita_medica: 140, id_tratamiento: 84 },
+    { id_visita_medica: 141, id_tratamiento: 39 },
+    { id_visita_medica: 141, id_tratamiento: 94 },
+    { id_visita_medica: 141, id_tratamiento: 57 },
+    { id_visita_medica: 141, id_tratamiento: 2 },
+    { id_visita_medica: 141, id_tratamiento: 54 },
+    { id_visita_medica: 141, id_tratamiento: 84 },
+    { id_visita_medica: 142, id_tratamiento: 53 },
+    { id_visita_medica: 143, id_tratamiento: 67 },
+    { id_visita_medica: 143, id_tratamiento: 20 },
+    { id_visita_medica: 143, id_tratamiento: 44 },
+    { id_visita_medica: 143, id_tratamiento: 75 },
+    { id_visita_medica: 143, id_tratamiento: 3 },
+    { id_visita_medica: 144, id_tratamiento: 78 },
+    { id_visita_medica: 144, id_tratamiento: 82 },
+    { id_visita_medica: 144, id_tratamiento: 90 },
+    { id_visita_medica: 144, id_tratamiento: 77 },
+    { id_visita_medica: 144, id_tratamiento: 81 },
+    { id_visita_medica: 144, id_tratamiento: 64 },
+    { id_visita_medica: 145, id_tratamiento: 3 },
+    { id_visita_medica: 145, id_tratamiento: 39 },
+    { id_visita_medica: 145, id_tratamiento: 18 },
+    { id_visita_medica: 145, id_tratamiento: 69 },
+    { id_visita_medica: 145, id_tratamiento: 5 },
+    { id_visita_medica: 146, id_tratamiento: 94 },
+    { id_visita_medica: 146, id_tratamiento: 102 },
+    { id_visita_medica: 146, id_tratamiento: 48 },
+    { id_visita_medica: 147, id_tratamiento: 9 },
+    { id_visita_medica: 147, id_tratamiento: 91 },
+    { id_visita_medica: 147, id_tratamiento: 47 },
+    { id_visita_medica: 147, id_tratamiento: 87 },
+    { id_visita_medica: 147, id_tratamiento: 29 },
+    { id_visita_medica: 147, id_tratamiento: 70 },
+    { id_visita_medica: 149, id_tratamiento: 29 },
+    { id_visita_medica: 149, id_tratamiento: 30 },
+    { id_visita_medica: 149, id_tratamiento: 60 },
+    { id_visita_medica: 149, id_tratamiento: 54 },
+    { id_visita_medica: 149, id_tratamiento: 62 },
+    { id_visita_medica: 150, id_tratamiento: 65 },
+    { id_visita_medica: 150, id_tratamiento: 67 },
+    { id_visita_medica: 151, id_tratamiento: 95 },
+    { id_visita_medica: 151, id_tratamiento: 78 },
+    { id_visita_medica: 151, id_tratamiento: 94 },
+    { id_visita_medica: 151, id_tratamiento: 91 },
+    { id_visita_medica: 155, id_tratamiento: 7 },
+    { id_visita_medica: 155, id_tratamiento: 28 },
+    { id_visita_medica: 155, id_tratamiento: 84 },
+    { id_visita_medica: 155, id_tratamiento: 49 },
+    { id_visita_medica: 155, id_tratamiento: 63 },
+    { id_visita_medica: 156, id_tratamiento: 57 },
+    { id_visita_medica: 156, id_tratamiento: 87 },
+    { id_visita_medica: 157, id_tratamiento: 42 },
+    { id_visita_medica: 157, id_tratamiento: 44 },
+    { id_visita_medica: 157, id_tratamiento: 104 },
+    { id_visita_medica: 157, id_tratamiento: 67 },
+    { id_visita_medica: 158, id_tratamiento: 42 },
+    { id_visita_medica: 158, id_tratamiento: 71 },
+    { id_visita_medica: 158, id_tratamiento: 91 },
+    { id_visita_medica: 158, id_tratamiento: 56 },
+    { id_visita_medica: 158, id_tratamiento: 55 },
+    { id_visita_medica: 159, id_tratamiento: 85 },
+    { id_visita_medica: 159, id_tratamiento: 39 },
+    { id_visita_medica: 159, id_tratamiento: 96 },
+    { id_visita_medica: 160, id_tratamiento: 81 },
+    { id_visita_medica: 160, id_tratamiento: 105 },
+    { id_visita_medica: 160, id_tratamiento: 90 },
+    { id_visita_medica: 160, id_tratamiento: 78 },
+    { id_visita_medica: 161, id_tratamiento: 49 },
+    { id_visita_medica: 162, id_tratamiento: 26 },
+    { id_visita_medica: 162, id_tratamiento: 7 },
+    { id_visita_medica: 162, id_tratamiento: 68 },
+    { id_visita_medica: 162, id_tratamiento: 50 },
+    { id_visita_medica: 162, id_tratamiento: 78 },
+    { id_visita_medica: 163, id_tratamiento: 90 },
+    { id_visita_medica: 164, id_tratamiento: 79 },
+    { id_visita_medica: 164, id_tratamiento: 6 },
+    { id_visita_medica: 166, id_tratamiento: 75 },
+    { id_visita_medica: 166, id_tratamiento: 99 },
+    { id_visita_medica: 166, id_tratamiento: 105 },
+    { id_visita_medica: 166, id_tratamiento: 65 },
+    { id_visita_medica: 166, id_tratamiento: 17 },
+    { id_visita_medica: 167, id_tratamiento: 26 },
+    { id_visita_medica: 167, id_tratamiento: 69 },
+    { id_visita_medica: 167, id_tratamiento: 32 },
+    { id_visita_medica: 167, id_tratamiento: 62 },
+    { id_visita_medica: 168, id_tratamiento: 18 },
+    { id_visita_medica: 168, id_tratamiento: 60 },
+    { id_visita_medica: 168, id_tratamiento: 78 },
+    { id_visita_medica: 170, id_tratamiento: 94 },
+    { id_visita_medica: 170, id_tratamiento: 21 },
+    { id_visita_medica: 170, id_tratamiento: 97 },
+    { id_visita_medica: 171, id_tratamiento: 45 },
+    { id_visita_medica: 171, id_tratamiento: 19 },
+    { id_visita_medica: 171, id_tratamiento: 94 },
+    { id_visita_medica: 171, id_tratamiento: 77 },
+    { id_visita_medica: 171, id_tratamiento: 100 },
+    { id_visita_medica: 171, id_tratamiento: 60 },
+    { id_visita_medica: 172, id_tratamiento: 39 },
+    { id_visita_medica: 173, id_tratamiento: 19 },
+    { id_visita_medica: 173, id_tratamiento: 5 },
+    { id_visita_medica: 173, id_tratamiento: 65 },
+    { id_visita_medica: 173, id_tratamiento: 58 },
+    { id_visita_medica: 173, id_tratamiento: 9 },
+    { id_visita_medica: 174, id_tratamiento: 67 },
+    { id_visita_medica: 175, id_tratamiento: 38 },
+    { id_visita_medica: 175, id_tratamiento: 76 },
+    { id_visita_medica: 176, id_tratamiento: 87 },
+    { id_visita_medica: 176, id_tratamiento: 82 },
+    { id_visita_medica: 176, id_tratamiento: 71 },
+    { id_visita_medica: 176, id_tratamiento: 70 },
+    { id_visita_medica: 176, id_tratamiento: 64 },
+    { id_visita_medica: 177, id_tratamiento: 31 },
+    { id_visita_medica: 177, id_tratamiento: 65 },
+    { id_visita_medica: 177, id_tratamiento: 53 },
+    { id_visita_medica: 177, id_tratamiento: 18 },
+    { id_visita_medica: 178, id_tratamiento: 37 },
+    { id_visita_medica: 178, id_tratamiento: 98 },
+    { id_visita_medica: 179, id_tratamiento: 54 },
+    { id_visita_medica: 179, id_tratamiento: 48 },
+    { id_visita_medica: 179, id_tratamiento: 15 },
+    { id_visita_medica: 179, id_tratamiento: 24 },
+    { id_visita_medica: 179, id_tratamiento: 61 },
+    { id_visita_medica: 180, id_tratamiento: 64 },
+    { id_visita_medica: 180, id_tratamiento: 60 },
+    { id_visita_medica: 180, id_tratamiento: 94 },
+    { id_visita_medica: 180, id_tratamiento: 22 },
+    { id_visita_medica: 181, id_tratamiento: 47 },
+    { id_visita_medica: 181, id_tratamiento: 56 },
+    { id_visita_medica: 181, id_tratamiento: 2 },
+    { id_visita_medica: 182, id_tratamiento: 48 },
+    { id_visita_medica: 182, id_tratamiento: 41 },
+    { id_visita_medica: 182, id_tratamiento: 89 },
+    { id_visita_medica: 182, id_tratamiento: 29 },
+    { id_visita_medica: 182, id_tratamiento: 69 },
+    { id_visita_medica: 183, id_tratamiento: 36 },
+    { id_visita_medica: 183, id_tratamiento: 25 },
+    { id_visita_medica: 183, id_tratamiento: 92 },
+    { id_visita_medica: 183, id_tratamiento: 61 },
+    { id_visita_medica: 183, id_tratamiento: 29 },
+    { id_visita_medica: 183, id_tratamiento: 82 },
+    { id_visita_medica: 184, id_tratamiento: 68 },
+    { id_visita_medica: 184, id_tratamiento: 7 },
+    { id_visita_medica: 185, id_tratamiento: 90 },
+    { id_visita_medica: 185, id_tratamiento: 77 },
+    { id_visita_medica: 188, id_tratamiento: 33 },
+    { id_visita_medica: 189, id_tratamiento: 104 },
+    { id_visita_medica: 189, id_tratamiento: 33 },
+    { id_visita_medica: 189, id_tratamiento: 25 },
+    { id_visita_medica: 189, id_tratamiento: 63 },
+    { id_visita_medica: 189, id_tratamiento: 71 },
+    { id_visita_medica: 190, id_tratamiento: 50 },
+    { id_visita_medica: 190, id_tratamiento: 56 },
+    { id_visita_medica: 190, id_tratamiento: 65 },
+    { id_visita_medica: 190, id_tratamiento: 46 },
+    { id_visita_medica: 190, id_tratamiento: 31 },
+    { id_visita_medica: 190, id_tratamiento: 78 },
+    { id_visita_medica: 192, id_tratamiento: 57 },
+    { id_visita_medica: 192, id_tratamiento: 24 },
+    { id_visita_medica: 192, id_tratamiento: 85 },
+    { id_visita_medica: 192, id_tratamiento: 13 },
+    { id_visita_medica: 192, id_tratamiento: 11 },
+    { id_visita_medica: 193, id_tratamiento: 93 },
+    { id_visita_medica: 193, id_tratamiento: 70 },
+    { id_visita_medica: 193, id_tratamiento: 28 },
+    { id_visita_medica: 193, id_tratamiento: 41 },
+    { id_visita_medica: 193, id_tratamiento: 40 },
+    { id_visita_medica: 193, id_tratamiento: 55 }
+]);
