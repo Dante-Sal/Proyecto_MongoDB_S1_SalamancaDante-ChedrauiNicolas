@@ -1248,10 +1248,36 @@ Una vez llegado a este punto, se empezaron a trasladar las 35 colecciones que co
 
 Para empezar a implementar la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos:
 
-1. Desde la terminal de *Linux*, escribir el comando `mongosh` para acceder a la **MongoShell** de manera local o alternativamente usar `mongosh '<uri>'` para conectarse a una URI específica.
+<br>
 
-2. Una vez dentro, se deberá ejecutar el comando `use sistema_hospitalario`, para crear de manera implícita la base de datos donde se almacenará toda la información, estructuras, esquemas, funciones e índices.
+1. Desde la terminal de *Linux*, escribir el comando:
+
+```
+mongosh
+```
+ 
+Para acceder a la **MongoShell** de manera local o alternativamente usar:
+ 
+```
+mongosh '<uri>'
+``` 
+ 
+Para conectarse a una URI específica.
+
+<br>
+
+2. Una vez dentro, se deberá ejecutar el comando:
+
+```
+use sistema_hospitalario
+```
+
+Para crear de manera implícita la base de datos donde se almacenará toda la información, estructuras, esquemas, funciones e índices.
+
+<br>
 
 3. Acceder al archivo `ddl.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
+
+<br>
 
 4. Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Lógico a su entorno o cluster.
