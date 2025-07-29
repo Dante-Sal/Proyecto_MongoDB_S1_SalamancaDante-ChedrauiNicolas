@@ -1235,3 +1235,7 @@ Ahora, bien, es lógico que la relación entre estas dos colecciones es importan
 <h4 align=center>Construcción del Modelo Físico</h4>
 
 Finalmente, tras completar la sección de normalización, se tomó el modelo lógico reestructurado por las tres formas normales y se llevó a cabo, a través de comandos por terminal **MongoShell**, la elaboración del modelo físico a partir del diagrama ya elaborado, especificando las colecciones, esquemas e índices únicos (datos que deben garantizar ser únicos de un documento a otro de su misma entidad).
+
+<h4 align=center>Descripción</h4>
+
+Una vez llegado a este punto, se empezaron a trasladar las 35 colecciones que componen el sistema desarrollado a comandos que **MongoDB** desde la **Shell**, pueda interpretar. Como ya se mencionó, se decidió usar el motor de bases de datos **MongoDB** y el aplicativo de administración de bases de datos **MongoDB Compass**.
