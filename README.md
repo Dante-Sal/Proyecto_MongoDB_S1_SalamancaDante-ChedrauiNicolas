@@ -568,6 +568,10 @@ La segunda forma normal solicita que no existan datos con atributos que no depen
 
 <h4 align=center>Descripción</h4>
 
+Teniendo en cuenta lo que la 2FN solicita, se pudo observar que el modelo ya existente tenía ciertas falencias en este ámbito, aunque pequeñas. Esto debido a que se pudieron identificar tres colecciones que poseían atributos fácilmente intercambiables con otros (lo que en esencia significa, que no son dependientes de la llave primaria de su respectiva colección).
+
+Estos tres atributos eran el tipo y estado de los seguros médicos, las direcciones de los pacientes y los fabricantes de los medicamentos. Si bien, naturalmente, estas propiedades tienen cierta correlación con sus colecciones, esta relación no es intrínseca, ya que pueden considerarse estas como entidades separadas, facilitando la flexibilidad del sistema.
+
 <h4 align=center>Gráfica</h4>
 
 ```mermaid
