@@ -769,3 +769,67 @@ db.createCollection("estados_seguros", {
 //índices colección estados_seguros
 
 db.estados_seguros.createIndex({ estado: 1 }, { unique: true });  
+
+//esquema colección medicos_especialidades
+
+db.createCollection("medicos_especialidades", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_medico", "id_especialidad"],
+            properties: {
+                id_medico: {
+                    bsonType: "int"
+                },
+                id_especialidad: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección medicos_especialidades
+
+db.medicos_especialidades.createIndex({ id_medico: 1, id_especialidad: 1 }, { unique: true });
+
+//esquema colección especialidades
+
+db.createCollection("especialidades", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    enum: [
+                        "Medicina Interna",
+                        "Pediatría",
+                        "Ginecología",
+                        "Cardiología",
+                        "Neurología",
+                        "Dermatología",
+                        "Ortopedia",
+                        "Cirugía General",
+                        "Anestesiología",
+                        "Psiquiatría",
+                        "Urología",
+                        "Oncología",
+                        "Endocrinología",
+                        "Nefrología",
+                        "Reumatología",
+                        "Gastroenterología",
+                        "Neumología",
+                        "Infectología",
+                        "Otros"
+                    ]
+                }
+            }
+        }
+    }
+});
+
+//índices colección especialidades
+
+db.especialidades.createIndex({ nombre: 1 }, { unique: true });
