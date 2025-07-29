@@ -1280,10 +1280,58 @@ Para crear de manera implícita la base de datos donde se almacenará toda la in
 
 <br>
 
-`4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Lógico a su entorno o cluster.
+`4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Físico a su entorno o cluster.
 
 <br>
 
 <h4 align=center>Inserciones de Datos</h4>
 
 En esta fase del proceso, una vez creado el esqueleto de la base de datos, se pudo iniciar el proceso de inserción de documentos a cada colección. Este proceso consiste en, esencialmente, agregar a cada colección información relacionada con esta, que coincida con las validaciones implementadas con `$jsonSchema`, así como con la unicidad garantizada por los índices simples y compuestos generados en cada una de las entidades.
+
+<h4 align=center>Descripción</h4>
+
+En esta sección del proyecto **Sistema Hospitalario**, se aseguró que las inserciones fueran pertinentes, respecto a la estructura generada previamente. Así mismo, se asignaron ids coherentes con el contexto y que faciliten la realización de búsquedas por filtrado de diferentes atributos a través de *agregaciones avanzadas* (`aggregate`).
+
+Teniendo en cuenta el contexto (base de datos de sistema hospitalario enfocado en Bucaramanga, Colombia y su zona metropolitana), se crearon datos que concordaran con dicho caso de estudio (números de teléfono, nombres, fabricantes de medicamentos, entre otros, acordes con el contexto).
+
+<h4 align=center>Código</h4>
+
+**[NOTA] :** El código que contiene los comandos que permiten la inserción de datos a las colecciones, se halla como archivo en este mismo repositorio, bajo el nombre de `dml.js`.
+
+<h4 align=center>Descripción Técnica</h4>
+
+Para implementar los datos correspondientes a cada colección en la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos:
+
+<br>
+
+`1.` Desde la terminal de *Linux*, escribir el comando:
+
+```
+mongosh
+```
+ 
+Para acceder a la **MongoShell** de manera local o alternativamente usar:
+ 
+```
+mongosh '<uri>'
+``` 
+ 
+Para conectarse a una URI específica. El comando a usar dependerá de donde se hallan almacenado los esquemas creados previamente.
+
+<br>
+
+`2.` Una vez dentro, se deberá ejecutar el comando:
+
+```
+use sistema_hospitalario
+```
+
+Para acceder a la base de datos donde se encuentra la estructura del Modelo Físico que se generó con anterioridad.
+
+<br>
+
+`3.` Acceder al archivo `dml.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
+
+<br>
+
+`4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `dml.js`, se habrá "importado" toda la información (documentos) de la BBDD a su entorno o cluster.
