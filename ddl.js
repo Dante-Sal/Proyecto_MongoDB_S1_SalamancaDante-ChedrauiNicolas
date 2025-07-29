@@ -506,3 +506,91 @@ db.createCollection("enfermeros", {
 
 db.enfermeros.createIndex({ tel: 1 }, { unique: true });
 db.enfermeros.createIndex({ correo_el: 1 }, { unique: true });
+
+//esquema colección barrios
+
+db.createCollection("barrios", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre", "municipio"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 3,
+                    maxLength: 50
+                },
+                municipio: {
+                    bsonType: "string",
+                    minLength: 5,
+                    maxLength: 30
+                }
+            }
+        }
+    }
+});
+
+//índices colección barrios
+
+db.barrios.createIndex({ nombre: 1 }, { unique: true });
+
+//esquema colección direcciones_pacientes
+
+db.createCollection("direcciones_pacientes", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["via_principal_tipo", "via_principal_numero", "via_principal_letra", "via_principal_bis", "via_generadora_numero", "via_generadora_letra", "via_generadora_bis", "placa", "id_barrio"],
+            properties: {
+                via_principal_tipo: {
+                    bsonType: "string",
+                    enum: [
+                        "Calle",
+                        "Carrera",
+                        "Avenida",
+                        "Transversal",
+                        "Diagonal",
+                        "Circular",
+                        "Autopista",
+                        "Bulevar",
+                        "Carretera",
+                        "Troncal"
+                    ]
+                },
+                via_principal_numero: {
+                    bsonType: "string",
+                    pattern: "^[0-9]{1,3}$"
+                },
+                via_principal_letra: {
+                    bsonType: ["string", "null"],
+                    pattern: "^[A-Z]{1,2}$"
+                },
+                via_principal_bis: {
+                    bsonType: "bool"
+                },
+                via_generadora_numero: {
+                    bsonType: "string",
+                    pattern: "^[0-9]{1,3}$"
+                },
+                via_generadora_letra: {
+                    bsonType: ["string", "null"],
+                    pattern: "^[A-Z]{1,2}$"
+                },
+                via_generadora_bis: {
+                    bsonType: "bool"
+                },
+                placa: {
+                    bsonType: "string",
+                    pattern: "^[0-9]{1,3}$"
+                },
+                id_barrio: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección direcciones_pacientes
+
+db.direcciones_pacientes.createIndex({ via_principal_tipo: 1, via_principal_numero: 1, via_principal_letra: 1, via_principal_bis: 1, via_generadora_numero: 1, via_generadora_letra: 1, via_generadora_bis: 1, placa: 1, id_barrio: 1 }, { unique: true });
