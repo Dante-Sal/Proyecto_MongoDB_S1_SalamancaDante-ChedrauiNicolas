@@ -1179,3 +1179,84 @@ db.createCollection("resultados", {
 //índices colección resultados
 
 db.resultados.createIndex({ descripcion: 1 }, { unique: true });
+
+//esquema colección visitas_medicas_tratamientos
+
+db.createCollection("visitas_medicas_tratamientos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_visita_medica", "id_tratamiento"],
+            properties: {
+                id_visita_medica: {
+                    bsonType: "int"
+                },
+                id_tratamiento: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección visitas_medicas_tratamientos
+
+db.visitas_medicas_tratamientos.createIndex({ id_visita_medica: 1, id_tratamiento: 1 }, { unique: true });
+
+//esquema colección tratamientos
+
+db.createCollection("tratamientos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre", "descripcion", "area_med", "costo"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 10,
+                    maxLength: 50
+                },
+                descripcion: {
+                    bsonType: "string",
+                    minLength: 30,
+                    maxLength: 150
+                },
+                area_med: {
+                    enum: [
+                        "Medicina General",
+                        "Pediatría",
+                        "Ginecología",
+                        "Obstetricia",
+                        "Cardiología",
+                        "Dermatología",
+                        "Neurología",
+                        "Ortopedia",
+                        "Oncología",
+                        "Psiquiatría",
+                        "Urología",
+                        "Gastroenterología",
+                        "Endocrinología",
+                        "Otorrinolaringología",
+                        "Oftalmología",
+                        "Nefrología",
+                        "Neumología",
+                        "Reumatología",
+                        "Infectología",
+                        "Medicina Interna",
+                        "Traumatología",
+                        "Otros"
+                    ]
+                },
+                costo: {
+                    bsonType: "decimal",
+                    minimum: 100000,
+                    maximum: 10000000
+                }
+            }
+        }
+    }
+});
+
+//índices colección tratamientos
+
+db.tratamientos.createIndex({ nombre: 1 }, { unique: true });
