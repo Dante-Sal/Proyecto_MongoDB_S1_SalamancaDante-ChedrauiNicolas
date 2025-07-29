@@ -21,3 +21,15 @@ db.dir_generales.find();
 //6. mostrar nombre y teléfono de todos los hospitales
 
 db.hospitales.find({}, { nombre: 1, tel: 1 });
+
+//7. encontrar hospitales que tengan la palabra "Hospital" en su nombre
+
+db.hospitales.find({ nombre: /Hospital/ });
+
+//8. encontrar áreas especializadas que empiecen por la palabra "Medicina"
+
+db.areas_especializadas.find({ nombre: /^Medicina/ });
+
+//9. encontrar personal de mantenimiento encargados de "Desinfección y bioseguridad"
+
+db.per_mantenimiento.find({ tipo_trabajo: "Desinfección y bioseguridad" });
