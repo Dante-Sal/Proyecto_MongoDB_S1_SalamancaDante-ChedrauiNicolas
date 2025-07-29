@@ -8246,3 +8246,220 @@ db.pacientes_seguros.insertMany([
     { id_paciente: 127, id_seguro: 1 },
     { id_paciente: 127, id_seguro: 17 }
 ]);
+
+//inserciones especialidades
+
+db.especialidades.insertMany([
+    {
+        _id: 1,
+        nombre: "Medicina Interna"
+    },
+    {
+        _id: 2,
+        nombre: "Pediatría"
+    },
+    {
+        _id: 3,
+        nombre: "Ginecología"
+    },
+    {
+        _id: 4,
+        nombre: "Cardiología"
+    },
+    {
+        _id: 5,
+        nombre: "Neurología"
+    },
+    {
+        _id: 6,
+        nombre: "Dermatología"
+    },
+    {
+        _id: 7,
+        nombre: "Ortopedia"
+    },
+    {
+        _id: 8,
+        nombre: "Cirugía General"
+    },
+    {
+        _id: 9,
+        nombre: "Anestesiología"
+    },
+    {
+        _id: 10,
+        nombre: "Psiquiatría"
+    },
+    {
+        _id: 11,
+        nombre: "Urología"
+    },
+    {
+        _id: 12,
+        nombre: "Oncología"
+    },
+    {
+        _id: 13,
+        nombre: "Endocrinología"
+    },
+    {
+        _id: 14,
+        nombre: "Nefrología"
+    },
+    {
+        _id: 15,
+        nombre: "Reumatología"
+    },
+    {
+        _id: 16,
+        nombre: "Gastroenterología"
+    },
+    {
+        _id: 17,
+        nombre: "Neumología"
+    },
+    {
+        _id: 18,
+        nombre: "Infectología"
+    },
+    {
+        _id: 19,
+        nombre: "Otros"
+    }
+]);
+
+//inserciones medicos_especialidades
+
+db.medicos_especialidades.insertMany([
+    { id_medico: 1, id_especialidad: 8 },
+    { id_medico: 2, id_especialidad: 4 },
+    { id_medico: 3, id_especialidad: 18 },
+    { id_medico: 4, id_especialidad: 1 },
+    { id_medico: 4, id_especialidad: 2 },
+    { id_medico: 4, id_especialidad: 18 },
+    { id_medico: 5, id_especialidad: 9 },
+    { id_medico: 5, id_especialidad: 19 },
+    { id_medico: 5, id_especialidad: 15 },
+    { id_medico: 6, id_especialidad: 17 },
+    { id_medico: 7, id_especialidad: 2 },
+    { id_medico: 7, id_especialidad: 3 },
+    { id_medico: 8, id_especialidad: 4 },
+    { id_medico: 9, id_especialidad: 7 },
+    { id_medico: 9, id_especialidad: 17 },
+    { id_medico: 9, id_especialidad: 11 },
+    { id_medico: 10, id_especialidad: 3 },
+    { id_medico: 10, id_especialidad: 5 },
+    { id_medico: 10, id_especialidad: 6 },
+    { id_medico: 11, id_especialidad: 15 },
+    { id_medico: 11, id_especialidad: 9 },
+    { id_medico: 12, id_especialidad: 9 },
+    { id_medico: 12, id_especialidad: 18 },
+    { id_medico: 12, id_especialidad: 12 },
+    { id_medico: 13, id_especialidad: 8 },
+    { id_medico: 14, id_especialidad: 4 },
+    { id_medico: 15, id_especialidad: 8 },
+    { id_medico: 16, id_especialidad: 9 },
+    { id_medico: 16, id_especialidad: 10 },
+    { id_medico: 16, id_especialidad: 6 },
+    { id_medico: 17, id_especialidad: 3 },
+    { id_medico: 17, id_especialidad: 1 },
+    { id_medico: 17, id_especialidad: 2 },
+    { id_medico: 18, id_especialidad: 1 },
+    { id_medico: 18, id_especialidad: 15 },
+    { id_medico: 19, id_especialidad: 12 },
+    { id_medico: 19, id_especialidad: 7 },
+    { id_medico: 19, id_especialidad: 3 },
+    { id_medico: 20, id_especialidad: 9 },
+    { id_medico: 20, id_especialidad: 5 },
+    { id_medico: 21, id_especialidad: 10 },
+    { id_medico: 21, id_especialidad: 4 },
+    { id_medico: 21, id_especialidad: 3 },
+    { id_medico: 22, id_especialidad: 13 },
+    { id_medico: 22, id_especialidad: 19 },
+    { id_medico: 23, id_especialidad: 11 },
+    { id_medico: 24, id_especialidad: 16 },
+    { id_medico: 24, id_especialidad: 3 },
+    { id_medico: 25, id_especialidad: 4 },
+    { id_medico: 25, id_especialidad: 16 },
+    { id_medico: 25, id_especialidad: 18 },
+    { id_medico: 26, id_especialidad: 4 },
+    { id_medico: 26, id_especialidad: 16 },
+    { id_medico: 27, id_especialidad: 7 },
+    { id_medico: 27, id_especialidad: 12 },
+    { id_medico: 28, id_especialidad: 1 },
+    { id_medico: 28, id_especialidad: 11 },
+    { id_medico: 29, id_especialidad: 11 },
+    { id_medico: 29, id_especialidad: 1 },
+    { id_medico: 29, id_especialidad: 16 },
+    { id_medico: 30, id_especialidad: 3 },
+    { id_medico: 30, id_especialidad: 1 },
+    { id_medico: 31, id_especialidad: 10 },
+    { id_medico: 31, id_especialidad: 8 },
+    { id_medico: 32, id_especialidad: 11 },
+    { id_medico: 32, id_especialidad: 8 },
+    { id_medico: 33, id_especialidad: 6 },
+    { id_medico: 33, id_especialidad: 7 },
+    { id_medico: 33, id_especialidad: 18 },
+    { id_medico: 34, id_especialidad: 8 },
+    { id_medico: 34, id_especialidad: 2 },
+    { id_medico: 34, id_especialidad: 10 },
+    { id_medico: 35, id_especialidad: 5 },
+    { id_medico: 35, id_especialidad: 17 },
+    { id_medico: 35, id_especialidad: 13 },
+    { id_medico: 36, id_especialidad: 2 },
+    { id_medico: 36, id_especialidad: 11 },
+    { id_medico: 37, id_especialidad: 14 },
+    { id_medico: 37, id_especialidad: 5 },
+    { id_medico: 38, id_especialidad: 3 },
+    { id_medico: 38, id_especialidad: 9 },
+    { id_medico: 39, id_especialidad: 9 },
+    { id_medico: 39, id_especialidad: 3 },
+    { id_medico: 40, id_especialidad: 4 },
+    { id_medico: 40, id_especialidad: 6 },
+    { id_medico: 40, id_especialidad: 18 },
+    { id_medico: 41, id_especialidad: 5 },
+    { id_medico: 41, id_especialidad: 3 },
+    { id_medico: 41, id_especialidad: 13 },
+    { id_medico: 42, id_especialidad: 10 },
+    { id_medico: 43, id_especialidad: 16 },
+    { id_medico: 44, id_especialidad: 17 },
+    { id_medico: 44, id_especialidad: 2 },
+    { id_medico: 45, id_especialidad: 6 },
+    { id_medico: 45, id_especialidad: 3 },
+    { id_medico: 45, id_especialidad: 13 },
+    { id_medico: 46, id_especialidad: 2 },
+    { id_medico: 47, id_especialidad: 1 },
+    { id_medico: 47, id_especialidad: 14 },
+    { id_medico: 48, id_especialidad: 11 },
+    { id_medico: 49, id_especialidad: 3 },
+    { id_medico: 49, id_especialidad: 18 },
+    { id_medico: 50, id_especialidad: 19 },
+    { id_medico: 50, id_especialidad: 6 },
+    { id_medico: 51, id_especialidad: 11 },
+    { id_medico: 51, id_especialidad: 19 },
+    { id_medico: 52, id_especialidad: 19 },
+    { id_medico: 52, id_especialidad: 15 },
+    { id_medico: 52, id_especialidad: 8 },
+    { id_medico: 53, id_especialidad: 16 },
+    { id_medico: 54, id_especialidad: 2 },
+    { id_medico: 55, id_especialidad: 3 },
+    { id_medico: 55, id_especialidad: 7 },
+    { id_medico: 55, id_especialidad: 15 },
+    { id_medico: 56, id_especialidad: 1 },
+    { id_medico: 56, id_especialidad: 15 },
+    { id_medico: 56, id_especialidad: 19 },
+    { id_medico: 57, id_especialidad: 6 },
+    { id_medico: 57, id_especialidad: 10 },
+    { id_medico: 58, id_especialidad: 9 },
+    { id_medico: 59, id_especialidad: 19 },
+    { id_medico: 59, id_especialidad: 3 },
+    { id_medico: 60, id_especialidad: 5 },
+    { id_medico: 61, id_especialidad: 12 },
+    { id_medico: 61, id_especialidad: 3 },
+    { id_medico: 61, id_especialidad: 14 },
+    { id_medico: 62, id_especialidad: 13 },
+    { id_medico: 62, id_especialidad: 3 },
+    { id_medico: 62, id_especialidad: 8 },
+    { id_medico: 63, id_especialidad: 7 },
+    { id_medico: 63, id_especialidad: 1 }
+]);
