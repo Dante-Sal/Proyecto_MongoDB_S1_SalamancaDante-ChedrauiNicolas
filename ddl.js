@@ -144,3 +144,54 @@ db.createCollection("areas_especializadas", {
 //índices colección areas_especializadas
 
 db.areas_especializadas.createIndex({ nombre: 1 }, { unique: true });
+
+//esquema colección dir_generales
+
+db.createCollection("dir_generales", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["primer_nombre", "primer_apellido", "segundo_apellido", "tel", "correo_el", "num_lic_gestion", "salario"],
+            properties: {
+                primer_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                primer_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^3[0-9]{9}$"
+                },
+                correo_el: {
+                    bsonType: "string",
+                    pattern: "^(?!.*\\.\\.)([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9])@([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])\.[a-zA-Z]{2,}$"
+                },
+                num_lic_gestion: {
+                    bsonType: "string",
+                    pattern: "^[A-Z]{3}-[0-9]{5,7}$"
+                },
+                salario: {
+                    bsonType: "decimal",
+                    minimum: 10000000
+                }
+            }
+        }
+    }
+});
+
+//índices colección dir_generales
+
+db.dir_generales.createIndex({ tel: 1 }, { unique: true });
+db.dir_generales.createIndex({ correo_el: 1 }, { unique: true });
+db.dir_generales.createIndex({ num_lic_gestion: 1 }, { unique: true });
