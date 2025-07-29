@@ -1229,3 +1229,9 @@ Así, se creó una entidad denominada `barrios`, la cual posee una característi
 Por otra parte, un cambio pequeño que se implementó, derivado de la 3FN, fue la supresión de la relación a través del `id_hist_clinica` (id de historia clínica) que existía entre `visitas_medicas` e `hist_clinicas`.
 
 Ahora, bien, es lógico que la relación entre estas dos colecciones es importante; pero lo que no se había captado hasta el momento, es que ya existía una relación indirecta entre estas dos colecciones (con la colección `pacientes` de por medio). Si se quiere acceder a una historia clínica desde una visita médica, simplemente se debe acceder primero al paciente asociado y este paciente tendrá asignada una historia clínica correspondiente a la historia clínica conectada con dicha cita.
+
+<br>
+
+<h4 align=center>Construcción del Modelo Físico</h4>
+
+Finalmente, tras completar la sección de normalización, se tomó el modelo lógico reestructurado por las tres formas normales y se llevó a cabo, a través de comandos por terminal **MongoShell**, la elaboración del modelo físico a partir del diagrama ya elaborado, especificando las colecciones, esquemas e índices únicos (datos que deben garantizar ser únicos de un documento a otro de su misma entidad).
