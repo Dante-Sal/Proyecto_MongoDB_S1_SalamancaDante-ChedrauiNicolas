@@ -677,9 +677,50 @@ db.tratamientos.find({ nombre: /tratamiento especializado combinado/i });
 
 db.diagnosticos.find({ descripcion: /(respiratoria)|(fiebre)|(dificultad para respirtar)|(bronquitis)|(tos)|(esputo)|(asma)|(sibilancias)|(dificultad respiratoria)|(disnea)|(auscultación)|(faringitis)/ });
 
-//62. mostrar medicamentos con más de 100 y menos de 200 unidades disponibles
+//62. mostrar medicamentos con más de 100 y menos de 200 unidades disponibles en el "Hospital Universitario de Santander"
 
-db.medicamentos.find({ cant_disp: { $gt: 100, $lt: 200 } });
+db.inventarios_medicamentos.aggregate([
+    {
+        $lookup: {
+            from: "hospitales",
+            localField: "id_hospital",
+            foreignField: "_id",
+            as: "hospital"
+        }
+    },
+    {
+        $lookup: {
+            from: "medicamentos",
+            localField: "id_medicamento",
+            foreignField: "_id",
+            as: "medicamento"
+        }
+    },
+    {
+        $unwind: "$hospital"
+    },
+    {
+        $unwind: "$medicamento"
+    },
+    {
+        $match: { 
+            $expr: { 
+                $and: [
+                    { $gt: ["$cant_disp", 100] }, 
+                    { $lt: ["$cant_disp", 200] }, 
+                    { $eq: ["$hospital.nombre", "Hospital Universitario de Santander"] }
+                ] 
+            } 
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nombre: "$medicamento.nombre",
+            cant_disp_en_hospital_universitario_de_santander: "$cant_disp"
+        }
+    }
+]);
 
 //63. mostrar antecedentes personales asociados a cirugías
 

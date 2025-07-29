@@ -11260,190 +11260,163 @@ db.medicamentos.insertMany([
         _id: 1,
         nombre: "Paracetamol 500mg",
         id_fabricante: 10,
-        tipo: "Vacuna",
-        cant_disp: 509
+        tipo: "Vacuna"
     },
     {
         _id: 2,
         nombre: "Ibuprofeno 400mg",
         id_fabricante: 6,
-        tipo: "Antidiabético",
-        cant_disp: 845
+        tipo: "Antidiabético"
     },
     {
         _id: 3,
         nombre: "Amoxicilina 875mg",
         id_fabricante: 2,
-        tipo: "Analgésico",
-        cant_disp: 299
+        tipo: "Analgésico"
     },
     {
         _id: 4,
         nombre: "Loratadina 10mg",
         id_fabricante: 1,
-        tipo: "Antihipertensivo",
-        cant_disp: 374
+        tipo: "Antihipertensivo"
     },
     {
         _id: 5,
         nombre: "Metformina 850mg",
         id_fabricante: 1,
-        tipo: "Diurético",
-        cant_disp: 949
+        tipo: "Diurético"
     },
     {
         _id: 6,
         nombre: "Losartán 50mg",
         id_fabricante: 3,
-        tipo: "Antidiabético",
-        cant_disp: 835
+        tipo: "Antidiabético"
     },
     {
         _id: 7,
         nombre: "Omeprazol 20mg",
         id_fabricante: 4,
-        tipo: "Antidiabético",
-        cant_disp: 790
+        tipo: "Antidiabético"
     },
     {
         _id: 8,
         nombre: "Diazepam 5mg",
         id_fabricante: 4,
-        tipo: "Antiinflamatorio",
-        cant_disp: 89
+        tipo: "Antiinflamatorio"
     },
     {
         _id: 9,
         nombre: "Fluoxetina 20mg",
         id_fabricante: 11,
-        tipo: "Anticoagulante",
-        cant_disp: 966
+        tipo: "Anticoagulante"
     },
     {
         _id: 10,
         nombre: "Acetaminofén Forte",
         id_fabricante: 6,
-        tipo: "Antiinflamatorio",
-        cant_disp: 690
+        tipo: "Antiinflamatorio"
     },
     {
         _id: 11,
         nombre: "Clonazepam 0.5mg",
         id_fabricante: 8,
-        tipo: "Antihistamínico",
-        cant_disp: 154
+        tipo: "Antihistamínico"
     },
     {
         _id: 12,
         nombre: "Dexametasona 4mg",
         id_fabricante: 9,
-        tipo: "Diurético",
-        cant_disp: 681
+        tipo: "Diurético"
     },
     {
         _id: 13,
         nombre: "Azitromicina 500mg",
         id_fabricante: 2,
-        tipo: "Antibiótico",
-        cant_disp: 51
+        tipo: "Antibiótico"
     },
     {
         _id: 14,
         nombre: "Salbutamol Inhalador",
         id_fabricante: 5,
-        tipo: "Gastroprotector",
-        cant_disp: 145
+        tipo: "Gastroprotector"
     },
     {
         _id: 15,
         nombre: "Insulina NPH",
         id_fabricante: 8,
-        tipo: "Antihipertensivo",
-        cant_disp: 105
+        tipo: "Antihipertensivo"
     },
     {
         _id: 16,
         nombre: "Vitamina C 1g",
         id_fabricante: 6,
-        tipo: "Antihistamínico",
-        cant_disp: 845
+        tipo: "Antihistamínico"
     },
     {
         _id: 17,
         nombre: "Ranitidina 150mg",
         id_fabricante: 5,
-        tipo: "Antipirético",
-        cant_disp: 434
+        tipo: "Antipirético"
     },
     {
         _id: 18,
         nombre: "Enalapril 10mg",
         id_fabricante: 11,
-        tipo: "Suplemento vitamínico",
-        cant_disp: 327
+        tipo: "Suplemento vitamínico"
     },
     {
         _id: 19,
         nombre: "Simvastatina 20mg",
         id_fabricante: 3,
-        tipo: "Antidepresivo",
-        cant_disp: 810
+        tipo: "Antidepresivo"
     },
     {
         _id: 20,
         nombre: "Ciprofloxacina 500mg",
         id_fabricante: 7,
-        tipo: "Antibiótico",
-        cant_disp: 252
+        tipo: "Antibiótico"
     },
     {
         _id: 21,
         nombre: "Albendazol 400mg",
         id_fabricante: 7,
-        tipo: "Otros",
-        cant_disp: 597
+        tipo: "Otros"
     },
     {
         _id: 22,
         nombre: "Aspirina 100mg",
         id_fabricante: 7,
-        tipo: "Antihistamínico",
-        cant_disp: 99
+        tipo: "Antihistamínico"
     },
     {
         _id: 23,
         nombre: "Furosemida 40mg",
         id_fabricante: 9,
-        tipo: "Otros",
-        cant_disp: 529
+        tipo: "Otros"
     },
     {
         _id: 24,
         nombre: "Levotiroxina 100mcg",
         id_fabricante: 11,
-        tipo: "Anticoagulante",
-        cant_disp: 339
+        tipo: "Anticoagulante"
     },
     {
         _id: 25,
         nombre: "Aciclovir 400mg",
         id_fabricante: 10,
-        tipo: "Antihistamínico",
-        cant_disp: 944
+        tipo: "Antihistamínico"
     },
     {
         _id: 26,
         nombre: "Prednisona 20mg",
         id_fabricante: 4,
-        tipo: "Suplemento vitamínico",
-        cant_disp: 47
+        tipo: "Suplemento vitamínico"
     },
     {
         _id: 27,
         nombre: "Vacuna Influenza",
         id_fabricante: 1,
-        tipo: "Antibiótico",
-        cant_disp: 250
+        tipo: "Antibiótico"
     }
 ]);
 
@@ -16818,4 +16791,684 @@ db.visitas_medicas_tratamientos.insertMany([
     { id_visita_medica: 193, id_tratamiento: 41 },
     { id_visita_medica: 193, id_tratamiento: 40 },
     { id_visita_medica: 193, id_tratamiento: 55 }
+]);
+
+//inserciones inventarios_medicamentos
+
+db.inventarios_medicamentos.insertMany([
+    {
+        "id_hospital": 1,
+        "id_medicamento": 1,
+        "cant_disp": 130
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 2,
+        "cant_disp": 30
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 3,
+        "cant_disp": 70
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 4,
+        "cant_disp": 13
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 5,
+        "cant_disp": 147
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 6,
+        "cant_disp": 128
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 7,
+        "cant_disp": 34
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 8,
+        "cant_disp": 26
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 9,
+        "cant_disp": 22
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 10,
+        "cant_disp": 113
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 11,
+        "cant_disp": 134
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 12,
+        "cant_disp": 90
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 13,
+        "cant_disp": 74
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 14,
+        "cant_disp": 29
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 15,
+        "cant_disp": 56
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 16,
+        "cant_disp": 189
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 17,
+        "cant_disp": 145
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 18,
+        "cant_disp": 110
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 19,
+        "cant_disp": 2
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 20,
+        "cant_disp": 11
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 21,
+        "cant_disp": 122
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 22,
+        "cant_disp": 14
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 23,
+        "cant_disp": 42
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 24,
+        "cant_disp": 46
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 25,
+        "cant_disp": 195
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 26,
+        "cant_disp": 95
+    },
+    {
+        "id_hospital": 1,
+        "id_medicamento": 27,
+        "cant_disp": 189
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 1,
+        "cant_disp": 69
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 2,
+        "cant_disp": 31
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 3,
+        "cant_disp": 39
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 4,
+        "cant_disp": 63
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 5,
+        "cant_disp": 76
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 6,
+        "cant_disp": 30
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 7,
+        "cant_disp": 136
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 8,
+        "cant_disp": 1
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 9,
+        "cant_disp": 56
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 10,
+        "cant_disp": 137
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 11,
+        "cant_disp": 31
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 12,
+        "cant_disp": 93
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 13,
+        "cant_disp": 25
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 14,
+        "cant_disp": 102
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 15,
+        "cant_disp": 4
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 16,
+        "cant_disp": 130
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 17,
+        "cant_disp": 144
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 18,
+        "cant_disp": 136
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 19,
+        "cant_disp": 75
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 20,
+        "cant_disp": 159
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 21,
+        "cant_disp": 89
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 22,
+        "cant_disp": 182
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 23,
+        "cant_disp": 55
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 24,
+        "cant_disp": 134
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 25,
+        "cant_disp": 152
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 26,
+        "cant_disp": 163
+    },
+    {
+        "id_hospital": 2,
+        "id_medicamento": 27,
+        "cant_disp": 194
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 1,
+        "cant_disp": 109
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 2,
+        "cant_disp": 77
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 3,
+        "cant_disp": 14
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 4,
+        "cant_disp": 95
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 5,
+        "cant_disp": 12
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 6,
+        "cant_disp": 6
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 7,
+        "cant_disp": 52
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 8,
+        "cant_disp": 70
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 9,
+        "cant_disp": 73
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 10,
+        "cant_disp": 162
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 11,
+        "cant_disp": 27
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 12,
+        "cant_disp": 199
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 13,
+        "cant_disp": 48
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 14,
+        "cant_disp": 123
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 15,
+        "cant_disp": 67
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 16,
+        "cant_disp": 185
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 17,
+        "cant_disp": 10
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 18,
+        "cant_disp": 196
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 19,
+        "cant_disp": 17
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 20,
+        "cant_disp": 176
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 21,
+        "cant_disp": 170
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 22,
+        "cant_disp": 72
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 23,
+        "cant_disp": 129
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 24,
+        "cant_disp": 185
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 25,
+        "cant_disp": 39
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 26,
+        "cant_disp": 44
+    },
+    {
+        "id_hospital": 3,
+        "id_medicamento": 27,
+        "cant_disp": 39
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 1,
+        "cant_disp": 91
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 2,
+        "cant_disp": 38
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 3,
+        "cant_disp": 102
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 4,
+        "cant_disp": 132
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 5,
+        "cant_disp": 120
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 6,
+        "cant_disp": 12
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 7,
+        "cant_disp": 75
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 8,
+        "cant_disp": 115
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 9,
+        "cant_disp": 133
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 10,
+        "cant_disp": 88
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 11,
+        "cant_disp": 57
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 12,
+        "cant_disp": 19
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 13,
+        "cant_disp": 181
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 14,
+        "cant_disp": 14
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 15,
+        "cant_disp": 191
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 16,
+        "cant_disp": 31
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 17,
+        "cant_disp": 130
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 18,
+        "cant_disp": 108
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 19,
+        "cant_disp": 70
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 20,
+        "cant_disp": 52
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 21,
+        "cant_disp": 76
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 22,
+        "cant_disp": 35
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 23,
+        "cant_disp": 185
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 24,
+        "cant_disp": 162
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 25,
+        "cant_disp": 188
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 26,
+        "cant_disp": 5
+    },
+    {
+        "id_hospital": 4,
+        "id_medicamento": 27,
+        "cant_disp": 59
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 1,
+        "cant_disp": 130
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 2,
+        "cant_disp": 140
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 3,
+        "cant_disp": 114
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 4,
+        "cant_disp": 56
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 5,
+        "cant_disp": 69
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 6,
+        "cant_disp": 135
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 7,
+        "cant_disp": 36
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 8,
+        "cant_disp": 53
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 9,
+        "cant_disp": 177
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 10,
+        "cant_disp": 84
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 11,
+        "cant_disp": 105
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 12,
+        "cant_disp": 151
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 13,
+        "cant_disp": 131
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 14,
+        "cant_disp": 3
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 15,
+        "cant_disp": 127
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 16,
+        "cant_disp": 80
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 17,
+        "cant_disp": 59
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 18,
+        "cant_disp": 178
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 19,
+        "cant_disp": 142
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 20,
+        "cant_disp": 171
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 21,
+        "cant_disp": 186
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 22,
+        "cant_disp": 95
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 23,
+        "cant_disp": 158
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 24,
+        "cant_disp": 18
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 25,
+        "cant_disp": 161
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 26,
+        "cant_disp": 125
+    },
+    {
+        "id_hospital": 5,
+        "id_medicamento": 27,
+        "cant_disp": 122
+    }
 ]);

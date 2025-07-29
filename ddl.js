@@ -998,7 +998,7 @@ db.createCollection("medicamentos", {
     validator: {
         $jsonSchema: {
             bsonType: "object",
-            required: ["nombre", "id_fabricante", "tipo", "cant_disp"],
+            required: ["nombre", "id_fabricante", "tipo"],
             properties: {
                 nombre: {
                     bsonType: "string",
@@ -1032,9 +1032,6 @@ db.createCollection("medicamentos", {
                         "Suplemento vitamínico",
                         "Otros"
                     ]
-                },
-                cant_disp: {
-                    bsonType: "int"
                 }
             }
         }
@@ -1260,3 +1257,30 @@ db.createCollection("tratamientos", {
 //índices colección tratamientos
 
 db.tratamientos.createIndex({ nombre: 1 }, { unique: true });
+
+//esquema colección inventarios_medicamentos
+
+db.createCollection("inventarios_medicamentos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_hospital", "id_medicamento", "cant_disp"],
+            properties: {
+                id_hospital: {
+                    bsonType: "int"
+                },
+                id_medicamento: {
+                    bsonType: "int"
+                },
+                cant_disp: {
+                    bsonType: "int",
+                    minimum: 0
+                }
+            }
+        }
+    }
+});
+
+//índices colección inventarios_medicamentos
+
+db.inventarios_medicamentos.createIndex({ id_hospital: 1, id_medicamento: 1 }, { unique: true });
