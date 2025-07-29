@@ -1,10 +1,10 @@
-# Base de Datos (DB) SISTEMA HOSPITALARIO
+<h1 align=center>Base de Datos (DB) SISTEMA HOSPITALARIO</h1>
 
-###### Proyecto MongoDB: (Dante Salamanca Galvis & Nicolás Chedraui Mantilla)
+<h6 align=center>Proyecto MongoDB: (Dante Salamanca Galvis & Nicolás Chedraui Mantilla)</h6>
 
 <br>
 
-### Introducción
+<h3 align=center>Introducción</h3>
 
 A continuación se documenta minuciosamente el proceso que se siguió para ejecutar la elaboración de la base de datos solicitada para un sistema hospitalario enfocado en Bucaramanga y la zona metropolitana de Bucaramanga, implementando modelo conceptual, lógico y finalmente físico (otorgándole especial énfasis al proceso de normalización hasta la 3ra Forma Normal que se debe llevar a cabo entre estas últimas dos fases).
 
@@ -14,7 +14,7 @@ Finalmente, se realizan inserciones de datos dentro de nuestro sistema, se crean
 
 <br>
 
-### Caso de Estudio
+<h3 align=center>Caso de Estudio</h3>
 
 El caso de estudio que dio origen a esta base de datos se centró, como se mencionó anteriormente, en el desarrollo de un modelo de datos para un sistema de aplicaciones de bases de datos para un sistema hospitalario o de salud alojado en la zona metropolitana de Bucaramanga, Colombia.
 
@@ -32,17 +32,17 @@ Dado que el sistema está enfocado en Bucaramanga y su zona metropolitana, los d
 
 <br>
 
-### Planificación
+<h3 align=center>Planificación</h3>
 
 <br>
 
-#### Construcción del Modelo Conceptual
+<h4 align=center>Construcción del Modelo Conceptual</h4>
 
 A partir de este caso de estudio, se inició por desarrollar lo que vendría siendo el primer modelo/prototipo de base de datos (en esencia, el modelo conceptual de esta). Este se basa en determinar, como primera medida, las entidades que harán parte de la BBDD, para posteriormente establecer atributos para cada una de estas y las relaciones entre entidad y entidad, especificando las cardinalidades de estas relaciones. 
 
 Este modelo se elaboró de una forma muy rudimentaria, estableciendo las bases para futuros modelos (lógico / físico) de forma que se proporcionó una estructura sobre la cual se pudo trabajar en las siguientes tres fases del desarrollo de este modelo de datos para el sistema de aplicaciones de bases de datos.
 
-#### Descripción
+<h4 align=center>Descripción</h4>
 
 A grandes rasgos, lo que se determinó en esta primera fase fueron las entidades principales a trabajar (aquí no están plasmadas todas las entidades que se trabajaron, ya que tras el proceso de normalización se añadieron más de estas).
 
@@ -50,11 +50,11 @@ Estas entidades principales fueron `dir_generales`, `hospitales`, `enfermeros`, 
 
 Los atributos que se definieron en esta primera etapa se establecieron a un nivel relativamente superficial, ya que no se tiene información detallada sobre cada entidad (solamente la estrictamente necesaria y solicitada por los requerimientos).
 
-#### Gráfica
+<h4 align=center>Gráfica</h4>
 
 ![Modelo Conceptual](modelo_conceptual.jpg)
 
-#### Descripción Técnica
+<h4 align=center>Descripción Técnica</h4>
 
 Teniendo en cuenta el funcionamiento, más a profundidad, de la lógica detrás de este primer esbozo de la futura base de datos, podríamos desglosar más en detalle cada entidad y su relación con sus adyacentes.
 
@@ -68,11 +68,11 @@ En resumen, este se trata de un modelo muy primitivo de la BBDD, que si bien fac
 
 <br>
 
-#### Construcción del Modelo Lógico
+<h4 align=center>Construcción del Modelo Lógico</h4>
 
 Una vez finalizado el modelo conceptual, se dio comienzo al proceso de establecimiento de un modelo lógico mejor estructurado en tablas (entidades) con columnas (atributos) y el tipo de dato para cada una de estas (string, int, decimal, etc.), así como determinadas características para determinadas columnas (primary key [PK] / foreign key [FK]).
 
-#### Descripción
+<h4 align=center>Descripción</h4>
 
 Si bien en esta etapa de la creación del sistema de datos aún no se tiene una claridad total de todas las entidades necesarias o de todas las relaciones posibles o desgloses que puedan surgir de atributos no lo suficientemente indivisibles o relacionados con las tablas a las cuales pertenecen; en este punto se pueden definir mejoras a ejecutar en el modelo que llegado a este momento se pueden identificar fácilmente.
 
@@ -80,7 +80,7 @@ Si bien antes ya se tenía una relación aproximada entre las colecciones, no se
 
 Básicamente, en este etapa no se realizan reestructuraciones de la base de datos, sino simplemente se transfiere el *Modelo Conceptual* a un esquema visual más limpio y específico con tipos de datos y llaves primarias y foráneas más explícitas.
 
-#### Gráfica
+<h4 align=center>Gráfica</h4>
 
 ```mermaid
 erDiagram
@@ -216,7 +216,7 @@ erDiagram
     hospitales ||--o{ inventarios_medicamentos : tienen
 ```
 
-#### Descripción Técnica
+<h4 align=center>Descripción Técnica</h4>
 
 Una vez definido una base suficientemente sólida o alineada a los requerimientos solicitados por el usuario originalmente, se puede proceder a la siguiente fase: el *Modelo Conceptual*.
 
@@ -239,3 +239,13 @@ Así, tomando el siguiente requerimiento en mente:
 Se analizó que al poseer un simple atributo `cant_disponible` en cada medicamento, no sería posible realizar una búsqueda minuciosa de las medicinas disponibles, puesto que no se especificaría cuántas unidades restan de cada medicamento en cada hospital, sino cuántas restan en general (en todo el sistema hospitalario).
 
 Así, se ejecutó la agregación de esta nueva actualización al modelo estructurado de datos, empleando esta nueva entidad como intermediaria entre las entidades `hospitales` y `medicamentos` (facilitando que exista un inventario por cada combinación posible de todos los hospitales con medicamentos existentes).
+
+<br>
+
+<h3 align=center>Normalización del Modelo Lógico</h3>
+
+<br>
+
+<h4 align=center>Primera Forma Normal (1FN)</h4>
+
+En esta primera fase de la normalización del modelo lógico se solicita que todos los atributos existentes dentro de las tablas sean lo más indivisibles posible (en otras palabras, que sean valores atómicos). No se admiten atributos que puedan almacenar múltiples valores o datos que sean subdivisibles como múltiples números de teléfono, direcciones o nombres.
