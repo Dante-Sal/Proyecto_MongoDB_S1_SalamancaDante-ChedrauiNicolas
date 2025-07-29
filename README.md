@@ -1239,3 +1239,9 @@ Finalmente, tras completar la sección de normalización, se tomó el modelo ló
 <h4 align=center>Descripción</h4>
 
 Una vez llegado a este punto, se empezaron a trasladar las 35 colecciones que componen el sistema desarrollado a comandos que **MongoDB** desde la **Shell**, pueda interpretar. Como ya se mencionó, se decidió usar el motor de bases de datos **MongoDB** y el aplicativo de administración de bases de datos **MongoDB Compass**.
+
+<h4 align=center>Código</h4>
+
+```
+El código que contiene los comandos que permiten la creación explícita de las colecciones, junto a sus esquemas e índices se halla como archivo en este mismo repositorio, bajo el nombre de 'ddl.js'
+```
