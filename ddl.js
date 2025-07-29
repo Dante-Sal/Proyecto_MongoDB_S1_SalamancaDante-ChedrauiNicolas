@@ -365,3 +365,144 @@ db.createCollection("medicos", {
 db.medicos.createIndex({ num_colegiatura: 1 }, { unique: true });
 db.medicos.createIndex({ tel: 1 }, { unique: true });
 db.medicos.createIndex({ correo_el: 1 }, { unique: true });
+
+//esquema colección per_admin
+
+db.createCollection("per_admin", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["primer_nombre", "primer_apellido", "segundo_apellido", "tel", "correo_el", "cargo", "area_resp", "salario", "id_hospital"],
+            properties: {
+                primer_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                primer_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^3[0-9]{9}$"
+                },
+                correo_el: {
+                    bsonType: "string",
+                    pattern: "^(?!.*\\.\\.)([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9])@([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])\.[a-zA-Z]{2,}$"
+                },
+                cargo: {
+                    bsonType: "string",
+                    enum: [
+                        "Jefe de Finanzas",
+                        "Jefe de Recursos Humanos",
+                        "Jefe de Compras",
+                        "Jefe de Logística",
+                        "Asistente Administrativo",
+                        "Analista Contable",
+                        "Secretario/a General",
+                        "Auxiliar de Archivo",
+                        "Recepcionista",
+                        "Coordinador de Talento Humano",
+                        "Gestor de Calidad",
+                        "Gestor de Seguridad y Salud en el Trabajo",
+                        "Tesorero/a",
+                        "Coordinador de Servicios Generales",
+                        "Director Jurídico",
+                        "Otros"
+                    ]
+                },
+                area_resp: {
+                    bsonType: "string",
+                    enum: [
+                        "Contabilidad",
+                        "Finanzas",
+                        "Talento Humano",
+                        "Compras",
+                        "Logística",
+                        "Calidad",
+                        "Archivo",
+                        "Recepción",
+                        "Jurídica",
+                        "Planeación",
+                        "Contratación",
+                        "Tesorería",
+                        "Sistemas de Información",
+                        "Atención al Usuario",
+                        "Seguridad y Salud en el Trabajo",
+                        "Servicios Generales",
+                        "Otros"
+                    ]
+                },
+                salario: {
+                    bsonType: "decimal",
+                    minimum: 1600000
+                },
+                id_hospital: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección per_admin
+
+db.per_admin.createIndex({ tel: 1 }, { unique: true });
+db.per_admin.createIndex({ correo_el: 1 }, { unique: true });
+
+//esquema colección enfermeros
+
+db.createCollection("enfermeros", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["primer_nombre", "primer_apellido", "segundo_apellido", "tel", "correo_el", "salario", "id_hospital"],
+            properties: {
+                primer_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                primer_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^3[0-9]{9}$"
+                },
+                correo_el: {
+                    bsonType: "string",
+                    pattern: "^(?!.*\\.\\.)([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9])@([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])\.[a-zA-Z]{2,}$"
+                },
+                salario: {
+                    bsonType: "decimal",
+                    minimum: 1700000
+                },
+                id_hospital: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección enfermeros
+
+db.enfermeros.createIndex({ tel: 1 }, { unique: true });
+db.enfermeros.createIndex({ correo_el: 1 }, { unique: true });
