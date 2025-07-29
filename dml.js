@@ -6342,3 +6342,1907 @@ db.enfermeros.insertMany([
         id_hospital: 3
     }
 ]);
+
+//inserciones visitas_medicas
+
+db.visitas_medicas.insertMany([
+    {
+        _id: 1,
+        fecha_hora: ISODate("2024-03-13T05:17:57"),
+        id_medico: 42,
+        id_paciente: 56,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 2,
+        fecha_hora: ISODate("2023-09-13T06:23:45"),
+        id_medico: 25,
+        id_paciente: 30,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 3,
+        fecha_hora: ISODate("2023-05-13T06:00:18"),
+        id_medico: 17,
+        id_paciente: 118,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 4,
+        fecha_hora: ISODate("2023-09-19T05:02:39"),
+        id_medico: 30,
+        id_paciente: 106,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 5,
+        fecha_hora: ISODate("2025-03-26T08:57:20"),
+        id_medico: 28,
+        id_paciente: 33,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 6,
+        fecha_hora: ISODate("2025-03-30T04:18:40"),
+        id_medico: 26,
+        id_paciente: 50,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 7,
+        fecha_hora: ISODate("2023-05-08T06:55:09"),
+        id_medico: 20,
+        id_paciente: 86,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 8,
+        fecha_hora: ISODate("2025-01-04T18:13:16"),
+        id_medico: 27,
+        id_paciente: 69,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 9,
+        fecha_hora: ISODate("2023-08-27T18:18:03"),
+        id_medico: 8,
+        id_paciente: 115,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 10,
+        fecha_hora: ISODate("2025-04-15T23:56:41"),
+        id_medico: 31,
+        id_paciente: 35,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 11,
+        fecha_hora: ISODate("2024-10-13T16:54:42"),
+        id_medico: 1,
+        id_paciente: 6,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 12,
+        fecha_hora: ISODate("2023-09-03T23:04:00"),
+        id_medico: 21,
+        id_paciente: 109,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 13,
+        fecha_hora: ISODate("2025-01-24T05:46:46"),
+        id_medico: 56,
+        id_paciente: 96,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 14,
+        fecha_hora: ISODate("2023-10-05T08:01:56"),
+        id_medico: 17,
+        id_paciente: 84,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 15,
+        fecha_hora: ISODate("2023-09-26T17:24:22"),
+        id_medico: 5,
+        id_paciente: 63,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 16,
+        fecha_hora: ISODate("2024-01-30T15:30:04"),
+        id_medico: 50,
+        id_paciente: 46,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 17,
+        fecha_hora: ISODate("2025-07-27T15:27:52"),
+        id_medico: 1,
+        id_paciente: 84,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 18,
+        fecha_hora: ISODate("2023-03-27T00:04:30"),
+        id_medico: 9,
+        id_paciente: 89,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 19,
+        fecha_hora: ISODate("2025-02-21T03:58:05"),
+        id_medico: 11,
+        id_paciente: 40,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 20,
+        fecha_hora: ISODate("2023-07-10T13:04:50"),
+        id_medico: 50,
+        id_paciente: 106,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 21,
+        fecha_hora: ISODate("2025-04-17T12:18:49"),
+        id_medico: 13,
+        id_paciente: 42,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 22,
+        fecha_hora: ISODate("2024-08-06T06:48:44"),
+        id_medico: 43,
+        id_paciente: 96,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 23,
+        fecha_hora: ISODate("2023-10-08T17:24:47"),
+        id_medico: 19,
+        id_paciente: 84,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 24,
+        fecha_hora: ISODate("2023-04-05T08:43:07"),
+        id_medico: 6,
+        id_paciente: 23,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 25,
+        fecha_hora: ISODate("2024-03-24T16:02:01"),
+        id_medico: 11,
+        id_paciente: 109,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 26,
+        fecha_hora: ISODate("2025-05-15T23:13:52"),
+        id_medico: 62,
+        id_paciente: 9,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 27,
+        fecha_hora: ISODate("2024-05-18T17:38:05"),
+        id_medico: 11,
+        id_paciente: 91,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 28,
+        fecha_hora: ISODate("2025-04-14T04:22:25"),
+        id_medico: 51,
+        id_paciente: 125,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 29,
+        fecha_hora: ISODate("2024-04-04T03:02:24"),
+        id_medico: 33,
+        id_paciente: 124,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 30,
+        fecha_hora: ISODate("2025-04-08T00:35:31"),
+        id_medico: 62,
+        id_paciente: 63,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 31,
+        fecha_hora: ISODate("2023-10-30T00:49:13"),
+        id_medico: 16,
+        id_paciente: 98,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 32,
+        fecha_hora: ISODate("2023-09-03T21:42:34"),
+        id_medico: 57,
+        id_paciente: 21,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 33,
+        fecha_hora: ISODate("2023-01-07T06:07:17"),
+        id_medico: 32,
+        id_paciente: 71,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 34,
+        fecha_hora: ISODate("2024-06-10T14:08:42"),
+        id_medico: 24,
+        id_paciente: 125,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 35,
+        fecha_hora: ISODate("2023-05-10T02:26:27"),
+        id_medico: 52,
+        id_paciente: 11,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 36,
+        fecha_hora: ISODate("2024-01-02T10:33:56"),
+        id_medico: 3,
+        id_paciente: 31,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 37,
+        fecha_hora: ISODate("2024-06-06T07:13:27"),
+        id_medico: 56,
+        id_paciente: 21,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 38,
+        fecha_hora: ISODate("2023-05-04T20:27:30"),
+        id_medico: 17,
+        id_paciente: 116,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 39,
+        fecha_hora: ISODate("2023-03-17T08:30:10"),
+        id_medico: 60,
+        id_paciente: 9,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 40,
+        fecha_hora: ISODate("2025-01-17T03:49:47"),
+        id_medico: 12,
+        id_paciente: 88,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 41,
+        fecha_hora: ISODate("2025-03-27T10:15:45"),
+        id_medico: 20,
+        id_paciente: 106,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 42,
+        fecha_hora: ISODate("2023-04-17T02:06:56"),
+        id_medico: 41,
+        id_paciente: 29,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 43,
+        fecha_hora: ISODate("2024-12-03T04:39:28"),
+        id_medico: 63,
+        id_paciente: 12,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 44,
+        fecha_hora: ISODate("2025-05-14T07:01:26"),
+        id_medico: 49,
+        id_paciente: 33,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 45,
+        fecha_hora: ISODate("2024-08-02T22:13:18"),
+        id_medico: 9,
+        id_paciente: 100,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 46,
+        fecha_hora: ISODate("2025-07-21T05:36:57"),
+        id_medico: 62,
+        id_paciente: 50,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 47,
+        fecha_hora: ISODate("2024-03-10T14:59:27"),
+        id_medico: 57,
+        id_paciente: 50,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 48,
+        fecha_hora: ISODate("2025-04-11T04:30:32"),
+        id_medico: 15,
+        id_paciente: 15,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 49,
+        fecha_hora: ISODate("2024-06-17T03:44:23"),
+        id_medico: 7,
+        id_paciente: 49,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 50,
+        fecha_hora: ISODate("2024-11-26T21:29:02"),
+        id_medico: 15,
+        id_paciente: 14,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 51,
+        fecha_hora: ISODate("2024-06-17T22:49:20"),
+        id_medico: 38,
+        id_paciente: 84,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 52,
+        fecha_hora: ISODate("2025-03-27T20:41:57"),
+        id_medico: 25,
+        id_paciente: 36,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 53,
+        fecha_hora: ISODate("2023-11-23T00:11:25"),
+        id_medico: 42,
+        id_paciente: 5,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 54,
+        fecha_hora: ISODate("2025-01-26T07:32:52"),
+        id_medico: 29,
+        id_paciente: 1,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 55,
+        fecha_hora: ISODate("2025-02-23T08:10:59"),
+        id_medico: 15,
+        id_paciente: 87,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 56,
+        fecha_hora: ISODate("2024-10-16T01:40:23"),
+        id_medico: 57,
+        id_paciente: 41,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 57,
+        fecha_hora: ISODate("2023-09-10T00:43:21"),
+        id_medico: 45,
+        id_paciente: 18,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 58,
+        fecha_hora: ISODate("2023-03-22T00:26:52"),
+        id_medico: 41,
+        id_paciente: 40,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 59,
+        fecha_hora: ISODate("2025-06-23T00:31:25"),
+        id_medico: 57,
+        id_paciente: 110,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 60,
+        fecha_hora: ISODate("2024-03-08T05:12:28"),
+        id_medico: 32,
+        id_paciente: 4,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 61,
+        fecha_hora: ISODate("2025-03-31T16:35:41"),
+        id_medico: 55,
+        id_paciente: 26,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 62,
+        fecha_hora: ISODate("2024-03-18T14:59:08"),
+        id_medico: 53,
+        id_paciente: 104,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 63,
+        fecha_hora: ISODate("2024-05-31T07:47:08"),
+        id_medico: 5,
+        id_paciente: 32,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 64,
+        fecha_hora: ISODate("2025-05-15T12:23:32"),
+        id_medico: 25,
+        id_paciente: 121,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 65,
+        fecha_hora: ISODate("2023-03-11T16:48:56"),
+        id_medico: 42,
+        id_paciente: 44,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 66,
+        fecha_hora: ISODate("2023-10-07T07:01:08"),
+        id_medico: 7,
+        id_paciente: 97,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 67,
+        fecha_hora: ISODate("2024-05-03T08:58:14"),
+        id_medico: 6,
+        id_paciente: 74,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 68,
+        fecha_hora: ISODate("2023-07-28T10:00:56"),
+        id_medico: 57,
+        id_paciente: 90,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 69,
+        fecha_hora: ISODate("2023-01-12T12:57:37"),
+        id_medico: 10,
+        id_paciente: 1,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 70,
+        fecha_hora: ISODate("2025-07-19T14:16:47"),
+        id_medico: 22,
+        id_paciente: 100,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 71,
+        fecha_hora: ISODate("2023-08-09T20:12:43"),
+        id_medico: 19,
+        id_paciente: 72,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 72,
+        fecha_hora: ISODate("2025-01-31T09:35:48"),
+        id_medico: 7,
+        id_paciente: 19,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 73,
+        fecha_hora: ISODate("2023-08-09T09:34:53"),
+        id_medico: 1,
+        id_paciente: 36,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 74,
+        fecha_hora: ISODate("2024-06-08T14:31:32"),
+        id_medico: 57,
+        id_paciente: 78,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 75,
+        fecha_hora: ISODate("2025-02-14T17:13:34"),
+        id_medico: 55,
+        id_paciente: 92,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 76,
+        fecha_hora: ISODate("2023-03-16T17:39:50"),
+        id_medico: 52,
+        id_paciente: 95,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 77,
+        fecha_hora: ISODate("2025-03-23T11:05:15"),
+        id_medico: 3,
+        id_paciente: 118,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 78,
+        fecha_hora: ISODate("2024-12-06T11:23:13"),
+        id_medico: 13,
+        id_paciente: 10,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 79,
+        fecha_hora: ISODate("2025-05-19T04:02:38"),
+        id_medico: 28,
+        id_paciente: 121,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 80,
+        fecha_hora: ISODate("2023-01-01T08:52:04"),
+        id_medico: 20,
+        id_paciente: 74,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 81,
+        fecha_hora: ISODate("2024-12-09T19:53:57"),
+        id_medico: 19,
+        id_paciente: 26,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 82,
+        fecha_hora: ISODate("2024-10-10T16:04:26"),
+        id_medico: 4,
+        id_paciente: 69,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 83,
+        fecha_hora: ISODate("2024-05-25T21:04:30"),
+        id_medico: 16,
+        id_paciente: 107,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 84,
+        fecha_hora: ISODate("2023-03-16T23:07:31"),
+        id_medico: 59,
+        id_paciente: 82,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 85,
+        fecha_hora: ISODate("2024-05-25T08:33:36"),
+        id_medico: 31,
+        id_paciente: 78,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 86,
+        fecha_hora: ISODate("2024-08-13T17:07:48"),
+        id_medico: 19,
+        id_paciente: 75,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 87,
+        fecha_hora: ISODate("2023-10-09T02:16:41"),
+        id_medico: 58,
+        id_paciente: 66,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 88,
+        fecha_hora: ISODate("2025-03-03T04:33:41"),
+        id_medico: 45,
+        id_paciente: 109,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 89,
+        fecha_hora: ISODate("2023-09-05T00:36:39"),
+        id_medico: 27,
+        id_paciente: 48,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 90,
+        fecha_hora: ISODate("2023-10-14T02:22:33"),
+        id_medico: 57,
+        id_paciente: 78,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 91,
+        fecha_hora: ISODate("2023-07-10T15:50:21"),
+        id_medico: 35,
+        id_paciente: 44,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 92,
+        fecha_hora: ISODate("2023-02-16T15:00:47"),
+        id_medico: 19,
+        id_paciente: 1,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 93,
+        fecha_hora: ISODate("2023-07-02T23:48:20"),
+        id_medico: 1,
+        id_paciente: 14,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 94,
+        fecha_hora: ISODate("2024-10-03T08:45:06"),
+        id_medico: 62,
+        id_paciente: 97,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 95,
+        fecha_hora: ISODate("2023-07-13T14:40:30"),
+        id_medico: 51,
+        id_paciente: 33,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 96,
+        fecha_hora: ISODate("2024-11-28T12:53:18"),
+        id_medico: 50,
+        id_paciente: 75,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 97,
+        fecha_hora: ISODate("2023-06-30T00:25:47"),
+        id_medico: 30,
+        id_paciente: 53,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 98,
+        fecha_hora: ISODate("2023-07-16T19:11:52"),
+        id_medico: 20,
+        id_paciente: 7,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 99,
+        fecha_hora: ISODate("2023-01-05T15:06:09"),
+        id_medico: 37,
+        id_paciente: 67,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 100,
+        fecha_hora: ISODate("2023-11-29T21:36:15"),
+        id_medico: 43,
+        id_paciente: 9,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 101,
+        fecha_hora: ISODate("2023-12-24T02:39:45"),
+        id_medico: 43,
+        id_paciente: 123,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 102,
+        fecha_hora: ISODate("2023-02-14T13:16:09"),
+        id_medico: 17,
+        id_paciente: 29,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 103,
+        fecha_hora: ISODate("2024-10-01T22:21:27"),
+        id_medico: 43,
+        id_paciente: 103,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 104,
+        fecha_hora: ISODate("2025-04-07T22:25:33"),
+        id_medico: 25,
+        id_paciente: 66,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 105,
+        fecha_hora: ISODate("2025-05-09T05:35:33"),
+        id_medico: 61,
+        id_paciente: 20,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 106,
+        fecha_hora: ISODate("2023-12-29T15:50:17"),
+        id_medico: 14,
+        id_paciente: 118,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 107,
+        fecha_hora: ISODate("2025-04-08T01:27:37"),
+        id_medico: 34,
+        id_paciente: 96,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 108,
+        fecha_hora: ISODate("2025-03-07T23:19:25"),
+        id_medico: 52,
+        id_paciente: 81,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 109,
+        fecha_hora: ISODate("2024-04-09T13:28:27"),
+        id_medico: 4,
+        id_paciente: 102,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 110,
+        fecha_hora: ISODate("2024-05-02T19:21:06"),
+        id_medico: 4,
+        id_paciente: 63,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 111,
+        fecha_hora: ISODate("2023-04-12T23:14:21"),
+        id_medico: 18,
+        id_paciente: 72,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 112,
+        fecha_hora: ISODate("2025-06-14T08:22:53"),
+        id_medico: 21,
+        id_paciente: 127,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 113,
+        fecha_hora: ISODate("2023-06-02T14:08:07"),
+        id_medico: 8,
+        id_paciente: 7,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 114,
+        fecha_hora: ISODate("2024-11-17T00:25:42"),
+        id_medico: 17,
+        id_paciente: 78,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 115,
+        fecha_hora: ISODate("2025-05-01T14:07:32"),
+        id_medico: 44,
+        id_paciente: 66,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 116,
+        fecha_hora: ISODate("2025-07-18T02:22:39"),
+        id_medico: 6,
+        id_paciente: 84,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 117,
+        fecha_hora: ISODate("2023-04-09T15:26:29"),
+        id_medico: 28,
+        id_paciente: 82,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 118,
+        fecha_hora: ISODate("2023-12-08T08:37:50"),
+        id_medico: 24,
+        id_paciente: 72,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 119,
+        fecha_hora: ISODate("2023-05-28T17:12:54"),
+        id_medico: 1,
+        id_paciente: 73,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 120,
+        fecha_hora: ISODate("2025-02-03T13:02:12"),
+        id_medico: 23,
+        id_paciente: 56,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 121,
+        fecha_hora: ISODate("2024-02-04T19:12:25"),
+        id_medico: 40,
+        id_paciente: 35,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 122,
+        fecha_hora: ISODate("2023-01-13T11:37:23"),
+        id_medico: 49,
+        id_paciente: 73,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 123,
+        fecha_hora: ISODate("2023-09-13T21:31:39"),
+        id_medico: 38,
+        id_paciente: 120,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 124,
+        fecha_hora: ISODate("2023-10-12T21:53:47"),
+        id_medico: 29,
+        id_paciente: 18,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 125,
+        fecha_hora: ISODate("2023-05-20T15:50:10"),
+        id_medico: 10,
+        id_paciente: 71,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 126,
+        fecha_hora: ISODate("2024-03-03T06:13:21"),
+        id_medico: 23,
+        id_paciente: 87,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 127,
+        fecha_hora: ISODate("2023-02-04T05:20:21"),
+        id_medico: 57,
+        id_paciente: 109,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 128,
+        fecha_hora: ISODate("2023-03-12T23:51:16"),
+        id_medico: 36,
+        id_paciente: 125,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 129,
+        fecha_hora: ISODate("2023-03-29T02:06:17"),
+        id_medico: 19,
+        id_paciente: 15,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 130,
+        fecha_hora: ISODate("2024-10-16T17:38:28"),
+        id_medico: 50,
+        id_paciente: 57,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 131,
+        fecha_hora: ISODate("2025-04-10T22:42:13"),
+        id_medico: 57,
+        id_paciente: 59,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 132,
+        fecha_hora: ISODate("2023-11-16T09:44:35"),
+        id_medico: 58,
+        id_paciente: 32,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 133,
+        fecha_hora: ISODate("2025-04-13T05:43:30"),
+        id_medico: 19,
+        id_paciente: 25,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 134,
+        fecha_hora: ISODate("2025-06-08T23:16:03"),
+        id_medico: 27,
+        id_paciente: 39,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 135,
+        fecha_hora: ISODate("2023-11-08T01:19:43"),
+        id_medico: 12,
+        id_paciente: 16,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 136,
+        fecha_hora: ISODate("2024-07-17T09:46:01"),
+        id_medico: 35,
+        id_paciente: 72,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 137,
+        fecha_hora: ISODate("2025-07-23T15:36:25"),
+        id_medico: 16,
+        id_paciente: 61,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 138,
+        fecha_hora: ISODate("2023-11-16T23:14:28"),
+        id_medico: 48,
+        id_paciente: 9,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 139,
+        fecha_hora: ISODate("2024-02-17T16:31:51"),
+        id_medico: 25,
+        id_paciente: 61,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 140,
+        fecha_hora: ISODate("2024-10-25T21:24:59"),
+        id_medico: 46,
+        id_paciente: 86,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 141,
+        fecha_hora: ISODate("2024-04-09T01:16:41"),
+        id_medico: 47,
+        id_paciente: 27,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 142,
+        fecha_hora: ISODate("2023-07-15T21:38:34"),
+        id_medico: 11,
+        id_paciente: 72,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 143,
+        fecha_hora: ISODate("2024-12-13T12:35:59"),
+        id_medico: 22,
+        id_paciente: 7,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 144,
+        fecha_hora: ISODate("2024-08-16T05:17:32"),
+        id_medico: 50,
+        id_paciente: 119,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 145,
+        fecha_hora: ISODate("2023-01-01T17:50:13"),
+        id_medico: 61,
+        id_paciente: 127,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 146,
+        fecha_hora: ISODate("2023-11-27T10:07:57"),
+        id_medico: 50,
+        id_paciente: 59,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 147,
+        fecha_hora: ISODate("2023-05-27T08:06:00"),
+        id_medico: 14,
+        id_paciente: 27,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 148,
+        fecha_hora: ISODate("2023-06-02T19:46:07"),
+        id_medico: 22,
+        id_paciente: 104,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 149,
+        fecha_hora: ISODate("2023-06-27T00:19:08"),
+        id_medico: 3,
+        id_paciente: 5,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 150,
+        fecha_hora: ISODate("2023-05-04T18:47:06"),
+        id_medico: 47,
+        id_paciente: 70,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 151,
+        fecha_hora: ISODate("2023-05-04T20:10:36"),
+        id_medico: 38,
+        id_paciente: 18,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 152,
+        fecha_hora: ISODate("2025-01-28T14:37:51"),
+        id_medico: 48,
+        id_paciente: 110,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 153,
+        fecha_hora: ISODate("2023-03-04T07:22:06"),
+        id_medico: 32,
+        id_paciente: 81,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 154,
+        fecha_hora: ISODate("2024-05-30T03:00:26"),
+        id_medico: 59,
+        id_paciente: 4,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 155,
+        fecha_hora: ISODate("2023-11-22T04:52:27"),
+        id_medico: 34,
+        id_paciente: 61,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 156,
+        fecha_hora: ISODate("2024-10-14T14:01:05"),
+        id_medico: 23,
+        id_paciente: 65,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 157,
+        fecha_hora: ISODate("2024-08-29T22:29:38"),
+        id_medico: 7,
+        id_paciente: 25,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 158,
+        fecha_hora: ISODate("2023-09-19T04:02:23"),
+        id_medico: 12,
+        id_paciente: 54,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 159,
+        fecha_hora: ISODate("2024-01-09T20:34:44"),
+        id_medico: 62,
+        id_paciente: 96,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 160,
+        fecha_hora: ISODate("2024-10-05T02:44:11"),
+        id_medico: 32,
+        id_paciente: 80,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 161,
+        fecha_hora: ISODate("2023-09-09T22:40:15"),
+        id_medico: 44,
+        id_paciente: 41,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 162,
+        fecha_hora: ISODate("2023-03-16T07:38:08"),
+        id_medico: 12,
+        id_paciente: 84,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 163,
+        fecha_hora: ISODate("2024-06-16T08:20:25"),
+        id_medico: 37,
+        id_paciente: 72,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 164,
+        fecha_hora: ISODate("2024-09-02T11:41:12"),
+        id_medico: 14,
+        id_paciente: 38,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 165,
+        fecha_hora: ISODate("2025-04-22T14:14:51"),
+        id_medico: 43,
+        id_paciente: 64,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 166,
+        fecha_hora: ISODate("2024-11-23T05:27:11"),
+        id_medico: 28,
+        id_paciente: 93,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 167,
+        fecha_hora: ISODate("2025-06-17T02:52:44"),
+        id_medico: 4,
+        id_paciente: 66,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 168,
+        fecha_hora: ISODate("2023-01-07T01:59:10"),
+        id_medico: 11,
+        id_paciente: 5,
+        evolucion: "El paciente muestra mejoría con respecto al tratamiento anterior."
+    },
+    {
+        _id: 169,
+        fecha_hora: ISODate("2024-04-26T20:02:06"),
+        id_medico: 42,
+        id_paciente: 19,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 170,
+        fecha_hora: ISODate("2023-08-25T19:03:11"),
+        id_medico: 25,
+        id_paciente: 115,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 171,
+        fecha_hora: ISODate("2023-08-24T00:11:18"),
+        id_medico: 43,
+        id_paciente: 47,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 172,
+        fecha_hora: ISODate("2024-04-14T21:33:32"),
+        id_medico: 2,
+        id_paciente: 53,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 173,
+        fecha_hora: ISODate("2023-02-02T06:15:28"),
+        id_medico: 19,
+        id_paciente: 86,
+        evolucion: "El paciente refiere persistencia del dolor, se ajusta medicación."
+    },
+    {
+        _id: 174,
+        fecha_hora: ISODate("2024-06-03T11:12:13"),
+        id_medico: 34,
+        id_paciente: 103,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 175,
+        fecha_hora: ISODate("2023-09-14T01:47:54"),
+        id_medico: 14,
+        id_paciente: 123,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 176,
+        fecha_hora: ISODate("2024-01-23T12:51:52"),
+        id_medico: 22,
+        id_paciente: 28,
+        evolucion: "Se solicita examen complementario para descartar complicaciones."
+    },
+    {
+        _id: 177,
+        fecha_hora: ISODate("2024-07-19T08:48:31"),
+        id_medico: 38,
+        id_paciente: 110,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 178,
+        fecha_hora: ISODate("2023-12-23T05:10:55"),
+        id_medico: 51,
+        id_paciente: 100,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 179,
+        fecha_hora: ISODate("2025-05-09T05:24:43"),
+        id_medico: 62,
+        id_paciente: 26,
+        evolucion: "Evolución satisfactoria, signos vitales dentro de parámetros normales."
+    },
+    {
+        _id: 180,
+        fecha_hora: ISODate("2024-12-04T06:49:09"),
+        id_medico: 39,
+        id_paciente: 110,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    },
+    {
+        _id: 181,
+        fecha_hora: ISODate("2024-12-08T09:05:09"),
+        id_medico: 35,
+        id_paciente: 19,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 182,
+        fecha_hora: ISODate("2023-04-10T04:05:50"),
+        id_medico: 20,
+        id_paciente: 105,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 183,
+        fecha_hora: ISODate("2023-09-19T05:26:42"),
+        id_medico: 56,
+        id_paciente: 95,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 184,
+        fecha_hora: ISODate("2023-07-04T01:45:34"),
+        id_medico: 10,
+        id_paciente: 78,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 185,
+        fecha_hora: ISODate("2023-12-07T02:26:27"),
+        id_medico: 37,
+        id_paciente: 4,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 186,
+        fecha_hora: ISODate("2024-07-12T00:47:36"),
+        id_medico: 61,
+        id_paciente: 70,
+        evolucion: "No se evidencian complicaciones derivadas del procedimiento anterior."
+    },
+    {
+        _id: 187,
+        fecha_hora: ISODate("2024-06-25T10:08:44"),
+        id_medico: 52,
+        id_paciente: 12,
+        evolucion: "Se observa una reducción significativa en los síntomas reportados."
+    },
+    {
+        _id: 188,
+        fecha_hora: ISODate("2024-08-03T18:08:00"),
+        id_medico: 50,
+        id_paciente: 104,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 189,
+        fecha_hora: ISODate("2024-11-14T05:53:30"),
+        id_medico: 20,
+        id_paciente: 114,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 190,
+        fecha_hora: ISODate("2023-12-31T22:11:11"),
+        id_medico: 9,
+        id_paciente: 64,
+        evolucion: "Se evidencia una respuesta favorable al medicamento recetado."
+    },
+    {
+        _id: 191,
+        fecha_hora: ISODate("2023-11-10T00:49:22"),
+        id_medico: 11,
+        id_paciente: 58,
+        evolucion: "Paciente con buena adherencia al tratamiento, sin reacciones adversas reportadas."
+    },
+    {
+        _id: 192,
+        fecha_hora: ISODate("2023-06-05T16:19:23"),
+        id_medico: 27,
+        id_paciente: 71,
+        evolucion: "No se observa mejoría clínica significativa, se cambia el esquema terapéutico."
+    },
+    {
+        _id: 193,
+        fecha_hora: ISODate("2024-10-16T12:23:24"),
+        id_medico: 53,
+        id_paciente: 1,
+        evolucion: "Se recomienda continuar con el tratamiento actual y realizar control en 15 días."
+    }
+]);
+
+//inserciones estados_seguros
+
+db.estados_seguros.insertMany([
+    {
+        _id: 1,
+        estado: "Activo",
+        activo: true
+    },
+    {
+        _id: 2,
+        estado: "Suspendido",
+        activo: false
+    },
+    {
+        _id: 3,
+        estado: "En revisión",
+        activo: false
+    },
+    {
+        _id: 4,
+        estado: "Cancelado",
+        activo: false
+    },
+    {
+        _id: 5,
+        estado: "Vencido",
+        activo: false
+    },
+    {
+        _id: 6,
+        estado: "En liquidación",
+        activo: false
+    },
+    {
+        _id: 7,
+        estado: "Histórico",
+        activo: false
+    }
+]);
+
+//inserciones tipos_seguros
+
+db.tipos_seguros.insertMany([
+    {
+        _id: 1,
+        tipo: "Régimen Contributivo"
+    },
+    {
+        _id: 2,
+        tipo: "Régimen Subsidiado"
+    },
+    {
+        _id: 3,
+        tipo: "Medicina Prepagada"
+    },
+    {
+        _id: 4,
+        tipo: "Póliza Privada"
+    },
+    {
+        _id: 5,
+        tipo: "Plan Complementario EPS"
+    },
+    {
+        _id: 6,
+        tipo: "Régimen Especial del Estado"
+    },
+    {
+        _id: 7,
+        tipo: "Seguro por Evento o Temporal"
+    }
+]);
+
+//inserciones seguros
+
+db.seguros.insertMany([
+    {
+        _id: 1,
+        nombre: "Salud Total Básico",
+        id_tipo: 1,
+        num_poliza: "STB-9832ZK",
+        id_estado: 1
+    },
+    {
+        _id: 2,
+        nombre: "Nueva EPS Familiar",
+        id_tipo: 2,
+        num_poliza: "NEPSF-758B",
+        id_estado: 2
+    },
+    {
+        _id: 3,
+        nombre: "SURA Premium",
+        id_tipo: 3,
+        num_poliza: "SURA-PREM9943",
+        id_estado: 3
+    },
+    {
+        _id: 4,
+        nombre: "Coomeva Vital",
+        id_tipo: 4,
+        num_poliza: "CMV-115D8",
+        id_estado: 4
+    },
+    {
+        _id: 5,
+        nombre: "Aliansalud Preferencial",
+        id_tipo: 1,
+        num_poliza: "ASP-7623B",
+        id_estado: 5
+    },
+    {
+        _id: 6,
+        nombre: "Compensar Salud",
+        id_tipo: 2,
+        num_poliza: "CPS-AB9381",
+        id_estado: 1
+    },
+    {
+        _id: 7,
+        nombre: "MedPlus Ejecutivo",
+        id_tipo: 3,
+        num_poliza: "MDE-55812",
+        id_estado: 6
+    },
+    {
+        _id: 8,
+        nombre: "Famisanar Clásico",
+        id_tipo: 5,
+        num_poliza: "FAM-84720K",
+        id_estado: 3
+    },
+    {
+        _id: 9,
+        nombre: "Sanitas Global",
+        id_tipo: 1,
+        num_poliza: "SG-777MNL",
+        id_estado: 2
+    },
+    {
+        _id: 10,
+        nombre: "Colpatria Salud",
+        id_tipo: 4,
+        num_poliza: "CPS-123XZ9",
+        id_estado: 7
+    },
+    {
+        _id: 11,
+        nombre: "Bolívar Vida y Salud",
+        id_tipo: 6,
+        num_poliza: "BVS-76287",
+        id_estado: 1
+    },
+    {
+        _id: 12,
+        nombre: "Medisanar Total",
+        id_tipo: 2,
+        num_poliza: "MT-5490AC",
+        id_estado: 2
+    },
+    {
+        _id: 13,
+        nombre: "Cafesalud Integral",
+        id_tipo: 3,
+        num_poliza: "CFI-4422",
+        id_estado: 3
+    },
+    {
+        _id: 14,
+        nombre: "Liberty Evento Único",
+        id_tipo: 7,
+        num_poliza: "LU-99318",
+        id_estado: 5
+    },
+    {
+        _id: 15,
+        nombre: "AXA Colpatria Evento",
+        id_tipo: 7,
+        num_poliza: "AXC-4502Q",
+        id_estado: 6
+    },
+    {
+        _id: 16,
+        nombre: "SOS Complementario",
+        id_tipo: 5,
+        num_poliza: "SOS-C9921",
+        id_estado: 3
+    },
+    {
+        _id: 17,
+        nombre: "Salud Vida Estatal",
+        id_tipo: 6,
+        num_poliza: "SVE-88873A",
+        id_estado: 4
+    },
+    {
+        _id: 18,
+        nombre: "Mutual Ser Plus",
+        id_tipo: 2,
+        num_poliza: "MSP-5520",
+        id_estado: 5
+    },
+    {
+        _id: 19,
+        nombre: "Vivirsalud EPS",
+        id_tipo: 1,
+        num_poliza: "VS-EPS9912",
+        id_estado: 6
+    },
+    {
+        _id: 20,
+        nombre: "Saludcoop Preferencial",
+        id_tipo: 3,
+        num_poliza: "SCP-773AD",
+        id_estado: 2
+    },
+    {
+        _id: 21,
+        nombre: "Colmédica Básico",
+        id_tipo: 4,
+        num_poliza: "CM-BS772",
+        id_estado: 4
+    },
+    {
+        _id: 22,
+        nombre: "Mapfre Temporal",
+        id_tipo: 7,
+        num_poliza: "MFT-009X",
+        id_estado: 7
+    },
+    {
+        _id: 23,
+        nombre: "Medilaser Complementario",
+        id_tipo: 5,
+        num_poliza: "MLC-8501Z",
+        id_estado: 3
+    },
+    {
+        _id: 24,
+        nombre: "Protegemos Vida",
+        id_tipo: 6,
+        num_poliza: "PV-6621A",
+        id_estado: 4
+    },
+    {
+        _id: 25,
+        nombre: "Emssanar Especial",
+        id_tipo: 1,
+        num_poliza: "EME-1882K",
+        id_estado: 1
+    },
+    {
+        _id: 26,
+        nombre: "Savia Salud Contributivo",
+        id_tipo: 2,
+        num_poliza: "SSC-7601",
+        id_estado: 6
+    },
+    {
+        _id: 27,
+        nombre: "Humana Vivir Clásico",
+        id_tipo: 4,
+        num_poliza: "HV-C9771",
+        id_estado: 2
+    },
+    {
+        _id: 28,
+        nombre: "Aliansalud Plan Plus",
+        id_tipo: 5,
+        num_poliza: "ASP-4490G",
+        id_estado: 5
+    },
+    {
+        _id: 29,
+        nombre: "Equidad Salud Estatal",
+        id_tipo: 6,
+        num_poliza: "ESE-9204X",
+        id_estado: 7
+    }
+]);
+
+//inserciones pacientes_seguros
+
+db.pacientes_seguros.insertMany([
+    { id_paciente: 1, id_seguro: 29 },
+    { id_paciente: 1, id_seguro: 16 },
+    { id_paciente: 1, id_seguro: 9 },
+    { id_paciente: 2, id_seguro: 4 },
+    { id_paciente: 2, id_seguro: 8 },
+    { id_paciente: 3, id_seguro: 6 },
+    { id_paciente: 4, id_seguro: 21 },
+    { id_paciente: 4, id_seguro: 22 },
+    { id_paciente: 5, id_seguro: 26 },
+    { id_paciente: 5, id_seguro: 18 },
+    { id_paciente: 5, id_seguro: 21 },
+    { id_paciente: 6, id_seguro: 9 },
+    { id_paciente: 7, id_seguro: 1 },
+    { id_paciente: 7, id_seguro: 12 },
+    { id_paciente: 7, id_seguro: 3 },
+    { id_paciente: 8, id_seguro: 4 },
+    { id_paciente: 8, id_seguro: 3 },
+    { id_paciente: 8, id_seguro: 25 },
+    { id_paciente: 9, id_seguro: 26 },
+    { id_paciente: 9, id_seguro: 6 },
+    { id_paciente: 9, id_seguro: 4 },
+    { id_paciente: 10, id_seguro: 3 },
+    { id_paciente: 11, id_seguro: 6 },
+    { id_paciente: 11, id_seguro: 29 },
+    { id_paciente: 11, id_seguro: 8 },
+    { id_paciente: 12, id_seguro: 13 },
+    { id_paciente: 12, id_seguro: 5 },
+    { id_paciente: 12, id_seguro: 25 },
+    { id_paciente: 13, id_seguro: 28 },
+    { id_paciente: 14, id_seguro: 20 },
+    { id_paciente: 14, id_seguro: 28 },
+    { id_paciente: 14, id_seguro: 6 },
+    { id_paciente: 15, id_seguro: 23 },
+    { id_paciente: 15, id_seguro: 20 },
+    { id_paciente: 16, id_seguro: 9 },
+    { id_paciente: 16, id_seguro: 21 },
+    { id_paciente: 16, id_seguro: 16 },
+    { id_paciente: 17, id_seguro: 16 },
+    { id_paciente: 17, id_seguro: 8 },
+    { id_paciente: 18, id_seguro: 20 },
+    { id_paciente: 19, id_seguro: 9 },
+    { id_paciente: 19, id_seguro: 16 },
+    { id_paciente: 19, id_seguro: 4 },
+    { id_paciente: 20, id_seguro: 6 },
+    { id_paciente: 20, id_seguro: 29 },
+    { id_paciente: 21, id_seguro: 7 },
+    { id_paciente: 21, id_seguro: 22 },
+    { id_paciente: 21, id_seguro: 17 },
+    { id_paciente: 22, id_seguro: 11 },
+    { id_paciente: 22, id_seguro: 3 },
+    { id_paciente: 22, id_seguro: 24 },
+    { id_paciente: 23, id_seguro: 6 },
+    { id_paciente: 24, id_seguro: 11 },
+    { id_paciente: 24, id_seguro: 22 },
+    { id_paciente: 24, id_seguro: 29 },
+    { id_paciente: 25, id_seguro: 11 },
+    { id_paciente: 25, id_seguro: 29 },
+    { id_paciente: 25, id_seguro: 6 },
+    { id_paciente: 26, id_seguro: 15 },
+    { id_paciente: 26, id_seguro: 25 },
+    { id_paciente: 27, id_seguro: 17 },
+    { id_paciente: 28, id_seguro: 7 },
+    { id_paciente: 28, id_seguro: 14 },
+    { id_paciente: 29, id_seguro: 10 },
+    { id_paciente: 29, id_seguro: 2 },
+    { id_paciente: 30, id_seguro: 2 },
+    { id_paciente: 30, id_seguro: 18 },
+    { id_paciente: 30, id_seguro: 21 },
+    { id_paciente: 31, id_seguro: 19 },
+    { id_paciente: 31, id_seguro: 2 },
+    { id_paciente: 31, id_seguro: 21 },
+    { id_paciente: 32, id_seguro: 10 },
+    { id_paciente: 32, id_seguro: 6 },
+    { id_paciente: 33, id_seguro: 4 },
+    { id_paciente: 34, id_seguro: 8 },
+    { id_paciente: 34, id_seguro: 2 },
+    { id_paciente: 34, id_seguro: 29 },
+    { id_paciente: 35, id_seguro: 27 },
+    { id_paciente: 36, id_seguro: 24 },
+    { id_paciente: 37, id_seguro: 20 },
+    { id_paciente: 37, id_seguro: 9 },
+    { id_paciente: 37, id_seguro: 16 },
+    { id_paciente: 38, id_seguro: 8 },
+    { id_paciente: 38, id_seguro: 23 },
+    { id_paciente: 39, id_seguro: 10 },
+    { id_paciente: 40, id_seguro: 10 },
+    { id_paciente: 40, id_seguro: 2 },
+    { id_paciente: 40, id_seguro: 20 },
+    { id_paciente: 41, id_seguro: 2 },
+    { id_paciente: 41, id_seguro: 20 },
+    { id_paciente: 42, id_seguro: 24 },
+    { id_paciente: 42, id_seguro: 15 },
+    { id_paciente: 42, id_seguro: 6 },
+    { id_paciente: 43, id_seguro: 21 },
+    { id_paciente: 43, id_seguro: 10 },
+    { id_paciente: 43, id_seguro: 27 },
+    { id_paciente: 44, id_seguro: 16 },
+    { id_paciente: 44, id_seguro: 25 },
+    { id_paciente: 45, id_seguro: 17 },
+    { id_paciente: 45, id_seguro: 2 },
+    { id_paciente: 46, id_seguro: 14 },
+    { id_paciente: 47, id_seguro: 15 },
+    { id_paciente: 47, id_seguro: 8 },
+    { id_paciente: 47, id_seguro: 5 },
+    { id_paciente: 48, id_seguro: 17 },
+    { id_paciente: 48, id_seguro: 7 },
+    { id_paciente: 49, id_seguro: 16 },
+    { id_paciente: 50, id_seguro: 23 },
+    { id_paciente: 50, id_seguro: 3 },
+    { id_paciente: 51, id_seguro: 21 },
+    { id_paciente: 51, id_seguro: 20 },
+    { id_paciente: 51, id_seguro: 2 },
+    { id_paciente: 52, id_seguro: 23 },
+    { id_paciente: 52, id_seguro: 27 },
+    { id_paciente: 53, id_seguro: 20 },
+    { id_paciente: 53, id_seguro: 12 },
+    { id_paciente: 53, id_seguro: 4 },
+    { id_paciente: 54, id_seguro: 22 },
+    { id_paciente: 55, id_seguro: 16 },
+    { id_paciente: 55, id_seguro: 22 },
+    { id_paciente: 55, id_seguro: 12 },
+    { id_paciente: 56, id_seguro: 2 },
+    { id_paciente: 56, id_seguro: 25 },
+    { id_paciente: 57, id_seguro: 16 },
+    { id_paciente: 58, id_seguro: 2 },
+    { id_paciente: 59, id_seguro: 21 },
+    { id_paciente: 59, id_seguro: 23 },
+    { id_paciente: 59, id_seguro: 7 },
+    { id_paciente: 60, id_seguro: 9 },
+    { id_paciente: 60, id_seguro: 21 },
+    { id_paciente: 60, id_seguro: 4 },
+    { id_paciente: 61, id_seguro: 17 },
+    { id_paciente: 61, id_seguro: 29 },
+    { id_paciente: 62, id_seguro: 15 },
+    { id_paciente: 63, id_seguro: 21 },
+    { id_paciente: 64, id_seguro: 25 },
+    { id_paciente: 64, id_seguro: 9 },
+    { id_paciente: 65, id_seguro: 3 },
+    { id_paciente: 65, id_seguro: 24 },
+    { id_paciente: 66, id_seguro: 2 },
+    { id_paciente: 66, id_seguro: 15 },
+    { id_paciente: 66, id_seguro: 22 },
+    { id_paciente: 67, id_seguro: 5 },
+    { id_paciente: 67, id_seguro: 28 },
+    { id_paciente: 67, id_seguro: 24 },
+    { id_paciente: 68, id_seguro: 25 },
+    { id_paciente: 68, id_seguro: 19 },
+    { id_paciente: 69, id_seguro: 11 },
+    { id_paciente: 69, id_seguro: 17 },
+    { id_paciente: 69, id_seguro: 15 },
+    { id_paciente: 70, id_seguro: 23 },
+    { id_paciente: 71, id_seguro: 20 },
+    { id_paciente: 72, id_seguro: 16 },
+    { id_paciente: 72, id_seguro: 8 },
+    { id_paciente: 72, id_seguro: 15 },
+    { id_paciente: 73, id_seguro: 5 },
+    { id_paciente: 74, id_seguro: 14 },
+    { id_paciente: 74, id_seguro: 13 },
+    { id_paciente: 75, id_seguro: 12 },
+    { id_paciente: 76, id_seguro: 12 },
+    { id_paciente: 77, id_seguro: 12 },
+    { id_paciente: 77, id_seguro: 8 },
+    { id_paciente: 78, id_seguro: 14 },
+    { id_paciente: 78, id_seguro: 29 },
+    { id_paciente: 79, id_seguro: 14 },
+    { id_paciente: 80, id_seguro: 6 },
+    { id_paciente: 81, id_seguro: 23 },
+    { id_paciente: 81, id_seguro: 8 },
+    { id_paciente: 82, id_seguro: 26 },
+    { id_paciente: 83, id_seguro: 22 },
+    { id_paciente: 83, id_seguro: 23 },
+    { id_paciente: 83, id_seguro: 25 },
+    { id_paciente: 84, id_seguro: 9 },
+    { id_paciente: 84, id_seguro: 22 },
+    { id_paciente: 85, id_seguro: 24 },
+    { id_paciente: 85, id_seguro: 4 },
+    { id_paciente: 86, id_seguro: 7 },
+    { id_paciente: 87, id_seguro: 23 },
+    { id_paciente: 87, id_seguro: 4 },
+    { id_paciente: 87, id_seguro: 14 },
+    { id_paciente: 88, id_seguro: 4 },
+    { id_paciente: 89, id_seguro: 9 },
+    { id_paciente: 89, id_seguro: 18 },
+    { id_paciente: 89, id_seguro: 8 },
+    { id_paciente: 90, id_seguro: 14 },
+    { id_paciente: 90, id_seguro: 26 },
+    { id_paciente: 90, id_seguro: 2 },
+    { id_paciente: 91, id_seguro: 27 },
+    { id_paciente: 92, id_seguro: 14 },
+    { id_paciente: 93, id_seguro: 12 },
+    { id_paciente: 93, id_seguro: 16 },
+    { id_paciente: 94, id_seguro: 14 },
+    { id_paciente: 94, id_seguro: 18 },
+    { id_paciente: 95, id_seguro: 24 },
+    { id_paciente: 95, id_seguro: 11 },
+    { id_paciente: 95, id_seguro: 13 },
+    { id_paciente: 96, id_seguro: 3 },
+    { id_paciente: 96, id_seguro: 28 },
+    { id_paciente: 96, id_seguro: 21 },
+    { id_paciente: 97, id_seguro: 26 },
+    { id_paciente: 97, id_seguro: 2 },
+    { id_paciente: 97, id_seguro: 27 },
+    { id_paciente: 98, id_seguro: 23 },
+    { id_paciente: 98, id_seguro: 10 },
+    { id_paciente: 99, id_seguro: 28 },
+    { id_paciente: 99, id_seguro: 27 },
+    { id_paciente: 99, id_seguro: 3 },
+    { id_paciente: 100, id_seguro: 4 },
+    { id_paciente: 100, id_seguro: 11 },
+    { id_paciente: 100, id_seguro: 3 },
+    { id_paciente: 101, id_seguro: 15 },
+    { id_paciente: 101, id_seguro: 12 },
+    { id_paciente: 102, id_seguro: 28 },
+    { id_paciente: 103, id_seguro: 23 },
+    { id_paciente: 103, id_seguro: 24 },
+    { id_paciente: 104, id_seguro: 5 },
+    { id_paciente: 105, id_seguro: 4 },
+    { id_paciente: 105, id_seguro: 19 },
+    { id_paciente: 105, id_seguro: 18 },
+    { id_paciente: 106, id_seguro: 11 },
+    { id_paciente: 106, id_seguro: 20 },
+    { id_paciente: 106, id_seguro: 18 },
+    { id_paciente: 107, id_seguro: 13 },
+    { id_paciente: 107, id_seguro: 29 },
+    { id_paciente: 108, id_seguro: 9 },
+    { id_paciente: 108, id_seguro: 24 },
+    { id_paciente: 108, id_seguro: 25 },
+    { id_paciente: 109, id_seguro: 15 },
+    { id_paciente: 110, id_seguro: 22 },
+    { id_paciente: 111, id_seguro: 10 },
+    { id_paciente: 111, id_seguro: 2 },
+    { id_paciente: 112, id_seguro: 5 },
+    { id_paciente: 112, id_seguro: 26 },
+    { id_paciente: 112, id_seguro: 15 },
+    { id_paciente: 113, id_seguro: 26 },
+    { id_paciente: 113, id_seguro: 19 },
+    { id_paciente: 114, id_seguro: 3 },
+    { id_paciente: 114, id_seguro: 21 },
+    { id_paciente: 114, id_seguro: 7 },
+    { id_paciente: 115, id_seguro: 7 },
+    { id_paciente: 116, id_seguro: 21 },
+    { id_paciente: 116, id_seguro: 13 },
+    { id_paciente: 116, id_seguro: 10 },
+    { id_paciente: 117, id_seguro: 12 },
+    { id_paciente: 117, id_seguro: 20 },
+    { id_paciente: 118, id_seguro: 13 },
+    { id_paciente: 119, id_seguro: 28 },
+    { id_paciente: 119, id_seguro: 4 },
+    { id_paciente: 120, id_seguro: 14 },
+    { id_paciente: 120, id_seguro: 24 },
+    { id_paciente: 121, id_seguro: 7 },
+    { id_paciente: 122, id_seguro: 15 },
+    { id_paciente: 123, id_seguro: 4 },
+    { id_paciente: 123, id_seguro: 9 },
+    { id_paciente: 124, id_seguro: 4 },
+    { id_paciente: 125, id_seguro: 23 },
+    { id_paciente: 125, id_seguro: 21 },
+    { id_paciente: 125, id_seguro: 25 },
+    { id_paciente: 126, id_seguro: 2 },
+    { id_paciente: 127, id_seguro: 26 },
+    { id_paciente: 127, id_seguro: 1 },
+    { id_paciente: 127, id_seguro: 17 }
+]);
