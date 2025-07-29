@@ -897,3 +897,9 @@ Por esta razón se decidió, dado que un seguro podría llegar a cambiar de tipo
 La tercera forma normal establece que no deben existir dependencias transitivas dentro de la tabla. Esto significa que ningún atributo no clave debe depender de otro atributo no clave, es decir, los atributos que no forman parte de la clave primaria no deben estar relacionados entre sí de manera indirecta.
 
 Si existe una dependencia transitiva, es necesario descomponer la tabla, creando una nueva entidad que contenga el atributo dependiente, de tal forma que se elimine la relación indirecta. Posteriormente, se establecerá una referencia mediante una llave foránea en la tabla original. Este proceso asegura que las dependencias entre atributos sean estrictamente directas a la clave primaria, garantizando mayor flexibilidad y consistencia en el modelo de datos.
+
+<h4 align=center>Descripción</h4>
+
+Para avanzar hacia la tercera forma normal, se analizó si el modelo actual presentaba dependencias transitivas que pudieran afectar la integridad de los datos. A partir de esta revisión, se identificaron algunos atributos que no dependían directamente de la clave primaria de sus respectivas tablas, lo cual motivó la reestructuración de ciertas entidades.
+
+Se crearon nuevas tablas para separar adecuadamente información que antes estaba integrada de forma poco óptima, permitiendo así que cada atributo quede vinculado únicamente a la clave primaria de su entidad. Estas mejoras aseguran un modelo más limpio, estructurado y alineado con los principios de la 3FN.
