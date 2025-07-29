@@ -1250,7 +1250,7 @@ Para empezar a implementar la base de datos `sistema_hospitalario` en un cluster
 
 <br>
 
-1. Desde la terminal de *Linux*, escribir el comando:
+`1.` Desde la terminal de *Linux*, escribir el comando:
 
 ```
 mongosh
@@ -1266,7 +1266,7 @@ Para conectarse a una URI específica.
 
 <br>
 
-2. Una vez dentro, se deberá ejecutar el comando:
+`2.` Una vez dentro, se deberá ejecutar el comando:
 
 ```
 use sistema_hospitalario
@@ -1276,8 +1276,14 @@ Para crear de manera implícita la base de datos donde se almacenará toda la in
 
 <br>
 
-3. Acceder al archivo `ddl.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
+`3.` Acceder al archivo `ddl.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
 
 <br>
 
-4. Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Lógico a su entorno o cluster.
+`4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Lógico a su entorno o cluster.
+
+<br>
+
+<h4 align=center>Inserciones de Datos</h4>
+
+En esta fase del proceso, una vez creado el esqueleto de la base de datos, se pudo iniciar el proceso de inserción de documentos a cada colección. Este proceso consiste en, esencialmente, agregar a cada colección información relacionada con esta, que coincida con las validaciones implementadas con `$jsonSchema`, así como con la unicidad garantizada por los índices simples y compuestos generados en cada una de las entidades.
