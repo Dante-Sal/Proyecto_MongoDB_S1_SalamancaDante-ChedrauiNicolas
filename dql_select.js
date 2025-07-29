@@ -199,3 +199,669 @@ db.per_mantenimiento.find({ salario: { $lt: NumberDecimal("2000000") } });
 //36. buscar personal de mantenimiento que posea dos nombres
 
 db.per_mantenimiento.find({ segundo_nombre: { $exists: true } });
+
+//37. mostrar solamente el nombre y correo electrónico de todo el personal de mantenimiento
+
+db.per_mantenimiento.aggregate([
+    {
+        $project: {
+            nombre_completo: {
+                $concat: [
+                    "$primer_nombre", " ",
+                    { $ifNull: ["$segundo_nombre", ""] }, " ",
+                    "$primer_apellido", " ",
+                    "$segundo_apellido"
+                ]
+            },
+            correo_electronico: "$correo_el"
+        }
+    }
+]);
+
+//38. buscar áreas especializadas cuyo nombre sea de exactamente una palabra
+
+db.areas_especializadas.find({ nombre: /^[^\s]+$/ });
+
+//39. buscar personal de mantenimiento con salario mayor a 3 millones de pesos
+
+db.per_mantenimiento.find({ salario: { $gt: NumberDecimal("3000000") } });
+
+//40. encontrar fabricantes de medicamentos nacionales y mostrar sólo el nombre y los datos de contacto
+
+db.fabricantes.find({ pais: "Colombia" }, { _id: 0, nombre: 1, tel: 1, correo_el: 1 });
+
+//41. mostrar la colección de pacientes con sus direcciones embebidas y ocultando el campo "id_direccion"
+
+db.pacientes.aggregate([
+    {
+        $lookup: {
+            from: "direcciones_pacientes",
+            localField: "id_direccion",
+            foreignField: "_id",
+            as: "direccion"
+        }
+    },
+    {
+        $project: {
+            id_hist_clinica: 1,
+            primer_nombre: 1,
+            segundo_nombre: 1,
+            primer_apellido: 1,
+            segundo_apellido: 1,
+            direccion: 1,
+            num_telefono: "$tel",
+            correo_electronico: "$correo_el"
+        }
+    }
+]);
+
+//42. mostrar directores generales cuyo correo electrónico termine en "hotmail.com"
+
+db.dir_generales.find({ correo_el: /hotmail.com$/ });
+
+//43. mostrar la colección de médicos con un campo extra llamado dir_general, que muestre el director general que gestiona el hospital donde trabaja cada médico
+
+db.medicos.aggregate([
+    {
+        $lookup: {
+            from: "hospitales",
+            localField: "id_hospital",
+            foreignField: "_id",
+            as: "hospital"
+        }
+    },
+    {
+        $unwind: "$hospital"
+    },
+    {
+        $lookup: {
+            from: "dir_generales",
+            localField: "hospital.id_dir_general",
+            foreignField: "_id",
+            as: "dir_general"
+        }
+    },
+    {
+        $unwind: "$dir_general"
+    },
+    {
+        $project: {
+            num_colegiatura: 1,
+            primer_nombre: 1,
+            segundo_nombre: 1,
+            primer_apellido: 1,
+            segundo_apellido: 1,
+            tel: 1,
+            correo_el: 1,
+            salario: 1,
+            id_hospital: 1,
+            dir_general: 1
+        }
+    }
+]);
+
+//44. mostrar enfermeros que tengan correos electrónicos con dominios diferentes a "gmail.com"
+
+db.enfermeros.find({ correo_el: { $not: /gmail\.com/ } });
+
+//45. encontrar enfermeros que se encuentren bajo la dirección de "Carlos Gómez Rincón"
+
+db.enfermeros.aggregate([
+    {
+        $lookup: {
+            from: "hospitales",
+            localField: "id_hospital",
+            foreignField: "_id",
+            as: "hospital"
+        }
+    },
+    {
+        $unwind: "$hospital"
+    },
+    {
+        $lookup: {
+            from: "dir_generales",
+            localField: "hospital.id_dir_general",
+            foreignField: "_id",
+            as: "dir_general"
+        }
+    },
+    {
+        $unwind: "$dir_general"
+    },
+    {
+        $match: {
+            "dir_general.primer_nombre": "Carlos",
+            "dir_general.primer_apellido": "Gómez",
+            "dir_general.segundo_apellido": "Rincón"
+        }
+    }
+]);
+
+//46. encontrar pacientes que hayan estado en alguna visita médica con el médico "Francisco Javier Montoya Luna"
+
+db.visitas_medicas.aggregate([
+    {
+        $lookup: {
+            from: "medicos",
+            localField: "id_medico",
+            foreignField: "_id",
+            as: "medico"
+        }
+    },
+    {
+        $lookup: {
+            from: "pacientes",
+            localField: "id_paciente",
+            foreignField: "_id",
+            as: "paciente"
+        }
+    },
+    {
+        $unwind: "$medico"
+    },
+    {
+        $unwind: "$paciente"
+    },
+    {
+        $match: {
+            "medico.primer_nombre": "Francisco",
+            "medico.segundo_nombre": "Javier",
+            "medico.primer_apellido": "Montoya",
+            "medico.segundo_apellido": "Luna"
+        }
+    },
+    {
+        $group: {
+            _id: "$paciente._id",
+            info_paciente: { $first: "$paciente" },
+            visitas: {
+                $addToSet: {
+                    _id: "$_id",
+                    fecha_hora: "$fecha_hora"
+                }
+            },
+            cant_visitas: { $sum: 1 }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            id_paciente: "$info_paciente._id",
+            id_hist_clinica: "$info_paciente.id_hist_clinica",
+            primer_nombre: "$info_paciente.primer_nombre",
+            segundo_nombre: "$info_paciente.segundo_nombre",
+            primer_apellido: "$info_paciente.primer_apellido",
+            segundo_apellido: "$info_paciente.segundo_apellido",
+            id_direccion: "$info_paciente.id_direccion",
+            tel: "$info_paciente.tel",
+            correo_el: "$info_paciente.correo_el",
+            visitas_con_francisco_javier_montoya_luna: "$visitas",
+            cant_visitas_con_francisco_javier_montoya_luna: "$cant_visitas"
+        }
+    }
+]);
+
+//47. encontrar pacientes alérgicos a la caspa de animales
+
+db.hist_clinicas_alergias.aggregate([
+    {
+        $lookup: {
+            from: "hist_clinicas",
+            localField: "id_hist_clinica",
+            foreignField: "_id",
+            as: "hist_clinica"
+        }
+    },
+    {
+        $lookup: {
+            from: "alergias",
+            localField: "id_alergia",
+            foreignField: "_id",
+            as: "alergia"
+        }
+    },
+    {
+        $unwind: "$hist_clinica"
+    },
+    {
+        $unwind: "$alergia"
+    },
+    {
+        $lookup: {
+            from: "pacientes",
+            localField: "hist_clinica._id",
+            foreignField: "id_hist_clinica",
+            as: "paciente"
+        }
+    },
+    {
+        $unwind: "$paciente"
+    },
+    {
+        $match: { "alergia.nombre": "Alergia a la caspa de animales" }
+    },
+    {
+        $group: {
+            _id: "$paciente._id",
+            paciente: { $first: "$paciente" }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            id_hist_clinica: "$paciente.id_hist_clinica",
+            primer_nombre: "$paciente.primer_nombre",
+            segundo_nombre: "$paciente.segundo_nombre",
+            primer_apellido: "$paciente.primer_apellido",
+            segundo_apellido: "$paciente.segundo_apellido",
+            id_direccion: "$paciente.id_direccion",
+            tel: "$paciente.tel",
+            correo_el: "$paciente.correo_el"
+        }
+    }
+]);
+
+//48. mostrar todas las terapias (tratamientos con nombre referente a estas mismas)
+
+db.tratamientos.find({ nombre: /terapia/i });
+
+//49. mostrar hospitales cuyo nombre contenga la palabra "San" (insensible a mayúsculas y minúsculas)
+
+db.hospitales.find({ nombre: /\bsan\b/i });
+
+//50. encontrar visitas médicas en las cuales se hayan asignado terapias (tratamientos con nombre referente a estas mismas)
+
+db.visitas_medicas_tratamientos.aggregate([
+    {
+        $lookup: {
+            from: "visitas_medicas",
+            localField: "id_visita_medica",
+            foreignField: "_id",
+            as: "visita_medica"
+        }
+    },
+    {
+        $lookup: {
+            from: "tratamientos",
+            localField: "id_tratamiento",
+            foreignField: "_id",
+            as: "tratamiento"
+        }
+    },
+    {
+        $unwind: "$visita_medica"
+    },
+    {
+        $unwind: "$tratamiento"
+    },
+    {
+        $match: { "tratamiento.nombre": /terapia/i }
+    },
+    {
+        $group: {
+            _id: "$id_visita_medica",
+            fecha_hora: { $first: "$visita_medica.fecha_hora" },
+            id_medico: { $first: "$visita_medica.id_medico" },
+            id_paciente: { $first: "$visita_medica.id_paciente" },
+            tratamientos_asignados: { $addToSet: "$tratamiento.nombre" },
+            evolucion_paciente: { $first: "$visita_medica.evolucion" }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            id_visita_medica: "$_id",
+            fecha_hora: 1,
+            id_medico: 1,
+            id_paciente: 1,
+            tratamientos_asignados: 1,
+            evolucion_paciente: 1
+        }
+    }
+]);
+
+//51. encontrar medicamentos de tipo "Analgésico" cuyo nombre empiece por la letra "A"
+
+db.medicamentos.find({ tipo: "Analgésico", nombre: /^A/i });
+
+//52. encontrar el medicamento con el "_id: 21" y mostrar solamente su nombre
+
+db.medicamentos.find({ _id: 21 }, { _id: 0, nombre: 1 });
+
+//53. listar todos los hospitales con solamente su nombre, número de teléfono, nombre del barrio y municipio donde está ubicado
+
+db.hospitales.aggregate([
+    {
+        $lookup: {
+            from: "barrios",
+            localField: "id_barrio",
+            foreignField: "_id",
+            as: "barrio_info"
+        }
+    },
+    {
+        $unwind: "$barrio_info"
+    },
+    {
+        $project: {
+            _id: 0,
+            hospital: "$nombre",
+            telefono: "$tel",
+            barrio: "$barrio_info.nombre",
+            municipio: "$barrio_info.municipio"
+        }
+    }
+]);
+
+//54. mostrar cada hospital sólo con su nombre, nombre del director general a cargo y correo electrónico del mismo
+
+db.hospitales.aggregate([
+    {
+        $lookup: {
+            from: "dir_generales",
+            localField: "id_dir_general",
+            foreignField: "_id",
+            as: "dir_general"
+        }
+    },
+    {
+        $unwind: "$dir_general"
+    },
+    {
+        $project: {
+            _id: 0,
+            hospital: "$nombre",
+            dir_general: {
+                $concat: [
+                    "$dir_general.primer_nombre", " ",
+                    { $ifNull: ["$dir_general.segundo_nombre", ""] }, " ",
+                    "$dir_general.primer_apellido", " ",
+                    "$dir_general.segundo_apellido"
+                ]
+            },
+            correo_el_dir_general: "$dir_general.correo_el"
+        }
+    }
+]);
+
+//55. encontrar tratamientos que cuesten entre $5'000.000 y $6'000.000
+
+db.tratamientos.find({ costo: { $gte: 5000000 }, costo: { $lte: 6000000 } });
+
+//56. encontrar visitas médicas realizadas en el año 2023 o en el mes de junio
+
+db.visitas_medicas.aggregate([{ $match: { $expr: { $or: [{ $eq: [{ $year: "$fecha_hora" }, 2023] }, { $eq: [{ $month: "$fecha_hora" }, 6] }] } } }]);
+
+//57. encontrar visitas médicas realizadas el 12 de marzo de 2023
+
+db.visitas_medicas.aggregate([{ $match: { $expr: { $and: [{ $eq: [{ $dayOfMonth: "$fecha_hora" }, 12] }, { $eq: [{ $month: "$fecha_hora" }, 3] }, { $eq: [{ $year: "$fecha_hora" }, 2023] }] } } }]);
+
+//58. listar cada hospital con solamente su nombre y el número total de áreas especializadas
+
+db.hospitales.aggregate([
+    {
+        $lookup: {
+            from: "hospitales_areas_especializadas",
+            localField: "_id",
+            foreignField: "id_hospital",
+            as: "areas"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            hospital: "$nombre",
+            total_areas: { $size: "$areas" }
+        }
+    }
+]);
+
+//59. mostrar los nombres de todos los hospitales junto con todas sus áreas especializadas (sin mostrar el id del hospital)
+
+db.hospitales.aggregate([
+    {
+        $lookup: {
+            from: "hospitales_areas_especializadas",
+            localField: "_id",
+            foreignField: "id_hospital",
+            as: "rel_areas"
+        }
+    },
+    { $unwind: "$rel_areas" },
+    {
+        $lookup: {
+            from: "areas_especializadas",
+            localField: "rel_areas.id_area_especializada",
+            foreignField: "_id",
+            as: "area"
+        }
+    },
+    {
+        $unwind: "$area"
+    },
+    {
+        $group: {
+            _id: "$_id",
+            nombre: { $first: "$nombre" },
+            areas_especializadas: { $addToSet: "$area.nombre" }
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nombre: 1,
+            areas_especializadas: 1
+        }
+    }
+]);
+
+//60. encontrar todos los tratamientos especializados combinados
+
+db.tratamientos.find({ nombre: /tratamiento especializado combinado/i });
+
+//61. buscar diagnósticos relacionados a problemas respiratorios, es decir, que contengan alguna de las siguientes palabras/frases clave:
+
+// - respiratoria
+// - fiebre
+// - dificultad para respirar
+// - bronquitis
+// - tos
+// - esputo
+// - asma
+// - sibilancias
+// - dificultad respiratoria
+// - disnea
+// - auscultación
+// - faringitis
+
+db.diagnosticos.find({ descripcion: /(respiratoria)|(fiebre)|(dificultad para respirtar)|(bronquitis)|(tos)|(esputo)|(asma)|(sibilancias)|(dificultad respiratoria)|(disnea)|(auscultación)|(faringitis)/ });
+
+//62. mostrar medicamentos con más de 100 y menos de 200 unidades disponibles
+
+db.medicamentos.find({ cant_disp: { $gt: 100, $lt: 200 } });
+
+//63. mostrar antecedentes personales asociados a cirugías
+
+db.ant_personales.find({ descripcion: /cirug[ií]a/i });
+
+//64. buscar todos los casos especiales en la colección de antecedentes personales
+
+db.ant_personales.find({ descripcion: /caso especial/i });
+
+//65. contar cuántos empleados de mantenimiento tiene cada hospital y mostrar dicha cantidad junto con el nombre del establecimiento
+
+db.per_mantenimiento.aggregate([
+    {
+        $group: {
+            _id: "$id_hospital",
+            total_personal: { $sum: 1 }
+        }
+    },
+    {
+        $lookup: {
+            from: "hospitales",
+            localField: "_id", foreignField: "_id",
+            as: "hospital"
+        }
+    },
+    {
+        $unwind: "$hospital"
+    },
+    {
+        $project: {
+            _id: 0,
+            nombre: "$hospital.nombre",
+            total_per_mantenimiento: "$total_personal"
+        }
+    }
+]);
+
+//66. mostrar los nombres de todos los hospitales y el salario promedio del personal de mantenimiento de cada uno
+
+db.per_mantenimiento.aggregate([
+    {
+        $group: {
+            _id: "$id_hospital",
+            salario_promedio: { $avg: "$salario" }
+        }
+    },
+    {
+        $lookup: {
+            from: "hospitales",
+            localField: "_id",
+            foreignField: "_id",
+            as: "hospital"
+        }
+    },
+    {
+        $unwind: "$hospital"
+    },
+    {
+        $project: {
+            _id: 0,
+            nombre: "$hospital.nombre",
+            salario_promedio_per_mantenimiento: {
+                $concat: [
+                    { $literal: "$" },
+                    { $toString: { $round: ["$salario_promedio", 2] } }
+                ]
+            }
+        }
+    }
+]);
+
+//67. listar los tipos de trabajo en mantenimiento de las instalaciones y cuántos empleados están asociados a cada uno
+
+db.per_mantenimiento.aggregate([
+    {
+        $group: {
+            _id: "$tipo_trabajo",
+            total_personas: { $sum: 1 }
+        }
+    },
+    {
+        $sort: { total_personas: 1 }
+    },
+    {
+        $project: {
+            _id: 0,
+            tipo_trabajo: "$_id",
+            total_empleados: "$total_personas"
+        }
+    }
+]);
+
+//68. mostrar todos los barrios con algún hospital asociado (nombre del barrio y municipio), con el total de hospitales que se encuentran ubicados en cada uno
+
+db.hospitales.aggregate([
+    {
+        $group: {
+            _id: "$id_barrio",
+            total_hosp: { $sum: 1 }
+        }
+    },
+    {
+        $lookup: {
+            from: "barrios",
+            localField: "_id",
+            foreignField: "_id",
+            as: "barrio"
+        }
+    },
+    {
+        $unwind: "$barrio"
+    },
+    {
+        $project: {
+            _id: 0,
+            nombre: "$barrio.nombre",
+            municipio: "$barrio.municipio",
+            total_hospitales: "$total_hosp"
+        }
+    }
+]);
+
+//69. obtener el total de salarios del personal de mantenimiento por hospital y mostrarlo junto a, únicamente, el nombre de cada hospital
+
+db.per_mantenimiento.aggregate([
+    {
+        $group: {
+            _id: "$id_hospital",
+            total_salarios: { $sum: "$salario" }
+        }
+    },
+    {
+        $lookup: {
+            from: "hospitales",
+            localField: "_id",
+            foreignField: "_id",
+            as: "hospital"
+        }
+    },
+    {
+        $unwind: "$hospital"
+    },
+    {
+        $project: {
+            _id: 0,
+            nombre: "$hospital.nombre",
+            total_salarios_per_mantenimiento: {
+                $concat: [
+                    { $literal: "$" },
+                    { $toString: "$total_salarios" }
+                ]
+            }
+        }
+    }
+]);
+
+//70. mostrar los nombres de todos los hospitales junto con los nombres completos del personal de mantenimiento
+
+db.hospitales.aggregate([
+    {
+        $lookup: {
+            from: "per_mantenimiento",
+            localField: "_id",
+            foreignField: "id_hospital",
+            as: "personal_mantenimiento"
+        }
+    },
+    {
+        $project: {
+            _id: 0,
+            nombre: 1,
+            personal_mantenimiento: {
+                $map: {
+                    input: "$personal_mantenimiento",
+                    as: "pm",
+                    in: { $concat: [
+                        "$$pm.primer_nombre", " ", 
+                        { $ifNull: ["$$pm.segundo_nombre", ""] }, " ", 
+                        "$$pm.primer_apellido", " ", "$$pm.segundo_apellido", " "
+                    ] }
+                }
+            }
+        }
+    }
+]);
