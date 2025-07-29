@@ -1134,3 +1134,48 @@ db.createCollection("diagnosticos", {
 //índices colección diagnosticos
 
 db.diagnosticos.createIndex({ descripcion: 1 }, { unique: true });
+
+//esquema colección visitas_medicas_resultados
+
+db.createCollection("visitas_medicas_resultados", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_visita_medica", "id_resultado"],
+            properties: {
+                id_visita_medica: {
+                    bsonType: "int"
+                },
+                id_resultado: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección visitas_medicas_resultados
+
+db.visitas_medicas_resultados.createIndex({ id_visita_medica: 1, id_resultado: 1 }, { unique: true });
+
+//esquema colección resultados
+
+db.createCollection("resultados", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["descripcion"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 20,
+                    maxLength: 1000
+                }
+            }
+        }
+    }
+});
+
+//índices colección resultados
+
+db.resultados.createIndex({ descripcion: 1 }, { unique: true });
