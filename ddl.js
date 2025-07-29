@@ -652,3 +652,120 @@ db.createCollection("visitas_medicas", {
 //índices colección visitas_medicas
 
 db.visitas_medicas.createIndex({ fecha_hora: 1, id_medico: 1, id_paciente: 1 }, { unique: true });
+
+//esquema colección pacientes_seguros
+
+db.createCollection("pacientes_seguros", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_paciente", "id_seguro"],
+            properties: {
+                id_paciente: {
+                    bsonType: "int"
+                },
+                id_seguro: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección pacientes_seguros
+
+db.pacientes_seguros.createIndex({ id_paciente: 1, id_seguro: 1 }, { unique: true });
+
+//esquema colección seguros
+
+db.createCollection("seguros", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre", "id_tipo", "num_poliza", "id_estado"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 3,
+                    maxLength: 50
+                },
+                id_tipo: {
+                    bsonType: "int"
+                },
+                num_poliza: {
+                    bsonType: "string",
+                    pattern: "^[A-Z0-9-]{6,16}$"
+                },
+                id_estado: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección seguros
+
+db.seguros.createIndex({ num_poliza: 1 }, { unique: true });
+db.seguros.createIndex({ nombre: 1, id_tipo: 1 }, { unique: true });
+
+//esquema colección tipos_seguros
+
+db.createCollection("tipos_seguros", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["tipo"],
+            properties: {
+                tipo: {
+                    bsonType: "string",
+                    enum: [
+                        "Régimen Contributivo",
+                        "Régimen Subsidiado",
+                        "Medicina Prepagada",
+                        "Póliza Privada",
+                        "Plan Complementario EPS",
+                        "Régimen Especial del Estado",
+                        "Seguro por Evento o Temporal"
+                    ]
+                }
+            }
+        }
+    }
+})
+
+//índices colección tipos_seguros
+
+db.tipos_seguros.createIndex({ tipo: 1 }, { unique: true });
+
+//esquema colección estados_seguros
+
+db.createCollection("estados_seguros", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["estado", "activo"],
+            properties: {
+                estado: {
+                    bsonType: "string",
+                    enum: [
+                        "Activo",
+                        "Suspendido",
+                        "En revisión",
+                        "Cancelado",
+                        "Vencido",
+                        "En liquidación",
+                        "Histórico"
+                    ]
+                },
+                activo: {
+                    bsonType: "bool"
+                }
+            }
+        }
+    }
+})
+
+//índices colección estados_seguros
+
+db.estados_seguros.createIndex({ estado: 1 }, { unique: true });  
