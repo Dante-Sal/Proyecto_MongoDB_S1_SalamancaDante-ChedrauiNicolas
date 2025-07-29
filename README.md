@@ -3,7 +3,6 @@
 ###### Proyecto MongoDB: (Dante Salamanca Galvis & Nicolás Chedraui Mantilla)
 
 <br>
-<br>
 
 ### Introducción
 
@@ -13,7 +12,6 @@ Se documenta cada parte del proceso, describiendo el flujo de trabajo lógico qu
 
 Finalmente, se realizan inserciones de datos dentro de nuestro sistema, se crean usuarios con diferentes permisos de acceso a la base de datos; ejecutando pruebas, como última medida, a través de consultas y funciones dentro de la BBDD que permitan a quienes tengan acceso a ella el poder manipular la forma en la que la información se presenta, pudiendo realizar diferentes tipos de filtrado de datos, entre otros tipos de consultas.
 
-<br>
 <br>
 
 ### Caso de Estudio
@@ -33,9 +31,10 @@ Se especifican también relaciones entre directores generales y hospitales, así
 Dado que el sistema está enfocado en Bucaramanga y su zona metropolitana, los datos ingresados, la cantidad de estos y los formatos que se definirán a través de `$jsonSchema` serán coherentes con dicho contexto, estableciendo una conexión con la realidad que representa la BBDD.
 
 <br>
-<br>
 
 ### Planificación
+
+<br>
 
 #### Construcción del Modelo Conceptual
 
@@ -68,7 +67,6 @@ También cabe resaltar que en este punto y hasta la ejecución de la normalizaci
 En resumen, este se trata de un modelo muy primitivo de la BBDD, que si bien facilita el bosquejo de una base o esqueleto para empezar a trabajar en la optimización de nuestro sistema, es muy poco eficiente y de implementarse, propiciaría un manejo de datos poco sostenible a lo largo del tiempo.
 
 <br>
-<br>
 
 #### Construcción del Modelo Lógico
 
@@ -78,9 +76,9 @@ Una vez finalizado el modelo conceptual, se dio comienzo al proceso de estableci
 
 Si bien en esta etapa de la creación del sistema de datos aún no se tiene una claridad total de todas las entidades necesarias o de todas las relaciones posibles o desgloses que puedan surgir de atributos no lo suficientemente indivisibles o relacionados con las tablas a las cuales pertenecen; en este punto se pueden definir mejoras a ejecutar en el modelo que llegado a este momento se pueden identificar fácilmente.
 
-Si bien antes ya se tenía una relación aproximada entre las colecciones, no se tenía una certeza completa de cómo se conectarían estas, unas con otras. Ahora se conoce, gracias a la asignación de tipos de datos (que se representarán en el modelo físico como un `bsonType`, dentro del `$jsonSchema`), que los ids que permitirán el `$lookup` entre tablas relacionadas serán enteros; y que datos como el número de teléfono o el número de colegiatura (`medicos`) no se almacenarán como números, sino como cadenas de texto (debido a que no se realizarán operaciones con ellos y permite, como adicional, realizar operaciones con *regex*).
+Si bien antes ya se tenía una relación aproximada entre las colecciones, no se tenía una certeza completa de cómo se conectarían estas, unas con otras. Ahora se conoce, gracias a la asignación de tipos de datos (que se representarán en el modelo físico como un `bsonType`, dentro del `$jsonSchema`), que los ids que permitirán el `$lookup` entre tablas relacionadas serán enteros.
 
-Básicamente, en este etapa no se realizan reestructuraciones de la base de datos, sino simplemente se transfiere el *Modelo Conceptual* a un esquema visual más limpio y específico.
+Básicamente, en este etapa no se realizan reestructuraciones de la base de datos, sino simplemente se transfiere el *Modelo Conceptual* a un esquema visual más limpio y específico con tipos de datos y llaves primarias y foráneas más explícitas.
 
 #### Gráfica
 
@@ -217,3 +215,27 @@ erDiagram
     medicamentos ||--o{ inventarios_medicamentos : "se almacenan en"
     hospitales ||--o{ inventarios_medicamentos : tienen
 ```
+
+#### Descripción Técnica
+
+Una vez definido una base suficientemente sólida o alineada a los requerimientos solicitados por el usuario originalmente, se puede proceder a la siguiente fase: el *Modelo Conceptual*.
+
+Aquí se definirán los tipos de datos de múltiples atributos, buscando siempre el formato que facilite más el correcto funcionamiento de la BBDD. 
+
+Datos como el número de teléfono o el número de colegiatura (`medicos`) no se almacenarán como números, sino como cadenas de texto (debido a que no se realizarán operaciones con ellos y permite, como adicional, realizar operaciones con *regex*).
+
+Por otra parte, se tiene en cuenta que si cierta información debe contener letras, como por ejemplo lo sería el número de licencia de gestión de los directores generales (su formato exige una combinación de letras y números), se tiene que guardar obligatoriamente como cadena de texto o `string`.
+
+Los precios o datos monetarios (salarios, por ejemplo), se recomiendan almacenar como decimales, tomando como razón que (si bien en Colombia no suele aplicar), si la base de datos se amplía, podría requerir de precios con cifras decimales (aunque probablemente, también requerría de la agregación de un nuevo campo `moneda`, para indicar la unidad monetaria que se usa para medir dicho precio/salario).
+
+Como último apunte antes de pasar al proceso de normalización del sistema que se lleva hasta el momento, se consideró en este punto del proceso la generación de una nueva entidad que almacenara las cantidades disponibles de cada medicamento por cada establecimiento clínico.
+
+Así, tomando el siguiente requerimiento en mente:
+
+```
+- Cálculo de inventarios de medicamentos por hospital.
+```
+
+Se analizó que al poseer un simple atributo `cant_disponible` en cada medicamento, no sería posible realizar una búsqueda minuciosa de las medicinas disponibles, puesto que no se especificaría cuántas unidades restan de cada medicamento en cada hospital, sino cuántas restan en general (en todo el sistema hospitalario).
+
+Así, se ejecutó la agregación de esta nueva actualización al modelo estructurado de datos, empleando esta nueva entidad como intermediaria entre las entidades `hospitales` y `medicamentos` (facilitando que exista un inventario por cada combinación posible de todos los hospitales con medicamentos existentes).
