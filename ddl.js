@@ -311,3 +311,57 @@ db.createCollection("pacientes", {
 db.pacientes.createIndex({ num_hc: 1 }, { unique: true });
 db.pacientes.createIndex({ tel: 1 }, { unique: true });
 db.pacientes.createIndex({ correo_el: 1 }, { unique: true });
+
+//esquema colección medicos
+
+db.createCollection("medicos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["num_colegiatura", "primer_nombre", "primer_apellido", "segundo_apellido", "tel", "correo_el", "salario", "id_hospital"],
+            properties: {
+                num_colegiatura: {
+                    bsonType: "string",
+                    pattern: "^[0-9]{6}$"
+                },
+                primer_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                primer_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^3[0-9]{9}$"
+                },
+                correo_el: {
+                    bsonType: "string",
+                    pattern: "^(?!.*\\.\\.)([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9])@([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])\.[a-zA-Z]{2,}$"
+                },
+                salario: {
+                    bsonType: "decimal",
+                    minimum: 4500000
+                },
+                id_hospital: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección medicos
+
+db.medicos.createIndex({ num_colegiatura: 1 }, { unique: true });
+db.medicos.createIndex({ tel: 1 }, { unique: true });
+db.medicos.createIndex({ correo_el: 1 }, { unique: true });
