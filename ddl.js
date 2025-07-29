@@ -621,3 +621,34 @@ db.createCollection("hist_clinicas", {
 //índices colección hist_clinicas
 
 db.hist_clinicas.createIndex({ num_hc: 1 }, { unique: true });
+
+//esquema colección visitas_medicas
+
+db.createCollection("visitas_medicas", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["fecha_hora", "id_medico", "id_paciente", "evolucion"],
+            properties: {
+                fecha_hora: {
+                    bsonType: "date"
+                },
+                id_medico: {
+                    bsonType: "int"
+                },
+                id_paciente: {
+                    bsonType: "int"
+                },
+                evolucion: {
+                    bsonType: "string",
+                    minLength: 15,
+                    maxLength: 2000
+                }
+            }
+        }
+    }
+});
+
+//índices colección visitas_medicas
+
+db.visitas_medicas.createIndex({ fecha_hora: 1, id_medico: 1, id_paciente: 1 }, { unique: true });
