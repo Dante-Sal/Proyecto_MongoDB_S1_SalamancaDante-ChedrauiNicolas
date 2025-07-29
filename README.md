@@ -1242,6 +1242,4 @@ Una vez llegado a este punto, se empezaron a trasladar las 35 colecciones que co
 
 <h4 align=center>Código</h4>
 
-```
-El código que contiene los comandos que permiten la creación explícita de las colecciones, junto a sus esquemas e índices se halla como archivo en este mismo repositorio, bajo el nombre de 'ddl.js'
-```
+**[NOTA] :** El código que contiene los comandos que permiten la creación explícita de las colecciones, junto a sus esquemas e índices se halla como archivo en este mismo repositorio, bajo el nombre de 'ddl.js'
