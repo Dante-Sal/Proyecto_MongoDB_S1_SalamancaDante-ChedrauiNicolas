@@ -195,3 +195,70 @@ db.createCollection("dir_generales", {
 db.dir_generales.createIndex({ tel: 1 }, { unique: true });
 db.dir_generales.createIndex({ correo_el: 1 }, { unique: true });
 db.dir_generales.createIndex({ num_lic_gestion: 1 }, { unique: true });
+
+//esquema colección per_mantenimiento
+
+db.createCollection("per_mantenimiento", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["primer_nombre", "primer_apellido", "segundo_apellido", "tel", "correo_el", "tipo_trabajo", "salario", "id_hospital"],
+            properties: {
+                primer_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                primer_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^3[0-9]{9}$"
+                },
+                correo_el: {
+                    bsonType: "string",
+                    pattern: "^(?!.*\\.\\.)([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9])@([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])\.[a-zA-Z]{2,}$"
+                },
+                tipo_trabajo: {
+                    bsonType: "string",
+                    enum: [
+                        "Electricidad",
+                        "Plomería",
+                        "Carpintería",
+                        "Pintura",
+                        "Jardinería",
+                        "Limpieza",
+                        "Refrigeración",
+                        "Mecánica hospitalaria",
+                        "Redes y cableado",
+                        "Sistemas contra incendios",
+                        "Ascensores y escaleras eléctricas",
+                        "Desinfección y bioseguridad",
+                        "Otros"
+                    ]
+                },
+                salario: {
+                    bsonType: "decimal",
+                    minimum: 1400000
+                },
+                id_hospital: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección per_mantenimiento
+
+db.per_mantenimiento.createIndex({ tel: 1 }, { unique: true });
+db.per_mantenimiento.createIndex({ correo_el: 1 }, { unique: true });
