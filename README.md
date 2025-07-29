@@ -249,3 +249,9 @@ Así, se ejecutó la agregación de esta nueva actualización al modelo estructu
 <h4 align=center>Primera Forma Normal (1FN)</h4>
 
 En esta primera fase de la normalización del modelo lógico se solicita que todos los atributos existentes dentro de las tablas sean lo más indivisibles posible (en otras palabras, que sean valores atómicos). No se admiten atributos que puedan almacenar múltiples valores o datos que sean subdivisibles como múltiples números de teléfono, direcciones o nombres.
+
+<h4 align=center>Descripción</h4>
+
+La primera forma normal solicita que no existan datos con atributos divisibles dentro del sistema, por lo que se decidió ejecutar un desglose de las columnas direccion, nombre, junto con la creación de múltiples tablas que cumplen el rol de puente entre diferentes colecciones (generando relaciones con cardinalidad N:M entre estas dos entidades). 
+
+Esta última decisión de estructuración se tomó para suprimir de múltiples entidades, como visitas médicas o historias clínicas, atributos con información relacionada, aunque no directamente, con estas; trasladándose estos a nuevas tablas generadas o a las entidades ya creadas que se hayan considerado verdaderas colecciones padres de estos, según sea el caso.
