@@ -878,3 +878,93 @@ db.createCollection("alergias", {
 //índices colección alergias
 
 db.alergias.createIndex({ nombre: 1 }, { unique: true });
+
+//esquema colección hist_clinicas_ant_personales
+
+db.createCollection("hist_clinicas_ant_personales", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_hist_clinica", "id_ant_personal"],
+            properties: {
+                id_hist_clinica: {
+                    bsonType: "int"
+                },
+                id_ant_personal: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección hist_clinicas_ant_personales
+
+db.hist_clinicas_ant_personales.createIndex({ id_hist_clinica: 1, id_ant_personal: 1 }, { unique: true });
+
+//esquema colección ant_personales
+
+db.createCollection("ant_personales", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["descripcion"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 10,
+                    maxLength: 1000
+                }
+            }
+        }
+    }
+});
+
+//índices colección ant_personales
+
+db.ant_personales.createIndex({ descripcion: 1 }, { unique: true });
+
+//esquema colección hist_clinicas_ant_familiares
+
+db.createCollection("hist_clinicas_ant_familiares", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_hist_clinica", "id_ant_familiar"],
+            properties: {
+                id_hist_clinica: {
+                    bsonType: "int"
+                },
+                id_ant_familiar: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección hist_clinicas_ant_familiares
+
+db.hist_clinicas_ant_familiares.createIndex({ id_hist_clinica: 1, id_ant_familiar: 1 }, { unique: true });
+
+//esquema colección ant_familiares
+
+db.createCollection("ant_familiares", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["descripcion"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 10,
+                    maxLength: 1000
+                }
+            }
+        }
+    }
+});
+
+//índices colección ant_familiares
+
+db.ant_familiares.createIndex({ descripcion: 1 }, { unique: true });
