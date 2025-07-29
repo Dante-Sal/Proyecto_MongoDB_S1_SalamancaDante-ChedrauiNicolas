@@ -865,3 +865,155 @@ db.hospitales.aggregate([
         }
     }
 ]);
+
+//71. mostrar barrios cuyo nombre contenga la letra "z" (mayúscula o minúscula)
+
+db.barrios.find({ nombre: /z/i });
+
+//72. mostrar barrios que pertenezcan a los municipios "Bucaramanga" o "Girón"
+
+db.barrios.find({ $or: [{ municipio: "Bucaramanga" }, { municipio: "Girón" }] });
+
+//73. mostrar áreas especializadas que no contengan la palabra "Medicina"
+
+db.areas_especializadas.find({ nombre: { $not: /Medicina/ } });
+
+//74. buscar directores generales cuyo teléfono empiece con el número "3" (móviles)
+
+db.dir_generales.find({ tel: /^3/ });
+
+//75. mostrar directores generales cuyo correo electrónico sea de dominio "gmail.com"
+
+db.dir_generales.find({ correo_el: /gmail\.com$/ });
+
+//76. mostrar todo el personal de mantenimiento ordenado por salario (de mayor a menor)
+
+db.per_mantenimiento.find().sort({ salario: -1 });
+
+//77. mostrar direcciones de pacientes que usen "Carrera" como vía principal
+
+db.direcciones_pacientes.find({ via_principal_tipo: "Carrera" });
+
+//78. listar direcciones de pacientes con número de vía principal menor o igual a "20"
+
+db.direcciones_pacientes.aggregate([
+    {
+        $match: {
+            $expr: {
+                $lte: [
+                    { $toInt: "$via_principal_numero" },
+                    20
+                ]
+            }
+        }
+    }
+]);
+
+//79. buscar direcciones de pacientes que tengan una letra de vía generadora definida
+
+db.direcciones_pacientes.find({ via_generadora_letra: { $ne: null } });
+
+//80. mostrar sólo tipo de vía principal y número de vía principal de todas las direcciones de pacientes
+
+db.direcciones_pacientes.find({}, { _id: 0, via_principal_tipo: 1, via_principal_numero: 1 });
+
+//81. listar todo el personal de mantenimiento cuyo primer nombre contenga la letra "o"
+
+db.per_mantenimiento.find({ primer_nombre: /o/i });
+
+//82. mostrar todo el personal de mantenimiento con salario entre 1.5 y 2.5 millones de pesos
+
+db.per_mantenimiento.find({ salario: { $gte: NumberDecimal("1500000"), $lte: NumberDecimal("2500000") } });
+
+//83. listar todo el personal de mantenimiento ordenado alfabéticamente por primer apellido
+
+db.per_mantenimiento.find().sort({ primer_apellido: 1 });
+
+//84. listar solamente los nombres y nacionalidades de todos los fabricantes
+
+db.fabricantes.find({}, { _id: 0, nombre: 1, pais: 1 });
+
+//85. mostrar fabricantes ubicados en "Suiza"
+
+db.fabricantes.find({ pais: "Suiza" });
+
+//86. buscar laboratorios en la colección de fabricantes de medicamentos
+
+db.fabricantes.find({ nombre: /laboratorios?/i });
+
+//87. mostrar todos los resultados médicos sin atributo "_id"
+
+db.resultados.find({}, { _id: 0, descripcion: 1 });
+
+//88. listar áreas especializadas con nombres que contengan "Pedi"
+
+db.areas_especializadas.find({ nombre: /Pedi/ });
+
+//89. buscar directores generales cuyo primer nombre sea exactamente "Carlos"
+
+db.dir_generales.find({ primer_nombre: "Carlos" });
+
+//90. listar directores generales ordenados por primer apellido (de la Z a A)
+
+db.dir_generales.find().sort({ primer_apellido: -1 });
+
+//91. listar todo el personal de mantenimiento cuyo nombre (no apellidos) termine con "a"
+
+db.per_mantenimiento.aggregate([
+    {
+        $project: {
+            nombres: {
+                $concat: [
+                    "$primer_nombre", " ",
+                    { $ifNull: ["$segundo_nombre", ""] }
+                ]
+            },
+            primer_apellido: "$primer_apellido",
+            segundo_apellido: "$segundo_apellido",
+            tel: "$tel",
+            correo_el: "$correo_el",
+            tipo_trabajo: "$tipo_trabajo",
+            salario: "$salario",
+            id_hospital: "$id_hospital"
+        }
+    },
+    {
+        $match: { nombres: /a$/ }
+    }
+]);
+
+//92. buscar medicamentos cuyo nombre empiece con "Amox"
+
+db.medicamentos.find({ nombre: /^Amox/ });
+
+//93. buscar medicamentos que contengan la letra "a"
+
+db.medicamentos.find({ nombre: /a/i });
+
+//94. mostrar sólo el _id y el costo de todos los tratamientos
+
+db.tratamientos.find({}, { costo_tratamiento: { $concat: [{ $literal: "$" }, { $toString: "$costo" }] } });
+
+//95. mostrar sólo el nombre de todos los tratamientos
+
+db.tratamientos.find({}, { _id: 0, nombre: 1 });
+
+//96. buscar tratamientos que contengan la letra "o" en su nombre
+
+db.tratamientos.find({ nombre: /o/i });
+
+//97. buscar tratamientos que contengan la palabra "clínico" o "clínica" en su descripción
+
+db.tratamientos.find({ descripcion: /(cl[ií]nico)|(cl[ií]nica)/i });
+
+//98. buscar tratamientos cuyo nombre termine en "ia"
+
+db.tratamientos.find({ nombre: /ia$/ });
+
+//99. encontrar médicos con nombre "Juan Sebastián" y cualquier apellido
+
+db.medicos.find({ primer_nombre: "Juan", segundo_nombre: "Sebastián" });
+
+//100. encontrar personal de mantenimiento con apellido "Fernández Rodríguez" y cualquier apellido
+
+db.medicos.find({ primer_apellido: "Fernández", segundo_apellido: "Rodríguez" });
