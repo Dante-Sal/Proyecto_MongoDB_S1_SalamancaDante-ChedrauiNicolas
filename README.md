@@ -41,3 +41,7 @@ A grandes rasgos, lo que se determinó en esta primera fase fueron las entidades
 Estas entidades principales fueron `dir_generales`, `hospitales`, `enfermeros`, `per_mantenimiento`, `per_admin`, `hist_clinicas`, `pacientes`, `medicos`, `medicamentos`, `visitas_medicas` y `tratamientos`.
 
 Los atributos que se definieron en esta primera etapa se establecieron a un nivel relativamente superficial, ya que no se tiene información detallada sobre cada entidad (solamente la estrictamente necesaria y solicitada por los requerimientos).
+
+#### Gráfica
+
+![Modelo Conceptual](modelo_conceptual.jpg)
