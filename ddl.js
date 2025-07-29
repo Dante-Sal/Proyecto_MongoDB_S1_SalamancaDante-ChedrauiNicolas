@@ -1089,3 +1089,48 @@ db.createCollection("fabricantes", {
 db.fabricantes.createIndex({ tel: 1 }, { unique: true });
 db.fabricantes.createIndex({ correo_el: 1 }, { unique: true });
 db.fabricantes.createIndex({ nombre: 1, pais: 1 }, { unique: true });
+
+//esquema colección visitas_medicas_diagnosticos
+
+db.createCollection("visitas_medicas_diagnosticos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_visita_medica", "id_diagnostico"],
+            properties: {
+                id_visita_medica: {
+                    bsonType: "int"
+                },
+                id_diagnostico: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+
+//índices colección visitas_medicas_diagnosticos
+
+db.visitas_medicas_diagnosticos.createIndex({ id_visita_medica: 1, id_diagnostico: 1 }, { unique: true });
+
+//esquema colección diagnosticos
+
+db.createCollection("diagnosticos", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["descripcion"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 15,
+                    maxLength: 500
+                }
+            }
+        }
+    }
+});
+
+//índices colección diagnosticos
+
+db.diagnosticos.createIndex({ descripcion: 1 }, { unique: true });
