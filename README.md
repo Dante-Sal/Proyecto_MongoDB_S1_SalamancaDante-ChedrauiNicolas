@@ -537,3 +537,25 @@ erDiagram
     visitas_medicas_resultados }o..|| resultados : "pueden ser de"
     medicamentos ||..o{ inventarios_medicamentos : "se almacenan en"
 ```
+
+<h4 align=center>Descripción Técnica</h4>
+
+Si bien se sabe que en **MongoDB**, está permitida la desnormalización, facilitando las búsquedas en atributos no atómicos o relacionados con cardinalidad muchos a muchos, esto no es lo más óptimo a largo plazo, ya que es más complicado adaptar la base de datos a nuevos contextos o en caso de agregar más información al sistema, resulta más complicado insertar datos si todo se encuentra embebido en arrays u objetos especificados como atributos.
+
+Al mismo tiempo, una relación muchos a muchos puede complicar en exceso la adición de nuevos documentos a las colecciones, ya que los datos no tendrán un orden u organización que facilite la visualización y manipulación de la BBDD.
+
+Por estas razones, se decidió implementar la subdivisión de diversos campos en otros más atómicos, o incluso, en casos extremos, en nuevas colecciones que (gracias a las cardinalidades N:M), generarán nuevas colecciones puente entre las entidades envueltas en el N:M.
+
+Algunos ejemplos de estas modificaciones son los campos que indican la dirección de residencia de los pacientes o la dirección donde se hallan ubicados los hospitales (se decidió separar este atributo en cada una de las propiedades individuales que una dirección, en el contexto de Bucaramanga y su zona metropolitana, normalmente tiene), al igual que el nombre completo del personal y pacientes (particionando esta información en campos `primer_nombre`, `segundo_nombre` [opcional], `primer_apellido` y `segundo_apellido`).
+
+Por otra parte, referente a la resolución de cardinalidades, los casos de atributos de tipo array que tuvieron que ser descompuestos en una o más entidades (dentro de nuestro modelo de datos) son:
+
+**Campo especialidades en médicos:** un médico puede tener muchas especialidades y una misma especialidad se puede asignar a muchos médicos. Se separa en una entidad `especialidades`, conectada a médicos a través de la entidad puente `medicos_especialidades`.
+
+**Campo antecedentes personales, antecedentes familiares y alergias en historias clínicas:** una historia clínica puede tener múltiples entradas de estos atributos y cada una de ellas se puede asignar a muchas historias clínicas (una misma alergia la pueden padecer muchos pacientes a la misma vez). Se separa en nuevas entidades `ant_personales` / `ant_familiares` / `alergias`, conectada a historias clínicas a través de las entidades puente `hist_clinicas_ant_personales` / `hist_clinicas_ant_familiares` / `hist_clinicas_alergias`.
+
+**Campo diagnósticos, resultados, medicamentos y tratamientos en visitas médicas:** una visita médica puede generar múltiples diagnósticos y resultados o recetar y asignar múltiples medicamentos y tratamientos, respectivamente; y cada una de estos atributos se puede asignar a muchas visitas médicas (un mismo medicamento puede ser recetado a múltiples pacientes en diferentes citas). Se separa en nuevas entidades `diagnosticos` / `resultados` / `medicamentos` / `tratamientos`, conectada a historias clínicas a través de las entidades puente `visitas_medicas_diagnosticos` / `visitas_medicas_resultados` / `visitas_medicas_medicamentos` / `visitas_medicas_tratamientos`.
+
+**Campo áreas especializadas en hospitales:** un hospital puede tener muchas áreas especializadas y una misma área se puede asignar a muchos hospitales. Se separa en una entidad `areas_especializadas`, conectada a hospitales a través de la entidad puente `hospitales_areas_especializadas`.
+
+**Campo seguros en pacientes:** un paciente puede tener muchos seguros y un mismo seguro se puede asignar a muchos pacientes. Se separa en una entidad `seguros`, conectada a pacientes a través de la entidad puente `pacientes_seguros`.
