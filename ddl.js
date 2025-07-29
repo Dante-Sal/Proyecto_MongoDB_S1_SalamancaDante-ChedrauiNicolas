@@ -262,3 +262,52 @@ db.createCollection("per_mantenimiento", {
 
 db.per_mantenimiento.createIndex({ tel: 1 }, { unique: true });
 db.per_mantenimiento.createIndex({ correo_el: 1 }, { unique: true });
+
+//esquema colección pacientes
+
+db.createCollection("pacientes", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["id_hist_clinica", "primer_nombre", "primer_apellido", "segundo_apellido", "id_direccion", "tel", "correo_el"],
+            properties: {
+                id_hist_clinica: {
+                    bsonType: "int"
+                },
+                primer_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_nombre: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                primer_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                segundo_apellido: {
+                    bsonType: "string",
+                    pattern: "^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ]{2,30}$"
+                },
+                id_direccion: {
+                    bsonType: "int"
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^3[0-9]{9}$"
+                },
+                correo_el: {
+                    bsonType: "string",
+                    pattern: "^(?!.*\\.\\.)([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9._+-]*[a-zA-Z0-9])@([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9.-]*[a-zA-Z0-9])\.[a-zA-Z]{2,}$"
+                }
+            }
+        }
+    }
+});
+
+//índices colección pacientes
+
+db.pacientes.createIndex({ num_hc: 1 }, { unique: true });
+db.pacientes.createIndex({ tel: 1 }, { unique: true });
+db.pacientes.createIndex({ correo_el: 1 }, { unique: true });
