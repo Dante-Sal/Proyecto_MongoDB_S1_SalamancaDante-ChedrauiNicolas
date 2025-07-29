@@ -889,3 +889,11 @@ La primera razón que propicia este cambio es, como suele ser el caso cuando se 
 La segunda razón está orientada al almacenaje de información. Si mantenemos, por ejemplo, los fabricantes como un array de cadenas de texto, no se pueden introducir nuevas características de cada fabricante en caso de precisarlo (como nacionalidad o información de contacto). La única alternativa para esta solución sería embeber los datos de cada fabricante en un array identificado como `fabricantes`, pero esto generaría una posible alteración drástica del `$jsonSchema` establecido al momento y fomentaría la desorganización y desnormalización de la base de datos.
 
 Por esta razón se decidió, dado que un seguro podría llegar a cambiar de tipo o estado si el paciente lo actualiza, o dado que los fabricantes de medicamentos podrían precisar de más información dentro de la BBDD (aislado del propio medicamento), o dado que un paciente podría cambiar rápidamente de una residencia a otra (modificando arbitrariamente los atributos de dirección y generando una relación no estrechamente directa con el `_id` del paciente); se decidió realizar el proceso de normalización en estas cuatro propiedades en colecciones separadas y referenciadas a sus entidades de origen.
+
+<br>
+
+<h4 align=center>Tercera Forma Normal (3FN)</h4>
+
+La tercera forma normal establece que no deben existir dependencias transitivas dentro de la tabla. Esto significa que ningún atributo no clave debe depender de otro atributo no clave, es decir, los atributos que no forman parte de la clave primaria no deben estar relacionados entre sí de manera indirecta.
+
+Si existe una dependencia transitiva, es necesario descomponer la tabla, creando una nueva entidad que contenga el atributo dependiente, de tal forma que se elimine la relación indirecta. Posteriormente, se establecerá una referencia mediante una llave foránea en la tabla original. Este proceso asegura que las dependencias entre atributos sean estrictamente directas a la clave primaria, garantizando mayor flexibilidad y consistencia en el modelo de datos.
