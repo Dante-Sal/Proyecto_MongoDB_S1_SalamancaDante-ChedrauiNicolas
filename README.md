@@ -1217,3 +1217,15 @@ erDiagram
     visitas_medicas ||--o{ visitas_medicas_resultados : "pueden tener"
     visitas_medicas_resultados }o..|| resultados : "pueden ser de"
 ```
+
+<h4 align=center>Descripción Técnica</h4>
+
+Sólo hubo dos cambios que se tuvieron que aplicar al modelo actual para cumplir exitosamente con las reglas establecidas en la tercera forma normal; relacionados con los atributos `barrio` y `municipio` de la colección `direcciones_pacientes` e `id_hist_clinica` de la colección `visitas_medicas`.
+
+En el primer caso se identificó que el municipio y el barrio de una dirección tienen una relación indirecta o transitiva. Si bien ambos, tanto barrio como municipio, son partes fundamentales y directamente relacionadas con la propia dirección; tras un minucioso análisis se dedujo que el municipio es una propiedad que se relaciona con el `_id` de su colección no de manera directa sino a través de `barrio` (si conocemos el barrio, podemos extraer fácilmente el nombre del municipio al que pertenece).
+
+Así, se creó una entidad denominada `barrios`, la cual posee una característica `municipio`. Cada barrio, de esta manera, tiene su municipio especificada en su propio documento, rompiendo la transitividad.
+
+Por otra parte, un cambio pequeño que se implementó, derivado de la 3FN, fue la supresión de la relación a través del `id_hist_clinica` (id de historia clínica) que existía entre `visitas_medicas` e `hist_clinicas`.
+
+Ahora, bien, es lógico que la relación entre estas dos colecciones es importante; pero lo que no se había captado hasta el momento, es que ya existía una relación indirecta entre estas dos colecciones (con la colección `pacientes` de por medio). Si se quiere acceder a una historia clínica desde una visita médica, simplemente se debe acceder primero al paciente asociado y este paciente tendrá asignada una historia clínica correspondiente a la historia clínica conectada con dicha cita.
