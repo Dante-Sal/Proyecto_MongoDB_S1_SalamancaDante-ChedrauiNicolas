@@ -559,3 +559,319 @@ Por otra parte, referente a la resolución de cardinalidades, los casos de atrib
 **Campo áreas especializadas en hospitales:** un hospital puede tener muchas áreas especializadas y una misma área se puede asignar a muchos hospitales. Se separa en una entidad `areas_especializadas`, conectada a hospitales a través de la entidad puente `hospitales_areas_especializadas`.
 
 **Campo seguros en pacientes:** un paciente puede tener muchos seguros y un mismo seguro se puede asignar a muchos pacientes. Se separa en una entidad `seguros`, conectada a pacientes a través de la entidad puente `pacientes_seguros`.
+
+<br>
+
+<h4 align=center>Segunda Forma Normal (2FN)</h4>
+
+La segunda forma normal solicita que no existan datos con atributos que no dependan de la clave primaria [pk] dentro del sistema. Esto, básicamente hace referencia a que datos que estén relacionados con la tabla a la que pertenecen, pero que esta relación no sea directa o sus columnas no sean inherentes de la entidad (pudiendo cambiar el elemento de la entidad al que pertenecen sin alterar estos atributos y mantener coherencia), deben ser trasladados a otra entidad independiente y ser referenciados a través de llaves foráneas en aquella tabla a la que previamente pertenecían.
+
+<h4 align=center>Descripción</h4>
+
+<h4 align=center>Gráfica</h4>
+
+```mermaid
+erDiagram
+    hospitales {
+        int _id PK
+        string nombre
+        string via_principal_tipo
+        string via_principal_numero
+        string via_principal_letra
+        string via_principal_bis
+        string via_generadora_numero
+        string via_generadora_letra
+        string via_generadora_bis
+        string placa
+        string barrio
+        string municipio
+        string tel
+        int id_dir_general FK
+    }
+
+    dir_generales {
+        int _id PK
+        string primer_nombre
+        string segundo_nombre
+        string primer_apellido
+        string segundo_apellido
+        string tel
+        string correo_el
+        string num_lic_gestion
+        decimal salario
+    }
+
+    hospitales_areas_especializadas {
+        int _id PK
+        int id_hospital FK
+        int id_area_especializada FK
+    }
+
+    areas_especializadas {
+        int _id PK
+        string nombre
+    }
+
+    medicos {
+        int _id PK
+        string num_colegiatura
+        string primer_nombre
+        string segundo_nombre
+        string primer_apellido
+        string segundo_apellido
+        string tel
+        string correo_el
+        string num_lic_gestion
+        decimal salario
+        int id_hospital FK    
+    }
+
+    especialidades {
+        int _id PK
+        string nombre
+    }
+
+    medicos_especialidades {
+        int _id PK
+        int id_medico FK
+        int id_especialidad FK
+    }
+
+    enfermeros {
+        int _id PK
+        string primer_nombre
+        string segundo_nombre
+        string primer_apellido
+        string segundo_apellido
+        string tel
+        string correo_el
+        decimal salario
+        int id_hospital FK
+    }
+
+    per_admin {
+        int _id PK
+        string primer_nombre
+        string segundo_nombre
+        string primer_apellido
+        string segundo_apellido
+        string tel
+        string correo_el
+        string cargo
+        string area_resp
+        decimal salario
+        int id_hospital FK
+    }
+
+    per_mantenimiento {
+        int _id PK
+        string primer_nombre
+        string segundo_nombre
+        string primer_apellido
+        string segundo_apellido
+        string tel
+        string correo_el
+        string tipo_trabajo
+        decimal salario
+        int id_hospital FK
+    }
+
+    pacientes {
+        int _id PK
+        string num_hc
+        string primer_nombre
+        string segundo_nombre
+        string primer_apellido
+        string segundo_apellido
+        string tel
+        string correo_el
+        int id_direccion FK
+    }
+
+    direcciones_pacientes {
+        int _id PK
+        string via_principal_tipo
+        string via_principal_numero
+        string via_principal_letra
+        string via_principal_bis
+        string via_generadora_numero
+        string via_generadora_letra
+        string via_generadora_bis
+        string placa
+        int barrio FK
+    }
+
+    pacientes_seguros {
+        int _id PK
+        int id_paciente FK
+        int id_seguro FK
+    }
+
+    seguros {
+        int _id PK
+        string nombre
+        string num_poliza
+        int id_tipo_seguro FK
+        int id_estado_seguro FK
+    }
+
+    estados_seguros {
+        int _id PK
+        string estado
+        bool activo
+    }
+
+    tipos_seguros {
+        int _id PK
+        string tipo
+    }
+
+    alergias {
+        int _id PK
+        string nombre
+    }
+
+    hist_clinicas {
+        string num_hc PK
+        date fecha_creacion
+        date fecha_actualizacion
+    }
+
+    hist_clinicas_alergias {
+        int _id PK
+        int id_hist_clinica FK
+        int id_alergia FK
+    }
+
+    hist_clinicas_ant_personales {
+        int _id PK
+        int id_hist_clinica FK
+        int id_ant_personal FK 
+    }
+
+    hist_clinicas_ant_familiares {
+        int _id PK
+        int id_hist_clinica FK
+        int id_ant_familiar FK 
+    }
+
+    ant_personales {
+        int _id PK
+        string description
+    }
+
+    ant_familiares {
+        int _id PK
+        string description
+    }
+
+    medicamentos {
+        int _id PK
+        string nombre
+        string tipo
+        int id_fabricante FK
+    }
+
+    fabricantes {
+        int _id PK
+        string nombre
+        string pais
+        string tel
+        string correo_el
+    }
+
+    diagnosticos {
+        int _id PK
+        string description
+    }
+
+    visitas_medicas {
+        int _id PK
+        date fecha_hora
+        int id_medico FK
+        int id_paciente FK
+        int num_hc FK
+        string evolucion
+    }
+
+    visitas_medicas_medicamentos {
+        int _id PK
+        int id_visita_medica FK
+        int id_medicamento FK
+    }
+
+    visitas_medicas_diagnosticos {
+        int _id PK
+        int id_visita_medica FK
+        int id_diagnostico FK
+    }
+
+    visitas_medicas_resultados {
+        int _id PK
+        int id_visita_medica FK
+        int id_resultado FK
+    }
+
+    visitas_medicas_tratamientos {
+        int _id PK
+        int id_visita_medica FK
+        int id_tratamiento FK
+    }
+
+    tratamientos {
+        int _id PK
+        string nombre
+        string descripcion
+        string area_med
+        decimal costo
+    }
+
+    resultados {
+        int _id PK
+        string descripcion
+    }
+
+    inventarios_medicamentos {
+        int _id PK
+        int id_hospital FK
+        int id_medicamento FK
+        int cant_disp
+    }
+
+    hospitales ||--o{ medicos : tienen
+    hospitales ||--o{ pacientes : tienen
+    hospitales ||--o{ enfermeros : tienen
+    hospitales ||--o{ per_admin : tienen
+    hospitales ||--o{ per_mantenimiento : tienen
+    hospitales ||..o{ hospitales_areas_especializadas : tienen
+    hospitales_areas_especializadas }o..|| areas_especializadas : pertenecen
+    hospitales ||..o{ inventarios_medicamentos : tienen
+    dir_generales ||--o{ hospitales : gestionan
+    pacientes ||--o{ pacientes_seguros : tienen
+    pacientes ||--o{ visitas_medicas : realizan
+    pacientes ||--o{ hist_clinicas : tienen
+    pacientes_seguros }o..|| seguros : "pueden ser de"
+    seguros }o..|| tipos_seguros : "son de"
+    seguros }o..|| estados_seguros : "son de"
+    medicos ||..o{ medicos_especialidades : "pueden tener"
+    medicos ||..o{ visitas_medicas : "atienden"
+    medicos_especialidades }o..|| especialidades : "pueden ser de"
+    pacientes ||--|| direcciones_pacientes : tienen
+    hist_clinicas ||--o{ hist_clinicas_alergias : tienen
+    hist_clinicas ||..o{ visitas_medicas : registran
+    hist_clinicas_alergias }o..|| alergias : "pueden formar parte de"
+    hist_clinicas ||--o{ hist_clinicas_ant_personales : tienen
+    hist_clinicas_ant_personales }o..|| ant_personales : "pueden formar parte de"
+    hist_clinicas ||--o{ hist_clinicas_ant_familiares : tienen
+    hist_clinicas_ant_familiares }o..|| ant_familiares : "pueden formar parte de"
+    visitas_medicas ||--o{ visitas_medicas_medicamentos : recetan
+    visitas_medicas_medicamentos }o..|| medicamentos : "son recetados en"
+    medicamentos }o..|| fabricantes : fabrican
+    visitas_medicas ||--o{ visitas_medicas_diagnosticos : "pueden tener"
+    visitas_medicas_diagnosticos }o..|| diagnosticos : "pueden formar parte de"
+    visitas_medicas ||--o{ visitas_medicas_tratamientos : asignan
+    visitas_medicas_tratamientos }o..|| tratamientos : "pueden ser de"
+    visitas_medicas ||--o{ visitas_medicas_resultados : "pueden tener"
+    visitas_medicas_resultados }o..|| resultados : "pueden ser de"
+    medicamentos ||..o{ inventarios_medicamentos : "se almacenan en"
+```
