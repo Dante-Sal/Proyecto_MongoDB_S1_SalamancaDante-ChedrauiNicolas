@@ -1310,7 +1310,7 @@ Se almacenan en historias clínicas a través de la colección puente `hist_clin
 
 <br>
 
-**medicos:** [INFORMACIÓN ÚNICA DEL MÉDICO: NÚMERO DE COLEGIATURA] se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
+**medicos:** *[INFORMACIÓN ÚNICA DEL MÉDICO: NÚMERO DE COLEGIATURA]* se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
 
 <br>
 
@@ -1318,11 +1318,11 @@ Se almacenan en historias clínicas a través de la colección puente `hist_clin
 
 <br>
 
-**per_admin:** [INFORMACIÓN ÚNICA DEL PERSONAL ADMINISTRATIVO: CARGO / ÁREA RESPONSABLE] se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
+**per_admin:** *[INFORMACIÓN ÚNICA DEL PERSONAL ADMINISTRATIVO: CARGO / ÁREA RESPONSABLE]* se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
 
 <br>
 
-**per_mentenimiento:** [INFORMACIÓN ÚNICA DEL PERSONAL DE MANTENIMIENTO: TIPO DE TRABAJO] se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
+**per_mentenimiento:** *[INFORMACIÓN ÚNICA DEL PERSONAL DE MANTENIMIENTO: TIPO DE TRABAJO]* se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
 
 <br>
 
