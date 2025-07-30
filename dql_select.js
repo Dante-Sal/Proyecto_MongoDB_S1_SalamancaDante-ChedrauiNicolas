@@ -49,7 +49,10 @@ db.per_mantenimiento.aggregate([
         $unwind: "$hospital"
     },
     {
-        $match: { "hospital.nombre": "Hospital Internacional de Colombia", salario: { $gt: NumberDecimal("1800000") } }
+        $match: { 
+            "hospital.nombre": "Hospital Internacional de Colombia", 
+            salario: { $gt: NumberDecimal("1800000") } 
+        }
     }
 ]);
 
@@ -440,12 +443,6 @@ db.hist_clinicas_alergias.aggregate([
     },
     {
         $match: { "alergia.nombre": "Alergia a la caspa de animales" }
-    },
-    {
-        $group: {
-            _id: "$paciente._id",
-            paciente: { $first: "$paciente" }
-        }
     },
     {
         $project: {

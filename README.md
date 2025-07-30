@@ -1495,3 +1495,225 @@ db.dir_generales.insertMany([
 A través de este comando, se realizan las inserciones dentro de la colección `dir_generales`. Este, específicamente, "importa" tres documentos con información pertinente y solicitada por el esquema, de tres directores generales.
 
 Cada campo tiene datos que coiciden con lo que se solicita a través del `$jsonSchema`, debido a que si la información insertada no coincide, podría surgir un error de fallo de validación.
+
+<br>
+
+<h4 align=center>Ejemplos de Consultas</h4>
+
+En este apartado se podrán encontrar algunas de las consultas que se podrán realizar una vez importada toda la base de datos desde los archivos `ddl.js` y `dml.js`, y que se podrán encontrar en el archivo `dql_select.js`.
+
+#### Consulta #8:
+
+```js
+//encontrar áreas especializadas que empiecen por la palabra "Medicina"
+
+db.areas_especializadas.find({ nombre: /^Medicina/ });
+```
+
+Si se ejecuta esta consulta en un entorno de **MongoDB** donde ya se encuentre almacenada la base de datos `sistema_hospitalario` (sea desde terminal o desde **MongoDB Compass**), se obtendrá un resultado como este o similar:
+
+```js
+{
+  _id: 24,
+  nombre: 'Medicina Familiar'
+}
+```
+
+Mediante un patrón *regex*, busca coincidencias donde una cadena de texto en el campo `nombre` de la colección `areas_especializadas`, empiece (`^`) con la palabra `Medicina`.
+
+#### Consulta #10:
+
+```js
+//encontrar personal de mantenimiento que trabajen en el "Hospital Internacional de Colombia" y ganen más de $1.800.000
+
+db.per_mantenimiento.aggregate([
+    {
+        $lookup: {
+            from: "hospitales",
+            localField: "id_hospital",
+            foreignField: "_id",
+            as: "hospital"
+        }
+    },
+    {
+        $unwind: "$hospital"
+    },
+    {
+        $match: { 
+            "hospital.nombre": "Hospital Internacional de Colombia", 
+            salario: { $gt: NumberDecimal("1800000") } 
+        }
+    }
+]);
+```
+
+Si se ejecuta esta consulta en un entorno de **MongoDB** donde ya se encuentre almacenada la base de datos `sistema_hospitalario` (sea desde terminal o desde **MongoDB Compass**), se obtendrá un resultado como este o similar:
+
+```js
+{
+  _id: 5,
+  primer_nombre: 'Teodoro',
+  primer_apellido: 'Alvarez',
+  segundo_apellido: 'Gonzalo',
+  tel: '3362971411',
+  correo_el: 'teodoro.alvarez864@gmail.com',
+  tipo_trabajo: 'Pintura',
+  salario: Decimal128('3350000'),
+  id_hospital: 3,
+  hospital: {
+    _id: 3,
+    nombre: 'Hospital Internacional de Colombia',
+    via_principal_tipo: 'Autopista',
+    via_principal_numero: '60',
+    via_principal_letra: null,
+    via_principal_bis: false,
+    via_generadora_numero: '12',
+    via_generadora_letra: 'D',
+    via_generadora_bis: true,
+    placa: '5',
+    id_barrio: 20,
+    tel: '6076789456',
+    id_dir_general: 3
+  }
+}
+```
+
+A continuación, los pasos que genera esta consulta realiza para llegar al resultado final esperado:
+
+`$lookup`: trae los datos de la colección `hospitales` a la colección actual (`per_mantenimiento`) y embebe toda la información en un nuevo campo `hospital` de tipo objeto.
+
+`$unwind`: separa los datos embebidos en documentos separados para facilitar la próxima etapa.
+
+`$match`: busca aquellos documentos, con el nuevo formato construido por las dos anteriores etapas, cuyo atributo `nombre` (embebido en el atributo creado `hospital`) coincida con el valor "Hospital Internacional de Colombia" y, simultáneamente, cuyo atributo `salario` sea superior (`$gt`) al número en formato decimal 1800000 (`NumberDecimal("1800000")`);
+
+#### Consulta #47:
+
+```js
+//encontrar pacientes alérgicos a la caspa de animales
+
+db.hist_clinicas_alergias.aggregate([
+    {
+        $lookup: {
+            from: "hist_clinicas",
+            localField: "id_hist_clinica",
+            foreignField: "_id",
+            as: "hist_clinica"
+        }
+    },
+    {
+        $lookup: {
+            from: "alergias",
+            localField: "id_alergia",
+            foreignField: "_id",
+            as: "alergia"
+        }
+    },
+    {
+        $unwind: "$hist_clinica"
+    },
+    {
+        $unwind: "$alergia"
+    },
+    {
+        $lookup: {
+            from: "pacientes",
+            localField: "hist_clinica._id",
+            foreignField: "id_hist_clinica",
+            as: "paciente"
+        }
+    },
+    {
+        $unwind: "$paciente"
+    },
+    {
+        $match: { "alergia.nombre": "Alergia a la caspa de animales" }
+    },
+    {
+        $project: {
+            _id: 0,
+            id_hist_clinica: "$paciente.id_hist_clinica",
+            primer_nombre: "$paciente.primer_nombre",
+            segundo_nombre: "$paciente.segundo_nombre",
+            primer_apellido: "$paciente.primer_apellido",
+            segundo_apellido: "$paciente.segundo_apellido",
+            id_direccion: "$paciente.id_direccion",
+            tel: "$paciente.tel",
+            correo_el: "$paciente.correo_el"
+        }
+    }
+]);
+```
+
+Si se ejecuta esta consulta en un entorno de **MongoDB** donde ya se encuentre almacenada la base de datos `sistema_hospitalario` (sea desde terminal o desde **MongoDB Compass**), se obtendrá un resultado como este o similar:
+
+```js
+{
+  id_hist_clinica: 26,
+  primer_nombre: 'Leandra',
+  segundo_nombre: 'Candido',
+  primer_apellido: 'Quero',
+  segundo_apellido: 'Hoz',
+  id_direccion: 51,
+  tel: '3451104651',
+  correo_el: 'leandra.quero.26@correo.com'
+}
+```
+
+A continuación, los pasos que genera esta consulta realiza para llegar al resultado final esperado:
+
+`$lookup`: trae los datos de la colección `hist_clinicas` a la colección actual (`hist_clinicas_alergias`) y embebe toda la información en un nuevo campo `hist_clinica` de tipo objeto.
+
+`$lookup`: trae los datos de la colección `alergias` a la colección actual (`hist_clinicas_alergias`) y embebe toda la información en un nuevo campo `alergia` de tipo objeto.
+
+`$unwind`: separa los datos embebidos (en `hist_clinica`) en documentos separados para facilitar la próxima etapa.
+
+`$unwind`: separa los datos embebidos (en `alergia`) en documentos separados para facilitar la próxima etapa.
+
+`$lookup`: trae los datos de la colección `pacientes` a la colección actual (`hist_clinicas_alergias`, desde el campo recién construido `hist_clinica`) y embebe toda la información en un nuevo campo `paciente` de tipo objeto.
+
+`$unwind`: separa los datos embebidos (en `paciente`) en documentos separados para facilitar la próxima etapa.
+
+`$match`: busca aquellos documentos, con el nuevo formato construido por las anteriores etapas, cuyo atributo `nombre` (embebido en el atributo creado `alergia`) coincida con el valor "Alergia a la caspa de animales".
+
+`$project`: da formato al resultado para sólo mostrar los campos que sean de interés.
+
+#### Consulta #55:
+
+```js
+//encontrar tratamientos que cuesten entre $5'000.000 y $6'000.000
+
+db.tratamientos.find({ costo: { $gte: 5000000 }, costo: { $lte: 6000000 } });
+```
+
+Si se ejecuta esta consulta en un entorno de **MongoDB** donde ya se encuentre almacenada la base de datos `sistema_hospitalario` (sea desde terminal o desde **MongoDB Compass**), se obtendrá un resultado como este o similar:
+
+```js
+{
+  _id: 2,
+  nombre: 'Control de diabetes tipo 2',
+  descripcion: 'Se desarrollan sesiones terapéuticas con duración variable según necesidad.',
+  area_med: 'Medicina General',
+  costo: Decimal128('3689201.04')
+}
+```
+
+Mediante una condición, se evalúa si un valor decimal del campo `costo` de la colección `tratamientos`, es mayor o igual que (`$gte`) el número 5000000; y, al mismo tiempo, si es menor o igual a (`$lte`) al número 6000000.
+
+#### Consulta #94:
+
+```js
+//mostrar sólo el _id y el costo de todos los tratamientos
+
+db.tratamientos.find({}, { costo_tratamiento: { $concat: [{ $literal: "$" }, { $toString: "$costo" }] } });
+```
+
+Si se ejecuta esta consulta en un entorno de **MongoDB** donde ya se encuentre almacenada la base de datos `sistema_hospitalario` (sea desde terminal o desde **MongoDB Compass**), se obtendrá un resultado como este o similar:
+
+```js
+{
+  _id: 1,
+  costo_tratamiento: '$7112705.77'
+}
+```
+
+Al no pasar ninguna condición al comando `find`, se mostrarán todos los documentos de la colección; pero se especifica cómo deben mostrarse. Al no especificar ningún campo, todos se ocultan, menos los que se indiquen. En este caso, se crea un nuevo campo denominado `costo_tratamiento` que consiste de una concatenación (`$concat`) entre los valores "$" (literal [`$literal`], debido a que este símbolo tiene una funcionalidad especial dentro de la sintaxis de **MongoDB**) y el valor del campo `costo` (presente en la estructura original), en formato `string` (`$toString`).
