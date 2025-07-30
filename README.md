@@ -32,6 +32,24 @@ Dado que el sistema está enfocado en Bucaramanga y su zona metropolitana, los d
 
 <br>
 
+<h3 align=center>Descripción del Proyecto</h3>
+
+Este proyecto tiene como objetivo el diseño metodológico de un sistema de bases de datos orientado al ámbito de la salud. La propuesta contempla la estructuración de cada uno de los sectores necesarios para garantizar un almacenamiento de datos eficiente, coherente y seguro.
+
+A través de este modelo, se busca facilitar, en el futuro, la gestión integral de la información médica, permitiendo una organización sistemática y consultas ágiles por parte del cliente. De este modo, el sistema está pensado para ofrecer una solución escalable y funcional frente a las crecientes necesidades de manejo de datos en instituciones del sector salud.
+
+<br>
+
+<h3 align=center>Requisitos del Sistema</h3>
+
+Para poder ejecutar este proyecto, generando toda la base de datos creada con su estructura, esquemas, índices, datos (documentos) y permitir al usuario la realización de consultas y acceso a funciones **JavaScript** y roles, se precisará de las siguientes tecnologías:
+
+- **MongoDB 8.0** / **cliente MongoDB Compass** (las dos son alternativas válidas, pero si se busca una interacción más visual con la BBDD, se recomienda la segunda opción).
+
+- **Visual Studio Code** (*opcional:* facilita la apertura y lectura de los archivos alojados en este repositorio).
+
+<br>
+
 <h3 align=center>Planificación</h3>
 
 <br>
@@ -1246,7 +1264,7 @@ Una vez llegado a este punto, se empezaron a trasladar las 35 colecciones que co
 
 <h4 align=center>Descripción Técnica</h4>
 
-Para empezar a implementar la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos:
+Para empezar a implementar la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos (suponiendo que ya se cuente con **MongoDB 8.0** o **MongoDB Compass** instalado en el sistema):
 
 <br>
 
@@ -1262,11 +1280,11 @@ Para acceder a la **MongoShell** de manera local o alternativamente usar:
 mongosh '<uri>'
 ``` 
  
-Para conectarse a una URI específica.
+Para conectarse a una URI específica (si usa **MongoDB Compass**, conectarse directamente desde la interfaz del cliente).
 
 <br>
 
-`2.` Una vez dentro, se deberá ejecutar el comando:
+`2.` Una vez dentro, se deberá ejecutar el comando (en **MongoDB Compass**, ejecutarlo en un entorno **Shell**):
 
 ```
 use sistema_hospitalario
@@ -1281,6 +1299,102 @@ Para crear de manera implícita la base de datos donde se almacenará toda la in
 <br>
 
 `4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Físico a su entorno o cluster.
+
+<br>
+
+#### Ejemplo (colección #1: `hospitales`):
+
+```js
+//esquema colección hospitales
+
+db.createCollection("hospitales", {
+    validator: {
+        $jsonSchema: {
+            bsonType: "object",
+            required: ["nombre", "via_principal_tipo", "via_principal_numero", "via_principal_letra", "via_principal_bis", "via_generadora_numero", "via_generadora_letra", "via_generadora_bis", "placa", "id_barrio", "tel", "id_dir_general"],
+            properties: {
+                nombre: {
+                    bsonType: "string",
+                    minLength: 5,
+                    maxLength: 100
+                },
+                via_principal_tipo: {
+                    bsonType: "string",
+                    enum: [
+                        "Calle",
+                        "Carrera",
+                        "Avenida",
+                        "Transversal",
+                        "Diagonal",
+                        "Circular",
+                        "Autopista",
+                        "Bulevar",
+                        "Carretera",
+                        "Troncal"
+                    ]
+                },
+                via_principal_numero: {
+                    bsonType: "string",
+                    pattern: "^[0-9]{1,3}$"
+                },
+                via_principal_letra: {
+                    bsonType: ["string", "null"],
+                    pattern: "^[A-Z]{1,2}$"
+                },
+                via_principal_bis: {
+                    bsonType: "bool"
+                },
+                via_generadora_numero: {
+                    bsonType: "string",
+                    pattern: "^[0-9]{1,3}$"
+                },
+                via_generadora_letra: {
+                    bsonType: ["string", "null"],
+                    pattern: "^[A-Z]{1,2}$"
+                },
+                via_generadora_bis: {
+                    bsonType: "bool"
+                },
+                placa: {
+                    bsonType: "string",
+                    pattern: "^[0-9]{1,3}$"
+                },
+                id_barrio: {
+                    bsonType: "int"
+                },
+                tel: {
+                    bsonType: "string",
+                    pattern: "^607[2-9][0-9]{6}$"
+                },
+                id_dir_general: {
+                    bsonType: "int"
+                }
+            }
+        }
+    }
+});
+```
+
+Este esquema, como se puede observar, cuenta con todas las características que se habían definido previamente (en el Modelo Lógico final, ya normalizado).
+
+A través del comando `createCollection` se crea la colección `"hospitales"` de forma explícita; y con las funcionalidades implementadas de **MongoDB** `validator` y `$jsonSchema`, se especifica el tipo BSON que deberá tener la colección (objeto JSON), los campos que requiere obligatoriamente la entidad hospital:
+
+```js
+"nombre", "via_principal_tipo", "via_principal_numero", "via_principal_letra", "via_principal_bis", "via_generadora_numero", "via_generadora_letra", "via_generadora_bis", "placa", "id_barrio", "tel", "id_dir_general"
+```
+
+Así como las propiedades que deberá cumplir cada campo para que el documento que se inserte sea validado correctamente. **Por ejemplo:** el campo `nombre` precisa ser una cadena de texto de entre 5 y 100 carácteres; el campo `tel` precisa ser una cadena de texto compuesta por dígitos que sigan un patrón *regex* determinado (empezar por 607, seguido de 1 dígito entre 2 y 9, seguido de 6 dígitos entre 0 y 9); el campo `id_dir_general` precisa ser un entero cualquiera; etc.
+
+Si se ejecuta este comando en la **MongoShell**, sea desde terminal de *Linux* o desde **MongoDB Compass**, se cargará la colección vacía `hospitales`, con el esquema indicando los campos requeridos y las condiciones que ha de cumplir cada uno.
+
+Finalmente, se tiene este comando:
+
+```js
+db.hospitales.createIndex({ nombre: 1 }, { unique: true });
+db.hospitales.createIndex({ via_principal_tipo: 1, via_principal_numero: 1, via_principal_letra: 1, via_principal_bis: 1, via_generadora_numero: 1, via_generadora_letra: 1, via_generadora_bis: 1, placa: 1, id_barrio: 1 }, { unique: true });
+```
+
+Que genera índices únicos en campos determinados, evitando que surjan datos repetidos en dichos campos en toda la colección. En este caso, se propicia que los nombres de los hospitales sean únicos, así como sus direcciones completas.
 
 <br>
 
@@ -1335,3 +1449,49 @@ Para acceder a la base de datos donde se encuentra la estructura del Modelo Fís
 <br>
 
 `4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `dml.js`, se habrá "importado" toda la información (documentos) de la BBDD a su entorno o cluster.
+
+<br>
+
+#### Ejemplo (colección #1: `dir_generales`):
+
+```js
+//inserciones dir_generales
+
+db.dir_generales.insertMany([
+    {
+        _id: 1,
+        primer_nombre: 'Carlos',
+        primer_apellido: 'Gómez',
+        segundo_apellido: 'Rincón',
+        tel: '3123456789',
+        correo_el: 'carlos.gomez@gmail.com',
+        num_lic_gestion: 'HOS-1234567',
+        salario: NumberDecimal('12500000')
+    },
+    {
+        _id: 2,
+        primer_nombre: 'Diana',
+        segundo_nombre: 'María',
+        primer_apellido: 'Pérez',
+        segundo_apellido: 'Suárez',
+        tel: '3001234567',
+        correo_el: 'diana.perez@hotmail.com',
+        num_lic_gestion: 'HOS-7654321',
+        salario: NumberDecimal('13000000')
+    },
+    {
+        _id: 3,
+        primer_nombre: 'Jorge',
+        primer_apellido: 'Martínez',
+        segundo_apellido: 'Ortiz',
+        tel: '3012345678',
+        correo_el: 'jorge.martinez@yahoo.com',
+        num_lic_gestion: 'HOS-2345678',
+        salario: NumberDecimal('11800000')
+    }
+]);
+```
+
+A través de este comando, se realizan las inserciones dentro de la colección `dir_generales`. Este, específicamente, "importa" tres documentos con información pertinente y solicitada por el esquema, de tres directores generales.
+
+Cada campo tiene datos que coiciden con lo que se solicita a través del `$jsonSchema`, debido a que si la información insertada no coincide, podría surgir un error de fallo de validación.
