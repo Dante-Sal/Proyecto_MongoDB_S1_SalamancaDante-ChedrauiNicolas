@@ -1819,3 +1819,191 @@ Si se ejecuta esta consulta en un entorno de **MongoDB** donde ya se encuentre a
 ```
 
 Al no pasar ninguna condición al comando `find`, se mostrarán todos los documentos de la colección; pero se especifica cómo deben mostrarse. Al no especificar ningún campo, todos se ocultan, menos los que se indiquen. En este caso, se crea un nuevo campo denominado `costo_tratamiento` que consiste de una concatenación (`$concat`) entre los valores "$" (literal [`$literal`], debido a que este símbolo tiene una funcionalidad especial dentro de la sintaxis de **MongoDB**) y el valor del campo `costo` (presente en la estructura original), en formato `string` (`$toString`).
+
+---
+
+<h4 align=center>Funciones</h4>
+
+#### 1. TxsXHosp()
+
+**Objetivo:**
+
+Calcular el total de tratamientos asignados por hospital y mostrar los tratamientos únicos.
+
+**Descripción:**
+
+La función realiza joins entre las visitas médicas, médicos, hospitales y tratamientos. Agrupa por hospital y cuenta los tratamientos asignados, listando además los nombres únicos de tratamientos utilizados.
+
+**Resultado esperado (ejemplo):**
+
+```
+
+Hospital: Hospital San Juan de Dios
+
+Total de tratamientos asignados: 170
+
+Tratamientos únicos asignados: Tratamiento especializado combinado #83, Tratamiento especializado combinado #91, Intervención para lumbalgia aguda, Intervención en trastorno de ansiedad, Terapia cognitivo conductual, Control de tiroides, Tratamiento especializado combinado #70, Tratamiento para hepatitis C, Control de colesterol elevado, Control de obesidad infantil, Endoscopia digestiva alta, Tratamiento especializado combinado #67, Tratamiento de glaucoma, Implante dental simple, Plan de vacunación adulto mayor, Seguimiento en embarazo de alto riesgo, Evaluación neurológica avanzada, Tratamiento especializado combinado #73, Tratamiento especializado combinado #68, Tratamiento especializado combinado #92, Rehabilitación post-operatoria, Sesión de hemodiálisis, Tratamiento especializado combinado #66, Tratamiento del pie diabético, Tratamiento especializado combinado #102, Manejo integral de hipertensión, Tratamiento especializado combinado #104, Tratamiento especializado combinado #87, Tratamiento para hiperplasia prostática, Terapia para asma crónica, Terapia de oxigenación hiperbárica, Tratamiento especializado combinado #89, Implante de marcapasos, Plan nutricional pediátrico, Colocación de prótesis ortopédica, Tratamiento de acné severo, Tratamiento especializado combinado #90, Manejo del dolor oncológico, Tratamiento especializado combinado #74, Colposcopia diagnóstica, Evaluación y corrección postural, Terapia física para escoliosis, Control de diabetes tipo 2, Tratamiento especializado combinado #76, Tratamiento de varices, Tratamiento especializado combinado #103, Colocación de catéter urinario, Control de asma infantil, Rehabilitación motora post-ACV, Tratamiento con insulina intensivo, Desparasitación gastrointestinal, Terapia de lenguaje pediátrica, Detección temprana de cáncer de mama, Control de lupus eritematoso, Terapia ocupacional geriátrica, Tratamiento especializado combinado #69, Cirugía laparoscópica, Monitoreo fetal electrónico, Tratamiento para alergias estacionales, Electrocardiograma con monitoreo, Colocación de DIU hormonal, Tratamiento especializado combinado #105, Tratamiento especializado combinado #72, Tratamiento especializado combinado #77, Tratamiento especializado combinado #88, Tratamiento para depresión mayor, Tratamiento especializado combinado #94, Tratamiento especializado combinado #98, Tratamiento especializado combinado #81, Tratamiento especializado combinado #71, Tratamiento especializado combinado #99, Tratamiento para trastorno bipolar, Tratamiento para reflujo gástrico, Control metabólico integral, Terapia de estimulación cerebral, Tratamiento especializado combinado #64, Terapia de reemplazo hormonal, Tratamiento especializado combinado #65, Tratamiento especializado combinado #85, Tratamiento para insuficiencia renal, Tratamiento especializado combinado #100, Control de migraña crónica, Tratamiento especializado combinado #84, Cirugía de cataratas
+
+------------------------------------------------------------
+```
+
+<br>
+
+#### 2. VMXHosp()
+
+**Objetivo:**  
+
+Contar el total de visitas médicas realizadas por hospital.
+
+**Descripción:**  
+
+Relaciona cada visita con su médico y hospital correspondiente. Agrupa por hospital y calcula el número total de visitas realizadas.
+
+**Resultado esperado:**
+
+```
+
+Hospital: Hospital San Juan de Dios
+
+Total de visitas médicas: 48
+
+------------------------------------------------------------
+```
+
+<br>
+
+#### 3. DxsXHosp()
+
+**Objetivo:**
+
+Contar el total de registros por diagnóstico en cada hospital.
+
+**Descripción:**
+
+Relaciona diagnósticos con visitas médicas, médicos y hospitales. Luego agrupa por hospital y diagnóstico para contabilizar cuántas veces fue registrado cada uno.
+
+**Resultado esperado:**
+
+```
+
+Hospital: Clínica Chicamocha
+
+Diagnóstico: Evaluación postoperatoria muestra buena evolución de herida quirúrgica sin signos de infección.
+
+Total registros del diagnóstico: 4
+
+------------------------------------------------------------
+```
+
+<br>
+
+#### 4. MedsXHosp()
+
+**Objetivo:**
+
+Obtener el total de medicamentos disponibles por hospital y mostrar los nombres únicos de medicamentos.
+
+**Descripción:**
+
+Relaciona los inventarios con los hospitales y medicamentos. Suma la cantidad disponible y agrupa por hospital listando los medicamentos únicos.
+
+**Resultado esperado:**
+
+```
+
+Hospital: Hospital Universitario de Santander
+
+Total de medicamentos disponibles en inventario: 2256
+
+Medicamentos únicos disponibles en inventario: Albendazol 400mg, Furosemida 40mg, Ibuprofeno 400mg, Levotiroxina 100mcg, Ciprofloxacina 500mg, Vitamina C 1g, Ranitidina 150mg, Paracetamol 500mg, Azitromicina 500mg, Diazepam 5mg, Aciclovir 400mg, Clonazepam 0.5mg, Loratadina 10mg, Acetaminofén Forte, Salbutamol Inhalador, Losartán 50mg, Simvastatina 20mg, Aspirina 100mg, Insulina NPH, Enalapril 10mg, Prednisona 20mg, Vacuna Influenza, Dexametasona 4mg, Omeprazol 20mg, Fluoxetina 20mg, Metformina 850mg, Amoxicilina 875mg
+
+------------------------------------------------------------
+```
+
+<br>
+
+#### 5. PctesXDX()
+
+**Objetivo:**
+
+Contar cuántos pacientes distintos han sido diagnosticados con cada diagnóstico.
+
+**Descripción:**
+
+Relaciona visitas médicas con pacientes y diagnósticos, agrupando por diagnóstico y acumulando pacientes únicos mediante `$addToSet`.
+
+**Resultado esperado:**
+
+```
+
+Total de pacientes registrados por "Presencia de secreción purulenta en oído derecho, diagnóstico de otitis media supurada.": 1
+
+------------------------------------------------------------
+```
+
+<br>
+
+#### 6. MedicosXHosp()
+
+**Objetivo:**
+
+Contar cuántos médicos tiene cada hospital y mostrar sus nombres completos.
+
+**Descripción:**
+
+Agrupa a los médicos por hospital y concatena sus nombres completos, incluyendo nombres opcionales como segundo nombre.
+
+**Resultado esperado:**
+
+```
+
+Hospital: Clínica Foscal
+
+Cuerpo médico: Melissa Juliana Camargo Salinas, Adriana Lucía Peña Guzmán, Álvaro José Valencia Mora, Diego  Ríos Ortiz, Karol Andrea Chaparro Moreno, Tomás  Delgado Navarro, Andrés Felipe Osorio Silva, Felipe  Rojas Díaz, Natalia Andrea Herrera Gómez, Esteban Alexander Álvarez Guerra
+
+Total de médicos: 10
+------------------------------------------------------------
+```
+
+<br>
+
+#### 7. CstTxsXHosp()
+
+**Objetivo:**
+
+Calcular cuántos tratamientos han sido asignados por hospital y el costo total asociado.
+
+**Descripción:**
+
+Relaciona las visitas con médicos, hospitales y tratamientos. Agrupa por hospital, suma los tratamientos y acumula el costo total.
+
+**Resultado esperado:**
+
+```
+
+Hospital: Hospital San Juan de Dios
+
+Total de tratamientos asignados: 170
+
+Total de costos de tratamientos: $920347009.93
+
+------------------------------------------------------------
+```
+
+---
+
+<h4 align=center>Contribuciones</h4>
+
+**Dante Salamanca Galvis:** [modelado de bases de datos: *modelo conceptual, modelo lógico, 1FN, 2FN, 3FN*; estructuración de bases de datos: *esquemas + índices*; inserción de datos; documentación]
+
+**Nicolás Chedraui Mantilla:** [inserción de datos; consultas; funciones]
+
+---
+
+<h4 align=center>Contacto</h4>
+
+En caso de surgir problemas con la implementación de determinada sección del sistema de bases de datos **Sistema Hospitalario**, contactar a:
+
+**Correo electrónico [email]:** [dantecampuslands@gmail.com](mailto:dantecampuslands@gmail.com?subject=Consulta%20general&body=Hola,%20quisiera%20saber%20más%20sobre...) / [dantesalamancagalvis@gmail.com](mailto:dantesalamancagalvis@gmail.com?subject=Consulta%20general&body=Hola,%20quisiera%20saber%20más%20sobre...)
+
+**Teléfono:** +57 302 734 1353
