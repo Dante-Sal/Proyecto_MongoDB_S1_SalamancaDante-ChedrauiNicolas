@@ -52,7 +52,7 @@ Para poder ejecutar este proyecto, generando toda la base de datos creada con su
 
 <h3 align=center>Planificación</h3>
 
----
+<br>
 
 <h4 align=center>Construcción del Modelo Conceptual</h4>
 
@@ -261,7 +261,7 @@ Así, se ejecutó la agregación de esta nueva actualización al modelo estructu
 
 <h3 align=center>Normalización del Modelo Lógico</h3>
 
----
+<br>
 
 <h4 align=center>Primera Forma Normal (1FN)</h4>
 
@@ -1314,7 +1314,7 @@ Una vez llegado a este punto, se empezaron a trasladar las 35 colecciones que co
 
 Para empezar a implementar la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos (suponiendo que ya se cuente con **MongoDB 8.0** o **MongoDB Compass** instalado en el sistema):
 
----
+<br>
 
 `1.` Desde la terminal de *Linux*, escribir el comando:
 
@@ -1330,7 +1330,7 @@ mongosh '<uri>'
  
 Para conectarse a una URI específica (si usa **MongoDB Compass**, conectarse directamente desde la interfaz del cliente).
 
----
+<br>
 
 `2.` Una vez dentro, se deberá ejecutar el comando (en **MongoDB Compass**, ejecutarlo en un entorno **Shell**):
 
@@ -1340,15 +1340,15 @@ use sistema_hospitalario
 
 Para crear de manera implícita la base de datos donde se almacenará toda la información, estructuras, esquemas, funciones e índices.
 
----
+<br>
 
 `3.` Acceder al archivo `ddl.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
 
----
+<br>
 
 `4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Físico a su entorno o cluster.
 
----
+<br>
 
 #### Ejemplo (colección #1: `hospitales`):
 
@@ -1464,7 +1464,7 @@ Teniendo en cuenta el contexto (base de datos de sistema hospitalario enfocado e
 
 Para implementar los datos correspondientes a cada colección en la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos:
 
----
+<br>
 
 `1.` Desde la terminal de *Linux*, escribir el comando:
 
@@ -1480,7 +1480,7 @@ mongosh '<uri>'
  
 Para conectarse a una URI específica. El comando a usar dependerá de donde se hallan almacenado los esquemas creados previamente.
 
----
+<br>
 
 `2.` Una vez dentro, se deberá ejecutar el comando:
 
@@ -1490,15 +1490,15 @@ use sistema_hospitalario
 
 Para acceder a la base de datos donde se encuentra la estructura del Modelo Físico que se generó con anterioridad.
 
----
+<br>
 
 `3.` Acceder al archivo `dml.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
 
----
+<br>
 
 `4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `dml.js`, se habrá "importado" toda la información (documentos) de la BBDD a su entorno o cluster.
 
----
+<br>
 
 #### Ejemplo (colección #1: `dir_generales`):
 
