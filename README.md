@@ -223,7 +223,6 @@ erDiagram
     hospitales ||--o{ per_admin : tienen
     hospitales ||--o{ per_mantenimiento : tienen
     hospitales ||--o{ medicos : tienen
-    hospitales ||--o{ pacientes : tienen
     hist_clinicas ||..|| pacientes : tienen
     hist_clinicas ||--o{ visitas_medicas : tienen_registradas
     pacientes ||--o{ visitas_medicas : realizan
@@ -523,7 +522,6 @@ erDiagram
     }
 
     hospitales ||--o{ medicos : tienen
-    hospitales ||--o{ pacientes : tienen
     pacientes ||--|| hist_clinicas : tienen
     hospitales ||--o{ enfermeros : tienen
     hospitales ||--o{ per_admin : tienen
@@ -861,7 +859,6 @@ erDiagram
     }
 
     hospitales ||--o{ medicos : tienen
-    hospitales ||--o{ pacientes : tienen
     hospitales ||--o{ enfermeros : tienen
     hospitales ||--o{ per_admin : tienen
     hospitales ||--o{ per_mantenimiento : tienen
@@ -1198,7 +1195,6 @@ erDiagram
     }
 
     hospitales ||--o{ medicos : tienen
-    hospitales ||--o{ pacientes : tienen
     hospitales ||--o{ enfermeros : tienen
     hospitales ||--o{ per_admin : tienen
     hospitales ||--o{ per_mantenimiento : tienen
@@ -1247,6 +1243,58 @@ Así, se creó una entidad denominada `barrios`, la cual posee una característi
 Por otra parte, un cambio pequeño que se implementó, derivado de la 3FN, fue la supresión de la relación a través del `id_hist_clinica` (id de historia clínica) que existía entre `visitas_medicas` e `hist_clinicas`.
 
 Ahora, bien, es lógico que la relación entre estas dos colecciones es importante; pero lo que no se había captado hasta el momento, es que ya existía una relación indirecta entre estas dos colecciones (con la colección `pacientes` de por medio). Si se quiere acceder a una historia clínica desde una visita médica, simplemente se debe acceder primero al paciente asociado y este paciente tendrá asignada una historia clínica correspondiente a la historia clínica conectada con dicha cita.
+
+<br>
+
+<h4 align=center>Estructura de la Base de Datos</h4>
+
+Se presenta un resumen rápido de las entidades/colecciones más importantes y cómo se relacionan entre ellas:
+
+**alergias:** contiene información sobre algunas alergias que pueden estar presentes en pacientes, se almacenan en historias clínicas a través de la colección puente `hist_clinicas_alergias` que contiene referencias a ambas colecciones.
+
+**ant_familiares/ant_personales:** contienen información sobre antecedentes médicos como cirugías, enfermedades o tratamientos previos (personales), o enfermedades hereditarias, constantes médicas en la familia o datos importantes de salud referentes al árbol genealógico de cierto paciente que lo pueda afectar indirectamente (familiares).
+
+Se almacenan en historias clínicas a través de la colección puente `hist_clinicas_ant_familiares`/`hist_clinicas_ant_personales` que contienen referencias a ambas colecciones.
+
+**areas_especializadas:** contienen información sobre las posibles áreas en las que determinado hospital puede estar enfocado. Se asocian con hospitales a través de la colección puente `hospitales_areas_especializadas` que contiene referencias a ambas colecciones.
+
+**barrios:** barrios de las direcciones de pacientes y hospitales. Se conectan con `direcciones_pacientes` y `hospitales` de forma directa a través de una llave foránea en cada una de estas dos últimas colecciones.
+
+**diagnosticos:** realizados durante o al final de visitas medicas, se almacenan en estas a través de la entidad puente `visitas_medicas_diagnosticos` que contiene referencias a ambas colecciones.
+
+**dir_generales:** encargados de gestionar `hospitales` (pueden estar a cargo de más de un hospital, pero cada hospital sólo cuenta con uno), son referenciados con una llave foránea en el documento del/los hospital/es que están bajo su gestión.
+
+**direcciones_pacientes:** contienen las direcciones de los `pacientes`, separadas en cada sección de las que normalmente se componen las direcciones en Bucaramanga y la zona metropolitana de Bucaramanga. Son referenciadas en el documento del paciente que reside en ellas como una llave foránea (relación 1:1).
+
+**enfermeros:** se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
+
+**especialidades:** contienen información sobre las posibles especialidades en las que determinado médico puede estar enfocado. Se asocian con médicos a través de la colección puente `medicos_especialidades` que contiene referencias a ambas colecciones.
+
+**fabricantes:** fabricantes de `medicamentos`. Son referenciados en la colección `medicamentos` (relación 1:N con 1 en `fabricantes`).
+
+**hist_clinicas:** cada paciente posee solamente una historia clínica y se conecta con ella a través de `id_hist_clinica`, campo de `pacientes` (contiene información sobre el número de historia, fecha de creación, ultima actualización y se asocia con `alergias`, `ant_familiares` y `ant_personales` en cardinalidad N:M).
+
+**hospitales:** cada establecimiento médico de la base de datos está alojado en esta colección. Contiene referencias al director general que lo gestiona y es referenciado en todas las colecciones del personal (`enfermeros`, `medicos`, `per_admin` y `per_mantenimiento`).
+
+**inventarios_medicamentos:** se relaciona con `hospitales` y `medicamentos` (contiene llaves foráneas a estas dos colecciones), conectando estas dos entidades en N:M, facilitando el conteo de la cantidad disponible de cada medicamento en cada hospital.
+
+**medicamentos:** referencia a su fabricante y contiene información directa sobre su nombre y tipo. Son recetados en `visitas_medicas`, por lo que se almacenan en estas a través de la entidad puente `visitas_medicas_medicamentos` que contiene referencias a ambas colecciones.
+
+**medicos:** [INFORMACIÓN ÚNICA DEL MÉDICO: NÚMERO DE COLEGIATURA] se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
+
+**pacientes:** referencian a la dirección en la cual residen y la historia médica que les corresponde. Así mismo, son referenciados en `visitas_medicas` a través de una llave foránea en esta última colección.
+
+**per_admin:** [INFORMACIÓN ÚNICA DEL PERSONAL ADMINISTRATIVO: CARGO / ÁREA RESPONSABLE] se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
+
+**per_mentenimiento:** [INFORMACIÓN ÚNICA DEL PERSONAL DE MANTENIMIENTO: TIPO DE TRABAJO] se asocian con el hospital en el cual trabajan a través de una llave foránea en esta misma colección con el id de dicho establecimiento médico.
+
+**resultados:** extraídos durante o al final de visitas medicas, se almacenan en estas a través de la entidad puente `visitas_medicas_resultados` que contiene referencias a ambas colecciones.
+
+**seguros:** seguros médicos de los `pacientes`, se conectan con estos a través de una entidad puente `pacientes_seguros` (cardinalidad N:M) que contiene referencias a ambas colecciones. `seguros` referencia también a las colecciones `estados_seguros` y `tipos_seguros`, características de los seguros que fueron normalizadas en colecciones separadas.
+
+**tratamientos:** contiene información directa sobre su nombre, descripción, área médica y costo. Son asignados en `visitas_medicas`, por lo que se almacenan en estas a través de la entidad puente `visitas_medicas_tratamientos` que contiene referencias a ambas colecciones.
+
+**visitas_medicas:** contiene información sobre la fecha y hora a la que se realizó la consulta. Asimismo, referencia al id del paciente y médico que formaron parte de cada visita. Establece relación 1:N con `pacientes` y `medicos` (con N en `visitas_medicas`).
 
 <br>
 
