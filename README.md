@@ -2,7 +2,7 @@
 
 <h6 align=center>Proyecto MongoDB: (Dante Salamanca Galvis & Nicolás Chedraui Mantilla)</h6>
 
-<br>
+---
 
 <h3 align=center>Introducción</h3>
 
@@ -12,7 +12,7 @@ Se documenta cada parte del proceso, describiendo el flujo de trabajo lógico qu
 
 Finalmente, se realizan inserciones de datos dentro de nuestro sistema, se crean usuarios con diferentes permisos de acceso a la base de datos; ejecutando pruebas, como última medida, a través de consultas y funciones dentro de la BBDD que permitan a quienes tengan acceso a ella el poder manipular la forma en la que la información se presenta, pudiendo realizar diferentes tipos de filtrado de datos, entre otros tipos de consultas.
 
-<br>
+---
 
 <h3 align=center>Caso de Estudio</h3>
 
@@ -30,7 +30,7 @@ Se especifican también relaciones entre directores generales y hospitales, así
 
 Dado que el sistema está enfocado en Bucaramanga y su zona metropolitana, los datos ingresados, la cantidad de estos y los formatos que se definirán a través de `$jsonSchema` serán coherentes con dicho contexto, estableciendo una conexión con la realidad que representa la BBDD.
 
-<br>
+---
 
 <h3 align=center>Descripción del Proyecto</h3>
 
@@ -38,7 +38,7 @@ Este proyecto tiene como objetivo el diseño metodológico de un sistema de base
 
 A través de este modelo, se busca facilitar, en el futuro, la gestión integral de la información médica, permitiendo una organización sistemática y consultas ágiles por parte del cliente. De este modo, el sistema está pensado para ofrecer una solución escalable y funcional frente a las crecientes necesidades de manejo de datos en instituciones del sector salud.
 
-<br>
+---
 
 <h3 align=center>Requisitos del Sistema</h3>
 
@@ -48,11 +48,11 @@ Para poder ejecutar este proyecto, generando toda la base de datos creada con su
 
 - **Visual Studio Code** (*opcional:* facilita la apertura y lectura de los archivos alojados en este repositorio).
 
-<br>
+---
 
 <h3 align=center>Planificación</h3>
 
-<br>
+---
 
 <h4 align=center>Construcción del Modelo Conceptual</h4>
 
@@ -84,7 +84,7 @@ También cabe resaltar que en este punto y hasta la ejecución de la normalizaci
 
 En resumen, este se trata de un modelo muy primitivo de la BBDD, que si bien facilita el bosquejo de una base o esqueleto para empezar a trabajar en la optimización de nuestro sistema, es muy poco eficiente y de implementarse, propiciaría un manejo de datos poco sostenible a lo largo del tiempo.
 
-<br>
+---
 
 <h4 align=center>Construcción del Modelo Lógico</h4>
 
@@ -257,11 +257,11 @@ Se analizó que al poseer un simple atributo `cant_disponible` en cada medicamen
 
 Así, se ejecutó la agregación de esta nueva actualización al modelo estructurado de datos, empleando esta nueva entidad como intermediaria entre las entidades `hospitales` y `medicamentos` (facilitando que exista un inventario por cada combinación posible de todos los hospitales con medicamentos existentes).
 
-<br>
+---
 
 <h3 align=center>Normalización del Modelo Lógico</h3>
 
-<br>
+---
 
 <h4 align=center>Primera Forma Normal (1FN)</h4>
 
@@ -576,7 +576,7 @@ Por otra parte, referente a la resolución de cardinalidades, los casos de atrib
 
 **Campo seguros en pacientes:** un paciente puede tener muchos seguros y un mismo seguro se puede asignar a muchos pacientes. Se separa en una entidad `seguros`, conectada a pacientes a través de la entidad puente `pacientes_seguros`.
 
-<br>
+---
 
 <h4 align=center>Segunda Forma Normal (2FN)</h4>
 
@@ -905,7 +905,7 @@ La segunda razón está orientada al almacenaje de información. Si mantenemos, 
 
 Por esta razón se decidió, dado que un seguro podría llegar a cambiar de tipo o estado si el paciente lo actualiza, o dado que los fabricantes de medicamentos podrían precisar de más información dentro de la BBDD (aislado del propio medicamento), o dado que un paciente podría cambiar rápidamente de una residencia a otra (modificando arbitrariamente los atributos de dirección y generando una relación no estrechamente directa con el `_id` del paciente); se decidió realizar el proceso de normalización en estas cuatro propiedades en colecciones separadas y referenciadas a sus entidades de origen.
 
-<br>
+---
 
 <h4 align=center>Tercera Forma Normal (3FN)</h4>
 
@@ -1244,7 +1244,7 @@ Por otra parte, un cambio pequeño que se implementó, derivado de la 3FN, fue l
 
 Ahora, bien, es lógico que la relación entre estas dos colecciones es importante; pero lo que no se había captado hasta el momento, es que ya existía una relación indirecta entre estas dos colecciones (con la colección `pacientes` de por medio). Si se quiere acceder a una historia clínica desde una visita médica, simplemente se debe acceder primero al paciente asociado y este paciente tendrá asignada una historia clínica correspondiente a la historia clínica conectada con dicha cita.
 
-<br>
+---
 
 <h4 align=center>Estructura de la Base de Datos</h4>
 
@@ -1296,7 +1296,7 @@ Se almacenan en historias clínicas a través de la colección puente `hist_clin
 
 **visitas_medicas:** contiene información sobre la fecha y hora a la que se realizó la consulta. Asimismo, referencia al id del paciente y médico que formaron parte de cada visita. Establece relación 1:N con `pacientes` y `medicos` (con N en `visitas_medicas`).
 
-<br>
+---
 
 <h4 align=center>Construcción del Modelo Físico</h4>
 
@@ -1314,7 +1314,7 @@ Una vez llegado a este punto, se empezaron a trasladar las 35 colecciones que co
 
 Para empezar a implementar la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos (suponiendo que ya se cuente con **MongoDB 8.0** o **MongoDB Compass** instalado en el sistema):
 
-<br>
+---
 
 `1.` Desde la terminal de *Linux*, escribir el comando:
 
@@ -1330,7 +1330,7 @@ mongosh '<uri>'
  
 Para conectarse a una URI específica (si usa **MongoDB Compass**, conectarse directamente desde la interfaz del cliente).
 
-<br>
+---
 
 `2.` Una vez dentro, se deberá ejecutar el comando (en **MongoDB Compass**, ejecutarlo en un entorno **Shell**):
 
@@ -1340,15 +1340,15 @@ use sistema_hospitalario
 
 Para crear de manera implícita la base de datos donde se almacenará toda la información, estructuras, esquemas, funciones e índices.
 
-<br>
+---
 
 `3.` Acceder al archivo `ddl.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
 
-<br>
+---
 
 `4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `ddl.js`, se habrá "importado" la estructura base o Modelo Físico a su entorno o cluster.
 
-<br>
+---
 
 #### Ejemplo (colección #1: `hospitales`):
 
@@ -1444,7 +1444,7 @@ db.hospitales.createIndex({ via_principal_tipo: 1, via_principal_numero: 1, via_
 
 Que genera índices únicos en campos determinados, evitando que surjan datos repetidos en dichos campos en toda la colección. En este caso, se propicia que los nombres de los hospitales sean únicos, así como sus direcciones completas.
 
-<br>
+---
 
 <h4 align=center>Inserciones de Datos</h4>
 
@@ -1464,7 +1464,7 @@ Teniendo en cuenta el contexto (base de datos de sistema hospitalario enfocado e
 
 Para implementar los datos correspondientes a cada colección en la base de datos `sistema_hospitalario` en un cluster, se debe seguir los siguientes pasos:
 
-<br>
+---
 
 `1.` Desde la terminal de *Linux*, escribir el comando:
 
@@ -1480,7 +1480,7 @@ mongosh '<uri>'
  
 Para conectarse a una URI específica. El comando a usar dependerá de donde se hallan almacenado los esquemas creados previamente.
 
-<br>
+---
 
 `2.` Una vez dentro, se deberá ejecutar el comando:
 
@@ -1490,15 +1490,15 @@ use sistema_hospitalario
 
 Para acceder a la base de datos donde se encuentra la estructura del Modelo Físico que se generó con anterioridad.
 
-<br>
+---
 
 `3.` Acceder al archivo `dml.js` y ejecutar los bloques de comando indicados allí en orden (copiar y pegar bloque por bloque, del archivo a la **Shell**).
 
-<br>
+---
 
 `4.` Cuando se halla realizado este procedimiento con todos los bloques de código alojados en `dml.js`, se habrá "importado" toda la información (documentos) de la BBDD a su entorno o cluster.
 
-<br>
+---
 
 #### Ejemplo (colección #1: `dir_generales`):
 
@@ -1544,7 +1544,7 @@ A través de este comando, se realizan las inserciones dentro de la colección `
 
 Cada campo tiene datos que coiciden con lo que se solicita a través del `$jsonSchema`, debido a que si la información insertada no coincide, podría surgir un error de fallo de validación.
 
-<br>
+---
 
 <h4 align=center>Ejemplos de Consultas</h4>
 
