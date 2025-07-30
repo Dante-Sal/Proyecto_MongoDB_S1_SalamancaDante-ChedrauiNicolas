@@ -2,7 +2,7 @@
 
 <h6 align=center>Proyecto MongoDB: (Dante Salamanca Galvis & Nicolás Chedraui Mantilla)</h6>
 
----
+<br>
 
 <h3 align=center>Introducción</h3>
 
