@@ -1254,7 +1254,7 @@ Se presenta un resumen rápido de las entidades/colecciones más importantes y c
 
 **alergias:** contiene información sobre algunas alergias que pueden estar presentes en pacientes, se almacenan en historias clínicas a través de la colección puente `hist_clinicas_alergias` que contiene referencias a ambas colecciones.
 
-
+<br>
 
 **ant_familiares/ant_personales:** contienen información sobre antecedentes médicos como cirugías, enfermedades o tratamientos previos (personales), o enfermedades hereditarias, constantes médicas en la familia o datos importantes de salud referentes al árbol genealógico de cierto paciente que lo pueda afectar indirectamente (familiares).
 
