@@ -2107,9 +2107,16 @@ db.createUser({
 
 <h4 align=center>Contribuciones</h4>
 
-**Dante Salamanca Galvis:** [modelado de bases de datos: *modelo conceptual, modelo lógico, 1FN, 2FN, 3FN*; estructuración de bases de datos: *esquemas + índices*; inserción de datos; documentación]
+**Dante Salamanca Galvis:** [modelado de bases de datos: modelo conceptual, modelo lógico, 1FN, 2FN, 3FN; estructuración de bases de datos: esquemas + índices; inserción de datos; usuarios + roles; documentación]
 
 **Nicolás Chedraui Mantilla:** [inserción de datos; consultas; funciones]
+
+---
+
+<h4 align=center>Sustentación</h4>
+
+**Sustentación Proyecto MongoDB - Sistema Hospitalario Pt.1:** [CLIC AQUÍ PARA VER EL VIDEO SUSTENTACIÓN](https://www.youtube.com/watch?v=CqZQmLdrBt0)
+**Sustentación Proyecto MongoDB - Sistema Hospitalario Pt.2:** [CLIC AQUÍ PARA VER EL VIDEO SUSTENTACIÓN](https://www.youtube.com/watch?v=-wlAQaojTJg)
 
 ---
 
