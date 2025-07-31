@@ -1824,7 +1824,7 @@ Al no pasar ninguna condición al comando `find`, se mostrarán todos los docume
 
 <h4 align=center>Funciones</h4>
 
-#### 1. TxsXHosp()
+#### 1. getTratsxHosp()
 
 **Objetivo:**
 
@@ -1849,7 +1849,7 @@ Tratamientos únicos asignados: Tratamiento especializado combinado #83, Tratami
 
 <br>
 
-#### 2. VMXHosp()
+#### 2. countVMxHosp()
 
 **Objetivo:**  
 
@@ -1872,7 +1872,7 @@ Total de visitas médicas: 48
 
 <br>
 
-#### 3. DxsXHosp()
+#### 3. countDxRegsxHosp()
 
 **Objetivo:**
 
@@ -1897,7 +1897,7 @@ Total registros del diagnóstico: 4
 
 <br>
 
-#### 4. MedsXHosp()
+#### 4. getMedsDispxHosp()
 
 **Objetivo:**
 
@@ -1922,7 +1922,7 @@ Medicamentos únicos disponibles en inventario: Albendazol 400mg, Furosemida 40m
 
 <br>
 
-#### 5. PctesXDX()
+#### 5. countPacsxDiag()
 
 **Objetivo:**
 
@@ -1943,7 +1943,7 @@ Total de pacientes registrados por "Presencia de secreción purulenta en oído d
 
 <br>
 
-#### 6. MedicosXHosp()
+#### 6. getMedicosxHosp()
 
 **Objetivo:**
 
@@ -1967,7 +1967,7 @@ Total de médicos: 10
 
 <br>
 
-#### 7. CstTxsXHosp()
+#### 7. calcTTCxHosp()
 
 **Objetivo:**
 
@@ -1988,6 +1988,117 @@ Total de tratamientos asignados: 170
 Total de costos de tratamientos: $920347009.93
 
 ------------------------------------------------------------
+```
+
+---
+
+<h4 align=center>Roles de Usuario y Permisos</h4>
+
+**[NOTA] :** Si se encuentra en un entorno de **MongoDB Atlas**, deberá configurar los usuarios y permisos manualmente desde la interfaz web de la plataforma.
+
+**[NOTA] :** Antes de poder crear los usuarios que conforman este sistema de bases de datos, se deberá configurar la autenticación, habiendo creado previamente un usuario `admin` con todos los permisos asignados.
+
+**Admin:** usuario con todos los permisos del entorno local (cluster, en **MongoDB Atlas**). Para generarlo desde **MongoShell** (obligatorio usar esta herramienta), se deberá ejecutar el siguiente comando, personalizando los valores de las llaves `user` y `pwd` a conveniencia:
+
+```js
+db.createUser({
+  user: "admin",
+  pwd: passwordPrompt("password"),
+  roles: [
+    {
+      role: "root",
+      db: "admin"
+    }
+  ]
+});
+```
+
+**[NOTA] :** El rol `root` encuentra su equivalente en `atlasAdmin`, en un entorno de **MongoDB Atlas** (configurar este rol en la interfaz web de la plataforma si se trabaja con esta).
+
+A continuación se deberá salir de la **MongoShell**, a través del siguiente comando:
+
+```js
+exit
+```
+
+Para posteriormente, en la terminal de *Linux*, ejecutar el siguiente comando que abrirá el archivo que permitirá activar la autenticación en **MongoDB**:
+
+```bash
+sudo nano /etc/mongod.conf
+```
+
+Una vez dentro del archivo, se deberá buscar la sección denotada con el nombre `#security:` e insertar justo debajo las siguientes líneas:
+
+```
+security:
+  authorization: enabled
+```
+
+Se precisará guardar cambios en dicho archivo, para posteriormente reiniciar **MongoDB**:
+
+```bash
+sudo systemctl restart mongod
+```
+
+La próxima vez que se acceda a la **MongoShell**, se deberá ejecutar el siguiente comando (reemplazando con el usuario correspondiente que halla asignado, por lo general `admin`). Luego, la terminal solicitará la contraseña que se insertó previamente, al crear el usuario:
+
+```bash
+mongosh -u "admin" --authenticationDatabase "admin"
+```
+
+Una vez dentro de la **MongoShell**, y accediendo a la base de datos que aplica en este contexto (`use sistema_hospitalario`), iniciado como usuario `admin` (o con todos los permisos dentro del entorno), se podrán generar los demás usuarios.
+
+**Director General (`dir_general`):** usuario con acceso a todos los permisos dentro de la base de datos.
+
+*Creación del usuario:*
+
+```javascript
+db.createUser({
+  user: "dir_general",
+  pwd: passwordPrompt("password"),
+  roles: [
+    {
+      role: "dbOwner",
+      db: "sistema_hospitalario"
+    }
+  ]
+});
+```
+
+**Médico Especialista (`medico_especialista`):** usuario con acceso de sólo lectura a las colecciones `pacientes` y `diagnosticos`.
+
+*Rol personalizado para médicos:*
+
+```js
+db.createRole({
+  role: "medicoEspecialista",
+  privileges: [
+    {
+      resource: { db: "sistema_hospitalario", collection: "pacientes" },
+      actions: ["find"]
+    },
+    {
+      resource: { db: "sistema_hospitalario", collection: "diagnosticos" },
+      actions: ["find", "insert"]
+    }
+  ],
+  roles: []
+});
+```
+
+*Creación del usuario:*
+
+```js
+db.createUser({
+  user: "medico_especialista",
+  pwd: passwordPrompt("password"),
+  roles: [
+    {
+      role: "medicoEspecialista",
+      db: "sistema_hospitalario"
+    }
+  ]
+});
 ```
 
 ---

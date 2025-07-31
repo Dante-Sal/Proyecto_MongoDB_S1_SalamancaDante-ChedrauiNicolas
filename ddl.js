@@ -308,7 +308,7 @@ db.createCollection("pacientes", {
 
 //índices colección pacientes
 
-db.pacientes.createIndex({ num_hc: 1 }, { unique: true });
+db.pacientes.createIndex({ id_hist_clinica: 1 }, { unique: true });
 db.pacientes.createIndex({ tel: 1 }, { unique: true });
 db.pacientes.createIndex({ correo_el: 1 }, { unique: true });
 
