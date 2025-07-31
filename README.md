@@ -1824,6 +1824,8 @@ Al no pasar ninguna condición al comando `find`, se mostrarán todos los docume
 
 <h4 align=center>Funciones</h4>
 
+A continuación se hace un resumen general de algunas de las funciones que se pueden implementar en la base de datos `sistema_hospitalario` y que se encuentran especificadas (20 funciones) en el archivo `dql_funciones.js`, en este mismo repositorio.
+
 #### 1. getTratsxHosp()
 
 **Objetivo:**
